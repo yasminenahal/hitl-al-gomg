@@ -31,8 +31,8 @@ simulators = _models / "simulators"
 priors = _models / "priors"
 
 # REINVENT
-reinvent = _repo_root / "HITL_AL_GOMG/Reinvent"
-reinventconda = _repo_root / "HITL_AL_GOMG/reinvent.v3.2"
+reinvent = _repo_root / "Reinvent"
+reinventconda = _repo_root / "reinvent.v3.2"
 
 # Results
 demos = _repo_root / "generations"
