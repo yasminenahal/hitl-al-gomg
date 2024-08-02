@@ -1,0 +1,40 @@
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_similarity import TestParallelRocsSimilarity
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_similarity_tautomers import \
+    TestParallelRocsSimilarityTautomers
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_similarity_negative_volume import \
+    TestParallelRocsSimilarityNegativeVolume
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_similarity_omegaopts import \
+    TestParallelRocsSimilarityOmegaopts
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_similarity import TestParallelRocsSimilarity
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_similarity_tversky_score_bug import \
+    TestParallelRocsSimilarityTverskyScoreBug
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_similarity_with_custom_cff import \
+    TestParallelRocsSimilarityWithCustomCff
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_similarity_with_shape_query_no_transf_kw import \
+    TestParallelRocsSimilarityWithShapeQueryNoTransfKw
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_similarity_with_shape_query_save_overlays import \
+    TestParallelRocsSimilarityWithShapeQuerySaveOverlays
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_similarity_with_transformation import \
+    TestParallelRocsSimilarityWithTransformation
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_similarity_with_two_components import \
+    TestParallelRocsSimilarityWithTwoComponents
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_similarity_enumerate_stereo import \
+    TestParallelRocsSimilarityEnumerateStereo
+from unittest_reinvent.scoring_tests.scoring_3d.test_large_batch_scoring_parallel_rocs_similarity import \
+    TestParallelRocsSimilarityWithShapeQueryLargeBatch
+from unittest_reinvent.scoring_tests.scoring_3d.test_rocs_similarity import TestRocsSimilarity
+from unittest_reinvent.scoring_tests.scoring_3d.test_rocs_similarity_with_two_components import \
+    TestRocsSimilarityWithTwoComponents
+from unittest_reinvent.scoring_tests.scoring_3d.test_rocs_similarity_with_shape_query_no_trans_kw import \
+    TestRocsSimilarityWithShapeQueryNoTransfTw
+from unittest_reinvent.scoring_tests.scoring_3d.test_rocs_similarity_with_two_components import \
+    TestRocsSimilarityWithTwoComponents
+from unittest_reinvent.scoring_tests.scoring_3d.test_rocs_similarity_with_transformation import \
+    TestRocsSimilarityWithTransformation
+from unittest_reinvent.scoring_tests.scoring_3d.test_rocs_similarity_tversky_score_bug import \
+    TestRocsSimilarityTverskyScoreBug
+from unittest_reinvent.scoring_tests.scoring_3d.test_rocs_multi_similarity import TestRocsMultiSimilarity
+from unittest_reinvent.scoring_tests.scoring_3d.test_parallel_rocs_multi_similarity import \
+    TestParallelRocsMultiSimilarity
+from unittest_reinvent.scoring_tests.scoring_3d.test_rocs_similarity_with_custom_cff import \
+    TestRocsSimilarityWithCustomCff

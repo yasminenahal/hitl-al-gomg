@@ -1,0 +1,18 @@
+from unittest_reinvent.scoring_tests.scoring_transformations.test_score_custom_interpolation import \
+    TestScoreCustomInterpolation
+from unittest_reinvent.scoring_tests.scoring_transformations.test_score_sigmoid_transformation import \
+    TestSigmoidTransformations
+from unittest_reinvent.scoring_tests.scoring_transformations.test_score_step_transformation import \
+    TestScoreStepTransformation
+from unittest_reinvent.scoring_tests.scoring_transformations.test_score_double_sigmoid_transformation import \
+    TestDoubleSigmoidTransformations
+from unittest_reinvent.scoring_tests.scoring_transformations.test_score_invalid_transformation import \
+    TestScoreInvalidTransformation
+from unittest_reinvent.scoring_tests.scoring_transformations.test_score_right_step_transformation import \
+    TestScoreRightStepTransformation
+from unittest_reinvent.scoring_tests.scoring_transformations.test_score_reverse_sigmoid_transformation import \
+    TestReverseSigmoidTransformations
+from unittest_reinvent.scoring_tests.scoring_transformations.test_score_left_step_transformation import \
+    TestScoreLeftStepTransformation
+from unittest_reinvent.scoring_tests.scoring_transformations.test_score_no_transformation import \
+    TestScoreNoTransformation

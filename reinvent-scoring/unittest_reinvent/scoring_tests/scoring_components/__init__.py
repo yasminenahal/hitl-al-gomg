@@ -1,0 +1,33 @@
+from unittest_reinvent.scoring_tests.scoring_components.test_mixed_selectivity_component import \
+    TestMixedSelectivityComponent
+from unittest_reinvent.scoring_tests.scoring_components.test_regression_selectivity_component import \
+    TestRegressionSelectivityComponent
+from unittest_reinvent.scoring_tests.scoring_components.test_broken_regression_selectivity_component import \
+    TestBrokenRegressionSelectivityComponent
+from unittest_reinvent.scoring_tests.scoring_components.test_classification_selectivity_component import \
+    TestClassificationSelectivityComponent
+from unittest_reinvent.scoring_tests.scoring_components.test_predictive_property_component_mols import \
+    TestPredictivePropertyComponentWithPredictFromMols
+from unittest_reinvent.scoring_tests.scoring_components.test_predictive_property_component_smiles import \
+    TestPredictivePropertyComponentWithPredictFromSmiles
+from unittest_reinvent.scoring_tests.scoring_components.test_custom_alerts_default_alerts import \
+    TestCustomAlertsWithDefaultAlerts
+from unittest_reinvent.scoring_tests.scoring_components.test_custom_alerts_user_alerts import \
+    TestCustomAlertsWithUserAlerts
+from unittest_reinvent.scoring_tests.scoring_components.test_jaccard_distance import \
+    TestJaccardDistance
+from unittest_reinvent.scoring_tests.scoring_components.test_jaccard_distance_custom_fingerprint_parameters import \
+    TestJaccardCustomFingerprintParameters
+from unittest_reinvent.scoring_tests.scoring_components.test_matching_substructure import \
+    TestMatchingSubstructures
+from unittest_reinvent.scoring_tests.scoring_components.test_invalid_matching_substructure import \
+    TestInvalidMatchingSubstructure
+from unittest_reinvent.scoring_tests.scoring_components.test_matching_substructures_not_provided import \
+    TestMatchingSubstructuresNotProvided
+from unittest_reinvent.scoring_tests.scoring_components.test_predictive_property_component import \
+    TestPredictivePropertyComponent
+from unittest_reinvent.scoring_tests.scoring_components.test_tanimoto_custom_fingerprint_parameters import \
+    TestTanimotoCustomFingerprintParameters
+from unittest_reinvent.scoring_tests.scoring_components.test_qed_score import TestQedScore
+from unittest_reinvent.scoring_tests.scoring_components.test_tanimoto_similarity import TestTanimotoSimilarity
+from unittest_reinvent.scoring_tests.scoring_components.pip import *

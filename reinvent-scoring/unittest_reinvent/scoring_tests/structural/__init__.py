@@ -1,0 +1,2 @@
+from unittest_reinvent.scoring_tests.structural.test_azdock import Test_structural_AZdock
+from unittest_reinvent.scoring_tests.structural.test_dockstream import Test_structural_DockStream

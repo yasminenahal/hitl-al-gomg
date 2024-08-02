@@ -1,0 +1,136 @@
+{
+    "workflow": {
+        "header": {
+            "workflow_id": "NIBR",
+            "description": "NIBR workflow - uses AWS",
+            "environment": {
+                "export": []
+            },
+            "global_variables": {
+                "input_json_path": null,
+                "output_json_path": null
+            }
+        },
+        "steps": [{
+                "step_id": "initialization_smile",
+                "type": "initialization",
+                "input": {
+                    "compounds": [{
+                      "source": "{input_json_path}",
+                      "source_type": "file",
+                      "format": "JSON"
+                    }]
+                }
+            }, {
+                "step_id": "Ligprep",
+                "type": "ligprep",
+                "execution": {
+                    "prefix_execution": "module load schrodinger/2020-4",
+                    "parallelization": {
+                        "cores": 4,
+                        "max_length_sublists": 1
+                    },
+                    "failure_policy": {
+                        "n_tries": 3
+                    }
+                },
+                "settings": {
+                    "arguments": {
+                        "flags": ["-epik"],
+                        "parameters": {
+                            "-ph": 7.0,
+                            "-pht": 3.0,
+                            "-s": 1,
+                            "-bff": 14
+                        }
+                    },
+                    "additional": {}
+                },
+                "input": {
+                    "compounds": [{
+                            "source": "initialization_smile",
+                            "source_type": "step"
+                        }
+                    ]
+                }
+            }, {
+                "step_id": "Glide",
+                "type": "glide",
+                "execution": {
+                    "prefix_execution": "module load schrodinger/2020-4",
+                    "parallelization": {
+                        "cores": 8,
+                        "max_length_sublists": 1
+                    },
+                    "failure_policy": {
+                        "n_tries": 3
+                    }
+                },
+                "settings": {
+                    "arguments": {
+                        "flags": [],
+                        "parameters": {
+                        }
+                    },
+                    "additional": {
+                        "configuration": {
+                            "AMIDE_MODE": "trans",
+                            "EXPANDED_SAMPLING": "True",
+                            "GRIDFILE": ["<FILL_IN_UNIT_TEST>"],
+                            "NENHANCED_SAMPLING": "1",
+                            "POSE_OUTTYPE": "ligandlib_sd",
+                            "POSES_PER_LIG": "15",
+                            "POSTDOCK_NPOSE": "25",
+                            "POSTDOCKSTRAIN": "True",
+                            "PRECISION": "SP",
+                            "REWARD_INTRA_HBONDS": "True"
+                        }
+                    }
+                },
+                "input": {
+                    "compounds": [{
+                            "source": "Ligprep",
+                            "source_type": "step"
+                        }
+                    ]
+                }
+            },
+            {
+                "step_id": "Shaep",
+                "type": "shaep",
+                "execution": {
+                    "binary_location": "/projects/cc/mai/binaries"
+                },
+                "input": {
+                    "generic": [{
+                            "source": "<FILL_IN_UNIT_TEST>",
+                            "extension":"mol2"
+                    }],
+                    "compounds": [{
+                            "source": "Glide",
+                            "target_field": "compounds",
+                            "source_type": "step"
+                    }]
+                },
+                "writeout": [
+                    {
+                        "compounds": {
+                            "category": "conformers",
+                            "selected_tags": ["shape_similarity", "esp_similarity", "docking_score"],
+                            "aggregation": {
+                                "mode": "best_per_compound",
+                                "key": "shape_similarity",
+                                "highest_is_best": true
+                            }
+                        },
+                        "destination": {
+                            "resource": "{output_json_path}",
+                            "type": "file",
+                            "format": "JSON"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
