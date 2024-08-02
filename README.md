@@ -81,8 +81,8 @@ The directory `example_files/` contains examples of hyperparameter grids for `sc
 1. In the `REINVENT` output directory, create a `data_for_figures/` directory to store all metric values
 2. In `HITL_AL_GOMG/`, run
 
-         $ python evaluate_results.py --job_name demo_drd2 --seed 2 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --scoring_model drd2 --init_data drd2 --acquisition None
-         $ python evaluate_results.py --job_name demo_drd2 --seed 2 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --scoring_model drd2 --init_data drd2 --acquisition entropy --al_iterations 5 --n_queries 10 --sigma_noise 0.1
+         $ python evaluate_results.py --job_name demo_drd2 --seed 3 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --scoring_model drd2 --init_data drd2 --acquisition None
+         $ python evaluate_results.py --job_name demo_drd2 --seed 3 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --scoring_model drd2 --init_data drd2 --acquisition entropy --al_iterations 5 --n_queries 10 --sigma_noise 0.1
 
 Data
 -------------
