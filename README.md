@@ -75,7 +75,7 @@ The directory `example_files/` contains examples of hyperparameter grids for `sc
 Data
 -------------
 - We provide data for training the penalized LogP and DRD2 bioactivity predictors, as well as a sample from ChEMBL on which `REINVENT` prior agent was pre-trained.
-- The experimental simulator for DRD2 bioactivity and the hERG model described in the multi-objective generation use case are available at ADDURL.
+- The experimental simulator for DRD2 bioactivity and the hERG model described in the multi-objective generation use case are available at this [URL](https://huggingface.co/yasminenahal/hitl-al-gomg-simulators/tree/main).
   
 Jupyter notebooks
 -------------
