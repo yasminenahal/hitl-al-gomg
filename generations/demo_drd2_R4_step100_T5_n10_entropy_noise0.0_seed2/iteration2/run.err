@@ -1,0 +1,2503 @@
+15:50:28: local_reinforcement_logger.log_message +32: INFO     starting an RL run
+15:50:29: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 0   Fraction valid SMILES: 94.5   Score: 0.1273   Time elapsed: 0   Time left: 0.0
+  Agent     Prior     Target     Score     SMILES
+-36.30    -40.77    -27.97      0.10      FC(c1cc(C2OC(=O)N3C2CN(C(C2(C(C)C)CCC(NC4CC4)C2)=O)CC3)c(F)cc1C)(F)F
+-29.58    -28.87    -28.87      0.00      CN(CC(=O)Nc1ccccc1C(=O)Nc1ccc(OC)c(OC)c1)C1CCCCC1
+-17.22    -30.86     -5.26      0.20      N1(S(=O)(=O)c2c(C)cc(C)cc2C)CCN(C2c3ccc(F)cc3C(c3ccc(F)cc3)C2)CC1
+-12.47    -55.78    -17.38      0.30      N1(c2cc(N3CCN(C4c5ccc(Cl)cc5C(c5ccc(F)cc5)C4)CC3)ccn2)CCN(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CC1
+-24.80    -40.50    -40.50      0.00      N1(Cc2ccc(NC(N3Cc4c(cc(F)cc4)C3)=O)cc2)CCN(C2c3ccc(Cl)c(Cl)c3CC2)CC1
+-12.23    -51.26    -51.26      0.00      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(C2c3c(cc(C(NN=Cc4cc(O)c(O)cc4)=O)cc3)CCN2)C1
+-38.55    -47.74    -34.94      0.10      c12ccc(N3CCOCC3)cc1nc(C1N(C(Nc3cc(C#N)cc(C(F)(F)F)c3)=O)CC(N)C1)n2Cc1cc(F)c(F)cc1
+-38.75    -35.99    -35.99      0.00      c1c2n(Cc3ccc(F)cc3)c3c(n(C)c(C(O)=O)c3C)c2cc(OCCC)c1
+-28.96    -63.56    -12.36      0.40      N1(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(C2c3cc(C(NC4CCN(CCNC(=O)Nc5c(F)cc(F)cc5)CC4)C(N(CC)CC)=O)ccc3OCC2)CC1
+-26.99    -54.70    -41.90      0.10      N1(C2OC(CO)C(O)C2O)CCN(C2c3ccc(Cl)c(C(Nc4ccc(C)cc4)=O)c3C(c3ccc(OC)cc3)C2C(OC)=O)CC1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+0.30000001192092896   0.30000001192092896   
+0.0   0.0   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.4000000059604645   0.4000000059604645   
+0.10000000149011612   0.10000000149011612   
+
+15:50:30: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 1   Fraction valid SMILES: 98.4   Score: 0.1367   Time elapsed: 1   Time left: 49.5
+  Agent     Prior     Target     Score     SMILES
+-28.36    -30.01     -4.41      0.20      c1c(SC)ccc(C=C2c3c(cc(F)cc3)C(CC(=O)NN3CCN(C)CC3)=C2C)c1
+-34.02    -36.72    -23.92      0.10      n1cc(Br)cc2nc(SC3C(=O)OCC3)n(C3C(O)C(O)C(CN)O3)c12
+-19.19    -48.89    -23.29      0.20      C1N(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CCN(C2c3c(cc(C(=O)NCC4CCN(C(=O)Nc5cc(F)cc(F)c5)CC4)cc3)CCC2)C1
+-39.40    -45.86    -45.86      0.00      C(c1ccc(O)cc1)(C=NNC(=O)c1cc(-c2ccc(OC)cc2OC)n(C2CCS(=O)(=O)C2)c1N)(C)C
+-14.28    -31.93     -6.33      0.20      C1N(S(=O)(c2ccc(OC)c(Cl)c2)=O)CCN(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)C1
+-31.57    -70.85    -45.25      0.20      c12sc(N3CCN(C4c5ccc(OC)cc5C(c5ccc(F)cc5)C4)CC3)nc1ccc(C(N1CCN(C3c4ccc(Cl)cc4OC(C)(C)C3)CC1)=O)c2
+-79.31    -90.95    -65.35      0.20      c1(N)ccc(C(OC2C(OC(c3cc(OC)c(OC)cc3)=O)C(COC3OCCCC3)OC2)=O)c(OC(=O)C(C)(C)C)c1C(OC1c2cc3c(cc2C(OC2C(O)C(O)C4C(C2O)COC4=O)C1c1cc(OC)c(O)c(OC)c1)c1c(cc(OC)c(OC)c1)C3c1ccc(OC)c(OC)c1)=O
+-26.23    -26.43    -26.43      0.00      CN1C(=O)c2n(nc(-c3c(-c4ccc(F)cc4)n(C)nc3)c2)CC1C
+-13.58    -47.18    -47.18      0.00      N1(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(C2c3c(cc(C(=O)NCCF)cc3)CCc3ccccc32)CC1
+-17.85    -20.19     -7.39      0.10      N(Cc1nc(-c2ccc(OC)cc2)oc1)C12CC3CC(C1)CC(C2)C3
+bioactivity   raw_bioactivity
+0.20000000298023224   0.20000000298023224   
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+
+15:50:31: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 2   Fraction valid SMILES: 97.7   Score: 0.1055   Time elapsed: 2   Time left: 65.3
+  Agent     Prior     Target     Score     SMILES
+ -9.53    -46.33    -20.73      0.20      C1N(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CCN(C2c3ccc(C(NCCN4CCN(C)CC4)=O)cc3OCC2)C1
+-27.26    -51.49    -25.89      0.20      c12c(c(C(N3CCN(C4c5ccc(Cl)cc5C(c5ccc(F)cc5)C4)CC3)=O)c(NC(c3ccncc3)=O)s1)CC(C)(C)NC2
+-20.42    -44.44    -44.44      0.00      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(CC2NCc3c(cc(C(N(C)CCN(C)C)=O)cc3)C2)C1
+ -8.20    -21.99      3.61      0.20      C1N(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CCN(C2CCCCC2)C1
+-20.03    -41.46     -3.06      0.30      c12c(N3CCN(C4c5c(cc(Cl)cc5)C(c5ccc(F)cc5)C4)CC3)ccnc1cc(OCCC1N(C)CCC1)cc2
+-16.43    -52.87    -40.07      0.10      C1N(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CCN(C2c3ccc(C(NCN4CCN(C5CCCCC5)CC4)=O)cc3CC2)C1
+-31.11    -32.69    -19.89      0.10      c1cccc2c1C1(N(C)CC(c3ccc(Cl)c(Cl)c3)C13C(=O)N(C)c1ccc(Br)cc13)C(=O)N2
+-14.67    -46.55    -20.95      0.20      N1(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CCN(C2c3ccc(C(=O)NS(CCCN4CCOCC4)(=O)=O)cc3CCC2)CC1
+-20.11    -52.41    -52.41      0.00      C1N(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CCN(C2c3ccc(C(=O)N(C)C)cc3CCc3cc(Cl)c(Cl)nc32)C1
+-32.43    -41.51    -41.51      0.00      C1N(CC2C(c3ccccc3)CN3C2CC2(CCCN(C(C)c4ccccc4)C2)O3)CCN(c2ccccc2)C1
+bioactivity   raw_bioactivity
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+0.30000001192092896   0.30000001192092896   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+0.0   0.0   
+
+15:50:32: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 3   Fraction valid SMILES: 98.4   Score: 0.1320   Time elapsed: 3   Time left: 72.8
+  Agent     Prior     Target     Score     SMILES
+-11.01    -21.34      4.26      0.20      C(C)N1CCN(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CC1
+-18.85    -46.38    -20.78      0.20      C1CN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN1CCN1C(=O)N(CCN2CCN(C3c4c(cc(C(F)(F)F)cc4)CCc4cc(F)ccc43)CC2)CC1
+-44.98    -45.44    -32.64      0.10      C1CNc2c(C3CCN(Cc4ccc(C=CCCO)n4C)CC3)noc2C1
+-30.94    -62.34    -36.74      0.20      c1(N2CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC2)c2c(ccc1)C(NC(N1CCN(CC(C(F)(F)F)(C)O)CC1)=O)CC2
+-23.71    -48.03    -48.03      0.00      O(Cc1cc(C(N2CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC2)C)c(C)cc1)CC
+-13.59    -31.59    -18.79      0.10      C(CN1CCN(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CC1)N1c2c(cc(F)cc2)C(=O)C1=O
+-19.62    -23.02    -23.02      0.00      CN1CCN(c2nc3c(c(C)n2)CN(CC2CC2)CC3)CC1
+-40.35    -49.22    -49.22      0.00      C1N(Cc2ccc(CS(=O)(Nc3ccc(NNc4c(O)n(-c5ccc(C(=O)OCC)cc5)c(O)c4)cc3)=O)cc2)CCN(CCO)C1
+-28.53    -30.84     -5.24      0.20      C1(C)NC(=NNC(c2c(OC)c(OC)ccc2)=O)CC1
+-17.82    -33.13    -20.33      0.10      [nH]1ncsc1=NC(CN1CCN(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CC1)=O
+bioactivity   raw_bioactivity
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+0.10000000149011612   0.10000000149011612   
+
+15:50:32: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 4   Fraction valid SMILES: 97.7   Score: 0.1461   Time elapsed: 4   Time left: 76.8
+  Agent     Prior     Target     Score     SMILES
+-33.92    -30.77    -17.97      0.10      c1(OC(F)(F)F)cc(COc2ccc(C=CC(=O)N(O)C)cc2)cc(F)c1
+-16.92    -37.50    -24.70      0.10      c1c2c(=O)n(CCCN3CCN(C4c5ccc(Cl)cc5C(c5ccc(F)cc5)C4)CC3)c(=O)[nH]c2cc(Cl)c1
+-22.19    -52.60    -27.00      0.20      c1c2c(ccc1)N(CC(N1CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC1)C1CCCC1)C(=O)C2
+-27.23    -33.49     17.71      0.40      c1(=Nc2cccnc2OC)c2c(C)c(C(NCC3N(CC)CCC3)=O)sc2[nH]cn1
+-17.02    -46.60     17.40      0.50      C1N(C2c3ccc(F)cc3C(c3ccc(F)cc3)C2)CCN(C2c3c(cc(-c4c(OC)cc(F)cc4)cc3)CC2N(C)C)C1
+-40.94    -45.13    -45.13      0.00      O1c2c(cc3c(c2)-c2cc4c(c(OC)c(OC)cc4)c(C=CC(=O)CC4C(O)C(O)C(CO)O4)c(=O)c2C(O)C3)OC1
+-44.29    -75.32    -49.72      0.20      C1N(C(C2NN(c3ccc(C(OC)=O)cc3)C(=O)N2)=O)c2c(ccc(NC(C)=O)c2)C12CCN(C1c3c(cc(F)cc3)C(c3ccc(F)cc3)C1)CC2
+-20.99    -55.09    -29.49      0.20      C1N(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CCN(C2c3ccc(C(N(C)Cc4cscn4)C)cc3CCC2)C1
+-16.70    -28.97      9.43      0.30      C1(N2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)CCN(C(=O)C2CCN(C(C3CC3)=O)CC2)CC1
+-40.51    -44.78    -31.98      0.10      c12c(c(OC)cc(OC)c1)C(=O)C1C3(C(C2)C(=O)N1CC#C)OC(=O)C3
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+0.4000000059604645   0.4000000059604645   
+0.5   0.5   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+0.30000001192092896   0.30000001192092896   
+0.10000000149011612   0.10000000149011612   
+
+15:50:33: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 5   Fraction valid SMILES: 98.4   Score: 0.1641   Time elapsed: 5   Time left: 79.2
+  Agent     Prior     Target     Score     SMILES
+-36.14    -68.50    -68.50      0.00      c1(F)c(N2C(C(N3CCN(C4c5ccc(Cl)cc5C(c5ccc(F)cc5)C4)(C)C3)COC)CC2)cc2c(c1)c(=O)c(C(=O)O)cn2C1CC1
+-28.97    -60.42    -22.02      0.30      C1N(C2c3ccc(F)cc3C(c3ccc(F)cc3)C2)CCN(C2c3ccc(NC(C(N4CCN(C)CC4)c4c(F)cc(F)cc4F)=O)cc3CCC2)C1
+-27.73    -41.21     -2.81      0.30      Cc1c(CN2CCN(C3c4c(cc(F)cc4)C(c4ccc(F)cc4)C3)CC2C)nc(CCOC)o1
+-23.57    -58.45    -45.65      0.10      C1N(c2ccc(C=NN=C(N)N3CCN(C4c5ccc(Cl)cc5C(c5ccc(F)cc5)C4)CC3)cc2)CCN(C2c3c(cccc3)CCc3ccccc32)C1
+-15.31    -47.19    -34.39      0.10      C1N(C2c3nc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)C1
+-17.33    -33.14    -33.14      0.00      c1(OC)c(OC)c(CN2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)ccc1C(C)=O
+-34.73    -34.56    -34.56      0.00      Oc1c(Cc2ccc(OCCN3Cc4c(cccc4)C3)c(-c3ccc(Cl)cc3)c2)sc(=O)[nH]1
+-20.60    -49.70    -36.90      0.10      c1(C(N2CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC2)C(NC2CCN(C3CCN(C)CC3)CC2)=O)ccc(OC(F)(F)F)cc1
+-71.86    -74.07    -61.27      0.10      C(=O)(C1OC(OC2C(C)C3C(C4OC(C)(C)OC4O3)O2)C(O)C(F)C1)N(CC(CNC(NNC(Nc1ccccc1C)=S)=O)OC)C
+-27.42    -26.27    -13.47      0.10      O(c1ccc2c(c3c(c(-c4ccc(O)c(OC)c4)c2)C(=O)OC3)c1)C
+bioactivity   raw_bioactivity
+0.0   0.0   
+0.30000001192092896   0.30000001192092896   
+0.30000001192092896   0.30000001192092896   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+
+15:50:34: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 6   Fraction valid SMILES: 99.2   Score: 0.1398   Time elapsed: 5   Time left: 67.1
+  Agent     Prior     Target     Score     SMILES
+-24.87    -45.50    -19.90      0.20      NC(c1ccc(F)cc1)CNC(CN1CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CC1)C
+-14.65    -27.00    -27.00      0.00      C1N(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CCN(CC(Cn2nc(C)cc2C)O)C1
+-13.85    -31.81     -6.21      0.20      C1N(CCCN2CCN(C3c4ccc(F)cc4C(c4ccc(F)cc4)C3)CC2)CCN(C(c2ccc(F)cc2)=O)C1
+-39.61    -46.34    -33.54      0.10      C1N(C)CCN(c2ccc(N=c3c(C)c(Nc4ccc(OCCOC)cc4Cl)c4ccc(F)cc4[nH]3)cc2)C1
+-15.47    -40.76    -27.96      0.10      C1(CN2CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC2)CCN(C(=O)C2CN(C3CC3)CC2c2ccc(F)cc2)CC1
+-43.65    -51.77    -38.97      0.10      c1c(Cl)c(F)cc(OCC2(Cl)CCN(C3CCN(C(c4cc(F)c(C(N)=O)cc4)CC4CC4)CC3)CC2)c1
+-48.17    -51.35    -51.35      0.00      N12C3C(C(C(OC)=O)=[N+](C(C)C)N3C1=C(C)C(=O)OC)C(C(C)C)CC2
+-24.04    -30.03    -30.03      0.00      c12cc3c(cc1C(NC(=O)c1cc(F)c(F)c(F)c1F)C1C(C2c2cc(OC)c(OC)c(OC)c2)C(=O)OC1)OCO3
+-25.47    -29.01    -29.01      0.00      CN1CCN(NC(C2(S(=O)(c3ccc(Br)cc3)=O)CC2)=O)CC1
+-32.40    -85.93    -60.33      0.20      c1(OCC2N(C(C)=O)CCC2)c(NC(N2CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC2)CC(=O)N2CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC2)cccc1
+bioactivity   raw_bioactivity
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.0   0.0   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+
+15:50:35: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 7   Fraction valid SMILES: 98.4   Score: 0.1555   Time elapsed: 6   Time left: 69.8
+  Agent     Prior     Target     Score     SMILES
+-26.06    -33.32    -20.52      0.10      CN(C1c2ccc(OC)c(OC)c2C(c2ccc(OC)c(OC)c2)C1COC(CCCCC)=O)C
+-16.49    -47.37    -21.77      0.20      N1(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CCN(C2c3ccc(C(NCCc4ccc(CN5CCNCC5)cc4)=O)cc3CCC2)CC1
+-25.06    -27.36     -1.76      0.20      OC(CN1Cc2c(cc(O)cc2)C1)c1ccc(F)cc1
+-24.05    -48.65    -23.05      0.20      C1N(C2c3cc(F)cc(F)c3C(c3ccc(F)cc3)C2)CCN(C2CCN(C(c3ccc(F)cc3F)C(N(C3CC3)C)=O)CC2)C1
+-29.84    -30.37    -17.57      0.10      N(C)(CC)CCN=c1c2c(c(Cl)ccc2)[nH]c2c1CCCC2
+-12.44    -50.69    -37.89      0.10      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(C2c3c(cc(C(NCCC(=O)O)=O)cc3)CCc3c2ccc(F)c3)C1
+-15.82    -44.22    -31.42      0.10      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(C2c3ccc(C(=O)NCC)cc3CO2)C1
+-28.93    -33.93    -21.13      0.10      C(CCCNS(c1ccc(OC)cc1)(=O)=O)COC1c2c(cc(OC)c(OC)c2)C(c2cc(OC)c(OC)c(OC)c2)C2C1COC2=O
+-35.76    -35.08    -22.28      0.10      C1(O)(CNc2ccc(F)c(F)c2)C2C34c5c(ccc(O)c5O2)CC(N(C)CC3)C4C=C1
+-12.98    -23.96     14.44      0.30      C1N(CCO)CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CC1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.30000001192092896   0.30000001192092896   
+
+15:50:36: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 8   Fraction valid SMILES: 96.9   Score: 0.1953   Time elapsed: 7   Time left: 71.6
+  Agent     Prior     Target     Score     SMILES
+-27.84    -33.29     -7.69      0.20      Clc1c(C2N3C=CC(C)(C)N=C3c3c(cccc3)C2)ccc(F)c1
+-18.30    -49.64     14.36      0.50      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3ccc(C(NCCO)=O)cc3CCc3cc(NS(=O)(=O)C)ccc32)C1
+-20.24    -22.00     -9.20      0.10      O1c2c(cc(CNC3CCN(CC(c4ccnc5c4cc(OC)cc5)O)CC3)cc2)OC1
+-27.93    -32.68    -32.68      0.00      N1CCC2(NC(c3ccc(F)c(Cl)c3)c3c2c(O)n(Cc2ccc(F)cc2)c3O)CC1
+-11.75    -30.41     -4.81      0.20      C1N(Cc2cc3c(cc2)OC(C)(C)C3)CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)C1
+-25.89    -67.74    -42.14      0.20      c1(F)c(F)cc(CN2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)c(CCC(=O)N2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)c1
+-12.22    -25.22     25.98      0.40      C1NCCN(C2c3c(c(F)ccc3)C(c3ccc(F)cc3)C2)C1
+-29.39    -33.27    -20.47      0.10      c1(OCc2ncsc2)cc2c(c(Cl)c1Cl)C(=O)C(C1CCCC1)(CC1CCCC1)C2O
+-14.86    -32.15    -32.15      0.00      N1(C2CCN(C(=O)Nc3ccc(OC)cc3)CC2)CCN(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CC1
+-37.78    -61.52     15.28      0.60      c1(C=C2C(=O)NC(=NC(c3ccc(C)cc3)C)S2)cc(N2CCN(C)CC2)cc(CN2CCN(C3c4c(cccc4)C(c4ccc(F)cc4)C3)CC2)c1
+bioactivity   raw_bioactivity
+0.20000000298023224   0.20000000298023224   
+0.5   0.5   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+0.4000000059604645   0.4000000059604645   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.6000000238418579   0.6000000238418579   
+
+15:50:37: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 9   Fraction valid SMILES: 98.4   Score: 0.2117   Time elapsed: 8   Time left: 72.8
+  Agent     Prior     Target     Score     SMILES
+-25.23    -53.82    -53.82      0.00      C(NC(c1sc2c(cc(OC)cc2)c1N1CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CC1)=O)CN1CCN(C)CC1
+-17.92    -52.17     11.83      0.50      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3ccc(C(=O)NCN(C)C)cc3CCc3cc(F)ccc32)CC1
+-27.77    -40.29     -1.89      0.30      C1N(C2(c3ccc(F)cc3)C3c4cc(C)ccc4C(c4c3c(CC)ccc4)C2)CCN(CCO)C1
+-10.37    -43.74    -30.94      0.10      C1N(C2CN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)CCN(C2c3ccc(F)cc3C(c3ccc(F)cc3)C2)C1
+-44.69    -60.27    -47.47      0.10      C1(NC(C2CCN(Cc3cc(NC(C4CCN(C(OC)=O)CC4)=O)ccc3)CC2)CC(C)(C)C)c2cc(CN3CCCCC3F)ccc2CC1
+ -7.82    -18.98     45.02      0.50      CN1CCN(C2c3ccc(F)cc3C(c3ccc(F)cc3)C2)CC1
+-43.54    -46.87    -46.87      0.00      C12OC(CC1)C1C2C2(CO2)CN(c2cc(F)c(F)cc2)N1C(CC)=O
+-18.51    -53.02     10.98      0.50      c12c(cc(F)cc1)C(N1CCN(C3c4ccc(F)cc4C(c4ccc(F)cc4)C3)CC1)C(N1CCN(CCN3CCN(C(=O)C)CC3)CC1)CC2
+-19.45    -42.65      8.55      0.40      N1(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(C2CCN(C(C(CN3CCN(CCO)CC3)CC(C)C)=O)CC2)CC1
+-18.52    -41.01     -2.61      0.30      N1(C2CCN(C(C3(F)CCN(C4CCCC4)CC3)=O)C2)CCN(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CC1
+bioactivity   raw_bioactivity
+0.0   0.0   
+0.5   0.5   
+0.30000001192092896   0.30000001192092896   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.5   0.5   
+0.0   0.0   
+0.5   0.5   
+0.4000000059604645   0.4000000059604645   
+0.30000001192092896   0.30000001192092896   
+
+15:50:38: local_reinforcement_logger.log_message +32: INFO     Resetting Agent
+15:50:38: local_reinforcement_logger.log_message +32: INFO     Adjusting sigma to: 178
+15:50:38: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 10   Fraction valid SMILES: 97.7   Score: 0.2234   Time elapsed: 9   Time left: 73.6
+  Agent     Prior     Target     Score     SMILES
+-23.66    -30.95     -5.35      0.20      C1N2CCc3cc(OC)c(OC)cc3C2CC(NC(=O)c2cc(OC)c(OC)c(OC)c2)C1c1cc(OC)c(O)c(OC)c1
+-14.95    -28.38    -28.38      0.00      c1cc(N2CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC2)cnc1
+-17.20    -52.85    -27.25      0.20      C1N(CN2CCN(N3CCN(C4c5c(cc(Cl)cc5)C(c5ccc(F)cc5)C4)CC3)CC2)CCN(C2c3c(cc(F)cc3)C(c3ccc(F)cc3)C2)C1
+-37.72    -45.57    -19.97      0.20      C1C(N(C(c2ccc(-c3ccc(CN4CCN(CC)CC4)cc3)cc2)=O)C2CCC(C3CCN(C(c4ccc(F)cc4)=O)CC3)CC2)C1
+-29.60    -29.72    -29.72      0.00      C(N(CCCCN)C1CCc2[nH]c(=N)sc2C1)(C1CCCC1)=O
+-50.87    -57.18    -44.38      0.10      O=C(NC1(C#N)CC1)C1N(C(C2N(C3CCN(C(=O)C4CC4)CC3)CC2C(NC(CCC2CCCCC2)C(=O)N(C(C)C)CCF)=O)=O)CC(S(=O)(c2ccccc2)=O)C1
+-29.41    -59.69    -59.69      0.00      c1(NC(CCN2CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC2)C(N2CC(O)C2)=O)cccc(OC)c1
+-39.96    -47.13    -47.13      0.00      c1c(O)ccc(C(c2ccc(OCCN3CCN(C(C)C)CC3)cc2)=C2CC(c3cc(O)ccc3)N(CCC3CCN(Cc4ccccc4)CC3)C2)c1
+-12.08    -25.40     51.40      0.60      N1(CCO)CCN(C2c3cc(F)cc(F)c3C(c3ccc(F)cc3)C2)CC1
+-12.30    -43.73     -5.33      0.30      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(C2c3c(cc(CN(CCN4CCOCC4)C)cc3)CCC2)C1
+bioactivity   raw_bioactivity
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.0   0.0   
+0.6000000238418579   0.6000000238418579   
+0.30000001192092896   0.30000001192092896   
+
+15:50:39: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 11   Fraction valid SMILES: 96.9   Score: 0.1172   Time elapsed: 10   Time left: 74.2
+  Agent     Prior     Target     Score     SMILES
+-29.35    -30.98    -30.98      0.00      c1cnc2n(O)c(=O)c(C(NCc3c(F)cc(F)cc3)=O)c(NC3CNCC3)c2c1F
+-26.59    -24.71    -24.71      0.00      C1CCN(c2ccc(C(NNc3ccccc3)=O)cc2)CC1
+-36.90    -43.50    -25.70      0.10      C1(NC(c2c(C)n3nc(C)c(-c4ccc(F)cc4)c3nc2C)=O)c2ccc(F)cc2S(=O)(=O)N(C2CC2)C1C
+-24.85    -24.35     -6.55      0.10      c1(OC)cc(C2N(C)CCc3c4ccccc4[nH]c32)cc(OC)c1OC
+-14.22    -29.17    -11.37      0.10      c1c(CN2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)ccc2c1OCC(=O)N2
+-16.33    -55.26    -19.66      0.20      C1N(C2c3c(F)ccc(F)c3C(c3ccc(F)cc3)C2)CCN(C2c3ccc(C(NCCOCCO)=O)cc3CCc3cc(F)ccc32)C1
+-26.91    -46.44    -28.64      0.10      CN1CC2(C(S(=O)(=O)N3CCN(C4c5ccc(Cl)cc5C(c5ccc(F)cc5)C4)CC3)C2)C1
+-36.02    -51.48    -15.88      0.20      CN1c2c(ccc(N3CCN(C4COC4)CC3)c2)C(c2ccc(F)cc2)(CCN2CCC(N3CCN(CC)C(=O)C3=O)CC2)C1=O
+-37.09    -45.25    -27.45      0.10      FC(F)(F)c1c(CN2C(CC3CCCCC3)CNC2=O)n2c(n1)n(-c1c(Cl)cc(C)cc1Cl)nc2CC
+-20.36    -56.70     -3.30      0.30      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(C2c3ccc(C(NCCO)=O)cc3C(N3CCC(C(N)=O)CC3)CC2)C1
+bioactivity   raw_bioactivity
+0.0   0.0   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+0.10000000149011612   0.10000000149011612   
+0.30000001192092896   0.30000001192092896   
+
+15:50:40: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 12   Fraction valid SMILES: 100.0   Score: 0.1523   Time elapsed: 11   Time left: 74.5
+  Agent     Prior     Target     Score     SMILES
+-18.85    -33.39    -33.39      0.00      COc1c(OCC#N)cc(CN2CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC2)cc1
+-18.82    -30.18     23.22      0.30      O1COc2c(CN3CCN(C4c5ccc(F)cc5C(c5ccc(F)cc5)C4)CC3)cccc21
+-33.18    -49.13     39.87      0.50      c1c(C2CCN(C3c4cc(Cl)ccc4C(c4ccc(F)cc4)C3)CC2)cc2c(c1)N(C1COC1)CC2F
+-31.44    -32.12    -14.32      0.10      N(c1ccc(NC(=O)c2c(OC)cccc2OC)cc1OC)C(=O)COc1c(C#N)cccc1
+-33.02    -30.41    -30.41      0.00      [nH]1c(N2CCC(O)CC2)c(F)c(=Nc2c(OC)cc(C#N)cc2)nc1Cl
+-33.10    -33.01    -33.01      0.00      Fc1ccc(CN2c3c(cccn3)C(=O)N(C)c3c(Cl)cccc3C2=O)c(OC)c1
+-13.51    -49.06    -31.26      0.10      C1N(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CCN(C2c3ccc(C(NCCc4cc(C)ccc4)=O)cc3CCO2)C1
+-46.68    -61.63    -43.83      0.10      C1(C2c3cc(OC)c(OC)cc3CCN2C2c3c(cc(C(NS(c4ccccc4Cl)(=O)=O)=O)cc3)CC(c3ccc(F)cc3)=N2)CC1
+-10.58    -44.51     80.09      0.70      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3c(cc(C(=O)NCCN4CCN(C)CC4)cc3)CCC2)CC1
+-41.98    -37.46    -37.46      0.00      C(c1cc(F)c(OC)cc1)C1Oc2c(ccc(C(C)=C(C#N)C#N)c2)O1
+bioactivity   raw_bioactivity
+0.0   0.0   
+0.30000001192092896   0.30000001192092896   
+0.5   0.5   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.699999988079071   0.699999988079071   
+0.0   0.0   
+
+15:50:41: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 13   Fraction valid SMILES: 98.4   Score: 0.1602   Time elapsed: 12   Time left: 74.6
+  Agent     Prior     Target     Score     SMILES
+-21.22    -38.44     -2.84      0.20      C1N=C(N)N(C2CC2)C12CCN(C1c3ccc(Cl)cc3C(c3ccc(F)cc3)C1)CC2
+-10.19    -27.62    -27.62      0.00      C1N(C(c2cc(OC)c(OC)c(OC)c2)=O)CCN(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)C1
+-57.28    -62.91    -45.11      0.10      n12c(C(OC(=O)OC34CC5CC(C3)CC(C4)C5)OC(CCC3(C)[N+]([O-])=CC=CC3)=O)c(CCN(C)C)nc1cc(Cl)c(Cl)c2
+-26.75    -35.38    -35.38      0.00      C1C(CNC(c2ccc(Cl)c(F)c2)=O)(c2ccc(F)cc2)CCN(C2CCN(C(c3c(C)cccc3C)=O)CC2)C1
+-37.60    -78.82    -43.22      0.20      c12cc(S(N3CCN(C4c5ccc(Cl)cc5C(c5ccc(F)cc5)C4)CC3)(=O)=O)ccc1NC(=O)C2=C1N(C2(c3ccc(Cl)cc3)CC2)C2N(CCN(CC)C2)C1
+-29.38    -42.50    -42.50      0.00      c1(NC2CN(Cc3c(F)cc(F)cc3)CC2c2ccc(F)cc2)c(C(N)=O)cc(C)cc1
+-13.19    -25.13    -25.13      0.00      c1ccccc1CNC(N1CCN(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CC1)=O
+-20.30    -42.54    -42.54      0.00      n1c(N2CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC2)c(C(F)(F)F)cc(NC(N)=O)c1
+-22.74    -52.35    -34.55      0.10      c1(COc2ccc(C(NCCN3CCN(C4c5ccc(Cl)cc5C(c5ccc(F)cc5)C4)CC3)C)cc2)ccc(Cl)cc1
+-25.61    -52.29    -52.29      0.00      c1(C(N2CCN(c3ccc(S(=O)(N4CCN(C5c6ccc(Cl)cc6C(c6ccc(F)cc6)C5)CC4)C)cc3)CC2)C(N(CC)CC)=O)ccccc1
+bioactivity   raw_bioactivity
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+0.0   0.0   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+
+15:50:41: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 14   Fraction valid SMILES: 98.4   Score: 0.1531   Time elapsed: 13   Time left: 74.5
+  Agent     Prior     Target     Score     SMILES
+-29.54    -27.76     -9.96      0.10      s1cc[nH]c1=NS(c1cc(C#N)c(Oc2ccc(Cl)cc2-c2nnc(C)s2)cc1)(=O)=O
+-34.09    -69.83    -52.03      0.10      C1N(C(N2CCCC2)C)N(S(c2cc(C(=O)N3CCN(C4c5ccc(Cl)cc5C(c5ccc(F)cc5)C4)C3)ccc2OC)(=O)=O)CCC1
+-19.41    -43.69    116.51      0.90      c12c(c(C(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C)cc(F)c1)OC(C)C2
+-28.85    -36.09    -18.29      0.10      C1(CN2CCN(c3ccc(F)cc3)CC2)CCCN1CCCc1c2c(ccc1)ccc(OC)c2
+-21.92    -50.94    -50.94      0.00      c1(-c2ccnn2C)c(OC)cc(C(N2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)CC(O)=O)cc1
+-30.72    -34.03    -16.23      0.10      c1cc2c(cc1)CCN(C1Cc3c(ccc(C=NNC(=S)N)c3)C1)C2
+-27.08    -27.80    -27.80      0.00      [nH]1[nH]ccc1=NC(O)c1cc(O)n(C2CC2)c1
+-17.51    -41.78    -41.78      0.00      C1CN(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)CCN1CCOC1c2c(cc(C(=O)N)cc2)COc2ccc(C(O)=O)cc21
+-14.93    -49.58     57.22      0.60      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3c(cc(C(NCc4cccc(OC)c4)=O)cc3)CCC2)CC1
+-23.95    -36.51    -18.71      0.10      C1CN(C2C(NS(=O)(c3ccc(F)c(F)c3)=O)CCCC2)CCN1C1c2ccc(F)cc2C(c2ccc(F)cc2)C1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.0   0.0   
+0.6000000238418579   0.6000000238418579   
+0.10000000149011612   0.10000000149011612   
+
+15:50:42: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 15   Fraction valid SMILES: 99.2   Score: 0.1805   Time elapsed: 14   Time left: 74.4
+  Agent     Prior     Target     Score     SMILES
+ -8.71    -19.91     15.69      0.20      C1NCCN(C2c3ccc(Cl)cc3C(c3ccc(F)cc3)C2)C1
+-22.48    -30.35      5.25      0.20      c1c(Cl)cc(N2CCN(C3c4cc(Cl)ccc4OC(CC)(CC)C3)CC2)cc1
+-13.46    -34.36    -16.56      0.10      C1N(C(c2ccc(OC3CCN(C4CCC4)CC3)cc2)=O)CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)C1
+-17.12    -36.21    -18.41      0.10      C1(N2CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC2)CCN(C(=O)c2cc(Cl)c(NC3CCOCC3)cc2)CC1
+-24.24    -43.50     27.70      0.40      CN(C)C(C)C1OC(N2CCN(C3c4ccc(F)cc4C(c4ccc(F)cc4)C3)CC2)CC1
+-10.56    -27.27    150.73      1.00      C1N(C23CC4CC(C2)CC(C3)C4)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-23.09    -43.69    -43.69      0.00      C1(N2CCN(C3c4ccc(Cl)cc4C(c4ccc(F)cc4)C3)CC2)C(c2cc(F)ccc2F)N(C)C(=O)CC1
+-27.66    -44.34     26.86      0.40      S(N1CCN2C(C1)CCN(C1c3cc(F)cc(F)c3C(c3ccc(F)cc3)C1)CC2)(=O)(N(C)C)=O
+ -9.06    -38.11     15.29      0.30      N1(CCN2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)CCN(C2c3ccc(F)cc3C(c3ccc(F)cc3)C2)CC1
+-26.08    -31.52    -13.72      0.10      c1c(NC2CN(C(=O)C3N(Cc4ccc(F)cc4)C(=O)CC3)CC2)cc(F)cc1F
+bioactivity   raw_bioactivity
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.4000000059604645   0.4000000059604645   
+1.0   1.0   
+0.0   0.0   
+0.4000000059604645   0.4000000059604645   
+0.30000001192092896   0.30000001192092896   
+0.10000000149011612   0.10000000149011612   
+
+15:50:43: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 16   Fraction valid SMILES: 97.7   Score: 0.1922   Time elapsed: 14   Time left: 69.2
+  Agent     Prior     Target     Score     SMILES
+-49.05    -92.11    -56.51      0.20      c1(OC2CCCC2)nn(Cc2cc3c(cc2)C(C)(C)CCN3C(N2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)C)c(O)c1
+-21.94    -34.97    -17.17      0.10      N1(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CC(NC(CSCc2ccc(F)cc2)=O)CC1
+-23.32    -43.53    -25.73      0.10      c1cc(Br)cc(CN(CC(N2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)C)C)c1
+-14.62    -35.36    107.04      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3ncc(C(O)O)cc3CCC2)C1
+-27.49    -54.33    -36.53      0.10      C1N(C(NC2N=C(c3ccccc3)c3ccccc3N(CC(N3CC4N(CCC4)CC3)=O)C2=O)=NCC)CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)C1
+-22.28    -37.79     -2.19      0.20      c1(CNC2CN(C3c4ccc(F)cc4C(c4ccc(F)cc4)C3)CC2)cc(F)cc(Cl)c1
+ -8.21    -21.17    156.83      1.00      C1N(CCO)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-19.12    -47.36      6.04      0.30      C1N(c2nc(C)c3cc(NC(c4ccc(C#N)cc4)=O)ccc3n2)CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)C1
+-27.07    -81.92    -81.92      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3cc(C(=O)NCCC(N4CCN(C5c6c(cc(C(NCCN7CCN(C)CC7)CC6)cc5)CC4)=O)C)ccc3CC2O)CC1
+-34.86    -41.56     11.84      0.30      C(OC)(CC1N2C(CN(CCO)C(c3ccc(OC)c(OC)c3)C2)c2c(cc(OC)c(OC)c2)C1)=O
+bioactivity   raw_bioactivity
+0.20000000298023224   0.20000000298023224   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.800000011920929   0.800000011920929   
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+1.0   1.0   
+0.30000001192092896   0.30000001192092896   
+0.0   0.0   
+0.30000001192092896   0.30000001192092896   
+
+15:50:44: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 17   Fraction valid SMILES: 96.9   Score: 0.2937   Time elapsed: 15   Time left: 69.2
+  Agent     Prior     Target     Score     SMILES
+-15.85    -39.96     31.24      0.40      C1N(CCCN2CCN(C3c4ccc(F)cc4C(c4ccc(F)cc4)C3)CC2)CCN(C2=NCC(C)O2)C1
+-34.87    -58.24    -40.44      0.10      c1(C2C(N3CCN(C4c5ccc(C(F)(F)C)cc5CCc5c4cccc5)CC3)CN(C3CC=CCC3)C2)ccc(F)c(F)c1
+-14.70    -31.53     21.87      0.30      c1cc(OC)cc(CN2CCN(C3c4ccc(F)cc4C(c4ccc(F)cc4)C3)CC2)c1F
+ -9.26    -35.66    -35.66      0.00      N1(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CC1
+-18.55    -97.10      9.70      0.60      C1N(C2c3ncc(C(N4CCN(C5c6c(cc(Cl)cc6)C(c6ccc(F)cc6)C5)CC4)CC3)cc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-50.03    -87.47     19.33      0.60      O(C1C(OC(C)=O)C(N2CCC2)OC(Cn2nnc(CN3CCN(C)CC3)c2)C1NC(COC(CCN)=O)=O)C(=O)N1CCN(C2c3cc(C#N)ccc3C(c3ccc(F)cc3)C2)CC1
+-33.67    -47.04      6.36      0.30      C1CN(C2(CNCc3cc(Cl)c(C(N4CCC(N5CCCC5)CC4)=O)cc3)CC2)CCN1C1c2c(cc(Cl)cc2)C(c2ccc(F)cc2)C1
+-17.60    -29.93    -12.13      0.10      N1(c2cc(C(O)=O)ccc2)CCN(C2c3ccc(F)cc3C(c3ccc(F)cc3)C2)CC1
+-20.64    -39.32     -3.72      0.20      c1(NC2CCN(C3c4cc(F)c(Cl)cc4C(c4ccc(F)cc4)C3)CC2)ccc2c(c1)C(=O)NC2
+-27.41    -73.41     15.59      0.50      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CNC(C(N3CCN(C4c5c(cc(Cl)cc5)C(c5ccc(F)cc5)C4)CC3)C(OC(C(F)(F)F)(C)C)=O)C2)C1
+bioactivity   raw_bioactivity
+0.4000000059604645   0.4000000059604645   
+0.10000000149011612   0.10000000149011612   
+0.30000001192092896   0.30000001192092896   
+0.4000000059604645   0.4000000059604645   
+0.6000000238418579   0.6000000238418579   
+0.6000000238418579   0.6000000238418579   
+0.30000001192092896   0.30000001192092896   
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+0.5   0.5   
+
+15:50:45: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 18   Fraction valid SMILES: 99.2   Score: 0.3172   Time elapsed: 16   Time left: 69.1
+  Agent     Prior     Target     Score     SMILES
+-22.09    -20.64     -2.84      0.10      Cn1c(=O)c2[nH]cc(-c3ccc(OC)c(OC)c3)c2nc1
+-23.88    -23.54    -23.54      0.00      c12c(ccc(NC(NC3c4c(cc(C(F)(F)F)cc4)CC3)=O)c1)c[nH]n2
+-18.96    -41.87    136.13      1.00      N1(CC(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN2CCN(Cc3ccncc3)CC2)CCN(C)CC1
+-30.81    -47.99     41.01      0.50      N1(CC(COc2ccc(C(c3ccc(OCC#C)cc3)c3cccs3)cc2)O)CCN(C2c3ccccc3C(c3ccc(F)cc3)C2)CC1
+-14.94    -18.01    124.39      0.80      C1(CNC(c2cc(Cl)c(N)cc2OC)=O)N(CC)CCC1
+ -5.99    -38.38    -38.38      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-18.54    -61.89     62.71      0.70      N1(Cc2c(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)cccc2)CCN(C2c3c(cc(F)cc3)C(c3ccc(F)cc3)C2)CC1
+-11.81    -45.86     96.54      0.80      N1(CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C2c3cc(F)cc(F)c3C(c3ccc(F)cc3)C2)CC1
+-17.19    -51.66    -16.06      0.20      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(C2c3c(cc(C4N(C(CN5CCN(C)CC5)=O)CCC4)cc3)CCN2)C1
+-17.43    -30.70      4.90      0.20      c1ccc(S(N2CCN(C3c4cc(F)c(Cl)cc4C(c4ccc(F)cc4)C3)CC2)(=O)=O)cc1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+1.0   1.0   
+0.5   0.5   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.800000011920929   0.800000011920929   
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+
+15:50:46: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 19   Fraction valid SMILES: 96.8   Score: 0.2897   Time elapsed: 17   Time left: 68.8
+  Agent     Prior     Target     Score     SMILES
+ -9.04    -24.08    153.92      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCNCC2)C1
+ -6.55    -23.62    -23.62      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCOC(c2ccc(F)cc2)c2ccc(F)cc2)CC1
+-14.62    -26.51     26.89      0.30      N1(C2CCOCC2)CCN(C2c3c(cc(F)cc3)C(c3ccc(F)cc3)C2)CC1
+ -8.86    -21.70    156.30      1.00      C1N(CC)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-18.15    -49.31      4.09      0.30      N1(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(C3c4ncc(C(F)(F)F)cc4CCC3)CC2)C)CC1
+-25.60    -28.88    -28.88      0.00      N1(NC(N[N+](=O)[O-])=NCC)CCC(C)CC1
+-26.98    -34.18    -16.38      0.10      C1N(CCCCN2CCN(c3ccc(F)cc3)CC2)CCN(c2cc(OC)c(OCCO)cc2)C1
+-18.78    -39.00    -21.20      0.10      c1(NC(CN2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)=O)cc(N2CCN(C)CC2)c(OC)cc1
+-14.55    -56.78     85.62      0.80      C1(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CC(NC(=O)N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C1
+-13.94    -35.10    107.30      0.80      c1cc2c(cc1)C(N1CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC1)C(OCCN(C)C)C2
+bioactivity   raw_bioactivity
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.30000001192092896   0.30000001192092896   
+1.0   1.0   
+0.30000001192092896   0.30000001192092896   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+
+15:50:46: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 20   Fraction valid SMILES: 100.0   Score: 0.3063   Time elapsed: 18   Time left: 68.6
+  Agent     Prior     Target     Score     SMILES
+-34.34    -37.27     -1.67      0.20      c12c(c3cc(OCc4ccccc4)ccc3n1CCOc1ccc(Cc3ccccc3)cc1)CC(C(=O)OC)NC2
+ -9.11    -28.66    -28.66      0.00      c1cc2c(cc1)C(N1CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC1)C(O)C2
+-13.37    -31.82    128.38      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCOC(c2occc2)=O)C1
+-73.02    -87.42    -69.62      0.10      Oc1c2c(c(O)n1Cc1c(OC)cc(OC)cc1)C1CC(C(=NOCCC(N3CCCNCC3)=O)C3C(O)C(O)CC(=O)N3NC(=O)N3CCN(Cc4ccc(F)cc4)CC3)CN1C2(C)C
+-29.40    -63.17    -45.37      0.10      C(Nc1c(C)c(C(N2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)CC(C)C)cc(F)c1)(=O)CN1CCN(C)CC1
+-17.11    -32.06     21.34      0.30      C1(N2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)CCN(C(C2CCN(S(CC(F)(F)F)(=O)=O)CC2)=O)CC1
+-20.91    -23.68    -23.68      0.00      C1N(Cc2coc(-c3ccc(O)cc3)n2)Cc2c(ccc(OC)c2)OC1
+-23.79    -23.82     11.78      0.20      N1(c2c(C)c(OC)cc(OC)c2)C(C)(C)N=C(N)N=C1N
+-30.73    -67.29    -31.69      0.20      c12nc(C3C(c4cc(F)c(F)cc4)CCN(C)C3)n(CCN3CCN(C4c5c(cc(C(F)(F)F)cc5)C(c5ccc(F)cc5)C4)CC3)c1cc(F)cc2
+-11.80    -25.45    152.55      1.00      N1(CC2CCOCC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+bioactivity   raw_bioactivity
+0.20000000298023224   0.20000000298023224   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.30000001192092896   0.30000001192092896   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+1.0   1.0   
+
+15:50:47: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 21   Fraction valid SMILES: 97.6   Score: 0.3630   Time elapsed: 19   Time left: 68.2
+  Agent     Prior     Target     Score     SMILES
+-23.09    -29.36    -11.56      0.10      C(N1CCN2C(CNC2=O)C1)(CCN1CCOCC1)=O
+ -9.99    -22.88    155.12      1.00      CN(C)CCN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-22.25    -38.91     50.09      0.50      C1N(C2CN(Cc3oc4ccccc4c3)CC2O)CCN(C2c3cc(Cl)ccc3C(c3ccc(F)cc3)C2)C1
+-25.46    -28.24    -10.44      0.10      c12ccccc1C(OCCCN1CCN(c3nc(C(F)(F)F)ccc3)CC1)CC2
+-34.53    -65.31     77.09      0.80      c12n(C3C(F)CC(NCCN4CCCCC4)CC3)c(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)nc1cc(C(F)(F)F)cc2
+-29.65    -32.28    -32.28      0.00      C1N(c2c(C(O)=O)cc(NCc3c(OC)ccc(OC)c3)cc2)C(=O)c2c1ccc(OC)c2
+-23.01    -37.40     -1.80      0.20      N1(C(OC2CC3CCC(C2)N3C)=O)CCN(C2c3c(c(F)cc(F)c3)C(c3ccc(F)cc3)C2)CC1
+-23.53    -46.34     24.86      0.40      n1c(-c2ccc(CN3CCN(C4c5c(cc(F)cc5)C(c5ccc(F)cc5)C4)CC3)cc2)ccc(C#N)c1
+-36.85    -42.13     -6.53      0.20      CC(CCN1c2cc(F)ccc2C(N(C2CC2)CC#C)C1)C
+-20.05    -60.91     -7.51      0.30      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(C3c4cc(C#N)ccc4C(OCCCN4CCOCC4)CC3)CC2)C)C1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+1.0   1.0   
+0.5   0.5   
+0.10000000149011612   0.10000000149011612   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+0.4000000059604645   0.4000000059604645   
+0.20000000298023224   0.20000000298023224   
+0.30000001192092896   0.30000001192092896   
+
+15:50:48: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 22   Fraction valid SMILES: 98.4   Score: 0.4000   Time elapsed: 20   Time left: 67.8
+  Agent     Prior     Target     Score     SMILES
+-27.92    -27.92    -27.92      0.00      C1(O)C(CO)N(Cc2c(O)c(Cl)cc(Cl)c2)C(CO)C1O
+-16.79    -33.19    127.01      0.90      C1(N=c2[nH]nc(C)cc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-13.25    -25.98    134.22      0.90      C1N(C(=O)NC(C)C)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-10.59    -27.32     97.28      0.70      C1N(Cc2c(OC)c(OC)ccc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-15.83    -36.19     88.41      0.70      C1(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C(c2cc(C(F)(F)F)cc(C(F)(F)F)c2F)=O)CC1
+-11.25    -42.25    135.75      1.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3c(cc(CCN4CCN(C)CC4)cc3)CC2)CC1
+-11.56    -54.54    105.66      0.90      N1(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-45.11    -47.96    -47.96      0.00      c1c(Cl)c(Cl)cc2c3c(n(CC4CO4)c12)CCN(c1c(C)c(C)nn1-c1ccc(F)cc1Cl)C3=O
+-14.96    -53.33     71.27      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(C3c4cc(C#N)ccc4CCc4cc(F)ccc43)CC2)C(OC)=O)C1
+-28.19    -46.28    -28.48      0.10      C(NC(=S)Nc1c(C)ccc(F)c1)CN1CCN(C2c3cc(F)ccc3OC(C)(C)C2)C1
+bioactivity   raw_bioactivity
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+0.699999988079071   0.699999988079071   
+0.10000000149011612   0.10000000149011612   
+
+15:50:49: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 23   Fraction valid SMILES: 100.0   Score: 0.3389   Time elapsed: 20   Time left: 64.2
+  Agent     Prior     Target     Score     SMILES
+ -8.84    -32.05    -32.05      0.00      c12c(cccc1)C(N1CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC1)CC2c1ccc(F)cc1
+-23.07    -38.14    122.06      0.90      O=C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CN1C(CC(O)=NO)CC1
+-19.40    -43.01    -43.01      0.00      C1N(C(N2CCN([N+](=NOc3c([N+]([O-])=O)cc([N+]([O-])=O)cc3)[O-])CC2)=O)CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)C1
+-27.48    -58.35     84.05      0.80      Clc1ccc2c(n3c(c2)-c2cc(F)ccc2N(C)CC3)c1CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-12.23    -34.45    143.55      1.00      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CN1CCN(CC23CC4CC(CC(C2)C4)C3)CC1
+ -8.67    -27.94    -27.94      0.00      C1N(C23CC4CC(C2)CC(C4)C3)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-12.60    -28.17     96.43      0.70      c1(F)ccc(S(=O)(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)=O)cc1
+-23.89    -22.04     -4.24      0.10      c1cccc2nc(CN3CCN(c4cccc(Cl)c4)CC3)ccc12
+-27.95    -44.25     44.75      0.50      C1CN(CCN2CCc3c(OC)ccc(F)c3C2)CCN1C1c2cc(OC)c(OC)cc2C(c2ccc(F)cc2)C1
+-17.09    -34.69    -34.69      0.00      c1(N2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)cn[nH]c(=N)c1Cl
+bioactivity   raw_bioactivity
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.10000000149011612   0.10000000149011612   
+0.5   0.5   
+0.0   0.0   
+
+15:50:50: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 24   Fraction valid SMILES: 99.2   Score: 0.3103   Time elapsed: 21   Time left: 63.8
+  Agent     Prior     Target     Score     SMILES
+ -8.41    -60.44    -60.44      0.00      C1N(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C(C)C)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-15.78    -42.18     11.22      0.30      C1N(C2c3c(c(F)cc(F)c3)C(c3ccc(F)cc3)C2)CCN(CC(CN2CCN(CCOC)CC2)O)C1
+-15.93    -34.25    -16.45      0.10      c12ccccc1N(C(=O)N1CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC1)CC2
+-25.46    -40.25    102.15      0.80      N(CCN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)Cc1c(Cl)cccc1N
+-35.85    -37.99    -37.99      0.00      N1(c2cc(F)c(OCCN3CCCCC3)cc2)C(=O)c2ccc(N3C(C4CCCCC4)COC3=O)cc2C1=O
+-22.16    -53.55     71.05      0.70      N1(C2CN(C(c3c(C(F)(F)F)cc(F)cc3)=O)CC2c2ccc(F)cc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-30.14    -31.01    -13.21      0.10      O1Cc2c(c(CNc3cc(F)ccc3F)ccn2)CC1
+-25.58    -29.36    -11.56      0.10      C1N(CC)CCN(c2cc(OCCN3CCN(C)CC3)c(Br)cc2)C1
+-31.79    -35.32      0.28      0.20      C1(CN2CCc3c(OCCN4CCN(C(CC)=O)CC4)cccc3C2)CCS(=O)(=O)CC1
+-39.42    -45.83    -28.03      0.10      O=C1N(Cc2ncc(CN3CCN(C)CC3)cc2)C(c2c(OC(F)(F)F)cccc2)C2C1N(c1cccc(OC)c1)C2c1ccc(F)cc1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.30000001192092896   0.30000001192092896   
+0.10000000149011612   0.10000000149011612   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+0.699999988079071   0.699999988079071   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+0.10000000149011612   0.10000000149011612   
+
+15:50:51: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 25   Fraction valid SMILES: 98.4   Score: 0.3591   Time elapsed: 22   Time left: 63.5
+  Agent     Prior     Target     Score     SMILES
+-13.50    -32.38    127.82      0.90      C1N(Cc2coc(-c3c(F)cccc3)n2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-26.43    -47.00    113.20      0.90      S(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)(=O)(=O)CC12C(NC(C3CN(C)C3)=O)(CO1)CC2
+-20.88    -33.93     55.07      0.50      CN(CCO)C(N1CCN(C2c3c(c(F)cc(F)c3)C(c3ccc(F)cc3)C2)CC1)=O
+-11.02    -32.08      3.52      0.20      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CC3CCN(C)CC3)CC2)C1
+-18.83    -32.55     20.85      0.30      C1N(C2c3c(c(C)cc(C)c3)C(c3ccc(N(C)C)cc3)C2)CCN(CCOC)C1
+-32.09    -35.30    -17.50      0.10      c1c(-c2cnn3ccc(N4C(C(C)O)COC4=O)nc23)cc(OCc2ccc(F)c(F)c2F)c(Cl)c1
+-13.84    -33.88    108.52      0.80      n1c(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)cc(CN2CCN(C)CC2)c(O)c1
+-17.94    -32.06    128.14      0.90      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CN1CCC2(CC1)N(c1cc(F)ccc1)CNC2=O
+ -7.32    -29.00    149.00      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCN(CCO)CC2)O)C1
+-16.05    -31.83    -31.83      0.00      C1(N2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)CCN(C(c2c(Cl)cn(CC)n2)=O)CC1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.5   0.5   
+0.20000000298023224   0.20000000298023224   
+0.30000001192092896   0.30000001192092896   
+0.10000000149011612   0.10000000149011612   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.0   0.0   
+
+15:50:52: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 26   Fraction valid SMILES: 96.9   Score: 0.4000   Time elapsed: 23   Time left: 63.0
+  Agent     Prior     Target     Score     SMILES
+-24.26    -28.28    -10.48      0.10      c1(N2CCN(C3CCCC3)CC2)c2onc(C(F)(F)F)c2ccc1
+-22.39    -46.53    113.67      0.90      N1C(COc2ccc(OC3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)cc2)COCC1
+-19.20    -42.15     82.45      0.70      N1(C(N2CC(N(C)C)C(c3ccc(C(F)(F)F)cc3)C2)=O)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-32.55    -39.67    -39.67      0.00      c1c2c(=O)cc(CSC)oc2c2c(c1)C(N1CCCCC1)CC2
+-15.99    -32.55    109.85      0.80      N1(C2=CC(C)(C)N(O)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-28.40    -33.62      1.98      0.20      c1ccc(CN2CCC(N3CCN(Cc4c(C)n(CC)nc4C)CC3)CC2)c(OC)c1OC
+ -7.85    -22.61    -22.61      0.00      C1CN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN1CCN1CCNC1=O
+-19.55    -34.45    125.75      0.90      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C(C)(C(NC)=O)C)CCO2)CC1
+-13.89    -31.36    128.84      0.90      N1(Cc2n(C3CC3)cnn2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-21.03    -39.31     31.89      0.40      [O-][N+](c1c(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c2oc(N3CCOCC3)nc(=O)c2cc1)=O
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+0.20000000298023224   0.20000000298023224   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.4000000059604645   0.4000000059604645   
+
+15:50:53: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 27   Fraction valid SMILES: 98.4   Score: 0.3524   Time elapsed: 24   Time left: 62.6
+  Agent     Prior     Target     Score     SMILES
+-27.92    -32.57    -32.57      0.00      c12cc(F)ccc1-n1c(c(Cl)nc1)Cn1nc(C(=O)NN3CCOCC3)cc1-2
+-15.83    -34.36    108.04      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(C2CCN(C(=O)N)CC2)=O)C1
+-25.46    -46.41    -46.41      0.00      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CC(Cc3ccc(OC(N4CCCC4)=O)c(F)c3)C(C)C)CC2)C1
+-26.24    -39.04    -21.24      0.10      c1(C2N(C34CC5CC(CC(C5)C3)C4)C(c3ccc(OC)cc3)CC2O)oc2ccc(F)cc2n1
+-15.57    -29.93     76.87      0.60      O=C(c1cc(C(F)(F)F)ccc1)N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-18.94    -43.45     45.55      0.50      C1N(C2CCN(C(CCNC(c3ccc(C(C)(C)C)cc3)=O)=O)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-12.20    -28.37     78.43      0.60      c1(NC(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)=O)cc(OC)c(OC)c(OC)c1
+-13.40    -28.59    113.81      0.80      N1(C(c2cscn2)=O)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-26.49    -51.63    -51.63      0.00      O=C(N1C(=O)C(CC)(CC)C1Oc1ccc(CC(N2CCN(C3c4c(cc(Cl)cc4)C(c4ccc(F)cc4)C3)CC2)C)cc1)OC(C)(C)C
+-18.96    -38.65    -20.85      0.10      N1(Cc2c(OC)cc(OC)c(OC)c2)CCN(C2c3cc(Br)sc3C(c3ccc(F)cc3)C2)CC1
+bioactivity   raw_bioactivity
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.6000000238418579   0.6000000238418579   
+0.5   0.5   
+0.6000000238418579   0.6000000238418579   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+
+15:50:54: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 28   Fraction valid SMILES: 98.4   Score: 0.3484   Time elapsed: 25   Time left: 62.1
+  Agent     Prior     Target     Score     SMILES
+-14.50    -34.40    125.80      0.90      C1N(C2CN(S(c3cn(C)cn3)(=O)=O)C2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-30.05    -32.63    -32.63      0.00      O(Cc1ccccc1C(Nc1ccc(S(N2CCOCC2)(=O)=O)cc1)=O)C(NC)=O
+-27.42    -25.83    -25.83      0.00      FC(c1ccc2c(c1)NC(=O)C(n1cncc1)S2)(F)F
+-11.63    -34.97     89.63      0.70      C1(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C(c2ccno2)=O)CC1
+-20.54    -27.12    -27.12      0.00      N1(CCc2cc(OC)c(OC)c(OC)c2)CCN(CC2Oc3c(cccc3)OC2)CC1
+-16.86    -31.89    110.51      0.80      N1(C2CCN(C(CN)=O)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-20.05    -21.03    -21.03      0.00      c1cc(F)ccc1C1N2CC3(C)C(=O)C(CC)(CN1C3)C2
+ -9.20    -25.68    134.52      0.90      C1N(Cc2cc3c(cc2)OCO3)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-36.48    -45.63    -27.83      0.10      c1c(F)cc(C2(CNC(Cc3cc(F)ccc3F)=O)CCN(C3CCCc4c5ccccc5n(C)c43)CC2)cc1
+-16.59    -42.97    117.23      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCN3CCN(CCN4CCNC(=O)C4)CC3)C2)C1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+0.0   0.0   
+0.699999988079071   0.699999988079071   
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+
+15:50:54: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 29   Fraction valid SMILES: 100.0   Score: 0.4437   Time elapsed: 26   Time left: 61.5
+  Agent     Prior     Target     Score     SMILES
+-34.73    -55.84    -55.84      0.00      Clc1c(CN2CCN(C3c4c(c(F)ccc4)Oc4c3cc(F)cc4)CC2)c2oc(N3CCN(C4CC4)CC3)cc2cc1
+-28.55    -50.00     74.60      0.70      c1(N(C2CN(C3c4cc(C#N)ccc4C(c4ccc(F)cc4)C3)CC2CCO)CC#N)nc(C#N)ncc1
+-12.39    -25.11    -25.11      0.00      C1CN(Cc2ccc(F)cc2)CCN1C1c2c(cc(Cl)cc2)C(c2ccc(F)cc2)C1
+-15.43    -32.31     74.49      0.60      c1c(NC(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)=O)c(OC)nc(OC)c1
+-30.28    -29.10    -29.10      0.00      N(c1cccc2ccc(C)nc12)C(CCN1C(=S)SC(=Cc2cc(OC)c(OC)cc2)C1=O)=O
+-29.63    -57.78     31.22      0.50      C1N(C2CN(CCC3(c4cc(F)ccc4)CCN(C(C4CCC(c5ccc(OC)cc5)CC4)=O)CC3)C2)CCN(C2c3c(cc(F)cc3)C(c3ccc(F)cc3)C2)C1
+-20.08    -38.94    103.46      0.80      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)(COC1CCCNC1)=O
+-32.57    -31.24    -13.44      0.10      O=C1N(c2ccccc2)C(=O)N2C(CCc3ccccc3)CN3CCCC3C12
+-17.80    -68.11     92.09      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(C3c4cc(C#N)ccc4C(C)(O)Cc4c3ccc(F)c4)CC2)C)C1
+-19.59    -40.25     30.95      0.40      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(CC(CN2CCN(CCO)CC2)(O)CCN(C)C)C1
+bioactivity   raw_bioactivity
+0.0   0.0   
+0.699999988079071   0.699999988079071   
+0.0   0.0   
+0.6000000238418579   0.6000000238418579   
+0.0   0.0   
+0.5   0.5   
+0.800000011920929   0.800000011920929   
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+0.4000000059604645   0.4000000059604645   
+
+15:50:55: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 30   Fraction valid SMILES: 98.4   Score: 0.3701   Time elapsed: 27   Time left: 61.0
+  Agent     Prior     Target     Score     SMILES
+-34.76    -37.66    -19.86      0.10      c12c(n(CCCC)cc1C(CC(N1CCOCC1)=O)c1ccc(C(F)(F)F)cc1)cc(OC)cc2
+-31.68    -35.41      0.19      0.20      O=C1N(CCc2scc(C(O)=O)n2)C(=O)c2cc(C(Nc3c(Cl)ccc(C(F)(F)F)c3)=O)ccc21
+-16.28    -24.52     11.08      0.20      c1c(C2N3CCCN3CC2c2ccc(C)cc2)ccc(F)c1
+-27.23    -52.35     72.25      0.70      C(Nc1ccc(S(N2CCOc3c2cccc3)(=O)=O)cc1)(CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)C
+ -9.61    -35.77    -35.77      0.00      C(N1CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CC1)CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-40.81    -47.83    -47.83      0.00      N1(C2CCCN(CCCCCCN(C)C3Cc4ccc(OC)cc4C3)C2)CNc2c(=N)nc(C)[nH]c21
+-27.93    -52.29     72.31      0.70      c1ccc(C)c2n(CC(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)O)c3c(cccc3)c12
+-27.64    -25.14     -7.34      0.10      c1c(Cl)ccc(-c2n[nH]c(=NC(C3Oc4c(cccc4)OC3)=O)cc2)c1
+-19.02    -43.81    116.39      0.90      C1N(C2CN(Cc3ccccc3Cl)CCC2N2CCN(C)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-21.32    -41.84    136.16      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CC3C4CCC(F)C3C4)CC2)C1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+0.699999988079071   0.699999988079071   
+0.4000000059604645   0.4000000059604645   
+0.0   0.0   
+0.699999988079071   0.699999988079071   
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+
+15:50:56: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 31   Fraction valid SMILES: 99.2   Score: 0.3520   Time elapsed: 28   Time left: 60.4
+  Agent     Prior     Target     Score     SMILES
+ -7.85    -22.96    -22.96      0.00      C1N(C2CCCCC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+ -8.13    -27.94    -27.94      0.00      C1N(C23CC4CC(C2)CC(C4)C3)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-15.04    -52.88    125.12      1.00      C1N(C2c3c(cc(Br)cc3)C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCN3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C2)C1
+-26.57    -77.59    -59.79      0.10      C1N(S(c2c3c(cccc3)c(NC(=O)CCN3CCN(C4c5c(cc(Cl)cc5)C(c5ccc(F)cc5)C4)CC3)cc2)(=O)=O)CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)C1
+-22.70    -57.29    -39.49      0.10      C1N(CCC2NC(CNC(c3ccc(-c4ccc(C(F)(F)F)cc4)cc3)=O)CCN(CC(c3ccccc3)c3ccccc3)C2=S)CCN(C2c3c(cc(F)cc3)C(c3ccc(F)cc3)C2)C1
+-42.81    -60.94     45.86      0.60      C1(N=c2[nH]c3c(c(N=c4cc(C)[nH][nH]4)n2)nn(C)c3CCO)CN(C2c3cc(F)ccc3C(c3ccccc3)C2)CC1
+-27.09    -25.01    -25.01      0.00      c1(Cl)ccc(OC)c(N=Cc2c(Cl)ccc(Cl)c2)c1
+ -9.11    -33.84    -33.84      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CC3CCCN3C)CC2)C1
+-26.84    -51.26     91.14      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(NC(N2CCN(C3c4cc(F)ccc4CC3O)CC2)=O)CC1
+-13.75    -45.32    114.88      0.90      c12c(ccc(C(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C)c1)C(N1CCN(C)CC1)CC2
+bioactivity   raw_bioactivity
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+1.0   1.0   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.6000000238418579   0.6000000238418579   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+
+15:50:57: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 32   Fraction valid SMILES: 99.2   Score: 0.3913   Time elapsed: 29   Time left: 59.8
+  Agent     Prior     Target     Score     SMILES
+-29.32    -28.58    -10.78      0.10      c1c2cc(-c3ccc4cc(OC)ccc4c3)c([N+](=O)[O-])cc2ccc1
+ -6.93    -25.02    135.18      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCNC(=O)C2)C1
+-20.69    -36.53     16.87      0.30      [nH]1c(CN2CCN(C3c4c(cc(F)cc4)C(c4ccc(F)cc4)C3)CC2)nc2c1C(N)NC=N2
+-11.23    -26.23    133.97      0.90      N1(CCc2ccc(OC)cc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-15.40    -44.80     97.60      0.80      C1CN(C2c3ncc(Br)cc3CCc3cc(OC)c(OC)cc32)CCN1C1c2cc(F)ccc2C(c2ccc(F)cc2)C1
+-35.98    -55.16    -19.56      0.20      C1CN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN1CC(NCC1(N2CCC3(OCCO3)CC2)CC1)C(N(CC)CC)=O
+-31.92    -35.91    -18.11      0.10      N1CCN(C(OC2c3cc(OC)c(OC)cc3-c3ccc(SC)c(=O)cc3C2)=O)C1=S
+ -6.97    -38.38    -38.38      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-15.30    -55.95     86.45      0.80      C1CN(C(c2cc(F)c(F)cc2)CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN1C1c2cc(F)ccc2C(c2ccc(F)cc2)C1
+ -9.67    -31.08    -31.08      0.00      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CN1CCN(CCN2CCNCC2)CC1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+0.30000001192092896   0.30000001192092896   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.20000000298023224   0.20000000298023224   
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+
+15:50:58: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 33   Fraction valid SMILES: 96.1   Score: 0.3976   Time elapsed: 30   Time left: 59.1
+  Agent     Prior     Target     Score     SMILES
+-12.39    -25.68    116.72      0.80      C1(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C(=O)OCC)CC1
+-14.15    -65.53     76.87      0.80      N1(C(C2(NC(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C)CC2)=O)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-20.01    -40.74     66.06      0.60      c1cc(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c(OCC)cc1OCCOC
+-32.09    -40.29    -22.49      0.10      C(N1CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CC1)C(O)CN1C(=O)NC(CC)(C2CC2)O1
+-24.18    -42.17    100.23      0.80      C1N(C2CN(C(=O)C=C(C)C)CC2C2CC2)CCN(C2c3cc(C(F)(F)F)ccc3C(c3ccc(F)cc3)C2)C1
+-14.02    -34.28    125.92      0.90      c1c(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C#N)ncc(F)c1
+-18.82    -28.42    -28.42      0.00      C(c1ccc(C(C)=O)cc1)N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-22.43    -41.08     12.32      0.30      c1cc(C)nc(N2CCN(C3c4c(cc(C)cc4)C(c4ccc(F)cc4)C3)CC2)c1N1CCN(C)CC1
+-40.12    -53.16    -35.36      0.10      c1(N2CCN(C3c4ncc(C(O)NCC5CN(C)CC5)n4-c4ccc(Cl)cc4C3)CC2)nc(C(F)(F)F)c(CO)s1
+-27.94    -53.02     18.18      0.40      n1cc(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)nc2c1[nH]cnc2=Nc1cc(F)cnc1
+bioactivity   raw_bioactivity
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.6000000238418579   0.6000000238418579   
+0.10000000149011612   0.10000000149011612   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.30000001192092896   0.30000001192092896   
+0.10000000149011612   0.10000000149011612   
+0.4000000059604645   0.4000000059604645   
+
+15:50:59: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 34   Fraction valid SMILES: 97.6   Score: 0.3984   Time elapsed: 30   Time left: 56.6
+  Agent     Prior     Target     Score     SMILES
+ -6.71    -41.49    -41.49      0.00      C1N(CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-24.74    -40.32    -40.32      0.00      c1(OC)cc2c(cc1)C1N(CC2)C(=O)CN(C2CCN(C3c4c(cc(CN5CCN(C)CC5)cc4)CC3)C2)C1
+ -5.38    -28.50    -28.50      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCN3CCNCC3)CC2)C1
+-24.88    -29.45    -11.65      0.10      c12c(C(N)=O)c(NC(=O)Nc3cccc(C(F)(F)F)c3)sc1CC(N1CCOCC1)CC2
+-27.63    -33.00    -33.00      0.00      c1cc(C2N(C3C(C)CC3C)CCNC2)cc(C)c1
+-14.96    -42.16    100.24      0.80      c1(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)cc(CN2CCN(CC)CC2)ccc1
+ -5.28    -20.62    -20.62      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCNC2=O)C1
+-20.14    -31.18     22.22      0.30      c1n(C)ncc1CN1CCN(C2c3cc(F)c(Cl)cc3C(c3ccc(F)cc3)C2)CC1
+-23.48    -46.48     78.12      0.70      c1c(F)ccc2[nH]c(O)c(CCC(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)=O)c12
+-32.60    -35.88    -35.88      0.00      c12c(c3cccnc3c(Cl)c1)OC1(CC2N(C)C)CCN(Cc2ccc(F)cc2)CC1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+1.0   1.0   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.30000001192092896   0.30000001192092896   
+0.699999988079071   0.699999988079071   
+0.0   0.0   
+
+15:51:00: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 35   Fraction valid SMILES: 100.0   Score: 0.4238   Time elapsed: 31   Time left: 56.0
+  Agent     Prior     Target     Score     SMILES
+-11.81    -33.33    144.67      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN3CCN(C)CC3C2)C1
+-10.67    -35.73    124.47      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3c(cc(CN4CCCCC4)cc3)CCC2)C1
+-27.49    -49.74     92.66      0.80      CN(CC[S+](c1c(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)=O)ccs1)[O-])C
+ -6.22    -26.78    -26.78      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCN(CC)CC2)O)C1
+ -6.79    -23.81    -23.81      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCOC(c2ccc(F)cc2)c2ccc(F)cc2)C1
+ -6.46    -37.93    -37.93      0.00      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-16.86    -42.70     99.70      0.80      C1N(C2CN(C3CCc4c(cc(OC)c(OC)c4)C3)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-19.58    -22.31     13.29      0.20      c12c(cccc1)NC(c1ccc(F)cc1)C1C(=N2)CC(c2ccc(C)cc2)CC1=O
+-24.31    -22.57    -22.57      0.00      c1(=NN)[nH]nc(-c2c(O)cc(C)cc2)o1
+-18.40    -40.42    137.58      1.00      s1c(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)nnc1C1CCN(C2COC2)CC1
+bioactivity   raw_bioactivity
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+1.0   1.0   
+
+15:51:01: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 36   Fraction valid SMILES: 98.4   Score: 0.4094   Time elapsed: 32   Time left: 55.4
+  Agent     Prior     Target     Score     SMILES
+-23.85    -22.37     -4.57      0.10      Cc1cc(C)ccc1OCC(=NNC(N)=S)C
+-17.43    -44.68    115.52      0.90      c1cc(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CN2CC(C)N(C3CC3)CC2)ccc1F
+-11.60    -39.36    120.84      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3cc(C#N)ccc3C(O)CC2)C1
+ -7.51    -29.51    148.49      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCN3CCN(C)CC3)CC2)C1
+-21.30    -26.70     -8.90      0.10      c1c(C(NNC(C2N3C(C)(CCC3=O)SC2)=O)=O)cnc(C)c1
+-12.89    -28.94     95.66      0.70      c1c([N+]([O-])=O)ccc(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c1
+-20.21    -19.99     -2.19      0.10      N1(CCCNCc2cc(OC)c(OC)c(OC)c2)CCN(Cc2ccccc2)CC1
+ -9.32    -21.00     14.60      0.20      O1CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CC1
+-22.77    -19.73    -19.73      0.00      c1(-c2nc(-c3ccc(OC)cc3)cc(-c3ccc(O)cc3)c2)c(O)cccc1
+-15.36    -34.23    125.97      0.90      C1N(CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C(CO)C)C1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.10000000149011612   0.10000000149011612   
+0.699999988079071   0.699999988079071   
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+
+15:51:02: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 37   Fraction valid SMILES: 98.4   Score: 0.3677   Time elapsed: 33   Time left: 54.7
+  Agent     Prior     Target     Score     SMILES
+-19.29    -21.10     50.10      0.40      CN1C(Cc2c(OC)ccc(Br)c2)CCC1
+-22.33    -48.74     75.86      0.70      Oc1c(C(C)(C)C)cc(OC(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C)=O)cc1C(C)C
+-24.60    -30.66    -12.86      0.10      c12c(C(CNC34CC5CC(C3)CC(C5)C4)O)cc(C(F)(F)F)nc1c(C(F)(F)F)cc(F)c2
+-27.78    -35.40    -35.40      0.00      c1c(C(CN2CCN(C3c4sccc4CC3)CC2)O)cc2ccccc2c1
+-33.83    -55.88     33.12      0.50      C1NCCN(Cc2c(C)n(C3CCN(C4CCN(C5c6c(cc(C(F)(F)F)cc6)C(c6ccc(F)cc6)C5)CC4)CC3)nn2)C1
+-12.26    -14.88    -14.88      0.00      N12CN3CN(C1)CN(C3)C2
+ -7.26    -21.83    -21.83      0.00      C1NCCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-26.68    -32.53    -14.73      0.10      C(N1N=C(c2cc(OC)c(OC)cc2)CC1c1c(Cl)cc(Cl)cc1)(CSC1CCCCC1)=O
+-39.24    -39.23    -39.23      0.00      C12=C(CN(Cc3cccc(C)c3)CC(=Cc3c4c(ccc3)cccc4)C1=O)CCN(C)C2
+-28.90    -45.22     97.18      0.80      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)C1(C(N2CCc3c(nc(C)c(C(N)=O)c3)C2)C)CC1
+bioactivity   raw_bioactivity
+0.4000000059604645   0.4000000059604645   
+0.699999988079071   0.699999988079071   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.5   0.5   
+0.0   0.0   
+1.0   1.0   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+
+15:51:03: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 38   Fraction valid SMILES: 99.2   Score: 0.3378   Time elapsed: 34   Time left: 54.1
+  Agent     Prior     Target     Score     SMILES
+ -7.83    -19.16     34.24      0.30      CN1CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CC1
+ -8.73    -22.61    -22.61      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCOCCO)CC1
+-25.82    -52.06     72.54      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCOC(C23C(C4C(C)(CC2)C2(C)C(CC4)C4(C)C(CC2)C(C)(C)C(NC(=O)C)CC4)C(O)CC3)O)C1
+-14.50    -28.04    -28.04      0.00      C1N(C2c3c(c(F)ccc3F)C(c3ccc(F)cc3)C2)CCN(CCO)C1
+-18.66    -44.84    115.36      0.90      C1N(C(c2c(C)c3c(s2)ncn(CC)c3=O)=O)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+ -9.85    -26.66    115.74      0.80      C1N(c2ncccc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-15.87    -51.44    -51.44      0.00      N1(C(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C(=O)CO)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+ -7.61    -29.51    -29.51      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCN3CCN(C)CC3)CC2)C1
+-21.58    -39.36    120.84      0.90      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(CCN3CCCC3=O)CC2)C(=O)N)CC1
+-14.05    -31.75    110.65      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(C(=O)C=C(C)C)CC2)C1
+bioactivity   raw_bioactivity
+0.30000001192092896   0.30000001192092896   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.4000000059604645   0.4000000059604645   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+
+15:51:03: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 39   Fraction valid SMILES: 99.2   Score: 0.4165   Time elapsed: 35   Time left: 53.4
+  Agent     Prior     Target     Score     SMILES
+-20.19    -35.39     89.21      0.70      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC2(N(CCC3CCN(C)CC3)CNC2=O)CC1
+-25.57    -22.28    -22.28      0.00      C1CCOC1CNC(=O)c1c([N+]([O-])=O)c(C)n(C)n1
+-30.03    -50.99    -33.19      0.10      C1N(c2c(C(OCC=Cc3ccc(F)cc3)=O)cc(F)cc2)CCN(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)C1
+ -9.22    -53.79    124.21      1.00      C1N(CC(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN2CCN(C)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-13.08    -61.62     80.78      0.80      C1N(C(C2(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)CCCC2)=O)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-18.87    -36.38    106.02      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(N2CCCC3(C(=O)NCN3)C2)C1
+-16.98    -24.92    -24.92      0.00      C1N(C)CCN(C2c3c(c(Br)cc(Cl)c3)C(c3ccc(F)cc3)C2)C1
+-11.13    -34.04     72.76      0.60      C1(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C(c2c(C)cc(F)cc2C)=O)CC1
+-41.60    -46.78    -46.78      0.00      C1N2C3C4(CCN(C3)CC4)CC(C(=O)N1c1ccc(F)cc1)C2C(OC)=O
+-15.72    -30.18     94.42      0.70      c1cc(S(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)(=O)=O)ccc1[N+](=O)[O-]
+bioactivity   raw_bioactivity
+0.699999988079071   0.699999988079071   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.4000000059604645   0.4000000059604645   
+0.6000000238418579   0.6000000238418579   
+0.0   0.0   
+0.699999988079071   0.699999988079071   
+
+15:51:04: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 40   Fraction valid SMILES: 96.8   Score: 0.3929   Time elapsed: 35   Time left: 51.2
+  Agent     Prior     Target     Score     SMILES
+-19.37    -35.16    107.24      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC1N1CCN(Cc2ccon2)CC1
+-12.42    -31.06      4.54      0.20      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(CC(O)CN2CCC2)C1
+-35.09    -64.39     42.41      0.60      C1N(CCC(c2cc(Cl)c(N)c3c2OCCN3C)O)CCN(CC(N2CCN(C3c4cc(C#N)ccc4C(c4ccc(F)cc4)C3)CC2)C)C1
+ -9.47    -29.01    -29.01      0.00      C1(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C2CC3CC(CC1C3)C2
+-10.97    -34.02    143.98      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCN3CCCN(C)C3=S)CC2)C1
+-35.54    -54.78     87.62      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2C(c3nc(C)ccc3)OC(c3ccc(CC)s3)C2)=O)C1
+-12.96    -45.39    -45.39      0.00      C(CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)N1CCN(C2c3cc(C#N)ccc3C(c3ccc(F)cc3)C2)CC1
+-36.89    -45.61    -10.01      0.20      c12c(c(OC)cc(OC)c1C1C(CNCCCCN3CCN(CCCC)CC3)Cc3cc(OC)ccc3C1)OCCO2
+-37.57    -40.59     -4.99      0.20      C12(O)C(C)(CCC3C1OC(=O)C1(C)C(c4cocc4)CC13)C(C(COC1C(O)C(O)C(O)C(CO)O1)C)CC2
+-15.74    -42.43    117.77      0.90      c12c(c(OCC(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C)ccc1)CCC2
+bioactivity   raw_bioactivity
+0.800000011920929   0.800000011920929   
+0.20000000298023224   0.20000000298023224   
+0.6000000238418579   0.6000000238418579   
+1.0   1.0   
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.20000000298023224   0.20000000298023224   
+0.20000000298023224   0.20000000298023224   
+0.8999999761581421   0.8999999761581421   
+
+15:51:06: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 41   Fraction valid SMILES: 99.2   Score: 0.3711   Time elapsed: 37   Time left: 52.0
+  Agent     Prior     Target     Score     SMILES
+-15.45    -31.89    -31.89      0.00      C1CN(c2c(F)cccc2F)CCN1C1c2cc(F)ccc2C(c2ccc(F)cc2)C1
+-32.40    -59.84     64.76      0.70      C1N2C3(N(C1)Cc1c3c(O)c(O)cc1)CCC2C(=O)N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-36.42    -36.50    -36.50      0.00      c1(F)cc(-c2sc(N)c(C(=O)Nc3c(N4CCN(C)CC4)n(Cc4ccc(F)cc4F)nc3)n2)ccc1
+-29.24    -34.24    -34.24      0.00      c1(F)ccc(CN2C(C(NN3CCN(C)CC3)=O)Cc3ccccc32)cc1Cl
+-13.30    -28.08     96.52      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC2(CN(CCO)C(=O)C2)C1
+-31.97    -56.93     14.27      0.40      C1(N(C2CC2)C2c3c(cc(F)cc3)C(c3ccc(F)cc3)C2)CCN(CCN2CCN(C(C(O)CO)CO)CC2)CC1
+-15.08    -33.04    127.16      0.90      C1N(C(N(CCN2CCOCC2)CC2CC2)=O)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-20.61    -33.30      2.30      0.20      c1c(Cn2cc(CN3CCN(C4c5c(cc(Cl)cc5)C(c5ccc(F)cc5)C4)CC3)nn2)ccc2c1OCO2
+-22.24    -46.36     78.24      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(C(C(CNC3COCC3)=O)C3CCCCC3)CC2)C1
+-24.67    -43.94     98.46      0.80      n12nc3ccccc3c1nc(CC)cc2N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+bioactivity   raw_bioactivity
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+0.0   0.0   
+0.0   0.0   
+0.699999988079071   0.699999988079071   
+0.4000000059604645   0.4000000059604645   
+0.8999999761581421   0.8999999761581421   
+0.20000000298023224   0.20000000298023224   
+0.699999988079071   0.699999988079071   
+0.800000011920929   0.800000011920929   
+
+15:51:06: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 42   Fraction valid SMILES: 97.6   Score: 0.4346   Time elapsed: 38   Time left: 51.3
+  Agent     Prior     Target     Score     SMILES
+-28.60    -40.98    -23.18      0.10      CC1(c2cc(F)ccc2F)CN(C2CCN(CC3CN(C(C4CCCCC4)=O)CC3c3cc(F)ccc3)C2)C(=O)O1
+-11.66    -35.23    107.17      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(C(CN3CCOCC3)=O)CC2)C1
+-10.32    -24.45    135.75      0.90      CN(C)C1CN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-24.28    -28.67      6.93      0.20      C12(C(NN=C3NCCC3)=O)CC3(C)CC(C1)CC(C2)C3
+-27.95    -27.72    -27.72      0.00      c1cc2[nH]c(C3CN(C(NC4CCCC4)=S)CC3)nc2cc1
+-14.78    -66.96     93.24      0.90      C1N(Cc2nnc(C3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)cc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-10.52    -30.08    -30.08      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCN3CCN(C)C3=O)CC2)C1
+-18.26    -51.91     72.69      0.70      C1N(c2ccccc2OC)CCN(C2CC(C(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C)CC2)C1
+ -9.96    -27.41    132.79      0.90      C1N(Cc2ccsc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-12.82    -30.31    147.69      1.00      C(CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)N1CCN(CC=C)CC1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+
+15:51:07: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 43   Fraction valid SMILES: 99.2   Score: 0.4659   Time elapsed: 39   Time left: 50.5
+  Agent     Prior     Target     Score     SMILES
+-12.16    -30.31    129.89      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCOCC2)(C)C)O1
+ -8.18    -27.94    -27.94      0.00      C1N(C23CC4CC(C2)CC(C4)C3)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-15.48    -36.92    -36.92      0.00      c1(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCO)ccc(Br)cc1
+-24.97    -45.89     96.51      0.80      o1c(C(CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C2CCN(C3CCC3)CC2)ccc1
+-24.42    -39.67    -39.67      0.00      c1(C(=O)O)c(OCCCC)cc(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)cc1
+-24.54    -54.31    105.89      0.90      N(C1C2C1CS(=O)(=O)C2)C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)C
+-12.83    -31.06    129.14      0.90      C1N(Cc2scc(Br)c2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-35.72    -39.00    -21.20      0.10      N1(C)C(C=Nc2ccccc2-c2ccc(N3CCN(C)CC3)nc2)C(=O)N(CCN(C)C)C1
+ -8.26    -49.47    -49.47      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C)C1
+-11.70    -28.96    113.44      0.80      N#Cc1c(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)nccc1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+
+15:51:08: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 44   Fraction valid SMILES: 100.0   Score: 0.4357   Time elapsed: 39   Time left: 48.5
+  Agent     Prior     Target     Score     SMILES
+-23.56    -46.31     78.29      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2NC(N=c3cc(C)c(OC)c(C)[nH]3)=NC2)C1
+-21.80    -50.37      3.03      0.30      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(C2CCN(C(N3CCN(C4CCC4)CC3)=NC3CC3)CC2)C1
+-30.38    -37.19     16.21      0.30      C1N=C2N(c3ccc(F)cc3N2CCCN2CCN(C3CC(c4ccc(F)cc4)c4c3ccc(Cl)c4)CC2)CC1
+-36.55    -35.73    -35.73      0.00      Clc1c2c(cccc2)c(Cl)c2nc(C(Cl)C)nn21
+-32.76    -29.34    -11.54      0.10      COc1c(OC)c2c(c(OC)c1C)CC(C)C(C)C(OC(=O)C(C)=CC)c1c3c(c(OC)cc1-2)OCO3
+-22.99    -24.83    -24.83      0.00      O1CCN(S(c2c(C)sc3ncn(CC(Nc4ccc(C)c(F)c4)=O)c(=O)c23)(=O)=O)CC1
+ -5.70    -39.69    -39.69      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3cc(CCN4CCN(C)CC4)ccc3CCC2)C1
+-21.00    -35.77    106.63      0.80      O=C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)c1cc2c(n1C)cc(C#N)cc2
+ -9.30    -38.33     86.27      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3cc(C(N)=O)ccc3OCC2)C1
+ -7.08    -43.72     98.68      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3cc(CCN4CCN(CC)CC4)ccc3CCC2)C1
+bioactivity   raw_bioactivity
+0.699999988079071   0.699999988079071   
+0.30000001192092896   0.30000001192092896   
+0.30000001192092896   0.30000001192092896   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.699999988079071   0.699999988079071   
+0.800000011920929   0.800000011920929   
+
+15:51:09: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 45   Fraction valid SMILES: 99.2   Score: 0.3898   Time elapsed: 40   Time left: 47.8
+  Agent     Prior     Target     Score     SMILES
+ -7.65    -27.38    -27.38      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCN3CCNC3=O)CC2)C1
+-15.65    -32.39    -32.39      0.00      c1cc([N+]([O-])=O)cc(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c1F
+-21.43    -45.03    115.17      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCOC(C23C(C4CCC5C(C)(C4(C)CC2)CCC23CO2)CC(C)(C)CC5)=S)C1
+-18.62    -39.08     67.72      0.60      O=C1C2(CCN(CC3CC3)CC2)CCN1C1c2cc(F)ccc2C(c2ccc(F)cc2)C1
+-100.56    -107.17    -89.37      0.10      N1c2c3c(c(O)c(C)c2NCC3O)C(C2(c3c(O)c4c(cc3)C(=O)C=CC4=O)Cc3ncc(NC(=O)C4N(C)CC(C)C4)cc32)N2C(O)C(=CC)C1C2
+-15.13    -36.15     88.45      0.70      c12c(cc(S(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)(=O)=O)cc1)N(C)CCO2
+-10.46    -27.90    -27.90      0.00      C1N(Cc2nccn2CC)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-10.52    -41.50    100.90      0.80      C1N(C2c3c(F)ccc4ccc(=O)n2c34)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-30.76    -50.12    -50.12      0.00      c1ccc(C2=NN(C3CCN(CCCN4CCN(C5c6cc(F)ccc6C(c6ccc(F)cc7)CC5)CC4)CC3)C(=O)C2(C)C)cc1C
+-12.51    -49.23    128.77      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3cc(CN4CCN(C)CC4)c(F)cc3C(C)(C)C2)C1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.6000000238418579   0.6000000238418579   
+0.10000000149011612   0.10000000149011612   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+1.0   1.0   
+
+15:51:10: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 46   Fraction valid SMILES: 96.1   Score: 0.4677   Time elapsed: 41   Time left: 47.1
+  Agent     Prior     Target     Score     SMILES
+ -6.90    -26.23    -26.23      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CC2)CC1
+-24.93    -22.65     -4.85      0.10      c1c(-c2ccc(F)cc2)ccc(CN(CCN(CC)CC)C(Cn2c(CCc3cccc(F)c3F)cc(=O)c3ccccc32)=O)c1
+-33.96    -33.50    -15.70      0.10      n1c2c(c(C)[nH]c1=Nc1ccc(N3CCN(C4CC4)CC3)cc1)CCN2Cc1ccccn1
+-13.54    -30.18    112.22      0.80      N1(C2CN(CCc3ccccc3)S(=O)(=O)C2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-22.00    -20.31    -20.31      0.00      c12ccccc1OCC(CN(CC)CC)O2
+-10.12    -25.40    -25.40      0.00      N1(Cc2cc3c(cc2)OCO3)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-11.87    -38.18    104.22      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(C(NC3CCNCC3)=O)CC2)C1
+-17.74    -39.30    103.10      0.80      NC1CN(c2cc(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)ncn2)CCC1
+-14.72    -29.99     94.61      0.70      N(CCN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)C(=O)C=Cc1cc(F)ccc1
+-10.49    -37.56    -37.56      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCN3CCCN(CCCN4CCNCC4)CC3)CC2)C1
+bioactivity   raw_bioactivity
+1.0   1.0   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+
+15:51:11: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 47   Fraction valid SMILES: 99.2   Score: 0.4634   Time elapsed: 42   Time left: 46.4
+  Agent     Prior     Target     Score     SMILES
+-10.35    -36.99    123.21      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CN(CC(N3CCN(C)CC3)=O)CC2)C1
+ -7.55    -23.60    -23.60      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCCCC2)CC1
+-13.14    -31.56    128.64      0.90      c12cc(CN3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)ccc1CN(C)CC2
+-16.40    -59.14    101.06      0.90      C1N(C(c2ccc(CC)cc2)CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-16.45    -34.14    126.06      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2C[N+](C)(C)CC2)C1
+-32.14    -32.54      3.06      0.20      c1cc2cc(O)c(NC(=O)C3(C)CCN3C3Cc4ccccc4C3)cc2cc1
+-27.00    -31.41    -13.61      0.10      O=C1NC(c2c(C(F)(F)F)cc(F)cc2)NC(c2ccc(F)cc2)C1C
+-12.23    -29.71    130.49      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC2(CN(CCN3CCCC3)C2)C1
+-11.45    -43.50     98.90      0.80      C1N(C(c2ccc(NC(N3Cc4cc(F)ccc4C3)=O)cc2)=O)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-15.58    -33.88    126.32      0.90      C1N(C2CC(C)(C)N(OC)C(C)(C)C2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.20000000298023224   0.20000000298023224   
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+
+15:51:11: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 48   Fraction valid SMILES: 97.6   Score: 0.4413   Time elapsed: 43   Time left: 45.6
+  Agent     Prior     Target     Score     SMILES
+-10.95    -26.43    -26.43      0.00      c1(F)ccccc1CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+ -7.35    -35.79    -35.79      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(C(CN3CCN(C)CC3)=O)CC2)C1
+-13.36    -26.96     97.64      0.70      N1(C(c2cnccc2)=O)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+ -8.61    -33.33    -33.33      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN3CCN(C)CC3C2)C1
+-41.06    -63.70    -28.10      0.20      N1(C2(CNC(=O)CN3CCN(Cc4ccc(C#N)cc4)CC3)C(C)CN3C(C2)CC2N(CC2=CC)CCC3)CCN(CC2CC2)CC1
+-10.59    -30.45    147.55      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCCC2CO)O)C1
+-24.69    -62.61     26.39      0.50      c12n(C3CCN(C4CCCCCCC4)CC3)c(=O)c(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)nc1CCN(CC1CC1)C2
+-38.91    -44.13     -8.53      0.20      ClC1C2(Sc3ccc(F)cc3)CCN(C1c1ccccc1)CC2=O
+-29.02    -38.24    -38.24      0.00      N1(C(NC2CC(F)(F)C2)=O)CCN(C2c3ncc(C(F)(F)F)cc3N(C3CC3)C(=O)C2)CC1
+-11.27    -25.45    152.55      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCCNC2=S)C1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.20000000298023224   0.20000000298023224   
+1.0   1.0   
+0.5   0.5   
+0.20000000298023224   0.20000000298023224   
+0.0   0.0   
+1.0   1.0   
+
+15:51:12: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 49   Fraction valid SMILES: 97.6   Score: 0.4622   Time elapsed: 44   Time left: 44.9
+  Agent     Prior     Target     Score     SMILES
+ -9.00    -27.37    132.83      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCOCCOCCO)CC1
+-13.32    -30.75    111.65      0.80      N1(CC2(c3ccc(F)cc3)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-26.39    -54.39    105.81      0.90      C1C2N(CCN1C1c3cc(F)ccc3C(c3ccc(F)cc3)C1)CCN(CCN1CCC(N3CCCC3)C1)CC2
+-25.62    -46.59     24.61      0.40      C1N(C2CCC2)C2C(CN3CCN(C4c5cc(F)ccc5C(c5sccc5)C4)CC3C2)C1
+-14.74    -40.39     30.81      0.40      N1(C2=NC(=O)C(=Cc3cc(OC)c(OC)c(OC)c3)S2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-43.13    -51.33    -51.33      0.00      Cc1cc(F)cc2c1N(C(N1S(=O)(=O)c3cc(F)ccc3C1CC(=O)OCC)=O)CC2
+-28.58    -58.47     83.93      0.80      NC(C1(SCCCc2ccc(F)cc2)CN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1N1CCN(C)CC1)=O
+-12.88    -29.02    148.98      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CC(O)C)CC2)C1
+-23.99    -43.21     10.19      0.30      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(CC(CCN2CCC(N3CCN(C)C(=O)C3)CC2)C(=O)N)C1
+-36.06    -41.38    -23.58      0.10      c1(-c2cc(OC)c(OC)c(OC)c2)c(-c2cc(C)c(OC)c(OC)c2)c2c(s1)N1CCNCC1C2
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.4000000059604645   0.4000000059604645   
+0.4000000059604645   0.4000000059604645   
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+0.30000001192092896   0.30000001192092896   
+0.10000000149011612   0.10000000149011612   
+
+15:51:13: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 50   Fraction valid SMILES: 98.4   Score: 0.4294   Time elapsed: 44   Time left: 43.1
+  Agent     Prior     Target     Score     SMILES
+-23.74    -81.70     60.70      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2COCC2C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C2c3c(cc(F)cc3)OC2C)C1
+ -6.56    -33.17    -33.17      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(C(N3CCN(C)CC3)=O)CC2)C1
+ -9.13    -53.79    -53.79      0.00      C1N(CC(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN2CCN(C)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-25.12    -55.00     87.40      0.80      C1(C2CC2)C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CN(C2CCN(C(=O)CN3CCN(C(C)C)CC3)CC2)C1
+-20.53    -35.91    106.49      0.80      n1(C)c2c(cc(F)cc2)c(CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c1
+-34.60    -59.67    100.53      0.90      C1N(CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C(CN(N(C2CCCCC2)C(=O)CC)C)C(C)C)C1
+ -7.27    -27.27    -27.27      0.00      C1N(C23CC4CC(C2)CC(C3)C4)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-35.00    -60.65     81.75      0.80      c1(F)cc(F)c(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c2[nH]c(C3=CCC(N4CCC(N)CC4)CC3)nc12
+ -9.65    -42.97    -42.97      0.00      C(CCN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+ -5.69    -23.95    -23.95      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCOCC2)O)C1
+bioactivity   raw_bioactivity
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+
+15:51:14: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 51   Fraction valid SMILES: 97.6   Score: 0.4480   Time elapsed: 46   Time left: 43.3
+  Agent     Prior     Target     Score     SMILES
+-75.84    -79.85    -44.25      0.20      CC12C(CC3CN1CC1(O2)CC2C(N(O)C4c5c(c6c(cc5)OCO6)C3N1C=C4)Cc1ccc(F)cc1)CCCC2
+-15.74    -70.87     71.53      0.80      N1(C(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C2CCN(CCN(C)C)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-14.11    -32.64    109.76      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCOC(=O)c2cc(F)ccc2)CC1
+-15.43    -51.89    108.31      0.90      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC2(CCN(C3c4cc(F)ccc4C(N4CCN(C)CC4)CC3)C2)CC1
+-18.71    -33.60    108.80      0.80      c1cccc2c1cc1cc(CN3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)ccc1n2
+-30.00    -37.90     -2.30      0.20      N1(C2CC(c3ccc(F)cc3)C(N(C(C3CCN(C(C4CC4)=O)CC3)=O)C)CC2)CCN(Cc2ccccc2F)CC1
+ -7.43    -24.08    -24.08      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCNCC2)C1
+-23.76    -28.86    -28.86      0.00      c1c(CN2CC(CN3CCN(CCN4CCOCC4)CC3)C(c3ccccc3)C2)ccnc1
+-16.81    -47.71    112.49      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3N(C4CCC4)CCOC3)CC2(C)C)C1
+-19.97    -41.48    136.52      1.00      c1c(N(C2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CC)nc(=NC2CC2)[nH]c1
+bioactivity   raw_bioactivity
+0.20000000298023224   0.20000000298023224   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.20000000298023224   0.20000000298023224   
+1.0   1.0   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+
+15:51:15: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 52   Fraction valid SMILES: 100.0   Score: 0.4714   Time elapsed: 47   Time left: 42.6
+  Agent     Prior     Target     Score     SMILES
+-15.13    -38.70    139.30      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CN(CCN3CCOCC3)C(CO)C2)C1
+-10.28    -32.05    -32.05      0.00      c12c(cccc1)C(N1CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC1)CC2c1ccc(F)cc1
+-19.94    -44.39    115.81      0.90      Cc1nn(C2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c2nc(N3CCN(C)CC3)ccc12
+-13.15    -21.09    -21.09      0.00      C1OCCN(C2c3c(cccc3)C(c3ccc(F)cc3)C2)C1
+-20.30    -45.80     96.60      0.80      o1c(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2CO)C)c(CO)cc1
+-29.18    -31.40      4.20      0.20      O=c1c2n(CCO)c(-c3ccc(N4CCN(C)CC4)cc3)nc2n(CC2CC2)c(=O)n1CC(C)C
+-10.04    -25.28    134.92      0.90      N1(C2CCN(CC)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-14.05    -44.32    115.88      0.90      c12c(cc(F)cc1)C(N1CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC1)C(F)C2
+-15.40    -34.48    143.52      1.00      C(C#N)(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CCN1CCN(C)CC1
+-29.91    -30.15    -12.35      0.10      C1C(=O)C(C)(C)C2CCC3(C)C4(C)CCC5(C(N6CCN(CC7CC7)CC6)=O)CCC(C)C(C)C5C4=CCC3C2(C)C1
+bioactivity   raw_bioactivity
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.4000000059604645   0.4000000059604645   
+0.800000011920929   0.800000011920929   
+0.20000000298023224   0.20000000298023224   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.10000000149011612   0.10000000149011612   
+
+15:51:16: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 53   Fraction valid SMILES: 99.2   Score: 0.4703   Time elapsed: 48   Time left: 41.8
+  Agent     Prior     Target     Score     SMILES
+ -7.78    -27.95    -27.95      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CC3OCCC3)CC2)C1
+-21.33    -22.93    -22.93      0.00      C12(C)N(C(C(Nc3ccc(OC)cc3OC)=O)CS1)C(=O)CC2
+-29.19    -28.39    -28.39      0.00      C(Nc1c(F)cccc1)(c1c(=O)oc2ccc(CN3CCOCC3)cc2c1)=O
+ -7.36    -24.86    153.14      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCO)CC1
+-14.37    -30.84    -30.84      0.00      OC(CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CN1CCN(CC)CC1
+-20.90    -35.60     71.20      0.60      C1N(c2ccc(CNC3c4cc(F)ccc4C(c4ccc(F)cc4)C3)cn2)CCN(CC)C1
+-25.64    -47.47    112.73      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(c2ccc3c(c2)CCCN3CC(O)CC(C)(C)C)O)CC1
+-20.77    -22.95    -22.95      0.00      N(N=C1CCC(C)n2c1ncc(C(O)=O)c2=O)C(N)=S
+-10.98    -47.28    112.92      0.90      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)c1ccc(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)cc1
+-24.39    -57.51     84.89      0.80      O(C)c1cccc(C2c3cc(OC)c(OC)cc3CCN2C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C)c1
+bioactivity   raw_bioactivity
+1.0   1.0   
+0.0   0.0   
+0.0   0.0   
+1.0   1.0   
+1.0   1.0   
+0.6000000238418579   0.6000000238418579   
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+
+15:51:18: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 54   Fraction valid SMILES: 97.6   Score: 0.4354   Time elapsed: 49   Time left: 41.0
+  Agent     Prior     Target     Score     SMILES
+-28.96    -27.79      7.81      0.20      O=C(N1N=C(c2ccc(Br)cc2)CC1c1c2ccccc2ccc1O)CCCC
+-26.60    -38.80     32.40      0.40      FC(F)(c1cc(CN2CCN(C3c4cc(Cl)ccc4C(c4ccc(F)cc4)C3)CC2)c(-c2ccccc2)nc1)F
+ -8.02    -25.33    -25.33      0.00      N1(Cc2ccc(F)cc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+ -8.45    -34.78    125.42      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3CC3)CC2c2cccc(F)c2)C1
+-18.91    -35.20    107.20      0.80      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(O)COc2cc(N3CCCC3)ccc2)CC1
+-15.73    -24.32    -24.32      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(c2ccccc2)C1
+-11.23    -33.02    127.18      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN3C(CCCC3)CC2)C1
+-26.00    -30.92      4.68      0.20      n12c(nc(-c3ccc(F)cc3)c1-c1ccc(F)cc1)CN(C(N1CC(C)N(C)CC1C)=O)CC2
+ -9.95    -57.65    -57.65      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(C3c4cc(C#N)ccc4C(c4ccc(F)cc4)C3)CC2)C(N)=O)C1
+-18.83    -50.88     73.72      0.70      c1(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2CCN2CCN(C)C2=O)C)ccc(F)cc1
+bioactivity   raw_bioactivity
+0.20000000298023224   0.20000000298023224   
+0.4000000059604645   0.4000000059604645   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.20000000298023224   0.20000000298023224   
+0.800000011920929   0.800000011920929   
+0.699999988079071   0.699999988079071   
+
+15:51:19: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 55   Fraction valid SMILES: 99.2   Score: 0.4836   Time elapsed: 50   Time left: 40.2
+  Agent     Prior     Target     Score     SMILES
+-27.58    -57.17     49.63      0.60      C1N(C(CN2CCC(CNC(c3c4c(ccc(F)c4)sc3)=O)CC2)C2CCCCC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-15.81    -77.27     65.13      0.80      Clc1c(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2C)C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C)ccc(F)c1
+ -7.92    -28.00    -28.00      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCC2)O)CC1
+-35.21    -40.69    -40.69      0.00      N(c1cc(OC(c2ccc(CN3CCN(C4CCCCC4)CC3)cc2)=O)cnc1)c1cc(F)c(F)cc1
+ -7.49    -32.96    -32.96      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCN(CC)CC2)O)CC1
+-15.12    -33.72     73.08      0.60      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(C(c3c(F)c[n+]([O-])cc3Cl)=O)CC2)C1
+-51.40    -58.10    -58.10      0.00      O(C12N(C(C)(C)C)C(N(CC(C)C)N(Cc3cc(Cl)c(Cl)cc3)C1O)N2)CC=C
+ -7.95    -35.47    -35.47      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCCN3CCN(C)CC3)CC2c2ccc(F)cc2)C1
+ -9.88    -36.72    123.48      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN3CCC2CC3)CC1
+-36.28    -52.58    -52.58      0.00      C1N(C2(CN(C)C(=O)OC)CCN(C3c4c(F)ccc5c4c(ccc5)C3O)CC2)CCN(C)C1
+bioactivity   raw_bioactivity
+0.6000000238418579   0.6000000238418579   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+0.0   0.0   
+1.0   1.0   
+0.6000000238418579   0.6000000238418579   
+0.0   0.0   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+
+15:51:20: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 56   Fraction valid SMILES: 99.2   Score: 0.4532   Time elapsed: 51   Time left: 39.4
+  Agent     Prior     Target     Score     SMILES
+-24.96    -45.64    114.56      0.90      c1cccc(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c1OCC(N)Cc1c(F)ccc(F)c1
+-31.95    -46.31      7.09      0.30      c1cccc2c(CN(C3CCN(C4c5c(cc(C)cc5)C(c5ccc(F)cc5)C4)CC3)CC3CCC(C)CC3)ccnc12
+-19.22    -37.90    122.30      0.90      c1c[nH]c2c(c1=NCCN1CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC1)CCN(CC)C2
+-20.28    -73.16     51.44      0.70      C1N(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCC)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1O
+-15.16    -32.59    109.81      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC2(NC(=O)N(CCN3CCCC3)C2=O)C1
+-15.23    -34.66    125.54      0.90      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(=NOCCN2CCNCC2)C)CC1
+-34.89    -34.10    -16.30      0.10      c1(SCC(O)=NO)nc2cc(C(F)(F)F)ccc2nc1COc1ccc(OC)cc1
+-26.79    -53.02     89.38      0.80      c12c(CNC(CN3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)O)cc(F)cc1C(C)(C)CO2
+-35.69    -36.94    -36.94      0.00      c12nnc(C3(C)CCc4c(cccc4)O3)n1c1c(c(C)c2)cc(OC)c(OC)c1
+-16.64    -45.23     97.17      0.80      c12c([N+]([O-])=O)cc(F)cc1C(N1CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC1)C(O)C2
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.30000001192092896   0.30000001192092896   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.10000000149011612   0.10000000149011612   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+
+15:51:21: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 57   Fraction valid SMILES: 98.4   Score: 0.5148   Time elapsed: 52   Time left: 38.6
+  Agent     Prior     Target     Score     SMILES
+-15.88    -45.13     61.67      0.60      C1N(c2ncc(NC(N3Cc4ccccc4C3)=O)cc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-11.70    -36.88    123.32      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCCN3CCN(CC)CC3)CC2c2ccccc2)C1
+-24.98    -28.51    -28.51      0.00      C1C(CNC(=O)C2N(C(Nc3ccc(Cl)cc3)=O)CCC2)CCN(C2CCCC2)C1
+-37.44    -40.32     -4.72      0.20      C1N2CCC(CC2)C12CN(CCN(CCCC)C(=O)C1C(c3ccc(F)cc3)C1)CC2
+-32.99    -70.08     54.52      0.70      O(C1CN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN1C(C(NC1CCN(C2CCN(CCC(C)N3CCOCC3)CC2)C1)=O)C)C
+-12.84    -31.81     92.79      0.70      C1N(C(=O)c2cc(F)ccc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-23.76    -34.69     54.31      0.50      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(NC(c2cc(C(F)(F)F)nnc2)=O)C1
+-16.43    -42.66    135.34      1.00      C1N(C2c3c(cc(F)cc3)C(N3CCN(C)CC3)C2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-20.99    -39.55    120.65      0.90      C1N(C23C(C2)CNC3=O)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-16.47    -56.74     85.66      0.80      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3cc(C#N)ccc3C(N3CCC3C(N)=O)C2)CC1
+bioactivity   raw_bioactivity
+0.6000000238418579   0.6000000238418579   
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+0.20000000298023224   0.20000000298023224   
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+0.5   0.5   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+
+15:51:22: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 58   Fraction valid SMILES: 99.2   Score: 0.4712   Time elapsed: 53   Time left: 37.7
+  Agent     Prior     Target     Score     SMILES
+ -6.52    -30.87    -30.87      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCO)C2=O)CC1
+-26.33    -60.67     46.13      0.60      N1(C2(CNC(N(C)C3CCN(C4CCCCC4)C3)=O)CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCCC1
+-21.81    -43.20     99.20      0.80      [N+](=O)(c1ccc(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)cc1NCCN1CCOCC1)[O-]
+ -7.79    -27.85    -27.85      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2OCCC2)CC1
+-16.75    -37.80     69.00      0.60      C1CN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC12CN(C(N(C)C1CCN(C3CCN(C)CC3)C1)=O)C2
+-43.10    -53.17    -53.17      0.00      c12cc(COCC3N(C(Nc4ccccc4C(OCC)=O)=O)CC3(F)F)ccc1C(NC(C1CC1)=O)CC2
+-18.70    -40.33     84.27      0.70      C1N(C2CN(C(c3ccccc3N3CCN(C)CC3)=O)CCC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-31.90    -56.48     50.32      0.60      C(CC)(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)C1CCN(C2CCN(C(=O)Nc3cc(OC)c(NS(C)(=O)=O)cc3)CC2)CC1
+-12.21    -42.10    118.10      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C(C)(C)C)CC2c2cccc(F)c2)CC1
+-31.20    -40.01    -40.01      0.00      n1c(N2CCNCC2)ncc2ncc(=O)n(C3CCN(C4CCc5c4cc(F)cc4)CC3)c12
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.6000000238418579   0.6000000238418579   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+0.6000000238418579   0.6000000238418579   
+0.0   0.0   
+0.699999988079071   0.699999988079071   
+0.6000000238418579   0.6000000238418579   
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+
+15:51:23: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 59   Fraction valid SMILES: 98.4   Score: 0.5250   Time elapsed: 54   Time left: 36.9
+  Agent     Prior     Target     Score     SMILES
+-11.10    -32.25    145.75      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(O)CN(CCO)CCO)CC1
+-29.09    -62.74     61.86      0.70      c1(C)c2ccc(N3CCN(C4CCN(C5c6cc(F)ccc6C(c6ccc(F)cc6)C5)CC4)CC3)cc2nc(N2CCN(C3CNC3)CC2)c1
+-13.44    -32.06    128.14      0.90      c1(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c2c(cc(F)cc2)on1
+-21.66    -53.96     88.44      0.80      c1(C2(CN3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)CN(CCNC(C)(C)C)CCO2)ccc(F)cc1
+-48.67    -62.01    -62.01      0.00      C(CNC1N(CC(OCC2OC(n3cc(C=C)c(=O)[nH]c3=O)C(F)C2O)COC2C(O)C(O)C(O)C(CO)O2)C(NC)=NC1)CCN1CCN(C)CC1
+-11.53    -39.75    120.45      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CCN(CC(N3CCN(C)CC3)=O)CC2)C1
+-19.94    -39.52     49.48      0.50      c1cc2cc(CN3CCN(C4c5cc(OC)c(OC)cc5C(c5ccc(F)cc5)C4)CC3)ccc2[nH]1
+-29.28    -65.60      5.60      0.40      C1N(C2CCN(C(CN(C3CN(C4CCCCC4)CC3)C(=O)Nc3ccc(OC)c(Cl)c3)C)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-13.54    -41.76    100.64      0.80      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(C(CC3CCN(C4CCOCC4)CC3)=O)CC2)CC1
+-12.80    -36.20    -36.20      0.00      c1(Cl)cc(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c(C(N)=O)cc1
+bioactivity   raw_bioactivity
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.5   0.5   
+0.4000000059604645   0.4000000059604645   
+0.800000011920929   0.800000011920929   
+0.5   0.5   
+
+15:51:23: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 60   Fraction valid SMILES: 97.7   Score: 0.4258   Time elapsed: 55   Time left: 36.1
+  Agent     Prior     Target     Score     SMILES
+-23.63    -27.12     -9.32      0.10      N1(C2Nc3c(Cl)cccc3C(=O)C2)CCOCC1
+-40.66    -40.28    -40.28      0.00      FC1(CN2CCN(C(=O)OC3CCN(c4ccncc4)CC3)CC2)CN(c2ccc(OC)nc2)CC1
+-27.34    -51.83     72.77      0.70      c1cc(C(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN2CCN(C3CCN(C(C(F)F)=O)CC3)CC2)ccc1F
+-17.95    -22.54    -22.54      0.00      C1N(C(Nc2ccc(C(N3CCN(C4CCCCC4)CC3)=O)cc2)=O)Cc2cc(F)ccc21
+ -7.89    -24.86    -24.86      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCCCC2)O)C1
+-32.06    -55.15    105.05      0.90      O1CC(N2CCC(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)CC2)C12CCN(CCCO)CC2
+-30.30    -40.53     -4.93      0.20      C1N(C2CCN(C(CC3CCCC3)=O)CC2)CC(NCCN2CCN(CCCC)CC2)C1
+-32.68    -77.98     28.82      0.60      CN(C1c2cc(Br)ccc2C(c2ccc(F)cc2)C1)CC(NC(CC(C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)C)C)=O)(C)C
+-44.40    -44.52    -26.72      0.10      n1cc2c(-c3cc[nH]c(=Nc4ccc(C#N)cc4)n3)c(CCc3cccc(C#N)c3)ccc2[nH]1
+-15.31    -33.65    126.55      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(N2CCCC2C)(CO)C1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.699999988079071   0.699999988079071   
+0.0   0.0   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.20000000298023224   0.20000000298023224   
+0.6000000238418579   0.6000000238418579   
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+
+15:51:24: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 61   Fraction valid SMILES: 97.7   Score: 0.4680   Time elapsed: 56   Time left: 35.2
+  Agent     Prior     Target     Score     SMILES
+-27.61    -33.34    -15.54      0.10      C12(N3CCCC3)CC(NC(=O)N3c4c(cccc4)C(c4ccccc4)C3)C(CC1)CC2
+-30.26    -27.57      8.03      0.20      c1(CNCc2ccc3[nH]c(=N)[nH]c(=N)c3c2)ccc(-c2ccc(C(F)(F)F)cc2)cc1
+-25.83    -47.27     23.93      0.40      C1N(C2c3c(cc(F)cc3)C(c3ccc(F)cc3)C2)CCN(C2CN(C4CCN(C(=O)CN)CC4)CC2)C1
+-23.81    -26.97    -26.97      0.00      c12c(=NC(CN3CCN(CCO)CC3)=O)c3c([nH]c1ccc(C)c2)CCCCC3
+-30.18    -32.65    -32.65      0.00      CC12CC3(CN4CCN(C(OC(C)(C)C)=O)CC4C1=O)CC(C2)C3
+ -9.35    -29.26     95.34      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC(N2CCN(CCOC)CC2)C1
+-18.47    -38.10     15.30      0.30      C1(NC2c3cc(Cl)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCO)CC2)CC1
+-13.52    -32.61    109.79      0.80      C1CN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN1CC1CN(C2CC2)CC1c1ccccc1
+-27.18    -33.12    -15.32      0.10      C1CN2CCN(Cc3ccc(C(F)(F)F)cc3)C(C1NCc1ccccc1OC)C2
+-23.62    -32.15      3.45      0.20      N1(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCC(CCNC(Nc2ccc(C(F)(F)F)cc2)=O)CC1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+0.4000000059604645   0.4000000059604645   
+0.0   0.0   
+0.0   0.0   
+0.699999988079071   0.699999988079071   
+0.30000001192092896   0.30000001192092896   
+0.800000011920929   0.800000011920929   
+0.10000000149011612   0.10000000149011612   
+0.20000000298023224   0.20000000298023224   
+
+15:51:25: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 62   Fraction valid SMILES: 98.4   Score: 0.4346   Time elapsed: 57   Time left: 34.4
+  Agent     Prior     Target     Score     SMILES
+-19.75    -30.48    111.92      0.80      c1n(C)c(C(=O)N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)nc1
+-20.38    -29.80     41.40      0.40      c1c(S(N2CCN(C3c4cc(Cl)ccc4C(c4ccc(F)cc4)C3)CC2)(=O)=O)ccc(NC(=O)C)c1
+ -7.07    -30.87    -30.87      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCO)C2=O)CC1
+-12.35    -36.26    -36.26      0.00      C1N(CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(CCN2CCNCC2)C1
+-10.35    -28.41    -28.41      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2C3CC4CC(C3)CC2C4)C1
+-22.01    -41.53     47.47      0.50      N1(C2c3c(cc(CCCOC)cc3)C(c3ccc(F)cc3)C2)CCN(CC(O)CN2CCN(CCO)CC2)CC1
+-40.75    -44.63    -44.63      0.00      O1C2(CN1)C(NC(c1ccc(-n3nccc3)cc1)=O)CN(CCCOC)C2
+-38.22    -82.19      6.81      0.50      C1N(Cc2cn(-c3c(CN4CCN(C5c6cc(F)ccc6C(Cc6cccc(F)c6)C5)CC4)ccc(F)c3)nn2)CCN(C2c3c(cc(F)cc3)C(c3ccc(F)cc3)C2)C1
+ -6.56    -34.97    143.03      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C)CCN2)CC1
+-12.45    -45.40    114.80      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C(C)(C)C(N3CCN(C)CC3)=O)CC2)CC1
+bioactivity   raw_bioactivity
+0.800000011920929   0.800000011920929   
+0.4000000059604645   0.4000000059604645   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+1.0   1.0   
+0.5   0.5   
+0.0   0.0   
+0.5   0.5   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+
+15:51:26: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 63   Fraction valid SMILES: 99.2   Score: 0.5472   Time elapsed: 58   Time left: 33.5
+  Agent     Prior     Target     Score     SMILES
+-31.62    -58.74    -40.94      0.10      C(CC12CCN(CC=C)C(C1C)Cc1c2cc(O)cc1)(N1CCN(C2c3cc(C#N)ccc3C(C)c3c2cccc3)CC1)=O
+-28.96    -26.74    -26.74      0.00      c1(C=C2CCc3ccccc3C2=O)nc2nc(C)ccc2s1
+-32.37    -79.03     81.17      0.90      CC1(C)C2C(CN3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)OOC1(C(N1CCN(C3c4cc(F)ccc4C(C)(C)C3O)CC1)CC)C2
+-22.81    -22.61     12.99      0.20      c12c(O)ccc3c1C14C(O2)C2(OC)CCC1(C(C2)N(CC1CC1)CC4)C3
+ -9.30    -40.74    119.46      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C(C)C(N(C)C)=O)CC2)CC1
+ -7.24    -28.08    -28.08      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CN2CCNCC2)C1
+-29.81    -77.83     46.77      0.70      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)(C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CN(C(C3CCN(C4CCN(C)CC4)CC3)=O)CC2)C1)=O
+-26.45    -29.09    -29.09      0.00      CNC1=NCCN1CC1CCN(c2ccc(OC)cc2)CC1
+-14.18    -35.85    124.35      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C3CC3)C2)CC1
+ -9.44    -26.45    -26.45      0.00      c1cc(F)ccc1N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.20000000298023224   0.20000000298023224   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+
+15:51:27: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 64   Fraction valid SMILES: 100.0   Score: 0.4690   Time elapsed: 59   Time left: 32.7
+  Agent     Prior     Target     Score     SMILES
+-39.97    -45.49    -45.49      0.00      CC(C)(C1N2C(c3cc(F)c(F)cc3)(C3Cc4c(OC)cccc4C2N(C)C3)C1)O
+-11.96    -35.73     35.47      0.40      C1N(C2c3c(F)cccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCO)CC2)CC1
+-21.13    -42.14    -24.34      0.10      c1(F)c(C2N(C3CCC(N4CCN(CCO)CC4)CC3)C(N)=NC2=O)ccc(F)c1
+-18.71    -25.77     27.63      0.30      N1(C2c3ccc(F)cc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(C)CC2)=O)CC1
+-35.44    -55.46    -55.46      0.00      C1NCCN(C2c3c(F)ccc4ccc(=O)n4c3C3N(C(C)C)CCC32C)CC1
+-30.87    -41.37    -23.57      0.10      O1C2(C(=O)Nc3c2cc(C#N)cc3)C(N2CCN(CCN(CC)CC)CC2)C1
+-15.80    -48.59     76.01      0.70      C1N(C2c3cc(C4CC4)ccc3Cc3ccccc32)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-31.01    -32.35    -32.35      0.00      CC12CN(C(c3ccc4ccc(OC)cc4c3)=O)CCN1CCC2
+-11.81    -29.86    112.54      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCOC(c2ccccc2)c2ccccc2)CC1
+-14.89    -39.52    102.88      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(O)COc2cc(F)cc3c2C(O)CCN3)C1
+bioactivity   raw_bioactivity
+0.0   0.0   
+0.4000000059604645   0.4000000059604645   
+0.10000000149011612   0.10000000149011612   
+0.30000001192092896   0.30000001192092896   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+0.699999988079071   0.699999988079071   
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+
+15:51:28: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 65   Fraction valid SMILES: 99.2   Score: 0.5039   Time elapsed: 60   Time left: 31.8
+  Agent     Prior     Target     Score     SMILES
+-13.07    -34.41    143.59      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCO)C(C)C2)C1
+-11.43    -27.82    -27.82      0.00      N1(C2c3c(cc(F)cc3)C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCO)CC2)CC1
+-18.05    -37.49     51.51      0.50      C1(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C(c2cccc(C(C)(C)C)c2)=O)CC1
+-11.64    -34.04    126.16      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCC(N3CCCCC3)CC2)CC1
+-30.28    -33.12    -33.12      0.00      c1(-c2cc(F)c(F)cc2)nc2c([nH]1)C(=O)NCCN2CCN(C)C
+-41.64    -79.48     45.12      0.70      O1C2C(=NN1c1ccc(C#N)c(C(F)(F)F)c1)C(CC)c1cccc(F)c1C2C1CCN(C2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CC1
+-24.95    -56.49    -20.89      0.20      c1cc2nc(N3CCN(C4c5c(cc(C(F)(F)F)cc5)C(c5ccc(F)cc5)C4)CC3)cn2cc1C(N1CCN(C2CC2)CC1)=O
+-11.28    -51.47    -51.47      0.00      N1(CC(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN2CCN(C)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-25.52    -50.05     74.55      0.70      C1CC2(CN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CN1C1CCN(C(=O)c2c3c(sc2N)CCCC3)CC1
+ -6.99    -29.80    -29.80      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(N2CCN(CCO)CC2)C1
+bioactivity   raw_bioactivity
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.5   0.5   
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+0.699999988079071   0.699999988079071   
+0.20000000298023224   0.20000000298023224   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+
+15:51:29: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 66   Fraction valid SMILES: 96.9   Score: 0.5523   Time elapsed: 61   Time left: 31.0
+  Agent     Prior     Target     Score     SMILES
+-19.26    -47.19    113.01      0.90      o1nc(-c2ccc(F)cc2)c(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c1CN1CCN(CC)CC1
+-12.56    -36.36    141.64      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2C3CCN(C3)C2)CC1
+-25.07    -46.46    113.74      0.90      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CCC(NS(C3CN(C)C4C3CCCC4)(=O)=O)CC2)CC1
+-19.12    -48.03     94.37      0.80      c12c(cc(OC)c(OC)c1)CN(C(C1CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC1)CCC)CC2
+-10.45    -47.57     94.83      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN3CCC(N4CCOCC4)CC3)CC2c2ccccc2)CC1
+-16.47    -39.30    103.10      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCOC2C(CNC3CCCC3)CCCC2)C1
+-26.54    -69.29    -69.29      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2c3cc(C(NCCO)=O)ccc3CC2c2ccn(C)cc2)CC1
+-24.34    -73.44     68.96      0.80      C1N(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CC)CCN(C2c3cc(C(C(F)(F)F)(C)C)ccc3CCC2N2CCC2)C1
+ -5.02    -31.97    -31.97      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCO)CC2)CC1
+-29.95    -49.52     75.08      0.70      C1(c2cc(CN3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)ccn2)CC(CCC)N(C)CC1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+
+15:51:31: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 67   Fraction valid SMILES: 97.7   Score: 0.5852   Time elapsed: 62   Time left: 30.1
+  Agent     Prior     Target     Score     SMILES
+ -7.81    -39.98    138.02      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCCN3CCN(C)CC3)CC2c2ccccc2)CC1
+-13.12    -25.73    152.27      1.00      CC1CCN(CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CC1
+-26.78    -52.65     71.95      0.70      C1(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CNC(C)CN1CC(N1CN(CCCCCCN)CS1(=O)=O)=O
+-11.32    -48.19     94.21      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3N(C(C)=O)CCC3)CC2c2cccc(F)c2)CC1
+-12.38    -34.36    143.64      1.00      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)N1CCN(C2COC2)CC1
+-33.32    -64.54     60.06      0.70      OC1C(NC2CCN(C(C(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C)=O)CC2)c2cc(CN3CCNCC3)ccc2CC1
+-11.79    -36.67    141.33      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2NCCOC2)CC1
+-21.72    -40.98     48.02      0.50      c1(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)ncc(C(NCc2cn(C)cn2)=O)cc1
+-31.97    -56.22    -38.42      0.10      c1c(C(NN2CCOCC2)=O)c(NC(N2CCN(C3c4cc(C#N)ccc4C(C(F)(F)F)C3)CC2)=O)c(Cl)cc1C(F)(F)F
+ -6.83    -36.65    141.35      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCN(CCO)CC2)(C)C)CC1
+bioactivity   raw_bioactivity
+1.0   1.0   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.5   0.5   
+0.10000000149011612   0.10000000149011612   
+1.0   1.0   
+
+15:51:32: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 68   Fraction valid SMILES: 98.4   Score: 0.6112   Time elapsed: 63   Time left: 29.2
+  Agent     Prior     Target     Score     SMILES
+ -9.40    -34.78    125.42      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CCCO)C2=O)CC1
+-19.79    -50.76    109.44      0.90      c1cc(NC(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCNC2CCOCC2)ccc1
+-15.27    -47.04    113.16      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C(C3CCCCN3C)(C)C)CC2)CC1
+-40.57    -65.29    -65.29      0.00      CN(C)c1ccc(-c2cc3nc(C4=NOC5(C4)CN(C4c6cc(F)ccc6C(N4CCN(C)CC5)=O)CC3)o2)cc1
+-21.83    -36.98     16.42      0.30      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(CC(N2CCC(N3CCC(C)CC3)CC2)C2CCCCC2)C1
+-11.12    -52.55     89.85      0.80      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CNC(C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)C)=O
+-12.62    -37.15    -37.15      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CCN(CC(N3CCOCC3)=O)CC2)CC1
+ -8.50    -28.48    113.92      0.80      C1N(c2ccccc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+ -9.66    -41.14    136.86      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN3CCN(C)CC3)CC2c2ccccc2)CC1
+-13.96    -33.59    108.81      0.80      c1c(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)nc(CO)nc1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+0.30000001192092896   0.30000001192092896   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+
+15:51:32: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 69   Fraction valid SMILES: 99.2   Score: 0.5008   Time elapsed: 64   Time left: 28.3
+  Agent     Prior     Target     Score     SMILES
+-19.22    -53.37     71.23      0.70      Clc1c(F)cc2c(c1)C(N1CCN(C3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)CC1)C2
+-15.53    -53.43     71.17      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(C(C3CCCN(CCN4CCN(C)CC4)CC3)=O)CC2)CC1
+-20.06    -53.78     70.82      0.70      O=C1N2CCN(C3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)CC2CCN1C1c2ccccc2C(C)(C)CC1
+-28.23    -39.01     14.39      0.30      N(N)CCCN(CC12CC3CC(C1)CC(C2)C3)C1c2ccccc2C(c2ccc(F)cc2)C1
+-15.82    -56.83     85.57      0.80      C(=O)(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)N1CCN(C2c3c(cc(CCN4CCN(CC)CC4)cc3)CC2)CC1
+-27.39    -40.16    -40.16      0.00      C1N(CC(N2C(c3cc(F)c(F)cc3)C(c3cccc(Cl)c3)CC(CC(NCCN3CCN(C)CC3)=O)C2=O)C2CC2)CCN(C)C1
+-15.59    -39.14    103.26      0.80      C1c2ccc(F)cc2CN1C1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-21.81    -50.37    127.63      1.00      O1C2C(C(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C[S+]([O-])C2)CN(CC2CC2)CC1
+-16.87    -61.96     80.44      0.80      CC(C)(C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CNC(N1CCN(C2c3cc(C#N)ccc3CC2O)CC1)=O)C
+-12.09    -44.76     97.64      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(C3CCN(C(C(F)(F)F)=O)CC3)CC2)CC1
+bioactivity   raw_bioactivity
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+0.30000001192092896   0.30000001192092896   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+
+15:51:33: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 70   Fraction valid SMILES: 99.2   Score: 0.5333   Time elapsed: 65   Time left: 27.5
+  Agent     Prior     Target     Score     SMILES
+-55.27    -60.27    -60.27      0.00      O1C2N3C4Cc5ccc(N)c(c51)C4C1(N2CC3=CCOC(=O)C)CCC1
+-14.11    -53.39    106.81      0.90      C1(N)(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-15.42    -43.19    117.01      0.90      C1N(CCN2CCC(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)CC2)CCN(C)CC1
+-13.32    -54.03     70.57      0.70      N1(C(=O)CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-17.37    -47.30    112.90      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(S(CC2CCN(C3CCN(CC)CC3)CC2)(=O)=O)CC1
+-16.74    -42.32     82.28      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(S(=O)(c3ccccc3Cl)=O)CC2)CC1
+-25.39    -56.44     68.16      0.70      C1N(Cc2nc(C(NC3CCN(C4CCN(CC)CC4)CC3)=O)cs2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+ -7.70    -40.83    119.37      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN3CCCC3)CC2c2cccc(F)c2)CC1
+-13.06    -46.57     78.03      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2C(OC)CN(CC3CCN(C)CC3)CC2)CC1
+-11.32    -51.96     90.44      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(C(=O)N2CCN(C3c4cc(C#N)ccc4C(N4CCN(C)CC4)C3)CC2)C1
+bioactivity   raw_bioactivity
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.800000011920929   0.800000011920929   
+
+15:51:35: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 71   Fraction valid SMILES: 98.4   Score: 0.5183   Time elapsed: 66   Time left: 26.6
+  Agent     Prior     Target     Score     SMILES
+-18.33    -50.35    127.65      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN(C2CNCC2)C)O)CC1
+ -6.32    -33.36    144.64      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CC3CC3)CC2)CC1
+-17.12    -59.08    118.92      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CN2CCN(C3c4c(c(F)ccc4)C(N4CCN(C)CC4)CC3)CC2)C1
+-24.07    -23.55     -5.75      0.10      c1cc(C(Nc2ccc(F)cc2)O)cn(-c2cc(C)c(C)cc2)c1=O
+-31.84    -36.92    -19.12      0.10      C12C(CN3CCN(CCO)CC3)C(CC1)CN(S(c1ccccc1C(F)(F)F)(=O)=O)C2
+-11.56    -41.61    136.39      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCN(CCC)CC2)(O)C(C)C)CC1
+-24.64    -26.68     -8.88      0.10      C(Nc1cc(OC)cc(OC)c1)(COC(=O)CN1C(=O)NC2(CCC(C)CC2)C1=O)=O
+-26.31    -61.58    116.42      1.00      C1(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CN(CCN2CCN(CC(C)CCN3CCOCC3)CC2)CC1
+-15.02    -42.02     82.58      0.70      c1(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c2c(C)noc2ccn1
+-22.18    -44.58    -44.58      0.00      C1N(C2CN(C3c4c(cc(CCN5CCN(C)CC5)cc4)CC3)CC2)CCN(Cc2c(F)cccc2F)C1
+bioactivity   raw_bioactivity
+1.0   1.0   
+1.0   1.0   
+1.0   1.0   
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+1.0   1.0   
+0.10000000149011612   0.10000000149011612   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.0   0.0   
+
+15:51:36: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 72   Fraction valid SMILES: 97.7   Score: 0.5328   Time elapsed: 67   Time left: 25.7
+  Agent     Prior     Target     Score     SMILES
+-19.84    -47.02     41.98      0.50      C1N(C2Cc3c(cc(CN(C4CCN(C)CC4)C)cc3)C(c3ccc(F)cc3)C2)CCN(CC2CC2)CC1
+-21.14    -56.07    104.13      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CN(CCN3CCCC3)CC2)C2COCC21
+-23.91    -59.30    100.90      0.90      C1N(C2CN(CC3OCCOC3)CC2Cc2ccc(OC)cc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-20.61    -39.87     84.73      0.70      c1ccc(C2N(CCCN3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C(=O)NC2)cc1OC
+ -9.02    -45.48    114.72      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN3CCC(N4CCOCC4)CC3)CC2)CC1
+-12.88    -55.98    104.22      0.90      C1N(C2CN(C3c4cc(C(F)(F)F)ccc4C(c4ccc(F)cc4)C3)CC2C2CC2)CCN(CC2CN(C)CCN2)C1
+-16.09    -42.84     81.76      0.70      c1(F)ccc(CNC2CN(C3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)CC2)cc1
+-12.99    -45.45    114.75      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN3CCC(NC(C)=O)CC3)CC2CC)CC1
+-17.83    -41.08     30.12      0.40      C1N(C2c3c(cc(Cl)cc3)C(c3ccc(F)cc3)C2)CCN(CC2C(CN3CCN(CC)CC3)CCC2)C1
+-16.60    -48.26     76.34      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2C(COCc3ccc(CO)o3)CCC2)CC1
+bioactivity   raw_bioactivity
+0.5   0.5   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.4000000059604645   0.4000000059604645   
+0.699999988079071   0.699999988079071   
+
+15:51:37: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 73   Fraction valid SMILES: 98.4   Score: 0.5719   Time elapsed: 68   Time left: 24.8
+  Agent     Prior     Target     Score     SMILES
+-22.07    -55.01     16.19      0.40      C1N(C2c3c(F)ccc(F)c3C(c3ccc(F)cc3)C2)CCN(CC2COC(CCN3CCC(O)CC3)CC2)CC1
+ -9.49    -49.44    110.76      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(CCN3CCCNC3=O)CC2)C(C)C)CC1
+-14.93    -42.02    -42.02      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCOCCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CC1
+-10.63    -57.54    102.66      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3CCC(N4CCN(C)CC4)CC3)CC2c2cccc(F)c2)CC1
+ -8.99    -29.32    -29.32      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC(N2CCN(CCO)CC2)CC1
+-30.09    -39.97     -4.37      0.20      c1(N=c2nc(N3CC(N)CC(N)C3)[nH]c(N3CC(N)CC(N)C3)n2)cc(NC(c2cc(NC(c3cc(F)cc(N4CCN(C)CC4)c3)=O)ccc2C)=O)cn2ncnc12
+-12.93    -41.89    118.31      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2NC(NCc3ccccc3)=NC2)CC1
+-17.74    -56.62    103.58      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(C(CN3CCN(C)CC3)C)CC2)c2ccc(F)cc2)CC1
+-26.44    -53.04     71.56      0.70      c1ccc2c(c1)C(N1CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC1)CC(CNS(c1c(F)cccc1)(=O)=O)CO2
+-12.85    -43.98    116.22      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(CCO)CC2)C2CCCCC2)CC1
+bioactivity   raw_bioactivity
+0.4000000059604645   0.4000000059604645   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.20000000298023224   0.20000000298023224   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+
+15:51:38: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 74   Fraction valid SMILES: 98.4   Score: 0.5622   Time elapsed: 69   Time left: 23.9
+  Agent     Prior     Target     Score     SMILES
+ -7.97    -30.38    -30.38      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CN2CC(N3CCN(C)CC3)C2)C1
+-14.06    -62.34     80.06      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CNC(C(N3CCN(C4c5cc(F)ccc5C(C)(C)CC4)CC3)=O)CC2)CC1
+-12.91    -47.09    113.11      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(Cc3c(F)cccc3)CC2)C(O)=O)CC1
+-22.80    -54.60     87.80      0.80      Cc1ccc(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c2c1[nH]c(C(N1CCN(CCN3CCCC3)CC1)=O)c2
+-18.19    -43.33     81.27      0.70      s1c(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)nnc1N1C(C)CN(C2CCN(C)CC2)CC1
+ -8.01    -37.70    140.30      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2COC(C)(C(F)(F)F)C2)CC1
+-14.88    -41.52    100.88      0.80      C1CN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC1NC(CN1CCN(CC2CC2)CC1)=O
+-19.46    -35.43     89.17      0.70      C(CNC(NCC1OCCC1)=O)N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+ -9.16    -20.37    -20.37      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCO)CC1
+ -8.70    -27.94    -27.94      0.00      C1N(C23CC4CC(C2)CC(C4)C3)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+bioactivity   raw_bioactivity
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+1.0   1.0   
+
+15:51:39: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 75   Fraction valid SMILES: 99.2   Score: 0.5360   Time elapsed: 70   Time left: 23.0
+  Agent     Prior     Target     Score     SMILES
+ -7.74    -29.66    -29.66      0.00      C1N(C2COC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-15.54    -41.49    136.51      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CCCN2CCN(CCCN)C)CC1
+-11.28    -43.50    116.70      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(C3CCN(C)CC3)CC2)CC1
+ -9.84    -26.20    -26.20      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(N2CCN(C)C2=O)CC1
+-10.62    -26.75    133.45      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(N2CCC(O)CC2)C1
+-13.08    -34.30    125.90      0.90      C1CN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCC(N3CCN(C)CC3)CC2)C1
+-10.37    -36.04    -36.04      0.00      c1(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)cn(CCN2CCN(C)CC2)nn1
+-21.39    -53.10     53.70      0.60      O1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1N1CCN(C2CCN(C(=O)CCN)CC2)CC1
+-15.59    -45.74     78.86      0.70      OC1C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C(N2CCN(C3CCCCC3)CC2)=O)C1
+-30.14    -50.10     74.50      0.70      O=C(N1CCN(c2ccc(C#N)cc2F)CC1)Nc1ccccc1CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+bioactivity   raw_bioactivity
+1.0   1.0   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.6000000238418579   0.6000000238418579   
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+
+15:51:40: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 76   Fraction valid SMILES: 97.6   Score: 0.6110   Time elapsed: 71   Time left: 22.1
+  Agent     Prior     Target     Score     SMILES
+-23.98    -45.12     97.28      0.80      N1(S(=O)(=O)N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCC(CN2CCN(C)C(C)C2)CC1
+ -8.94    -39.23    120.97      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2CCN(CC3CCN(C)CC3)CC2)CC1
+-12.22    -36.21    123.99      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CCN2C(=O)N(CCN3CCCCC3)CC2)CC1
+ -7.84    -28.92    -28.92      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(c2ccc(F)cc2)CC1
+-22.93    -38.38    121.82      0.90      CC(N1CC(S(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)(=O)=O)CC1)C
+-28.49    -60.75     99.45      0.90      CC(CCn1ccc(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(CCN2CCOCC2)C(C)=O)n1)C
+-22.15    -45.78     96.62      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CN(Cc3cn(CCOCC)cn3)CCC2)CC1
+-45.35    -50.92    -33.12      0.10      C(F)(F)(F)c1cc(NN=C(C(c2ccc(OC)cc2)=O)C(=O)N(C2C(N3CCOCC3)CCCC2)C)ccc1[N+]([O-])=O
+-12.16    -42.70    135.30      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN(CC)CC)CCC2O)CC1
+-16.86    -49.20    111.00      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N(C2CCN(C)CC2)CCCO)=O)CC1
+bioactivity   raw_bioactivity
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.10000000149011612   0.10000000149011612   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+
+15:51:41: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 77   Fraction valid SMILES: 99.2   Score: 0.5477   Time elapsed: 72   Time left: 21.2
+  Agent     Prior     Target     Score     SMILES
+-33.28    -57.09     85.31      0.80      C(CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)C1C(c2ccc(F)cc2)CN(C(CCOC)CN2CCCC2)C1
+-14.97    -46.61     95.79      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2NC(N=c3[nH]c4c(cc(OC)cc4)o3)CN2)CC1
+-14.44    -33.84     90.76      0.70      C1(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C(c2c(F)c(C)ccc2)=O)CC1
+-25.83    -56.97     49.83      0.60      c1(CO)ccc(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c(C(N2CCN(C3CCN(C(CN(C)C)C)CC3)CC2)=O)c1
+ -9.54    -27.83    132.37      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC(CN2CCCC2)CC1
+-24.08    -52.74     36.26      0.50      N1(S(=O)(c2cc(NC(c3sccc3)=O)ccc2OC)=O)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-14.04    -44.72    115.48      0.90      O1C(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CN(C2CCN(CC3CCCN(C)C3)CC2)CC1
+-30.09    -63.91     96.29      0.90      CC1(C)CC1C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)C(N(C1CC(C2COCC2)C1)O)=O
+-45.40    -60.43    -24.83      0.20      N1(C23CC(c4ccccc4)C(C(N(Cc4ncccc4C)C4CC4)C2)CS3)CCN(CC2CCCCCC2)CC1
+-16.57    -29.31    130.89      0.90      C1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1NC1COC1
+bioactivity   raw_bioactivity
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.699999988079071   0.699999988079071   
+0.6000000238418579   0.6000000238418579   
+0.8999999761581421   0.8999999761581421   
+0.5   0.5   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.20000000298023224   0.20000000298023224   
+0.8999999761581421   0.8999999761581421   
+
+15:51:42: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 78   Fraction valid SMILES: 99.2   Score: 0.6219   Time elapsed: 73   Time left: 20.3
+  Agent     Prior     Target     Score     SMILES
+-10.78    -51.07    109.13      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2N(C3CCN(CCN4CCN(C)CC4)CC3)C(=O)CC2)CC1
+-19.98    -49.83     56.97      0.60      c1(Cl)cc(Cl)c(C2N(C3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C(NC)=NC2)cc1
+-10.07    -27.95     96.65      0.70      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CCNC(C=Cc1ccc(F)cc1)=O
+-20.73    -47.19     41.81      0.50      c1cnc(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c(CNC(CC2NCCC2)=O)c1
+-25.08    -29.88    -29.88      0.00      C1(CN2CCN(S(=O)(N3CCC(C)CC3)=O)CC2)N(C)CCC1
+-21.03    -36.49     52.51      0.50      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C2CC(N(C(c3ccsc3)=O)C2)CC1
+-15.98    -49.06     57.74      0.60      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN3CCC(CNC(CNC(=O)C)=O)CC3)CC2)CC1
+-10.20    -46.56    131.44      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CC(N3CCN(CCO)CC3)CC2)CC1
+-28.85    -66.64     57.96      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2n3c4c(ccc(NC(C)=O)c4)cc3C(N3CCN(C)CC3)CC2)CC1
+ -7.42    -36.04    106.36      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CN2CCNC2=O)CC1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.6000000238418579   0.6000000238418579   
+0.699999988079071   0.699999988079071   
+0.5   0.5   
+0.0   0.0   
+0.5   0.5   
+0.6000000238418579   0.6000000238418579   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.800000011920929   0.800000011920929   
+
+15:51:43: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 79   Fraction valid SMILES: 99.2   Score: 0.5294   Time elapsed: 74   Time left: 19.4
+  Agent     Prior     Target     Score     SMILES
+-48.11    -65.76    -47.96      0.10      CN1C2C3(OC)C(Cc4ccc(OC)cc42)C(Cc2ccc(OC)c(OCCN4CCN(CC)CC4)c23)C=C1N1CCN(Cc2ccccc2OC)CC1
+-18.03    -29.75    -11.95      0.10      C1N(C2CCN(Cc3oc(C)c(C)n3)CC2)CCN(CC2CC2)CC1
+-16.16    -48.22    111.98      0.90      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3N(C4CCN(C)CC4)CC3)CC2c2ccccc2)CC1
+-15.11    -52.32     90.08      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3CCC(NC(C=C(C)C)=O)CC3)CC2c2cccc(F)c2)CC1
+ -9.71    -29.25    -29.25      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(O)COc2cc(N(C)C)ccn2)CC1
+-28.37    -59.85     46.95      0.60      O(C)c1c(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c2c(o1)cc(C#N)c(C(N1CCN(C3COC3)CC1)=O)c2
+-14.21    -43.50     81.10      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C2CC(NC3CCN(CCN4CCCCC4)CC3)CC2C1
+ -7.62    -40.93    -40.93      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN(CC)CC)CC2)CC1
+-17.53    -36.65    -36.65      0.00      N1(C2C(O)CN(CCC)CC2)CCN(C2c3cc(C(F)(F)F)ccc3C(c3ccc(F)cc3)C2)CC1
+-18.03    -39.08    103.32      0.80      C1N(C2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCC(N(CC2CCCC2)C(C)=O)C1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.6000000238418579   0.6000000238418579   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+
+15:51:44: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 80   Fraction valid SMILES: 100.0   Score: 0.5617   Time elapsed: 75   Time left: 18.5
+  Agent     Prior     Target     Score     SMILES
+-11.17    -39.76    -39.76      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C(C(O)=O)C(C)C)CC2CC)CC1
+-13.65    -49.46    128.54      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2N(CCN3CCCN(CCO)CC3)CCCC2)CC1
+ -9.44    -34.13     90.47      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(c2cc(NC(C)=O)ccc2)CC1
+-25.75    -63.06     61.54      0.70      C(N1CCN(C2c3cc(C(C)(C)C)ccc3C(c3ccc(F)cc3)C2)CC1)(C1N(C2c3cc(C(F)(F)F)ccc3C(c3ccc(F)cc3)C2)CC2N(C1)CCC2)=O
+-45.81    -57.57    -57.57      0.00      C1NCCC(c2ccc(C3C(c4ccc(F)cc4)(C#N)C(CC(C)(C)C)NC3CN3C(C)CN(CC4CC4)CC3)cc2OC)C1
+-11.51    -46.17    114.03      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC(N2CCN(CCN3CCCN(CCCN)CC3)CC2)CC1
+ -8.11    -38.19    -38.19      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN3C(C2)CCCC3)CC1
+-16.89    -37.95     86.65      0.70      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC(N2CCN(CCCCN3CCNCC3)CC2)C1
+-11.98    -58.27     66.33      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(CC3CCOCC3)CC2)C(N2CCN(C3CCCCC3)CC2)=O)CC1
+ -8.29    -35.01    -35.01      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN3CCCC3)CC2c2cccc(F)c2)CC1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+
+15:51:45: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 81   Fraction valid SMILES: 99.2   Score: 0.5378   Time elapsed: 76   Time left: 17.6
+  Agent     Prior     Target     Score     SMILES
+-20.81    -63.41     96.79      0.90      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CNS(C1CCN(CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CC1)(=O)=O
+ -5.80    -44.64    -44.64      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCCN3CCN(C)CC3)CC2c2cccc(F)c2)CC1
+-16.09    -49.73     92.67      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2C(CNCCCCNCC3N(CC)CCC3)CNC2)CC1
+-14.34    -44.43    115.77      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCC(CN3CC(C(O)=O)CC3)CC2)O)CC1
+-19.15    -50.80    109.40      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2NC(N3CCC(C(O)=O)CC3)C2=O)CC1
+-10.45    -54.57    123.43      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN3CCCN(CC4CCCC4)CC3)CC2)CC1
+-14.85    -42.19    135.81      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN3CC3CC2)CC1
+ -8.10    -33.87    -33.87      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CCCN2CCC)CC1
+-13.51    -47.31    112.89      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2N(CCN3CCN(CCCN4CCCCC4)CC3)C(=O)CC2)CC1
+ -8.52    -41.56    -41.56      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2OCCN(CC)C2)CC1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+1.0   1.0   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+
+15:51:46: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 82   Fraction valid SMILES: 99.2   Score: 0.5945   Time elapsed: 77   Time left: 16.7
+  Agent     Prior     Target     Score     SMILES
+-13.58    -34.87    107.53      0.80      C1N(CCCN2CCN(C3CCCCC3)CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-22.57    -55.45    104.75      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(CCN3CCC3=NO)CC2)CC1
+-22.41    -29.21    -11.41      0.10      O=C1NC(=O)NC(=O)C12C1N(CC(C3CC3)C1)C(c1ccc(F)cc1)CC2c1ccc(F)cc1
+ -9.70    -31.84    -31.84      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C2CC(NC3CCC3)CC2C1
+-12.31    -41.95    118.25      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2COC(CC(OCC)OCC)C2)CC1
+-16.59    -54.17    106.03      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CCC(NC(=O)N3CCN(CCN4CCCNC4=O)CC3)CC2)CC1
+-22.94    -45.89     78.71      0.70      c12c(N3CCN(C4c5cc(C(F)(F)F)ccc5C(c5ccc(F)cc5)C4)CC3)nccc1CN(C(C)(C)C)CC2
+-13.17    -38.07    139.93      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(O)CN2CC(O)CC2)CC1
+-56.15    -59.47    -41.67      0.10      c1c(C#N)ccc(C2C(NC(C3(NC(c4cc(OCC(N5CCOCC5)=NO)cc(C)c4)=O)CC3)=O)CN(CC3CCCCC3)C2)c1F
+-12.46    -42.54    117.66      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C)CCN2Cc2ccc(F)cc2)CC1
+bioactivity   raw_bioactivity
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.10000000149011612   0.10000000149011612   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+
+15:51:47: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 83   Fraction valid SMILES: 100.0   Score: 0.5758   Time elapsed: 78   Time left: 15.8
+  Agent     Prior     Target     Score     SMILES
+ -8.48    -40.64    119.56      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC(N3CCOCC3)=O)CC2)CC1
+-23.71    -23.31    -23.31      0.00      c1cc2c(c(N3CCN(CCC4CCC(NC(=O)CCO)CC4)CC3)ccc2)cc1
+-18.14    -37.66     86.94      0.70      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CCCN2CCN2CCNC2=O)C(C)C1
+-19.88    -49.03    128.97      1.00      C1N(C2C(N3CCN(C)CC3)COc3cc(F)ccc32)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-34.46    -57.03     14.17      0.40      c12c(ccnc1N1CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC1)ccc(C(NCc1onc(C)n1)=O)c2
+-23.33    -57.94     84.46      0.80      CN(C1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)C1CNCC1CN1CCN(CCCN2CCNC2=O)CC1
+-36.05    -63.52     61.08      0.70      [n+]1([O-])c2c([n+]([O-])c(NCCN3CCN(C4c5c(cc(CC)c(Br)c5)C(c5ccc(F)cc5)C4)CC3)n1)CCCC2
+-23.24    -52.79     54.01      0.60      N1(c2c(NC(=O)Cn3c(O)c4c(c3O)CC=CC4)cccc2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-13.70    -45.97    114.23      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(N2CCCN(CC3(C)CC3)CC2)CC1
+ -9.82    -48.97     57.83      0.60      C1N(C2c3c(cc(F)cc3)C(c3ccc(F)cc3)C2)CCN(CC2CN(CCCN3CCN(CCO)CC3)CC2c2cccc(F)c2)CC1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.4000000059604645   0.4000000059604645   
+0.800000011920929   0.800000011920929   
+0.699999988079071   0.699999988079071   
+0.6000000238418579   0.6000000238418579   
+0.8999999761581421   0.8999999761581421   
+0.6000000238418579   0.6000000238418579   
+
+15:51:48: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 84   Fraction valid SMILES: 100.0   Score: 0.5937   Time elapsed: 79   Time left: 14.9
+  Agent     Prior     Target     Score     SMILES
+-15.11    -52.25    107.95      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(CC3CCOCC3)CC2)C)C(c2ccccc2)C1
+-23.27    -37.04    -19.24      0.10      [nH]1[nH]c2c(c1=NC(=O)C1CC1)CN(C1CCC(N3CCN(CC4CC4)CC3)CC1)C2c1ccc(F)cc1
+-12.99    -57.54     67.06      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C3CCN(CCN4CCNC4=O)CC3)CC2c2cccc(F)c2)CC1
+-17.88    -57.24     67.36      0.70      N(NC(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)C)S(c1cc(C(F)(F)F)cc(C(F)(F)F)c1)(=O)=O
+ -9.76    -27.50     97.10      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C2CC(C)(CC(C)(C)C2)C1
+ -8.63    -31.34    -31.34      0.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN(C)C)CC2)CC1
+-13.58    -39.86     49.14      0.50      C1N(C2CN(C3c4cc(C#N)ccc4C(c4ccc(F)cc4)C3)C2)CCN(CC2CCCN2)C1
+-33.08    -50.87     91.53      0.80      c1(CCCNC(NC2CC2)=Nc2ccccc2CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)ncccc1
+-12.96    -40.14    137.86      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC#N)CCO2)CC1
+-33.74    -55.79     51.01      0.60      C1N(Cc2ccc(F)cc2)C(=O)N(CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C1C(NCC1CC(CN)C1)=O
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.10000000149011612   0.10000000149011612   
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.5   0.5   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+0.6000000238418579   0.6000000238418579   
+
+15:51:49: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 85   Fraction valid SMILES: 99.2   Score: 0.5938   Time elapsed: 80   Time left: 14.0
+  Agent     Prior     Target     Score     SMILES
+-16.17    -44.25     62.55      0.60      C1N(C2CN(C3c4cc(C#N)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(CC2COC2)C1
+-15.85    -53.80     70.80      0.70      C1N(C2CN(C3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C2)CCN(CCOCCO)CC1
+-19.60    -57.22     67.38      0.70      C1N(C2c3c(cc(F)cc3)C(c3ccc(F)cc3)C2)CCN(C2CCN(CCC3CCCCN3CCN3CCOCC3)CC2)CC1
+ -7.65    -48.17    -48.17      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN3CCC(N4CCN(C)C4=O)CC3)CC2)CC1
+-22.89    -58.83     83.57      0.80      C(C1N(CC2N(CC(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C3CCC3)CCC2)C(N)=NC1)CN1CCN(C)CC1
+ -9.94    -27.94    -27.94      0.00      C1N(CCOC)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+ -7.54    -34.84    -34.84      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C3CC3)CC2)CC1
+-12.67    -38.04    122.16      0.90      c12c(F)cccc1C(N1CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC1)C(O)C2
+-16.20    -37.98    140.02      1.00      C(CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CN1CCN(CC2(O)CC2)CC1
+-13.64    -67.77     74.63      0.80      C1N(C2CN(C3c4cc(C(F)(F)F)ccc4C(c4ccc(F)cc4)C3)CC2C2CC2)CCN(C2c3cc(C(F)(F)F)ccc3C(N3CCC3)C2)C1
+bioactivity   raw_bioactivity
+0.6000000238418579   0.6000000238418579   
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+
+15:51:50: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 86   Fraction valid SMILES: 100.0   Score: 0.6008   Time elapsed: 81   Time left: 13.0
+  Agent     Prior     Target     Score     SMILES
+-13.26    -58.54     83.86      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2N(C3CCN(C4c5cc(F)ccc5C(C)(C)CC4)CC3)C(=O)CC2)CC1
+ -7.32    -49.18    111.02      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3CCN(CCO)CC3)CC2c2cccc(F)c2)CC1
+-15.43    -32.55    -32.55      0.00      C1CN(Cc2n(C3CC3)nnn2)CCN1C1c2cc(F)ccc2C(c2ccc(F)cc2)C1
+-26.03    -32.26    -14.46      0.10      Cc1n(C2CCN(C3COC3)CC2)c2c(c1)cc(S(N1CCOCC1)(=O)=O)cc2
+-15.38    -39.69    120.51      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CCNC(C2(O)CCC2)=O)CC1
+ -6.01    -43.91    -43.91      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCN3CCC(N4CCCCC4)CC3)CC2)CC1
+-24.72    -58.41     66.19      0.70      n1ccnc(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c1CNC(N(C1CN(C2CCC2)CC1)C)=O
+-11.49    -47.19    -47.19      0.00      C1CN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCCN3CCN(C)CC3)CC2)C1
+-27.63    -28.43    -10.63      0.10      c1cc2c(c3ccccc13)C(c1ccc(OC)cc1)C(C#N)C(=NC)N2C
+-18.51    -57.09     85.31      0.80      c1(C2(C(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C)CCN(C3CCN(CC)CC3)CC2)cc(F)ccc1
+bioactivity   raw_bioactivity
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.10000000149011612   0.10000000149011612   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.10000000149011612   0.10000000149011612   
+0.800000011920929   0.800000011920929   
+
+15:51:50: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 87   Fraction valid SMILES: 100.0   Score: 0.6539   Time elapsed: 82   Time left: 12.1
+  Agent     Prior     Target     Score     SMILES
+-17.34    -63.68     60.92      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3C(C(N4CCN(C)CC4)=O)CCCC3)CC2CC(C)C)CC1C
+-15.78    -46.64    131.36      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CC(NN)CC2)CC1
+-19.80    -23.12    -23.12      0.00      COc1cc(C2N(CCN3CCCCC3)CCCC2)cc(OC)c1OC
+-13.88    -57.28    102.92      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC(N2CCN(C3c4cc(C(F)(F)F)ccc4C(N4CCN(C)CC4)C3)CC2)CC1
+-33.00    -36.64    -36.64      0.00      O1C2c3c(c(O)n(CCCN4CCN(CCCCCCN5CCNCC5)CC4)c3O)C1O2
+ -5.47    -19.62    -19.62      0.00      CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-11.02    -38.49    139.51      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2C(O)C(NCC(F)(F)F)CO2)CC1
+-15.32    -40.74     83.86      0.70      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C3CCN(C(=O)CC)CC3)CC2c2cccc(F)c2)CC1
+ -7.80    -37.12    -37.12      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCO)CC2)CC1
+-22.98    -71.88     34.92      0.60      c1cc(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)sc1NC(N1CCN(C2c3cc(F)ccc3C(C)(C)C2O)CC1)=O
+bioactivity   raw_bioactivity
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+1.0   1.0   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.6000000238418579   0.6000000238418579   
+
+15:51:52: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 88   Fraction valid SMILES: 99.2   Score: 0.5953   Time elapsed: 83   Time left: 11.2
+  Agent     Prior     Target     Score     SMILES
+-17.81    -40.14     84.46      0.70      C1(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C(C2CC(N(C3CCN(C)C3)C)CC2)=O)CC1
+-15.82    -55.76     68.84      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC(N2CCN(CCOCCOCCN3CCN(CCN4CCCNC4=O)CC3)CC2)CC1
+-23.76    -62.98     79.42      0.80      C(CN1C(=O)N(CCN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C(CCN2CCCC2)C1)CN1CCN(CC2CCOCC2)CC1
+-18.74    -52.77     89.63      0.80      C1N(C2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(Cc2cccnc2OCC(F)(F)F)CC1
+-37.25    -48.02    -48.02      0.00      O(CCNC(C1=CN(C2CCN(CC3CCCCC3)CC2)CC(=Cc2cc(Br)c(OC)cc2)C1=O)=O)C
+-36.73    -30.07    -30.07      0.00      n1cscc1-c1n(CC)c2cc(N)ccc2n1
+-13.49    -40.43    101.97      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2OC3(CN4CCC3CC4)C2)CC1
+-40.86    -75.83     13.17      0.50      c1cc(CN2c3c(cncc3)C(=Nc3ccc(C(N)=O)cc3)c3c2cccc3)ccc1S(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)(=O)=O
+-23.88    -46.44     60.36      0.60      C1N(CC(N2CCN(C3c4c(cc(F)cc4)C(c4ccc(F)cc4)C3)CC2)CCN2CCN(CC3(O)CCOCC3)CC2)CCCC1
+-20.73    -85.02     39.58      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2NC(N3CCN(C4c5cc(F)ccc5C(NC(C)=O)CO4)CC3)CC2)CC1
+bioactivity   raw_bioactivity
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+0.5   0.5   
+0.6000000238418579   0.6000000238418579   
+0.699999988079071   0.699999988079071   
+
+15:51:53: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 89   Fraction valid SMILES: 100.0   Score: 0.6242   Time elapsed: 84   Time left: 10.3
+  Agent     Prior     Target     Score     SMILES
+-18.46    -59.44     65.16      0.70      C1N(c2ccc(NC(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)CCN(CC)CC)cc2)CCN(C(C)=O)CC1
+-10.52    -40.98    119.22      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(C)CC2)C(N(CC)CC)=O)CC1
+ -8.51    -46.60    113.60      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3CCC(NC(C=C)=O)CC3)CC2)CC1
+-23.38    -48.75     93.65      0.80      C1(NC2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C(C2N(C(NC3CCCC3)=O)CCC2)=O)CC1
+ -8.94    -41.56    -41.56      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2OCCN(CC)C2)CC1
+-14.51    -55.67    122.33      1.00      C1N(CC(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN2CCN(CC3CCCCC3)CC2)CCN(CC2CCOCC2)CC1
+ -5.53    -19.62    -19.62      0.00      CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-30.20    -53.87     88.53      0.80      C1N(C(CCc2nc3c(cc2)CCCN3)CC(C)C)CCN(C2c3cc(CC)ccc3C(c3ccc(F)cc3)C2)CC1
+-43.92    -43.79    -43.79      0.00      C1N(c2c(C)c3n(C45CC(C4)C5)c(=O)c(F)cc3c(=O)[nH]2)CC(N)C1c1ccc(NC2CCC2)c(F)c1
+-29.74    -32.53    -14.73      0.10      C(C1N(C(COc2cc(C)cc3oc(=O)cc(CCCC)c23)=O)CCCC1)(N1CCC(N2CCCCC2)CC1)=O
+bioactivity   raw_bioactivity
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+1.0   1.0   
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+0.0   0.0   
+0.10000000149011612   0.10000000149011612   
+
+15:51:54: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 90   Fraction valid SMILES: 98.4   Score: 0.6254   Time elapsed: 85   Time left: 9.3
+  Agent     Prior     Target     Score     SMILES
+-13.91    -53.34     71.26      0.70      C1N(C2c3c(cc(F)cc3)C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3CCCN3CCC(F)(F)F)CC2)CC1
+-20.92    -47.01     77.59      0.70      c1cc(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)cc2c1C(C)(C)CN2C(CN1CCN(C)CC1)=O
+-32.76    -55.25     -1.85      0.30      CC1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCC3C(C)(C)C(C2)C3NC(c2ccc(NS(C)(=O)=O)cc2)=O)C1
+-32.04    -37.81    -37.81      0.00      c1c(OC)c2[nH]cc(C3=CCN(C4CCC(N(C(C)=O)CC5CC5)CC4)CC3)c2cc1F
+-17.11    -51.70    126.30      1.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3N(C(=O)CC)CCCN(CC)C3)CO2)CC1
+-17.51    -55.73     86.67      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(c2nnc(N(C)C)n2CCN2CCN(C)CC2)CC1
+-19.69    -55.69     86.71      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC(CNC(=O)N(C)C)C)OC2)CC1
+-22.96    -57.86    102.34      0.90      C1N(C2(CCN3CCC(CN4CCCCC4)CC3)CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C)C1
+-10.06    -28.70     95.90      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(n2c3c(cccc3)[nH]c2=O)CC1
+-22.20    -66.44     58.16      0.70      C1c2c(ccc(S(N3CCC(C(N4CCN(C5c6cc(F)ccc6C(c6ccc(F)cc6)C5)CC4)CC3)C)(=O)=O)c2)CCN1C
+bioactivity   raw_bioactivity
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+0.30000001192092896   0.30000001192092896   
+0.0   0.0   
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.699999988079071   0.699999988079071   
+
+15:51:55: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 91   Fraction valid SMILES: 99.2   Score: 0.6445   Time elapsed: 86   Time left: 8.4
+  Agent     Prior     Target     Score     SMILES
+-11.19    -42.26    117.94      0.90      C1CN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(CC3CCCCC3)CC2)CC1
+-14.88    -53.43     71.17      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CCC(NC3CCN(CC)CC3)=O)CC2)CC1
+-10.25    -54.28    105.92      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CNC2CCN(CCN3CCN(C)CC3)CC2)CC1
+-27.29    -65.13     59.47      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3CCOCC3)CC(Cc3ccc(F)cc3)C2)CC1NC(C)C(N)=O
+-19.55    -78.20     82.00      0.90      C1N(C(C2CN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2N2CCC(O)C2)CCN2CCN(CCO)CC2)CCN(C)CC1
+-22.75    -50.06     56.74      0.60      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC2N(CC1CNC(C)=O)CCCN2C1CC1
+ -9.06    -35.84    -35.84      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CCCN2CC2CC2)CC1
+-15.96    -51.12    126.88      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2N(C3C(C)CCCC3)CCCN(CC)C2)CC1
+-10.89    -32.63    127.57      0.90      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC(N)=O)CC2)CC1
+ -7.90    -44.04    133.96      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(C2N(CCN3CCN(C)CC3)CCC2)CC1
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.6000000238418579   0.6000000238418579   
+1.0   1.0   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+
+15:51:56: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 92   Fraction valid SMILES: 99.2   Score: 0.6727   Time elapsed: 87   Time left: 7.5
+  Agent     Prior     Target     Score     SMILES
+-33.94    -34.85    -34.85      0.00      CCN(CC)CCN=c1[nH]c(-c2ccc(NC(c3ccc(C(Nc4ccc(-c5[nH]c6ccccc6n5)cc4)=O)cc3)=O)cc2)n(C)c1
+-16.29    -50.15     92.25      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CN2CCN(CC(N3CCNC(=O)C3)C)CC2)CC1
+-20.31    -39.35    120.85      0.90      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(N2C(=O)N(CCN(C)CC(F)F)CC2)CC1
+-26.08    -61.99     62.61      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(C2CCN(Cc3cc(C(NCCN4CCC(N5CCCCC5)CC4)=O)c(F)cc3)CC2)CC1
+-42.57    -65.36    -47.56      0.10      C1N(CC2N(C(c3ccc(Cl)cc3-c3n(C)c(C)c(C(N(c4ncc(OC)cc4)c4ccc(O)cc4)=O)c3)(CCF)O)Cc3cc(C#N)ccc3C2)CCN(CC2CC2)CC1
+-10.57    -51.44     90.96      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(C3CCN(CCN4CCNC4=O)CC3)CC2)CC1
+-17.66    -60.29     82.11      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3N(C(=O)C4CCN(C(N(C)C)=O)CC4)CCCN3)CC2)CC1
+-31.03    -66.96     75.44      0.80      N1(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(C2c3c(c(F)c(F)cc3)C(N3CCC(S(C)(=O)=O)CC3)C2)CC1
+ -6.98    -44.11    -44.11      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CCC(N3CCN(CCO)CC3)CC2)CC1
+-25.33    -62.61     -9.21      0.30      C1N(C2c3c(F)ccc(F)c3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3OCC(NC4CCOCC4)CC3)CC2)CC1
+bioactivity   raw_bioactivity
+0.0   0.0   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+0.10000000149011612   0.10000000149011612   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.30000001192092896   0.30000001192092896   
+
+15:51:57: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 93   Fraction valid SMILES: 100.0   Score: 0.6608   Time elapsed: 88   Time left: 6.6
+  Agent     Prior     Target     Score     SMILES
+-14.71    -72.80     51.80      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2(CCOCC)CN(CC3CN(C4CCCCC4)CC3)CC2N2CCN(C)CC2)CC1
+-15.15    -37.72    122.48      0.90      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CCCN2CCCN2CCN(Cc3ccccc3)CC2)CC1
+-33.08    -43.65    -43.65      0.00      c1(CNC(C2CN(CC3CC3)C(=O)N2C)=O)ccc(N2CCN(C)CC2)cc1OCC12CC3CC(CC(C3)C1)C2
+-19.83    -44.93    -44.93      0.00      N#Cc1ccc2c(c1)C(N1CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC1)C(OC)C2O
+-22.54    -57.54    102.66      0.90      C1(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C(N2CCN(CC3NC(=O)C4CCCN4C3=O)CC2)CCC1
+-16.02    -55.66    122.34      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2NCC(CN(CCCN3CCN(C)CC3)C)CC2)CC1
+-24.82    -70.23     89.97      0.90      c1(Br)cc(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CO)c2c(c1)C(N1CCN(CCN3CCCC3)CC1)CC2
+ -5.65    -19.62    -19.62      0.00      CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+ -9.14    -47.15     77.45      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(N2CCC(C(N3CCN(CC)CC3)=O)CC2)CC1
+-46.29    -61.94    -26.34      0.20      c12c(cc(NN=NCCN3CCCCC3)cc1)CCC(CN1CCC(C3c4cc(F)ccc4C(CC(=O)O)CC3)CC1)O2
+bioactivity   raw_bioactivity
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.20000000298023224   0.20000000298023224   
+
+15:51:58: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 94   Fraction valid SMILES: 99.2   Score: 0.6938   Time elapsed: 90   Time left: 5.7
+  Agent     Prior     Target     Score     SMILES
+-20.95    -41.62     82.98      0.70      c12c(CCN3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)c(F)cn1CCN(CCOC)C2=O
+-21.18    -28.57    -10.77      0.10      c1cc2c(cc1)S(=O)(=O)Cc1c-2n(C2CN(CCN3CCN(CC)CC3)CC2)nc1C(N1CCOCC1)=O
+-20.49    -37.84     86.76      0.70      c12c(CN3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)cc(C(=O)N(C)C)cc1OCCO2
+-20.18    -43.61    116.59      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(N2CCCC(CCC3CCC3)CC2)C1
+-20.39    -71.91     52.69      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(C(=O)N2CCN(C3c4cc(C(F)(F)F)ccc4C(NCC(O)C(C4CCC4)C)C3)CC2)CC1
+-11.04    -43.60    134.40      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CN2CCC(CCN3CCOCC3)CC2)CC1
+-40.57    -88.77     53.63      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(CN2CCN(CCOC(CCCN3CCN(CC)CC3)CC3CCCC(C)N3C)CO2)O)CC1
+-12.77    -50.10    110.10      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(N2C(CN3CCCNC3=O)CCC2)CC1
+-10.65    -34.46    -34.46      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(O)COc2cc(N(C)C)ccn2)CC1
+-12.84    -40.45    119.75      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2(C(F)(F)F)CC2)CC1
+bioactivity   raw_bioactivity
+0.699999988079071   0.699999988079071   
+0.10000000149011612   0.10000000149011612   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+
+15:52:00: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 95   Fraction valid SMILES: 99.2   Score: 0.6461   Time elapsed: 91   Time left: 4.7
+  Agent     Prior     Target     Score     SMILES
+-10.39    -42.56     99.84      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2(CCOC)CCOCC2)CC1
+-10.19    -51.75     72.85      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(N2CCC(C(N3CCN(CCOC)CC3)=O)CC2)CC1
+-11.57    -42.89    135.11      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CN(CCN3CCNCC3)CC2)CC1
+-29.65    -34.82    -34.82      0.00      N(C1CC1)C(N1N(c2ccccc2)NC(N2CCOCC2)=N1)=S
+-18.32    -54.27    105.93      0.90      N1(CC2N(C3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)CCCC2)CCN(CC2CC2)CC1
+-14.26    -44.79    133.21      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CCN(CCC(C(F)(F)F)O)CC2)CC1
+-45.64    -56.81    -56.81      0.00      C1NCCC(Oc2cccc3c2C(NC(N2CCC(n4c(=O)[nH]c5c4cccn4)CC2)CCN(C2CCCC2)C3)CC2N(CCCC2)CC1)=O
+-19.08    -57.34    120.66      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2(CN3CCN(C)CC3)C(CCC)CN(CC3CCOCC3)CC2)CC1
+-16.81    -53.83     70.77      0.70      C1N(c2coc(O)c2CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)CCN(CC2CCN(C)CC2)CC1
+ -8.69    -55.59     86.81      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3CCN(C4CCCCC4)CC3)CC2)CC1
+bioactivity   raw_bioactivity
+0.800000011920929   0.800000011920929   
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.0   0.0   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.0   0.0   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.800000011920929   0.800000011920929   
+
+15:52:01: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 96   Fraction valid SMILES: 99.2   Score: 0.6641   Time elapsed: 92   Time left: 3.8
+  Agent     Prior     Target     Score     SMILES
+-20.31    -47.55     77.05      0.70      C1N(CC(NN=CC=Cc2occc2)=O)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-13.63    -75.38    102.62      1.00      c1cccc(CN2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)c1C(N1CCN(C2c3cc(F)ccc3C(N3CCN(C)CC3)CC2)CC1)C
+-33.12    -66.37    -12.97      0.30      C1N(C2C(N3CCN(C4c5ncccc5CCc5cc(Cl)ccc54)CC3)CCc3ccc(CNS(CCCN4CCN(C)CC4)(=O)=O)cc32)CCN(CC2CCCCC2)CC1
+ -7.33    -31.70    146.30      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CN2CCC(C)CC2)CC1
+-12.58    -35.84    142.16      1.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3CCC3)CC2)CC1
+-20.24    -45.66     61.14      0.60      C1N(C2c3cc(C)ccc3C(c3ccc(F)cc3)C2)CCC2(CN(CCN3CCN(C)CC3)CC2)CC1
+-30.16    -70.54    -34.94      0.20      c1(F)c(CN2c3cc(C(=O)N4CCN(C5c6cc(F)ccc6C(C)(C)CC5)C4)ccc3C(N3CCN(CCN4CCN(C)CC4)CC3)C2)cccc1
+-10.57    -41.78    136.22      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CN2CC(CN(CC)CC)CCC2)CC1
+-26.84    -68.73     91.47      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2(CN3C(CC)(CC)CN(C4CC4)CC3)CCOC2)CC1
+-12.45    -50.86    127.14      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2N(C3CCN(CCC)CC3)CCN(C)C2)CC1
+bioactivity   raw_bioactivity
+0.699999988079071   0.699999988079071   
+1.0   1.0   
+0.30000001192092896   0.30000001192092896   
+1.0   1.0   
+1.0   1.0   
+0.6000000238418579   0.6000000238418579   
+0.20000000298023224   0.20000000298023224   
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+
+15:52:02: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 97   Fraction valid SMILES: 99.2   Score: 0.6375   Time elapsed: 93   Time left: 2.8
+  Agent     Prior     Target     Score     SMILES
+-18.85    -51.82    108.38      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2N(CC3CCC(C(F)(F)F)CC3)C(=O)NC2)CC1
+-20.72    -47.07    113.13      0.90      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CCN1S(=O)(=O)C2C(CCN(CC3CCCC3)CC2)C1
+-12.58    -47.04    113.16      0.90      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3CCN(CC(=O)N(C)C)CC3)CC2)CC1
+ -9.63    -49.03    -49.03      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2NC(N3CCC(N4CCCCC4)CC3)CC2)CC1
+-17.45    -65.02     77.38      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC(N2CCN(C(CN3CCN(CCO)CC3)C3CCCCC3)CC2)C)CC1
+-10.80    -42.13    118.07      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC(NC2CCN(CCN3CCCCC3)CC2)CC1
+-18.55    -71.52     88.68      0.90      c1cccc(C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C(N2CCN(C3c4cc(F)ccc4C(c4ccc(F)cc4)C3)CC2)C)c1C(F)(F)F
+ -5.79    -19.62    -19.62      0.00      CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-25.75    -79.69     44.91      0.70      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(N2CCC(C(N3CCN(C4c5c(cc(C)c(C)c5)C(CC)(CCC)CC4)CC3)=O)CC2)CC1
+-11.97    -47.02     95.38      0.80      C(N1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CNC(N1CCN(C2c3cc(C#N)ccc3CC2)CC1)=O
+bioactivity   raw_bioactivity
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.800000011920929   0.800000011920929   
+
+15:52:03: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 98   Fraction valid SMILES: 100.0   Score: 0.6488   Time elapsed: 95   Time left: 1.9
+  Agent     Prior     Target     Score     SMILES
+-35.79    -50.18    -32.38      0.10      CNCCN(C1c2c(F)ccc3c2c(ccc3)C1)CCCCN1C2CCC1CC(NC(C1c3ccccc3Cc3ccccc31)=O)C2
+-23.21    -52.91     53.89      0.60      C1(NCCC2c3cc(CC)ccc3CC2)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1
+-19.63    -53.94     88.46      0.80      C1NCCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1NCC(N1CCN(Cc2cccc(C(F)(F)F)c2)CC1)=O
+-14.52    -44.33     62.47      0.60      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CNC(C2CNCCN2C)=O)CC1
+-13.11    -51.57    108.63      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3NC(=O)NC3(CC)CC)CC2)CC1
+-32.13    -66.20     76.20      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CN2CC(C(C(O)=NO)N3CCN(C(CC(N4CCCCC4)C)=O)CC3)CC2)CC1
+ -9.54    -48.78    111.42      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CNC2CCN(CC3(O)CCCCC3)CC2)CC1
+-17.75    -35.44    124.76      0.90      C(CN1CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CC1)CN1C(=O)NC(C2CC2)C1
+-14.62    -47.79    112.41      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CCN(CCCC3CCN(C(C)=O)CC3)CC2)CC1
+-13.04    -34.90    143.10      1.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCC(CN2C(CC3CCCCC3)CCC2)CC1
+bioactivity   raw_bioactivity
+0.10000000149011612   0.10000000149011612   
+0.6000000238418579   0.6000000238418579   
+0.800000011920929   0.800000011920929   
+0.6000000238418579   0.6000000238418579   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+
+15:52:04: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 99   Fraction valid SMILES: 100.0   Score: 0.6602   Time elapsed: 96   Time left: 1.0
+  Agent     Prior     Target     Score     SMILES
+ -8.21    -34.37    -34.37      0.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CNC2)CC1
+-26.30    -58.63    101.57      0.90      c1ccc2nc(CN3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)cc(CNC3CCN(CCN4CCC(CN(C)C)CC4)CC3)c2c1
+-48.02    -63.35    -27.75      0.20      C(C)CN1C(CC2C3C(C(c4cc(OC)c(OC)c(OC)c4)c4cc5c(cc42)OCO5)C(=O)OC3)OC(COC(N2CCN(N3CCN(CCN4CCN(C)CC4)CC3)CC2)=O)C1
+-16.25    -62.96     97.24      0.90      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2N(C3CCN(C4c5cc(F)ccc5C(C)(C)CC4)C3)CC2)CC1
+-27.55    -80.98     61.42      0.80      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2CN(CC3CCN(CC4CCN(C(CO)=O)CC4)CC3)CC2)CC1NC1=NCC(C)N1
+ -9.20    -43.66    134.34      1.00      C1N(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2N(CCN3CCCC3)CCC2)CC1
+-16.04    -75.07     49.53      0.70      C1N(C(Nc2cccc(C(N3CCN(C4c5cc(F)ccc5C(c5ccc(F)cc5)C4)CC3)C)c2)=O)CCN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)C1
+-10.84    -37.94    122.26      0.90      C1CN(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(C2CCN(CC3CCC3)CC2)C1
+-13.76    -42.23    135.77      1.00      N1(C2c3cc(F)ccc3C(c3ccc(F)cc3)C2)CCN(CC2N(CCN3CCOCC3)C(CC)COC2)CC1
+-32.81    -30.80    -30.80      0.00      c1c(C2(c3noc(-c4cc(CN)ccc4)n3)CCC2)ccc(-c2cnc(=NCCC)[nH]c2)c1
+bioactivity   raw_bioactivity
+1.0   1.0   
+0.8999999761581421   0.8999999761581421   
+0.20000000298023224   0.20000000298023224   
+0.8999999761581421   0.8999999761581421   
+0.800000011920929   0.800000011920929   
+1.0   1.0   
+0.699999988079071   0.699999988079071   
+0.8999999761581421   0.8999999761581421   
+1.0   1.0   
+0.0   0.0   
+

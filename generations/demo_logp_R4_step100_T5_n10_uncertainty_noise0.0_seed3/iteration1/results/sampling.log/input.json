@@ -1,0 +1,19 @@
+{
+    "logging": {
+        "job_id": "/home/klgx638/Projects/HITL_AL_GoalOrientedMolGen/generations/demo_logp_R4_step100_T5_n10_uncertainty_noise0.0_seed3",
+        "job_name": "sample_agent_fine-tune predictive component",
+        "logging_path": "/home/klgx638/Projects/HITL_AL_GoalOrientedMolGen/generations/demo_logp_R4_step100_T5_n10_uncertainty_noise0.0_seed3/iteration1/results/sampling.log",
+        "recipient": "local",
+        "sender": "http://127.0.0.1"
+    },
+    "model_type": "default",
+    "parameters": {
+        "batch_size": 128,
+        "model_path": "/home/klgx638/Projects/HITL_AL_GoalOrientedMolGen/generations/demo_logp_R4_step100_T5_n10_uncertainty_noise0.0_seed3/iteration1/results/Agent.ckpt",
+        "num_smiles": 1000,
+        "output_smiles_path": "/home/klgx638/Projects/HITL_AL_GoalOrientedMolGen/generations/demo_logp_R4_step100_T5_n10_uncertainty_noise0.0_seed3/iteration1/results/sampled_N_1000.csv",
+        "with_likelihood": false
+    },
+    "run_type": "sampling",
+    "version": 2
+}

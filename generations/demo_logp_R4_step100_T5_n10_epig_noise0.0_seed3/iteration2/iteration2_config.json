@@ -1,0 +1,68 @@
+{
+    "logging": {
+        "job_id": "/home/klgx638/Projects/HITL_AL_GoalOrientedMolGen/generations/demo_logp_R4_step100_None",
+        "job_name": "fine-tune predictive component",
+        "logging_frequency": 0,
+        "logging_path": "/home/klgx638/Projects/HITL_AL_GoalOrientedMolGen/generations/demo_logp_R4_step100_T5_n10_epig_noise0.0_seed3/iteration2/progress.log",
+        "recipient": "local",
+        "result_folder": "/home/klgx638/Projects/HITL_AL_GoalOrientedMolGen/generations/demo_logp_R4_step100_T5_n10_epig_noise0.0_seed3/iteration2/results",
+        "sender": "http://127.0.0.1"
+    },
+    "model_type": "default",
+    "parameters": {
+        "diversity_filter": {
+            "bucket_size": 25,
+            "minscore": 0.4,
+            "minsimilarity": 0.4,
+            "name": "IdenticalMurckoScaffold"
+        },
+        "inception": {
+            "memory_size": 20,
+            "sample_size": 5,
+            "smiles": []
+        },
+        "reinforcement_learning": {
+            "agent": "/home/klgx638/Projects/HITL_AL_GoalOrientedMolGen/generations/demo_logp_R4_step100_T5_n10_epig_noise0.0_seed3/iteration1/results/Agent.ckpt",
+            "batch_size": 128,
+            "learning_rate": 0.0001,
+            "margin_threshold": 50,
+            "n_steps": 100,
+            "prior": "/home/klgx638/Projects/HITL_AL_GoalOrientedMolGen/HITL_AL_GOMG/models/priors/random.prior.new",
+            "reset": 0,
+            "reset_score_cutoff": 0.5,
+            "sigma": 128
+        },
+        "scoring_function": {
+            "name": "custom_product",
+            "parallel": true,
+            "parameters": [
+                {
+                    "component_type": "predictive_property",
+                    "name": "logp",
+                    "specific_parameters": {
+                        "container_type": "scikit_container",
+                        "descriptor_type": "ecfp_counts",
+                        "model_path": "/home/klgx638/Projects/HITL_AL_GoalOrientedMolGen/generations/demo_logp_R4_step100_T5_n10_epig_noise0.0_seed3/iteration1/penal_logp_iteration_2.pkl",
+                        "radius": 3,
+                        "scikit": "regression",
+                        "size": 2048,
+                        "smiles": "",
+                        "transformation": {
+                            "coef_div": 3.0,
+                            "coef_se": 10,
+                            "coef_si": 10,
+                            "high": 4,
+                            "low": 2,
+                            "transformation_type": "double_sigmoid"
+                        },
+                        "use_counts": false,
+                        "use_features": false
+                    },
+                    "weight": 1
+                }
+            ]
+        }
+    },
+    "run_type": "reinforcement_learning",
+    "version": 3
+}

@@ -1,0 +1,2501 @@
+10:52:44: local_reinforcement_logger.log_message +32: INFO     starting an RL run
+10:52:45: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 0   Fraction valid SMILES: 100.0   Score: 0.9365   Time elapsed: 0   Time left: 0.0
+  Agent     Prior     Target     Score     SMILES
+-27.06    -28.35     94.03      0.96      c1c(CC(O)=O)ccc(OC2c3ccccc3CC2N2CCCC2CO)c1
+-36.54    -36.77     90.29      0.99      COc1ccc(C(OC(=S)c2ccc(C)cc2)c2ccc(Cl)cc2)c(OC)c1
+-22.76    -23.62    103.75      1.00      c12cc(C(N3CCN(c4ccccc4)CC3)=O)ccc1nc(-c1ccc(C)cc1)c(-c1ccccc1)n2
+-26.77    -27.93     96.60      0.97      c1(F)ccc(CN2CC3(CNC(c4oncc4)=O)CCOC3CC2)cc1
+-29.66    -29.42     96.36      0.98      n1c2c(=O)n(C)cc(-c3c(Oc4ccc(F)cc4F)ccc(S(N4CC(F)CC4)(=O)=O)c3)c2ccc1
+-43.69    -44.28     71.31      0.90      c1(-c2cc3c(n(C4CC4)cc3C(=O)O)cc2Cl)ccc(C2(C)CC2O)cc1
+-25.09    -26.72     98.83      0.98      c1ccc(-c2n3[nH]c(=Nc4cccc(N5CCN(C)CC5)c4)nc3ccc2)cc1NC(=O)Nc1cccc(C(F)(F)F)c1
+-28.51    -30.38     69.84      0.78      n1(-c2ccc(OC)cc2)cc(C2N(c3ccccc3)C=Nc3n(-c4ccccc4)nc(C)c32)c(-c2ccc(Cl)cc2)n1
+-33.25    -32.86     87.37      0.94      n1c(N2CCC3(CCCNC3)C2)n(C)nc1-c1ccc(F)cc1OC
+-18.89    -19.61    107.12      0.99      Cc1ccc(-c2occ(CNCc3ccccn3)n2)cc1
+logp   raw_logp
+0.9561542272567749   2.401594638824463   
+0.9926378130912781   3.360543966293335   
+0.9950541257858276   3.307756185531616   
+0.9728485941886902   2.4663140773773193   
+0.9826807379722595   2.526258707046509   
+0.9030779600143433   2.2907938957214355   
+0.9808396100997925   3.4871652126312256   
+0.7829553484916687   3.832843065261841   
+0.9393372535705566   2.3569774627685547   
+0.9900957345962524   2.60024356842041   
+
+10:52:46: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 1   Fraction valid SMILES: 98.4   Score: 0.9230   Time elapsed: 1   Time left: 49.5
+  Agent     Prior     Target     Score     SMILES
+-41.31    -41.66    -41.66      0.00      C(C(c1ccc(OS(=O)(=O)C2CCCCC2)cc1)O)NC(C)Cc1cc2c3c([nH]c2c1)cccc3
+-29.60    -30.37     83.15      0.89      c1c(Cl)c(Cl)ccc1-n1cnc(-c2ccccc2)c1[N+]([O-])=O
+-48.97    -51.06     75.55      0.99      C1C(COc2ccc(N3CC(c4ccc(NC(=O)c5cc(F)ccc5NCc5ccco5)c(Cl)c4)CCC3)nc2)C1
+-43.79    -43.55     81.02      0.97      O=C(O)C1C(c2ccc(F)cc2)C(C(=O)N2CCC(c3c(C(NCC)=O)cc(C(C)(C)C)cc3)CC2)CC1
+-46.32    -47.11     78.41      0.98      N(S(=O)(c1ccc(Cl)s1)=O)CCC1(N(c2ccccc2)Cc2ccc(F)c(C(F)(F)F)c2)CCCCC1=O
+-23.97    -24.23    103.54      1.00      C1(NC(Cn2c(=O)c3cccn3c3c2cc(F)cc3)=O)CCN(Cc2ccccc2)CC1
+-25.53    -25.74     99.36      0.98      c1cccc2c(Cl)cc(C(C=Cc3ccc(C)cc3)=O)cc12
+-23.07    -23.10    103.83      0.99      c1(-c2n[nH]nn2)ccccc1-c1ccc(Cn2c(CCC)cc(-c3ccccc3)n2)cc1
+-18.89    -19.72     92.38      0.88      c1cc(-c2c(C(=O)N3CCN(c4ncccc4)CC3)c(C)on2)ccc1
+-36.81    -38.80     80.42      0.93      c1(Cl)cc(Cl)cc(-c2ccc3c(c2)ncc2ccc(=O)n(-c4ccc(F)c(NC(=O)C(C)C)c4)c23)c1
+logp   raw_logp
+0.0   0.0   
+0.8868703246116638   2.268287181854248   
+0.9891082048416138   3.4123191833496094   
+0.9732203483581543   2.46816086769104   
+0.9805971384048462   2.5111618041992188   
+0.9982482194900513   2.8370182514190674   
+0.9773659706115723   2.4906435012817383   
+0.9916273951530457   3.377551317214966   
+0.8757525682449341   2.254430055618286   
+0.9314189553260803   3.660111665725708   
+
+10:52:47: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 2   Fraction valid SMILES: 98.4   Score: 0.9145   Time elapsed: 2   Time left: 65.3
+  Agent     Prior     Target     Score     SMILES
+-32.76    -35.38     90.86      0.99      c1(-c2ccccc2S(=O)(Nc2ccc(Cl)cc2)=O)ccc(CNCc2cccc(C(C)=O)c2)cc1
+-30.71    -32.33     95.40      1.00      c1(-n2cccn2)ccc(-c2csc(NNC(=S)N)c2-c2ccccc2)cc1
+-21.40    -20.53     83.25      0.81      O1COc2ccc(C(=O)OCC(N3CC(C)CC(C)C3)=O)cc21
+-29.99    -30.73     78.34      0.85      c1(-c2cc3ncn(C)c(=O)c3c(N3CCC(CO)C(O)C3)n2)oc2ccccc2c1
+-39.04    -38.18     89.25      1.00      n1[nH]c(-c2cccc(NC(C(NC(Cc3ccc(C(F)(F)F)cc3)=O)Cc3ccc(OCC(=NO)O)cc3)=O)c2)nn1
+-20.26    -21.59    106.07      1.00      Oc1c(C(c2ccc(O)cc2)c2ccccc2)cccc1
+-24.08    -24.22     99.12      0.96      n1c(N2CCN(Cc3oc([N+](=O)[O-])cc3)CC2)n(CC)c2ccccc12
+-28.01    -30.06     84.10      0.89      c1cccc(-c2ccc(CN3CCC(N=c4[nH]c5ccccc5[nH]4)CC3)cc2)c1-c1occn1
+-21.42    -22.71    100.37      0.96      c1cc(C(C=Cc2ccccc2O)=O)ccc1NC(=O)C(Br)=C
+-27.66    -26.82     78.12      0.82      O=CN=CCOc1ccc(C(=O)CC)cc1
+logp   raw_logp
+0.9862256646156311   3.443380355834961   
+0.9979048371315002   3.1897172927856445   
+0.8107938766479492   2.1895933151245117   
+0.8520407676696777   2.2280967235565186   
+0.9954870939254761   3.2955262660980225   
+0.9972810745239258   2.7732994556427   
+0.9635918140411377   2.4268295764923096   
+0.8918671011924744   3.72509503364563   
+0.9615381956100464   2.4193999767303467   
+0.8198055624961853   2.1973917484283447   
+
+10:52:47: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 3   Fraction valid SMILES: 97.7   Score: 0.9139   Time elapsed: 3   Time left: 72.8
+  Agent     Prior     Target     Score     SMILES
+-33.08    -36.76     88.96      0.98      o1c(-c2nc3n(c(=NCCc4ccc(OC)cc4)[nH]c(CN4CCN(Cc5ccccc5)CC4)n3)c2)ccc1
+-27.43    -29.57     97.75      0.99      n1nc(-c2ccccc2Br)n2c1ccc(N1CCN(c3ccccc3Cl)CC1)n2
+-26.11    -27.21     97.80      0.98      c1c(C#N)cccc1NC(NNc1ccc(C#N)cc1)=O
+-25.85    -25.15     90.86      0.91      C(COc1ccccc1)c1n(C)c2[nH]c(=N)[nH]c(=N)c2n1
+-25.35    -24.49     79.25      0.81      C1N(C(=O)CC)C(C(=O)N=c2cccc[nH]2)Cc2ccccc21
+-28.34    -28.02     81.28      0.85      c1c[nH]c(=N)c(C(=O)NNC(=O)c2cc([N+](=O)[O-])c(C)cc2)n1
+-24.33    -25.13    101.65      0.99      C(=O)(Nc1c(C(Nc2c(=O)n(-c3ccccc3)n(C)c2C)=O)cccc1)COc1ccc(Cl)cc1
+-23.61    -24.26    102.83      0.99      Cc1ccc(-c2n(Cc3ccccc3)c(SCC(=O)Nc3cc4c(cc3)OCCO4)nn2)cc1
+-28.92    -29.53     97.33      0.99      c1(Oc2c(C(=NO)O)ccc(-c3c(O)cccc3)c2)ccccc1
+-28.42    -28.38     74.62      0.80      CCc1c(NC(Nc2c(C)csc2C(=O)O)=O)c(CC)ccc1
+logp   raw_logp
+0.9822031259536743   3.477353811264038   
+0.9947130084037781   2.6833627223968506   
+0.9766570925712585   2.486527442932129   
+0.906316876411438   2.2956888675689697   
+0.8104491829872131   2.189300775527954   
+0.8539726138114929   2.2301042079925537   
+0.9904891848564148   3.3943986892700195   
+0.9928807616233826   3.3561034202575684   
+0.9911413192749023   3.3850111961364746   
+0.8046716451644897   2.1844568252563477   
+
+10:52:48: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 4   Fraction valid SMILES: 97.7   Score: 0.9259   Time elapsed: 4   Time left: 76.8
+  Agent     Prior     Target     Score     SMILES
+-30.64    -31.91     86.88      0.93      C1OCCN(c2cc(NC(=O)Nc3cc(-c4cnc(=NC(C)C)[nH]c4)ccc3)ccc2)C1
+-23.67    -24.62     98.87      0.96      C(#N)c1ccc(C=NNC(c2cc([N+]([O-])=O)ccc2Cl)=O)cc1
+-23.56    -25.18     94.29      0.93      C(c1ccccc1)N=c1c2c(nc(N3c4c(cccc4)CC3)[nH]1)cccc2
+-20.21    -19.26    102.47      0.95      c1(CCCCCCC(c2oc(-c3ccc(C(O)=O)cn3)cn2)=O)ccccc1
+-27.64    -25.95     98.75      0.97      O(CC=C)NC(=O)NC1CCCCCCC1
+-36.72    -38.85     87.94      0.99      c1ccc(N(C)CCOc2cccc(-c3oc4c(C(=O)NCc5cc(C)ccc5)cccc4c3)c2)cc1
+-20.51    -21.81    104.02      0.98      c1c(-c2ccc(OC(F)(F)F)cc2)ccc(NCc2c(-c3cnc(C(NCCC(=O)O)=O)cc3)cc(C(F)(F)F)cc2)c1
+-30.78    -30.40     86.78      0.92      c1c(C(C)N=c2n3c(c(=Cc4[nH]c(=O)[nH]c4O)cn3)nc(=NCc3ccc(Cl)c(C(F)(F)F)c3)[nH]2)cccc1
+-22.93    -23.27     89.58      0.88      c1ccc(C(CN(N)CCC)=O)cc1
+-23.21    -24.73    102.32      0.99      FC(F)(c1ccc(-c2ccc(CNCCNc3ccccc3)cc2)cc1)F
+logp   raw_logp
+0.9280309677124023   2.3331305980682373   
+0.9648140668869019   2.4314448833465576   
+0.9333698749542236   3.656078815460205   
+0.9510571956634521   2.3865671157836914   
+0.9742028713226318   2.473165512084961   
+0.9905714392662048   3.3932511806488037   
+0.9830515384674072   3.4708683490753174   
+0.9154205918312073   2.3103108406066895   
+0.8816849589347839   2.2616841793060303   
+0.9925710558891296   2.6382617950439453   
+
+10:52:49: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 5   Fraction valid SMILES: 97.7   Score: 0.9170   Time elapsed: 5   Time left: 79.2
+  Agent     Prior     Target     Score     SMILES
+-45.65    -46.01     77.99      0.97      c1(C(CN2CCN(CC)CC2)O)ccc2c(c3cc(-c4cncc(OCc5ccccc5)c4)[nH]c3c(Cl)n2)c1
+-26.85    -27.20     98.89      0.99      C1N(Cc2cnc(C)n2Cc2ccc(C#N)cc2)CCC(N2C(=O)Nc3ccccc3C2=O)C1
+-29.03    -29.44     98.44      1.00      C(N1C(=O)c2c(cccc2)C1=O)N(Cc1ccco1)C1=NS(=O)(=O)c2c1cccc2
+-30.78    -30.96     60.60      0.72      c1cc(-c2ccc(Cl)cc2)nc2cc(-c3c4c(ncc3)cc(Cl)cc4)sc12
+-40.15    -39.25     84.12      0.96      c1(F)c(NC(=O)c2c(=O)n(C(C(=O)N(C)C)C)c3c(nccc3)c2O)ccc(Cl)c1
+-19.39    -19.19    107.49      0.99      Oc1c(C=O)cc(-c2ccc(C#N)cc2)cc1
+-38.45    -39.43     79.61      0.93      O(C(C(OC(NCc1ccc(OC2CCCCC2)cc1)=O)C(N1C(c2ccccc2)CCC1)=O)=O)C
+-42.15    -42.74     73.82      0.91      c12c(cc(N(CC(C)C)S(c3c(Cl)c(NC(=O)C4CCCN4)ccc3)(=O)=O)cn1)cc[nH]2
+-79.36    -79.74    -79.74      0.00      C12C34C(=O)C=CC3(O)OC(C3(C55C(OC(=O)C)CC(C)(C5CC(O)C(C)(C)C4CC3)OO5)OC1OCCC)C(O)C2=C
+-22.52    -23.13     96.27      0.93      c1cccc(COCC(N2CCN(S(=O)(c3ccc(Br)cc3)=O)CC2)=O)c1
+logp   raw_logp
+0.9687524437904358   3.5525522232055664   
+0.985029935836792   2.545593023300171   
+0.9990622997283936   2.9810309410095215   
+0.7153224945068359   3.8799550533294678   
+0.9637659192085266   2.4274778366088867   
+0.9897170066833496   2.5952839851379395   
+0.9300060868263245   2.33703351020813   
+0.9106397032737732   2.302464008331299   
+0.0   0.0   
+0.9328218102455139   2.3427774906158447   
+
+10:52:50: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 6   Fraction valid SMILES: 99.2   Score: 0.9197   Time elapsed: 5   Time left: 67.1
+  Agent     Prior     Target     Score     SMILES
+-28.84    -30.45     90.34      0.94      N(NCc1nc2ccccc2[nH]1)=c1sc(CC)c(-c2ccccc2)[nH]1
+-20.73    -20.46     88.92      0.85      C(=O)(N)C[S+]([O-])c1ccccc1
+-27.40    -28.04     97.73      0.98      c1(C(Nc2ccc(S(N=c3nccc[nH]3)(=O)=O)cc2)=O)cc2[nH]c(=O)c(C(C)C)nc2cc1
+-22.54    -23.35    102.82      0.99      c1(-c2ccc(CN(C)CC3CN(Cc4ccccc4)CCC3)cc2)ccccc1
+-27.77    -26.68     87.62      0.89      c1(S(=O)(N2CCN(CC(C)C)CC2)=O)ccc(OC(C)C)cc1
+-36.79    -35.80     81.28      0.91      c1(C)ccn2c(nc(CCc3oc(CCCCC4SCC5C(C4)CO5)nn3)n2)c1
+-21.31    -22.20     82.83      0.82      c1ccccc1C(=O)N=c1sc(-c2oc(Br)cc2)n[nH]1
+-28.92    -30.86     75.99      0.83      c1(F)c(Cn2cc(C(NCc3c(C)[nH]c(=N)cc3C)=O)cc2Br)cccc1OC
+-33.02    -33.81     90.56      0.97      O=C(C(C)C)Nc1ccc(NC(=O)NCC(c2ccccc2)F)cc1
+-30.80    -30.83     82.85      0.89      C(=O)(N=c1[nH]nc(CCOCC)s1)CSc1nc(-c2ccccc2)nc2ccc(Cl)cc12
+logp   raw_logp
+0.9437316656112671   2.367384195327759   
+0.8544738292694092   2.230628728866577   
+0.9826038479804993   2.5256705284118652   
+0.9856962561607361   2.5516252517700195   
+0.8929570913314819   2.2763843536376953   
+0.9147509932518005   2.309187889099121   
+0.8206034898757935   2.198096752166748   
+0.8347498178482056   2.2110252380371094   
+0.9715818166732788   2.4601995944976807   
+0.8881176710128784   2.2699148654937744   
+
+10:52:51: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 7   Fraction valid SMILES: 100.0   Score: 0.9422   Time elapsed: 6   Time left: 69.8
+  Agent     Prior     Target     Score     SMILES
+-28.13    -28.18     99.50      1.00      n12ccc(=NC(=O)C3CC3)nc1c(-c1ccc(Oc3ccccc3)cc1)c[nH]2
+-24.24    -24.93    101.48      0.99      c1cc(C2c3cc(OC)c(OC)cc3CCN2C(c2cccnc2)=O)ccc1[N+](=O)[O-]
+-35.53    -36.69     90.80      1.00      Clc1ccc(-c2nc(C(=O)N3Cc4c(ccc(CN5CC(C)(C)SC5)c4)CC3)ccc2)cc1
+-20.98    -21.17    105.28      0.99      C1CN(CC(=O)N(c2ccccc2)c2ccccc2)c2c(cccc2)C1
+-33.44    -33.33     84.81      0.92      c1cc(Br)cc(N2C(=O)C(C)NC23CCCCC3)c1Br
+-21.90    -21.76    104.91      0.99      Cc1ccccc1NC(CN1CCN(CC(Nc2ccc(Cl)cc2)=O)CC1)=O
+-34.62    -32.53     90.83      0.96      c1nn(CC2CN(C3CCOCC3)CCC2)c2c1c(=N)nc(CCc1ccccc1)[nH]2
+-28.03    -27.64     85.28      0.88      c1c(C(O)=O)cc2c([nH]c3cc4c(cc32)CCC(C)(C)N4)c1
+-23.59    -24.64    103.11      1.00      c1(CN2CCC3(CC2)N(c2ccccc2)CNC3=O)ccc(C(=O)Nc2ccc(C(C)(C)C)cc2)cc1
+-24.14    -25.18     87.55      0.88      c1cc(C(=O)N2CC3CN(c4cncc(C)n4)CC3C2)c(C)o1
+logp   raw_logp
+0.9975211024284363   3.2137718200683594   
+0.9875632524490356   2.5701394081115723   
+0.995958149433136   2.7192516326904297   
+0.9879270195960999   2.574066162109375   
+0.922957718372345   2.323540449142456   
+0.9895948171615601   2.593722105026245   
+0.963750958442688   2.427421808242798   
+0.8821496367454529   2.26226544380188   
+0.998045027256012   3.1795432567596436   
+0.8807470202445984   2.26051664352417   
+
+10:52:52: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 8   Fraction valid SMILES: 97.7   Score: 0.9067   Time elapsed: 7   Time left: 71.6
+  Agent     Prior     Target     Score     SMILES
+-34.22    -30.44     87.81      0.92      CN(CC1CN(CCCc2ccccc2)CC1)C(C(C)(C)CC)=O
+-34.59    -36.38     87.03      0.96      C1N(c2c(NS(c3c(OC)ccc(Br)c3)(=O)=O)cc(C(=O)N=c3c(C)ccc[nH]3)cc2)CCOC1
+-41.08    -44.41     76.68      0.95      C1(F)C(O)C(CNS(=O)(=O)c2ccc(NC(NCc3c(N4CCCCCC4)cc([N+](=O)[O-])cc3)=O)cc2)CC1
+-22.13    -22.24     92.40      0.90      c1nc(CCCNC(=N)NC(=O)c2c(N)[nH]c(=N)c(Cl)n2)ccc1
+-35.64    -35.26     73.94      0.85      c12c(cc(C(OC)=O)c3nc(-c4cccc([N+]([O-])=O)c4)nc(N4CCCC4)c13)OCO2
+-44.54    -42.63     66.11      0.85      c1(C)c(O)c(C)c2c3c1C1(C)CC(C)(C)Oc4c1c(cnc4)C=C3C(C)CO2
+-40.09    -41.84     77.93      0.94      c1c(Cl)cc2c([nH]ccc2=NCCCN2CC3C(N(c4nc5n(cccc5)c4)CC3)C2)c1
+-23.01    -21.01     85.12      0.83      c1(Cl)cc(N=c2nc(OCC)[nH]c(OCC)n2)c(OC)cc1OC
+-50.78    -51.49     66.72      0.92      Nc1ccc2c(c1)[nH]cc2-c1cc2c(c(C(C)C)cc(C(N3CC(O)CC3C(=O)OCC)=O)c2)[nH]1
+-33.30    -34.09     88.81      0.96      N(C(CCC(=O)Oc1ccc(N=c2[nH]c3n(C)c(=O)n(C)c(=O)c3n2C)cc1)=O)c1ccccc1
+logp   raw_logp
+0.9238248467445374   2.3251376152038574   
+0.9641775488853455   2.4290223121643066   
+0.9460413455963135   2.373164415359497   
+0.8956021666526794   2.280029773712158   
+0.8531018495559692   2.229196786880493   
+0.8495367765426636   2.225526809692383   
+0.9357444643974304   2.348980665206909   
+0.8291752934455872   2.205829620361328   
+0.9235207438468933   2.324575662612915   
+0.9601258039474487   2.414508581161499   
+
+10:52:52: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 9   Fraction valid SMILES: 98.4   Score: 0.9223   Time elapsed: 8   Time left: 72.8
+  Agent     Prior     Target     Score     SMILES
+-29.47    -30.88     96.49      1.00      n1c(-c2ccccc2)oc2ccc3c(c12)occ3-c1ccc(O)cc1
+-32.33    -32.62     91.78      0.97      c1cc(C(c2ccccc2)(C(NCCCN2C=CCC(c3ccccc3)=N2)=O)O)ccc1
+-24.93    -25.41     96.79      0.95      O=C(Cn1nc2c(c1)CC(C)CC2)N(c1ccccc1)CC(NCC1OCCC1)=O
+-29.97    -30.39     91.31      0.95      c1(S(=O)(=O)n2c(-c3ccccc3)cnc2CNCCO)ccccc1
+-26.23    -25.75    100.60      0.99      c1cc(Cl)ccc1Cn1nnc(-c2ccc3c(sc(=NC(=O)C)[nH]3)c2)c1
+-30.14    -28.85     79.32      0.85      C12c3c(c(O)n(-c4ccccc4C)c3O)C(c3c1cccc3)N2C(=O)OC
+-27.76    -28.53     80.69      0.85      C(=O)(c1ccccc1)Nc1c(N)cc(C(O)CO)cc1
+-32.88    -32.54     92.43      0.98      C1(C(=O)Nc2c(-c3nn(CC(N4CCC(N(C)CCCC)CC4)=O)nn3)cccc2)CCCCC1
+-35.34    -38.10     89.71      1.00      c1cc(-c2sc(N(c3c(N)cccc3)Cc3cscc3)nn2)ncc1
+-26.57    -25.72     87.94      0.89      CCN(CC)Cc1c(O)c(-c2coc3cc(O)cc(O)c3c2=O)ccc1O
+logp   raw_logp
+0.9950872659683228   3.3068606853485107   
+0.9718877077102661   2.461651563644409   
+0.954734206199646   2.397247314453125   
+0.9507616758346558   2.385741949081421   
+0.9871059060096741   2.5653610229492188   
+0.845070481300354   2.2210288047790527   
+0.8533289432525635   2.2294328212738037   
+0.9763293266296387   2.484665870666504   
+0.9985328912734985   2.8654603958129883   
+0.8879653811454773   2.2697153091430664   
+
+10:52:53: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 10   Fraction valid SMILES: 99.2   Score: 0.9279   Time elapsed: 9   Time left: 73.6
+  Agent     Prior     Target     Score     SMILES
+-44.46    -45.91     80.26      0.99      c1ccc(-c2ccc(NC(c3ccncc3)=O)cc2)cc1OC(c1c(C(F)(F)F)cccc1)CC(NS(=O)(C)=O)C
+-30.42    -33.22     94.16      1.00      s1c(N=c2cc[nH]c3c2ccc(-c2ccc(CNCCN4CCOCC4)cc2)c3)nc(N2CCOCC2)c1
+-31.20    -32.74     93.42      0.99      c1cccn1S(=O)(=O)c1ccc(NC(Cc2ccc(OCCCc3ccccc3)cc2)=O)cc1
+-29.39    -30.90     93.32      0.97      c1(-c2c(OCCCN3CCCCC3)cccc2)cccc(-c2c3ccccc3oc2Cc2ccccc2)c1
+-34.04    -35.78     87.14      0.96      c1cc(OC)ccc1CCN(Cc1ccc(OC)cc1)C(c1nc[nH]c1C(=O)Nc1ccc(Cl)cc1)=O
+-31.30    -31.55     75.02      0.83      c1ccc2c(c1)C(=O)c1cc(CC(C(NCCS)=O)=O)oc1-2
+-40.34    -41.42     86.24      1.00      c1cc2nc(C=Nc3[nH]cnc3C(=O)NCc3ccccc3)n(CCc3ccc(F)cc3)c2cc1
+-25.56    -25.59     94.98      0.94      c1(NNC(NC(c2c(Cl)cc(Cl)cc2)=O)=S)c(Cl)cccc1
+-48.41    -49.29     61.89      0.87      C1(Oc2c(O)c3c(C=C)c([N+](=O)[O-])c(=O)cc-3oc2)C(O)CCC(C)(C)C1
+-38.39    -37.66     66.03      0.81      C(S(C)(=O)=O)c1c(N(CC)C)cc(C(=O)NC(c2nccs2)(C)C)nc1
+logp   raw_logp
+0.9857078194618225   3.4482672214508057   
+0.9951514005661011   2.694892168045044   
+0.9855899214744568   2.5506443977355957   
+0.9704246520996094   3.5451583862304688   
+0.9602560997009277   3.5850472450256348   
+0.832569420337677   2.2089767456054688   
+0.9973089098930359   3.2252697944641113   
+0.9419312477111816   2.3630313873291016   
+0.8685582280158997   2.246021270751953   
+0.8100370168685913   2.1889514923095703   
+
+10:52:54: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 11   Fraction valid SMILES: 99.2   Score: 0.9313   Time elapsed: 10   Time left: 74.2
+  Agent     Prior     Target     Score     SMILES
+-22.86    -22.67     89.18      0.87      c1(C(=O)NC(C(N)=O)Cc2ccccc2)ccc(S(N)(=O)=O)cc1
+-26.58    -26.03     80.31      0.83      S(c1nc(-c2ccc(OC)cc2)cc(C(F)(F)F)n1)C(C(=O)O)CC(=O)O
+-31.87    -33.95     91.44      0.98      C(N)(c1ccc(-c2oc(-c3cc(C#N)c(OC(C)C)cc3)cc2)cc1Cl)=O
+-32.04    -34.64     92.37      0.99      N(c1ccc(-c2oc(=S)[nH]n2)cc1)N=c1[nH]ncc(-c2ccccc2O)c1C
+-26.66    -27.58     99.44      0.99      c1[nH]c2c(cccc2S(=O)(c2ccc3n(C)c4c(c3c2)C2NC(CC2)C4)=O)c1
+-40.46    -43.16     84.57      1.00      c1cc(S(=O)(N(C2CCN(CCc3ccc(OCC(N4CCCCC4)=O)c(C)c3)CC2)c2ccc(C#N)cc2)=O)cnc1
+-40.85    -40.10     72.53      0.88      c1(N2CC(Cn3cc(C=C4C(=O)NCCN4)c4cc(OC)ccc43)OCC2)ccncc1
+-39.33    -41.45     80.71      0.95      c1ccccc1N1c2nc(C(F)(F)F)cc(-c3cc(N4C(=O)CCC4)ccc3)c2C2(CCOCC2)C1=O
+-45.18    -47.65     80.23      1.00      c1(Nc2n3c(nc2-c2ccc(OCCN4CC5C(C(=O)NCC5)C4)cc2)cccc3)ccc(Br)cc1F
+-28.20    -29.28     96.47      0.98      c1c(NC(=O)NC2N=C(c3c(F)cccc3)c3ccccc3N(C)C2=O)cc(CN2CCCC2)cc1
+logp   raw_logp
+0.8737881779670715   2.252093553543091   
+0.8308276534080505   2.207355499267578   
+0.9795780777931213   2.504349946975708   
+0.9922233819961548   2.6322124004364014   
+0.9923415780067444   2.63423752784729   
+0.9978741407394409   2.808169364929199   
+0.8799381256103516   2.2595160007476807   
+0.9543914198875427   2.3962175846099854   
+0.9990706443786621   2.9927256107330322   
+0.9824601411819458   3.4754221439361572   
+
+10:52:55: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 12   Fraction valid SMILES: 98.4   Score: 0.9184   Time elapsed: 11   Time left: 74.5
+  Agent     Prior     Target     Score     SMILES
+-29.76    -30.84     97.02      1.00      c1(-c2nc(-c3ccc(C)o3)[nH]c(=Nc3ccccc3)c2)ccco1
+-26.57    -25.97     84.60      0.86      N(S(=O)(=O)c1c2ncccc2ccc1)=c1c(F)c[nH]cc1
+-22.36    -22.31     82.81      0.82      C1=CSC2=NS(=O)(=O)c3c(cccc3)N12
+-25.77    -25.54    100.69      0.99      N(S(c1ccc(C)cc1)(=O)=O)(Cc1nc2c(=N)[nH]c(=N)[nH]c2cc1)C
+-36.78    -36.79     59.66      0.75      c1cc2c(cc1)C(C)(C)C(=CC=Cc1[n+](C)c3cc(N)ccc3cc1)N2c1ccc(C)cc1
+-17.18    -17.57     96.41      0.89      c1(O)ccc(-c2oc3cc(O)cc(O)c3c(=O)c2OC2OC(C)C(O)C(O)C2O)cc1
+-36.26    -35.84     85.04      0.94      C12(C)C3CCC4(C)C(CCC4C(CCC(=O)NC(C(=O)O)Cc4c5ccccc5[nH]c4)C)C3CCC1C(=O)CC2
+-21.42    -22.00    105.77      1.00      c1cc2ccc(C=NNC3=c4ccccc4=NC3=O)cc2cc1
+-29.51    -30.29     95.65      0.98      c1c(C(=O)NCC2C3CN(Cc4ccc(Br)cc4)CC23)c(Cl)cc(Cl)c1
+-38.41    -40.01     77.85      0.92      C1CN(C(c2nn(C3CCN(c4ncc(C(=O)NCc5cnccc5)cc4)CC3)c(C)c2)=O)CCC1
+logp   raw_logp
+0.9988755583763123   3.0834426879882812   
+0.8638070821762085   2.24068021774292   
+0.8212934732437134   2.1987082958221436   
+0.9861736297607422   2.5561208724975586   
+0.7535140514373779   3.854409694671631   
+0.8904494047164917   2.273000717163086   
+0.9443537592887878   2.3689186573028564   
+0.9981381297111511   3.1722536087036133   
+0.9838777780532837   2.5357630252838135   
+0.9207838773727417   2.319607734680176   
+
+10:52:56: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 13   Fraction valid SMILES: 98.4   Score: 0.9207   Time elapsed: 11   Time left: 68.4
+  Agent     Prior     Target     Score     SMILES
+-22.63    -22.84    104.95      1.00      c12ccccc1sc(-c1ccsc1NC(=O)Nc1ccccc1)n2
+-35.18    -36.57     90.70      0.99      NC(=O)c1c2n(nc1-c1ccc(Oc3ccccc3)cc1)CCc1c-2ccc(OC(N(C)CC(F)(F)F)=O)c1
+-20.63    -20.70     90.57      0.87      c1(=O)n(C)cnc2cc(-c3ccc(N4CCN(C)CC4)cc3)nc(N3CC(CO)CC3)c12
+-27.23    -29.01     98.71      1.00      c12c(cccc1)c(S(Nc1ccc(C(N3CCC(O)(c4[nH]ccn4)CC3)=O)cc1)(=O)=O)ccc2
+-27.88    -28.60     98.36      0.99      c1(C(=O)Nc2c(-c3cccc(Cl)c3)ncnc2)ccc(OC(C)C)cc1
+-25.43    -26.45    101.13      1.00      O(C)c1ccc(S(=O)(=O)N2C(c3ccccc3)c3n(ccc3)-c3ccccc3C2=O)cc1
+-43.92    -42.96     83.64      0.99      c1cc(-c2c(C(=O)C)c(C)c(C)cc2C(=O)CCc2ccc(CC)cc2)cnc1Cl
+-27.45    -27.37     91.23      0.93      C1C(OC(=O)c2ccc(NC(=O)c3c(C)onc3C)cc2)CCCC1
+-25.63    -25.16    101.36      0.99      c1(-c2c3c(ccc2)CCCC3)noc(-c2ccc(OC)cc2)c1
+-29.12    -30.80     96.79      1.00      C1N(c2c3c(ncn2)ccc(F)c3)CCN(CCc2cccc(NC(Nc3ccccc3)=O)c2)C1
+logp   raw_logp
+0.9983243942260742   2.843923330307007   
+0.9943085312843323   3.3264355659484863   
+0.8692470788955688   2.246809244155884   
+0.9978100657463074   3.1961238384246826   
+0.9918665885925293   2.6262807846069336   
+0.9967193007469177   3.2525296211242676   
+0.989115297794342   2.5877668857574463   
+0.9265574216842651   2.33028244972229   
+0.9884312748908997   2.5797080993652344   
+0.9967878460884094   3.2496492862701416   
+
+10:52:57: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 14   Fraction valid SMILES: 99.2   Score: 0.9232   Time elapsed: 12   Time left: 68.8
+  Agent     Prior     Target     Score     SMILES
+-30.70    -32.07     95.58      1.00      c1(-c2ccccc2)cc(NC(=O)Nc2c(F)cc(F)cc2F)c2c(c1)nc(C)cc2
+-21.10    -20.89    103.92      0.98      c1cc(N=c2scc(CC(=O)Nc3ccccc3)[nH]2)ccc1C
+-28.27    -28.62     86.20      0.90      c1c(Br)c(S(N2CCCC2C(=O)Nc2cc(Cl)c(Cl)cc2)(=O)=O)ccc1
+-26.12    -25.64     88.98      0.90      C1CCCN(c2c3c(C)c(C(=O)Nc4c(C)cc(C)cc4)sc3ncn2)CC1
+-24.98    -24.25    102.34      0.99      c1(N2CCN(CCCCCCn3c(=O)ccc(-n4c5ccccc5nc4C)n3)CC2)c(Cl)c(Cl)ccc1
+-20.82    -20.89    104.02      0.98      c1c(C=CC(=O)c2oc3ccccc3c2)ccc(Br)c1
+-21.20    -21.31    101.03      0.96      c1cc2c(cc1)scc2C(c1ccc(OC)cc1)=O
+-21.47    -21.74     88.30      0.86      c1ccc(OCc2nc(C#N)c(NCc3ccncc3)o2)cc1C
+-21.37    -21.53     93.14      0.90      c1(N(C)C)ccc(NC(=O)N2CCN(c3c4c(cc(OC)c(OC)c4)ncn3)CC2)cc1
+-28.80    -30.17     97.51      1.00      c1ccccc1CN(C(=O)c1ccccc1C)C(C)c1cc(Cl)c(Cl)cc1
+logp   raw_logp
+0.9973137378692627   2.7749805450439453   
+0.9750428199768066   2.477593421936035   
+0.897068977355957   2.2820863723754883   
+0.8954907655715942   2.279874563217163   
+0.9889302253723145   2.5855374336242676   
+0.9758653044700623   2.482072591781616   
+0.9558260440826416   2.400578260421753   
+0.8596650958061218   2.2361505031585693   
+0.8958911895751953   2.280432939529419   
+0.9974746704101562   3.2163829803466797   
+
+10:52:58: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 15   Fraction valid SMILES: 96.9   Score: 0.8989   Time elapsed: 13   Time left: 69.1
+  Agent     Prior     Target     Score     SMILES
+-20.01    -20.69    102.79      0.96      c1c(NC(=O)c2ccc(Cl)cc2)ccc(-c2nc3c(cccc3)[nH]2)c1
+-37.51    -36.90     79.20      0.91      C1N2C3(CCC1)CN(c1cccc(Cl)c1)C3C2
+-22.80    -22.81     99.46      0.96      c1(Oc2c3sc(-c4ncn(C)c4)cc3ncc2)c(F)cc(NC(=O)c2c(=O)n(-c3ccc(F)cc3)ccc2)cc1
+-26.92    -27.74     99.72      1.00      Brc1c2c(cccc2)n(CCCCN2CCN(c3ccc(Cl)cc3)CC2)c1
+-30.85    -31.76     96.12      1.00      c1cc(C)c(SCc2n(C)c3c(cc(NC(COc4ccc([N+]([O-])=O)cc4)=O)cc3)n2)cc1
+-41.69    -44.50     79.85      0.97      c1c(-c2cc(N(CC(Nc3c(F)cccc3)=O)C(=O)c3cc(C)cc(C)c3)nn2-c2ccccc2)ccc(OC)c1
+-29.23    -28.94     93.28      0.95      c1(COc2cc(C)ccc2C)c(-c2[nH]c(=O)c(C#N)c(-c3ccc(C)cc3)c2)cccc1
+-34.82    -34.72     93.11      1.00      c1(NC(OC)=O)ccc(Oc2ncccc2C(=O)N2Cc3ccccc3CC2C(=O)O)cc1
+-31.54    -31.92     95.92      1.00      c1cccc(OC)c1C(CNC(=O)c1cccc(Cc2ccccc2)c1)N1CCC(Cc2ccccc2)CC1
+-40.66    -42.27     79.85      0.95      c1(Cl)ccc2c([nH]ccc2=Nc2ccc(NC(=O)N3CCN(c4ccc([N+]([O-])=O)c(F)c4)C3=N)cc2)c1
+logp   raw_logp
+0.9646562337875366   3.569159507751465   
+0.9070071578025818   2.2967517375946045   
+0.955248236656189   3.601194143295288   
+0.9957937598228455   2.7138993740081787   
+0.999006986618042   3.0485618114471436   
+0.97148197889328   3.5402708053588867   
+0.9548506736755371   3.6024010181427   
+0.998640775680542   2.878690004348755   
+0.9987578392028809   3.104504346847534   
+0.9540165066719055   3.604900598526001   
+
+10:52:58: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 16   Fraction valid SMILES: 97.7   Score: 0.8959   Time elapsed: 14   Time left: 69.2
+  Agent     Prior     Target     Score     SMILES
+-24.39    -25.70     97.16      0.96      c1cc(N=c2c(Cl)c[nH]c(=Nc3ccc(NC(=O)C4CC4)cc3)[nH]2)c(S(NC)(=O)=O)cc1
+-35.81    -34.99     91.45      0.99      c1c(Cl)ccc2c1C(=O)N1C(N2S(=O)(c2ccc(C)cc2)=O)CN(CCC)CC1
+-39.46    -38.77     68.84      0.84      C1(C(OC)=O)C(C)N1S(=O)(c1cc(C(NCc2ccco2)=O)c(F)cc1)=O
+-20.28    -20.23    106.12      0.99      c1(C2=[N+]([O-])c3cc(Cl)ccc3C2=O)ccc(OC)cc1
+-25.71    -28.33     88.02      0.91      c1ccc(Sc2ccc(NC(c3ccc(Nc4c5c(cccc5)[n+](C)cc4)cc3)=O)cc2)cc1
+-57.19    -58.70    -58.70      0.00      c1nc2c(c1-c1cnn(C3(CC#N)CN(C4CC5CN(c6ccc(C(O)(C(F)F)F)c(C(F)(F)F)c6)CC5C4)C3)c1)nc[nH]2
+-26.33    -27.25     81.84      0.85      c1cccc(N2CCN(C(Cc3c(C(=O)O)n(CC)c4cc(C)ccc34)=O)CC2)c1
+-36.33    -37.27     90.07      0.99      C(C)(c1nn(-c2sccc2)c(-c2ccc([S+]([O-])C)cc2)c1C)(O)C
+-30.00    -30.64     95.48      0.99      n1c(SCC(N2c3ccccc3NC(=O)C2)=O)n(-c2c(CC)cccc2)c(-c2ncccc2)n1
+-30.12    -29.18     81.21      0.86      O=[N+](c1c2c(c(S(=O)(=O)c3ccccc3)c(C)[nH]2)cc([N+](=O)[O-])c1)[O-]
+logp   raw_logp
+0.9598422646522522   2.413546562194824   
+0.9877917170524597   2.572591781616211   
+0.8407410979270935   2.216768741607666   
+0.9871242046356201   2.5655486583709717   
+0.908961832523346   3.700200080871582   
+0.0   0.0   
+0.8522093892097473   2.228271007537842   
+0.9948990941047668   2.68813157081604   
+0.9853333234786987   3.4516940116882324   
+0.8623924255371094   2.2391202449798584   
+
+10:52:59: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 17   Fraction valid SMILES: 99.2   Score: 0.9201   Time elapsed: 15   Time left: 69.2
+  Agent     Prior     Target     Score     SMILES
+-24.30    -25.26    101.42      0.99      c1ccncc1C(O)CNC(Cc1ccccc1)(c1ccccc1)c1ccccc1
+-24.25    -24.89    -24.89      0.00      c1cc(N2CCN(S(=O)(c3ccc4[nH]c(O)c4c3)=O)CC2)ccc1F
+-28.70    -30.04     97.36      1.00      C(c1ccc(-c2ccc(-c3c4c(nn3C)c(N3CC(N)CCC3)ccn4)cc2)cc1)#N
+-25.73    -26.52    101.30      1.00      c1(Cl)ccccc1C=NNC(=O)c1cc(S(Nc2ccc(F)cc2)(=O)=O)ccc1
+-26.00    -26.17     76.43      0.80      c1(Cl)cc(Oc2ccc([N+](=O)[O-])cc2Cl)c(CC(=O)O)cc1C
+-24.53    -24.51    103.03      1.00      c1c(N2CCN(CC(O)CNC(=O)c3nc(-c4c(C)cccc4)ccc3)CC2)cccc1
+-20.44    -21.24    106.63      1.00      N(C(=O)N=c1[nH]c(-c2ccccc2)c(-c2ccccc2)s1)c1ccccc1
+-31.09    -33.14     94.73      1.00      c1cc(OC)c(-c2cc(N(CCOC)C(c3ccc(O)cc3O)=O)ccc2)cc1
+-20.11    -21.06    106.04      0.99      c1c(C=Cc2c3ccc(Nc4ccccc4C(NCC4CCCCC4)=O)cc3n[nH]2)cccc1
+-29.53    -30.19     86.84      0.91      c1(CN2Cc3n(c(C(N(CCC)CC4CC4)=O)nc3)CC2)ccc(F)cc1
+logp   raw_logp
+0.9897631406784058   2.5958781242370605   
+0.0   0.0   
+0.9952910542488098   2.6987931728363037   
+0.9985334277153015   3.1344804763793945   
+0.801571786403656   2.1819024085998535   
+0.9963632225990295   2.733485698699951   
+0.9990457892417908   2.969020366668701   
+0.9990541338920593   2.974365711212158   
+0.9929602146148682   3.3546183109283447   
+0.9142240881919861   2.308310031890869   
+
+10:53:00: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 18   Fraction valid SMILES: 98.4   Score: 0.9335   Time elapsed: 16   Time left: 69.1
+  Agent     Prior     Target     Score     SMILES
+-22.74    -21.97     93.47      0.90      c1(F)ccc(CNC(CSc2[nH]c(C)cc(=O)n2)=O)cc1
+-27.78    -28.52     96.78      0.98      c1(NC(c2c(C)nco2)=O)ccc(-n2c(C(F)(F)F)nc3c2cccc3)cc1
+-25.10    -24.81     85.79      0.86      S(c1cc(Cl)cc(Cl)c1)(N1CCC(C(=O)NCc2ccccn2)CC1)(=O)=O
+-20.00    -19.30    107.85      0.99      N(c1ccccc1)C(=S)Nc1ccc(OCC)cc1
+-26.49    -28.51     91.16      0.93      FC(c1ccnc(N=c2cccc(CN(C3CCN(C)CC3)C)[nH]2)c1)(F)F
+-30.31    -30.93     96.42      0.99      c1(C(NCCc2ccccc2)=O)ccc(Cn2nc(-c3ccc(C(F)(F)F)cc3)nn2)o1
+-45.67    -46.84    -46.84      0.00      c1cc(C2OC(c3ccc(CN(c4ccc(C(C5CC5)(C)c5ccc(C(=O)O)cc5)cc4C)=O)cc3)CC2)ccc1
+-33.58    -34.64     92.55      0.99      N(c1ccc(Cl)cc1)=c1[nH]oc2c(-c3ccc(F)cc3N)ccnc21
+-27.57    -27.89     98.32      0.99      c1cc2n(Cc3cc(Br)ccc3)ccc2cc1NC(C(C)(C)C)=O
+-51.96    -50.92     75.20      0.99      C(CC)C[N+](C1CC(OC(=O)C)OC1C([O-])=O)CCOC(=O)CCCCCCCCCCCCCCC
+logp   raw_logp
+0.9018493890762329   2.288975238800049   
+0.9788783192634583   2.4998629093170166   
+0.8640308976173401   2.2409281730651855   
+0.993408739566803   2.654099225997925   
+0.934956967830658   2.3472838401794434   
+0.9949553608894348   2.6896090507507324   
+0.0   0.0   
+0.9936840534210205   2.6597518920898438   
+0.9859907627105713   2.5543811321258545   
+0.9853218197822571   3.4517979621887207   
+
+10:53:01: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 19   Fraction valid SMILES: 97.7   Score: 0.9057   Time elapsed: 17   Time left: 68.8
+  Agent     Prior     Target     Score     SMILES
+-29.78    -30.83     93.71      0.97      O=C(Nc1cc(Cl)c(-c2cc(F)cc(F)c2C)cc1)Nc1ccc(OC(F)(F)F)cc1
+-43.06    -42.36     84.51      0.99      C(C(CCS)CN(C(c1cc(C=Cc2cccc(F)c2)ccc1)=O)C)c1ccccc1
+-35.53    -34.69     68.09      0.80      C1Cc2oc(-c3c(F)cccn3)nc2CN1c1nc(C)c(C)s1
+-21.41    -21.68    105.94      1.00      c1c(-c2c[nH]n3c(=NCc4cccnc4)cc(C)nc23)ccc(C)c1
+-32.60    -32.06     85.95      0.92      O=C(Nc1ccc(-n2nc(C3CCCCC3)cc2C(O)=O)cc1)OC(C)C
+-24.50    -25.18     95.24      0.94      c1(O)ccc(-c2[nH]c(=N)ccc2)cc1OCCN(C)C
+-31.75    -32.31     91.11      0.96      C(COc1c(NC(=O)N2CCC(c3nc(-c4ccccc4)no3)CC2)cccc1)C1CCCCC1
+-43.47    -44.89    -44.89      0.00      C12C(C(=O)Nc3cccc(CN(CC)CC)c3)C=CC1Cc1cccc3ccc2c31
+-41.99    -41.13     80.98      0.95      C(#C)Cn1ncc(S(=O)(NC(=O)C2(NC(c3ccc4c(C5CCCC5)c(-c5cocn5)n(C)c4c3)=O)CCC2)=O)c1
+-36.74    -39.68     86.32      0.98      c1(NS(c2ccc(N=c3[nH]cc(C4CC4)c(-c4ccc(S(=O)(C)=O)cc4)n3)cc2)(=O)=O)c(Sc2ccccc2)cccc1
+logp   raw_logp
+0.9729364514350891   2.4667482376098633   
+0.9911330342292786   2.61486554145813   
+0.803024172782898   2.1830954551696777   
+0.9970893263816833   2.7638683319091797   
+0.9219630360603333   2.321728467941284   
+0.9407541751861572   2.3602535724639893   
+0.9641565084457397   2.428942918777466   
+0.0   0.0   
+0.953964352607727   2.394944667816162   
+0.9843766093254089   3.460068941116333   
+
+10:53:02: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 20   Fraction valid SMILES: 99.2   Score: 0.9306   Time elapsed: 17   Time left: 64.8
+  Agent     Prior     Target     Score     SMILES
+-23.48    -24.96    102.62      1.00      O=C(NCc1c(OCc2ccc(Cl)cc2)cccc1)Nc1ccc(Cl)cc1
+-29.08    -29.84     98.03      1.00      N(=c1c(C(=O)NC2CCN(Cc3cc4c(cc3)OCO4)CC2)ccc[nH]1)C(=O)c1ccccc1Br
+-23.88    -24.00    100.87      0.98      c1cccc2c1C(c1cn(CC=C)c3c1cccc3)=CC(=O)C2=O
+-27.08    -27.83     86.58      0.89      c1c(N=c2[nH]n(C3C(C#N)CC(OC(=O)N4CCOCC4)CC3)cc2C(N)=O)ccc(C(F)(F)F)c1
+-40.25    -42.37     84.18      0.99      c1ccccc1COC1C(S(Nc2ccc(OCCCc3ccc(NC(N)=N)cc3)cc2)(=O)=O)OC(CO)C(O)C1O
+-23.13    -23.55    100.82      0.97      O=C(N=C1SCCN1)c1ccc(N=c2cc[nH]c(C(F)(F)F)c2)cc1
+-59.51    -58.12     54.75      0.88      c1(-c2c(-c3ccc(Cl)cc3)nns2)cc(C(c2ccc3c(cc(O)n3C3CCCC3)c2)c2ccc(OC)cc2)oc1
+-36.36    -37.61     88.35      0.98      O=C(C1=CN(C2CCN(C(c3ccc(Cl)cc3)c3ccccc3)CC2)C(=O)NC1c1cc(F)cc(F)c1)N
+-54.04    -54.78     67.61      0.96      c1(=O)c(C(NC2CCCC2)=O)cn(C2CC2)c2cc(N3CC(C)N(Cn4cnc5c(N6CC(CN)CCC6)ncnc54)CC3)n(C)c12
+-23.65    -23.10     90.09      0.88      c1(Cl)cc(F)ccc1CNC(c1n(C)nc(C)c1)=O
+logp   raw_logp
+0.9967032670974731   3.25319242477417   
+0.9989936947822571   2.946774482727051   
+0.9755246639251709   2.4801995754241943   
+0.893790602684021   2.277524471282959   
+0.988653302192688   2.582271099090576   
+0.9716318249702454   2.4604358673095703   
+0.8818148374557495   3.7381536960601807   
+0.984019935131073   3.4630625247955322   
+0.9562097787857056   2.4017674922943115   
+0.8843665719032288   2.2650668621063232   
+
+10:53:03: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 21   Fraction valid SMILES: 98.4   Score: 0.8857   Time elapsed: 18   Time left: 64.6
+  Agent     Prior     Target     Score     SMILES
+-17.70    -16.03    100.44      0.91      C1(O)CCC2C3CCc4cc(O)ccc4C3CCC12C
+-23.47    -24.67    101.96      0.99      c1cccc(OC)c1-c1nnc(SCc2cccc(F)c2)cc1
+-35.80    -37.49     66.76      0.81      N1(C)Cc2c(c(N=c3cc[nH]n3Cc3c(Cl)cccc3Cl)ncc2)CC1
+-25.36    -26.53     98.24      0.97      c1(Oc2ccc(OCc3ccccc3)cc2)ccc2[nH]c(=N)ccc2c1
+-23.24    -23.02     91.58      0.90      O=c1[nH]c(=O)c2c(nc(Cl)nc2N(CC)CC)n1C
+-21.89    -22.89    102.85      0.98      c1csc(C(c2ccc(Nc3c(F)cc(F)cc3)cc2)=O)c1
+-26.74    -26.80     99.03      0.98      c1(OC(=O)c2noc(-c3ccc(C(C)(C)C)cc3)c2)cccc(C)c1
+-29.25    -28.42     92.38      0.94      c1(SCCN(C)C)n(-c2ccccc2)c2nc(C)cc(C)c2c(=S)n1
+-20.79    -19.33    -19.33      0.00      c1cc(CCCC(CS)N)ccc1
+-23.74    -23.49     90.92      0.89      O1C2CCC1CN(c1c3c4c(sc3nc(-c3ccncc3)n1)CCCC4)C2
+logp   raw_logp
+0.9099200367927551   2.301316022872925   
+0.9892656207084656   2.5896050930023193   
+0.8144242167472839   2.192699670791626   
+0.9747616052627563   3.523904800415039   
+0.895270049571991   2.2795674800872803   
+0.9823755025863647   2.5239388942718506   
+0.9831093549728394   2.529585123062134   
+0.9437509179115295   2.367431402206421   
+0.9185165762901306   2.3156094551086426   
+0.8938508033752441   2.277606964111328   
+
+10:53:04: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 22   Fraction valid SMILES: 98.4   Score: 0.9086   Time elapsed: 19   Time left: 64.4
+  Agent     Prior     Target     Score     SMILES
+-30.82    -30.09     83.82      0.89      [nH]1cnc2c1nc(-c1occc1)[nH]c2=NCC(Cc1ccccc1)O
+-43.25    -42.71     70.18      0.88      C1=C(c2c(Cl)cc(NS(=O)(=O)C)cc2)C(N(CC)CC)c2c(ccc(OC)c2)O1
+-47.06    -48.26     78.99      0.99      c1ccc(Oc2nc3c(cccc3)nc2N2CCC3(CC2)CC2c4ccccc4C3(O)OC2C(=O)O)cc1
+-26.94    -25.93     97.11      0.96      c1(C(C)C)ccc(NC(=O)CN(C)C(=O)c2cc(S(=O)(N3CCCCC3)=O)ccc2OC)cc1
+-51.88    -50.97     74.50      0.98      c1(C(N(CC2CCCCC2)Cc2nccc3c2n(CC(N2CCNCC2)=O)c2c3cc(C(N)=O)cc2)=O)csc2c1cccc2
+-24.35    -24.87     93.95      0.93      c1c(S(=O)(N2CCN(c3[nH]c(=N)nc(C)c3)CC2)=O)ccc(C(C)C)c1
+-48.15    -50.15     71.86      0.95      S(=O)(c1ccc2ccccc2c1)(NC(c1c(O)cccc1)C(=O)N=Nc1c2c(ccc(C(Nc3ccccc3N)=O)c2)c(O)[nH]c1=O)=O
+-32.24    -33.02    -33.02      0.00      o1c2c(Br)cc(Cl)cc2cc2c1cc([N+]([O-])=O)cc2
+-30.98    -30.65     79.69      0.86      c1(Cl)ccc(Cl)cc1SCc1nc2c(ccc(C(F)(F)F)c2)n1CCC
+-25.19    -26.67    100.71      1.00      c1(Br)ccc(-c2nn3c(c4c([nH]c3=NC(Nc3ccc(Cl)cc3)=O)nn(C)c4)n2)cc1
+logp   raw_logp
+0.8899107575416565   2.272282838821411   
+0.8818924427032471   2.2619433403015137   
+0.9941614270210266   3.329824209213257   
+0.961236834526062   2.418342113494873   
+0.9802512526512146   2.5088114738464355   
+0.928279459476471   2.333616018295288   
+0.9531793594360352   3.6073660850524902   
+0.0   0.0   
+0.8620496392250061   2.2387442588806152   
+0.9952039122581482   2.696345329284668   
+
+10:53:05: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 23   Fraction valid SMILES: 97.7   Score: 0.9213   Time elapsed: 20   Time left: 64.2
+  Agent     Prior     Target     Score     SMILES
+-27.95    -29.34     93.46      0.96      N(c1ccccc1)N=Cc1c2c(Cl)cccc2n(Cc2cc(Cl)ccc2)c1
+-44.64    -43.81     73.85      0.92      C1C(O)CN1C1c2c(ccc(Oc3ccc([N+]([O-])=O)c(C#N)c3)c2)C(N(C(C)=O)C)C1
+-21.12    -21.20     89.60      0.87      C(c1ccc(Br)cc1)(N1CC2CNCC(C2)C1)=O
+-30.58    -32.25     94.98      0.99      c1c(N)ccc(CN2CC3C(CC2COc2ccc(Cl)cc2)C3)c1
+-22.77    -22.30     83.65      0.83      C(Cc1ccc(OC)c(OC)c1)(=O)c1c(O)cc(O)c(CC)c1
+-25.65    -25.31    101.06      0.99      c1cc(Cc2cccc(F)c2)ccc1CC(N)C
+-35.03    -35.60     80.62      0.91      c1cc(N2C(=O)C(=NC(c3c(=O)oc4c(c3)cccc4)=O)C(=O)N2C)cc(Cl)c1
+-37.87    -38.33     89.52      1.00      Clc1c(-c2c(F)ccc(F)c2C(N2C(C)C(N=c3[nH]cc(Cl)c(-c4c(C(F)(F)F)cccn4)c3)CCC2)=O)ccc(F)c1
+-29.61    -30.47     78.34      0.85      o1c(-c2ccccc2O)nc(-c2ccncc2)c1C(N)=O
+-31.36    -34.55     92.03      0.99      c1cccc2c1Cc1cc(NC(=O)c3c(NS(c4ccc(NC(N)=N)cc4)(=O)=O)cccc3)ccc1-2
+logp   raw_logp
+0.9594336748123169   3.5878281593322754   
+0.9192501902580261   2.31689190864563   
+0.8656342029571533   2.242715358734131   
+0.9939663410186768   2.665815591812134   
+0.8277596831321716   2.2045319080352783   
+0.9872739315032959   2.567096471786499   
+0.9079847931861877   2.298269033432007   
+0.9987902641296387   2.900784730911255   
+0.8501258492469788   2.226128101348877   
+0.9889152646064758   3.4146406650543213   
+
+10:53:05: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 24   Fraction valid SMILES: 99.2   Score: 0.9257   Time elapsed: 21   Time left: 63.8
+  Agent     Prior     Target     Score     SMILES
+-34.98    -35.47     88.82      0.97      C([N+](CC[N+](C)(C)CCCn1ccc(=O)c2ccccc21)(C)C)COS(C)(=O)=O
+-25.62    -25.40    102.41      1.00      C1COCCN1S(=O)(c1cccc(C(N2c3ccccc3Sc3c2cccc3)=O)c1)=O
+-39.68    -38.89     87.29      0.99      C(OC(=O)c1cc(-n2c(C(=O)NC)c3ccccc3n2)ccc1)c1ccc(OC)cc1
+-29.53    -31.47     95.57      0.99      c1c(NC(c2ccccc2NC(=O)c2ccc(N3C(C)CCC3)cc2)=O)ccc(C(C)(C)C)c1
+-23.13    -23.14    101.60      0.97      N(c1cc(Cl)c(Cl)cc1)=C1N(C(=S)SC)CC2(CCCCC2)CO1
+-28.95    -30.21     83.56      0.89      c1cccc(NS(=O)(=O)c2ccc(C(NCc3nnc(SCC(=O)N4CCCC4)o3)=O)cc2)c1Cl
+-41.03    -44.60     82.20      0.99      c1(C(=O)Nc2c(Nc3ccc(C(=O)OC)c(Cl)c3)ccc(C(=O)NCc3ccccc3F)c2)cc(C#N)ccc1
+-27.21    -30.51     85.68      0.91      c1c(NC(Nc2c(Cl)ccc3c2cccn3)=O)ccc(-c2ccc(-c3nc4ccccc4[nH]3)cc2)c1
+-38.81    -38.50     83.50      0.95      c1(=NC(=O)c2ccc3c(cccc3)n2)[nH]c(-c2cc(C3CCCCC3)[nH]c2)c[nH]c1=N
+-33.77    -33.66     75.42      0.85      c1(F)c([N+]([O-])=O)cc(NC(Nc2cccs2)=O)c(OCC)c1
+logp   raw_logp
+0.9709993004798889   2.4574763774871826   
+0.9984790682792664   3.140536308288574   
+0.9857564568519592   3.4478156566619873   
+0.992526113986969   3.3625357151031494   
+0.9745576977729797   2.4750187397003174   
+0.888804018497467   2.270817279815674   
+0.9906485080718994   3.3921663761138916   
+0.9077324867248535   3.7021238803863525   
+0.9530962705612183   2.3923916816711426   
+0.852138876914978   2.228198289871216   
+
+10:53:06: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 25   Fraction valid SMILES: 97.7   Score: 0.9144   Time elapsed: 22   Time left: 63.5
+  Agent     Prior     Target     Score     SMILES
+-28.09    -28.85     98.84      1.00      C1CN(c2c(Cl)cc(C(=O)Nc3ccc(OC)cc3)cc2)C(c2ccccc2)S1
+-22.74    -24.28    100.81      0.98      c1cccn1-c1ccc(-c2nc(Cc3ccc(Cl)cc3)on2)cc1
+-18.44    -18.46     85.35      0.81      c1c(C=NN=c2[nH]ncn2N)ccc(C)c1
+-44.88    -45.17     72.74      0.92      c1c2c(ccc1)sc(C(C(=O)C(C(OC1C3(C)CCC(C3(C)C)C1)c1ccccc1)O)=O)c2
+-28.57    -29.20     75.51      0.82      N1=C(Nc2cccnc2)N=C(c2ccc(Cl)cc2)c2ccccc2C1
+-29.24    -30.14     96.09      0.99      O=C(N(c1ccc(OCCN(C)CC)cc1)c1cccc(C)c1)c1ccccc1
+-21.53    -22.28    104.25      0.99      c1cnc(Oc2ccc(N=c3cccc[nH]3)cc2)c(C2CCN(S(=O)(=O)C)CC2)n1
+-31.56    -33.41     94.47      1.00      N(C(C(=O)NCC#N)Cc1ccc(-c2c(OC)cccc2OC)cc1)C(=O)C(NC(=O)N1CCOCC1)Cc1ccccc1
+-24.24    -24.72    102.45      0.99      c1(-c2n(-c3ccc(Cl)cc3)c(SCC(=O)N=c3cc(C)o[nH]3)nn2)ccc(Cl)cc1
+-25.26    -26.43    100.61      0.99      c1(-c2nc(N(C)N=Cc3cc(OC)c(OC)cc3)sc2)ccc([N+]([O-])=O)cc1
+logp   raw_logp
+0.9975884556770325   3.209883689880371   
+0.9772082567214966   3.5102829933166504   
+0.8109997510910034   2.1897683143615723   
+0.9212049245834351   2.320361614227295   
+0.8180184364318848   3.804178476333618   
+0.9862285256385803   2.556647539138794   
+0.9885040521621704   2.580543041229248   
+0.9990582466125488   3.0225043296813965   
+0.9934980273246765   2.6559062004089355   
+0.9925198554992676   2.6373536586761475   
+
+10:53:07: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 26   Fraction valid SMILES: 99.2   Score: 0.9350   Time elapsed: 23   Time left: 63.0
+  Agent     Prior     Target     Score     SMILES
+-24.42    -24.06     89.46      0.89      c1c(C#N)cccc1NC(C1CCN(S(c2cccnc2)(=O)=O)CC1)=O
+-27.91    -28.58     90.20      0.93      O(c1cc2c(c(OC)c1OC)-c1c(cc(=O)c(OC)cc1)C(NC(=O)Cn1cc[n+](Cc3ccc(F)cc3F)c1)CC2)C
+-27.03    -28.18     94.01      0.95      c1(-c2ccc(NC(Nc3c(F)cccc3)=O)cc2)cc(C(NC(CC(O)=O)C=O)=O)no1
+-22.69    -24.13    103.74      1.00      N1(C)c2c(cccc2)C(c2ccccc2)=NC(NC(c2n(C)ccc2)=O)C1=O
+-27.81    -28.09     94.33      0.96      c1cc(Br)oc1C(=O)N1N=C(c2ccc(OC)cc2)CC1c1ccc2ccccc2c1
+-32.89    -32.08     72.50      0.82      C1c2cn(C(C)CO)cc(C(=O)N)c2=Nc2c(cc(OC)cc2)N1
+-30.91    -29.30     89.93      0.93      O=C(N(S(=O)(=O)c1cc2[nH]c(=O)[nH]c2cc1)CC(C)C)CCc1ccccc1
+-39.58    -40.23     85.31      0.98      c12ccccc1[nH]c1c2CCN2C(=O)N(C(c3ccccc3)COC(=O)c3cccs3)C(=O)C21C
+-23.65    -24.94    101.61      0.99      c1(Cn2c(=O)c(-c3ccc(Br)cc3)nc3c[nH]c(=NCc4ccccc4)nc23)ccccc1
+-27.11    -29.11     94.16      0.96      c1(C)nc(Oc2cc(NS(=O)(=O)c3ccc(NC(=O)C)cc3)c(Cl)cc2)c(C)cc1
+logp   raw_logp
+0.886938750743866   2.268376111984253   
+0.9279343485832214   2.332942008972168   
+0.954584538936615   2.396796941757202   
+0.9989790320396423   3.0579261779785156   
+0.9564401507377625   3.5975139141082764   
+0.817033052444458   2.1949610710144043   
+0.9315088391304016   2.340071678161621   
+0.9808167219161987   3.4873239994049072   
+0.9886329770088196   3.417965888977051   
+0.963076114654541   2.424926519393921   
+
+10:53:08: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 27   Fraction valid SMILES: 95.3   Score: 0.8894   Time elapsed: 24   Time left: 62.6
+  Agent     Prior     Target     Score     SMILES
+-30.28    -29.71     77.48      0.84      C1(c2ccccn2)CC=Nn2c(-c3cccs3)nnc21
+-22.08    -22.77    103.71      0.99      c1cccc(-n2nc(-c3ccc(Cl)cc3)c(C(N3CCSCC3)=O)c2)c1
+-30.32    -31.85     94.77      0.99      C1(N(CCc2ccccc2)Cc2nnnn2Cc2ccc(OCc3ccc(C(C)C)cc3)cc2)CCCCC1
+-22.29    -23.97    103.67      1.00      O=c1n(-c2ccccc2)c(=Nc2ccccc2)[nH]c2c1cn[nH]2
+-64.36    -62.27    -62.27      0.00      C(O)C1(C)C(O)CCC2(C)C3C(C)(C4(C)C(C5C67CC7OC(C)(CCC6C4(C)CC5)OC7=O)C3O)CC(OC(C)=O)C12
+-32.30    -32.17     92.50      0.97      o1c2cc3c(cc2c2c(c4c(cc2)cccc4)c1=O)CC(=O)C(OC)=CC3=O
+-31.30    -32.35     84.48      0.91      c1c(C(N)=N)ccc(COc2ccc3nc(C(N)=N)cc(C=Cc4ccc(C(N)=N)cc4)c3c2)c1
+-30.07    -29.87     90.90      0.94      O(CC)C(=O)CN1c2c(cccc2)C(=S)NC1c1ccccc1
+-25.17    -26.15     86.43      0.88      c1(CN(C2CC2)C(=O)c2cncc(Br)c2)ncccc1
+-30.17    -31.78     94.37      0.99      c1(N2CCN(C(=O)c3ccco3)CC2)c(C=NNC(c2cc(C)ccc2)=O)cc(Cl)cc1
+logp   raw_logp
+0.8374181985855103   2.213562250137329   
+0.9881011247634888   2.5759875774383545   
+0.9891916513442993   3.4113025665283203   
+0.9971511363983154   2.766831398010254   
+0.0   0.0   
+0.9739506840705872   2.4718635082244873   
+0.9127156138420105   3.69417667388916   
+0.9435152411460876   2.366853952407837   
+0.8795027136802673   2.2589800357818604   
+0.9855128526687622   2.5499374866485596   
+
+10:53:09: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 28   Fraction valid SMILES: 98.4   Score: 0.9320   Time elapsed: 24   Time left: 59.6
+  Agent     Prior     Target     Score     SMILES
+-30.16    -32.05     95.75      1.00      O=C(c1ccccc1NC(=O)c1ccc(N2CCCNCC2)cc1)Nc1ccc(S(=O)(N)=O)cc1
+-23.32    -24.57     95.75      0.94      c1cc(Br)cc2c(N=NC(=O)Nc3ccccc3Cl)c(O)[nH]c12
+-82.29    -81.46     45.16      0.99      CC1(NC(=O)NC2CC3C4Cn5c(=O)n(-c6ccc(Cl)cc6)c(=O)n5C3c3ccccc3N4C2=O)CCC2(Nc3[nH]c(=O)[nH]c(=O)c3NC2OCc2ccccc2)C1
+-28.15    -29.92     93.13      0.96      c1c2ccccc2c(N2C(=O)c3ccccc3NC2c2cc(N)c(O)c(OC)c2)cc1
+-34.05    -32.80     82.25      0.90      O=C(C(C)(C)NS(c1cc(Cl)c(N)c(Cl)c1)(=O)=O)NCCCCc1c(OC)cccc1
+-32.69    -30.65     87.91      0.93      C1CC(C(=O)OC2CCCCC2)CCN1C(c1sc2c(c1)COc1cccc(C)c1-2)=O
+-21.13    -21.98    104.72      0.99      O=C(c1ccc(NS(=O)(c2cccs2)=O)cc1)Nc1ccc(C)cc1
+-20.33    -20.33    100.26      0.94      c1cc(OC)ccc1OCC(Nc1c(F)cccc1)=O
+-32.38    -34.65     79.00      0.89      N(C(Nc1ccc(Oc2ccccc2)cc1)=S)c1ccc(-c2nn3c(ccc3Br)nc2)cc1
+-24.98    -26.28    101.59      1.00      c1c([N+](=O)[O-])ccc(C(Oc2ccc(Cl)cc2C(Nc2ccccc2C)=O)=O)c1
+logp   raw_logp
+0.9984564781188965   3.142955780029297   
+0.9400418996810913   2.35859751701355   
+0.9892163872718811   3.4109995365142822   
+0.96131831407547   3.5813727378845215   
+0.8988828659057617   2.2846662998199463   
+0.9261960983276367   2.329592227935791   
+0.9898417592048645   2.5968968868255615   
+0.9421399831771851   2.3635294437408447   
+0.8879008889198303   3.7303690910339355   
+0.9989520907402039   2.9343748092651367   
+
+10:53:10: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 29   Fraction valid SMILES: 96.1   Score: 0.8958   Time elapsed: 25   Time left: 59.2
+  Agent     Prior     Target     Score     SMILES
+-29.70    -32.66     94.04      0.99      S(=O)(c1ccc(-c2[nH]c(=N)c3nc(-c4occc4)nn3c2)cc1)(=O)N(c1ccc(Cl)cc1)C
+-35.34    -35.27     76.50      0.87      c12ccc(-c3n(C)c4c(cc(F)c(N5CCNCC5)c4)c3C#Cc3cscc3)cc1OCO2
+-25.95    -27.36    100.52      1.00      c1(NC(c2cc(-c3ccc(C)cc3)on2)=O)ccccc1-n1ncnc1
+-20.13    -20.01    102.06      0.95      c1cccc(CN2CC3(COCC4CCOCC4)COCC3C2)c1
+-19.79    -21.72     89.00      0.86      Oc1c(O)ccc(-c2oc3cc(O)cc(O)c3c(=O)c2OC(=O)c2cc(O)c(O)c(O)c2)c1
+-39.53    -40.65     85.73      0.99      c1(Oc2c(C#N)cccn2)c(F)c(-c2cnc(=N)[nH]c2)ccc1NS(=O)(=O)c1cccc(F)c1Cl
+-40.28    -41.46     78.22      0.94      c1c(-c2cnc(OC)cc2)c[nH]c(=Nc2c(Cl)cccc2O)c1-c1cc2c(ncs2)cc1
+-23.12    -22.82    102.86      0.98      n1(Cc2c(F)cc(F)cc2)cc(COc2ccc(C=O)cc2)nn1
+-30.57    -30.43     86.15      0.91      c1(=NNC(c2cc(-c3cc4c(cccc4)oc3=O)[nH]c(=N)c2C#N)=O)cccc[nH]1
+-52.22    -53.17     64.16      0.92      C(c1cc(O)cc2noc(-c3cc(O)ccc3)c12)C(C(O)=NO)C(C(NC1c2ccccc2CC1O)=O)CC
+logp   raw_logp
+0.9898947477340698   3.402412176132202   
+0.873180091381073   2.2513766288757324   
+0.9990551471710205   2.9751229286193848   
+0.9536770582199097   2.394094705581665   
+0.864988386631012   2.2419934272766113   
+0.9873353242874146   2.5677361488342285   
+0.935016393661499   3.6525886058807373   
+0.9818945527076721   2.520362377166748   
+0.9108105897903442   2.3027379512786865   
+0.9166339039802551   2.312366008758545   
+
+10:53:11: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 30   Fraction valid SMILES: 98.4   Score: 0.9255   Time elapsed: 26   Time left: 58.7
+  Agent     Prior     Target     Score     SMILES
+-27.27    -27.46     90.72      0.92      c1ccc2[nH]c3c(c2c1)CC(CC)Cc1c-3cccc1
+-26.67    -27.55    100.23      1.00      c1(NC(Cn2n(-c3ccccc3)c(=O)c3cccnc23)=O)cccc(S(N2CCCCCC2)(=O)=O)c1
+-21.72    -20.87    105.65      0.99      CC(=CCN1CCN(C(c2ccc(F)cc2)c2ccc(F)cc2)CC1)C
+-28.40    -29.23     74.03      0.81      c1cc(NS(=O)(=O)c2cc3c(cc2C)NC(=O)CC(=O)N3)cc(C(=O)O)c1
+-26.11    -28.16     99.37      1.00      C1(=O)c2c(cccc2OCC(N2c3ccccc3CC2)=O)N(Cc2ccccc2)C1=O
+-28.12    -28.83     97.39      0.99      c12c([N+]([O-])=O)c(Sc3ccccc3)ccc1n(CCN(C)C)cc2
+-32.74    -34.50     92.73      0.99      Oc1c(O)cc(C(=O)N(c2ccc(-c3ncc(OC(CCC)C)cn3)cc2)Cc2ccccc2)cc1
+-24.55    -25.29     98.89      0.97      c1(NC(c2nn(-c3ccccc3)c(OC)c2)=O)ccc(C(=O)O)cc1
+-42.99    -44.65     83.19      1.00      C(Oc1cc2c(cc1O)occ2CCN(C)C)CN(Cc1ncccc1)Cc1ccncc1
+-29.13    -32.52    -32.52      0.00      c1c2n3c(c(=O)n(Cc4cc(OC)ccc4)c2nc1)cc(-c1ccc(OC)cc1)n3
+logp   raw_logp
+0.9233123660087585   2.3241918087005615   
+0.9982913732528687   3.15912127494812   
+0.9883862137794495   2.5791943073272705   
+0.8067225813865662   2.1861636638641357   
+0.9963897466659546   3.2655248641967773   
+0.9860343337059021   2.554793119430542   
+0.9939491748809814   3.334561347961426   
+0.9701666831970215   2.4536750316619873   
+0.9987742900848389   3.1018600463867188   
+0.0   0.0   
+
+10:53:12: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 31   Fraction valid SMILES: 99.2   Score: 0.9409   Time elapsed: 27   Time left: 58.2
+  Agent     Prior     Target     Score     SMILES
+-25.19    -25.00     84.85      0.86      C(Sc1[nH]c(Cl)cc(=Nc2cccc(Cl)c2)n1)C(=O)N1CCOCC1
+-25.09    -26.22     94.03      0.94      c1ccccc1-c1n(CC)c(=Nc2cccc(SC(F)(F)F)c2)sc1
+-32.92    -32.74     77.67      0.86      C(c1c(OC)c(OC)ccc1)N1C(O)C(=O)NCC1c1cccc(F)c1
+-25.21    -25.26     91.12      0.91      O(C(=O)c1c(O)ccc(N=Cc2c(O)c(C(C)(C)C)cc(C=CC(c3ccccc3)=O)c2)c1)C
+-30.00    -30.38     75.72      0.83      C(NCC#N)(CN1N=C(c2ccc(F)cc2)CSC1=S)=O
+-22.34    -23.10     94.73      0.92      O=C(CN1C(=O)Nc2c(cc(Br)cc2)C1c1ccccc1)O
+-56.55    -58.55     66.76      0.98      C1(N(c2ccc(C)cc2)S(c2ccc(C)cc2)(=O)=O)C(OC(=O)c2ccc(Cl)cc2)C(=O)N2C(C(=O)N=c3cc[nH]cc3F)C(C)(C)SC21
+-21.83    -22.72    103.81      0.99      c1ccc(-n2nc(C)c3c2ncc2ccccc23)cc1
+-34.59    -33.49     91.21      0.97      C(c1c(Cl)cccc1)NC(CC(CSSCC1C(O)C(O)C(n2c3c(c(=N)[nH]cn3)nc2)O1)O)=O
+-23.02    -24.35    100.30      0.97      O=C(NCc1cccc(N2C(N)=NC(N)=NC2(C)C)c1)c1ccccc1SC
+logp   raw_logp
+0.8582270741462708   2.2346041202545166   
+0.9394658803939819   2.357271909713745   
+0.862534761428833   2.239276647567749   
+0.9092273116111755   2.3002185821533203   
+0.8288570642471313   2.2055370807647705   
+0.9205393195152283   2.31917142868042   
+0.9790515303611755   3.499040126800537   
+0.988500714302063   2.580504894256592   
+0.974237322807312   2.473344564437866   
+0.9738479852676392   2.471336841583252   
+
+10:53:13: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 32   Fraction valid SMILES: 97.7   Score: 0.8952   Time elapsed: 28   Time left: 57.7
+  Agent     Prior     Target     Score     SMILES
+-25.27    -24.23     91.67      0.91      S(N(CC1C(C)CN(C(CO)C)C(=O)c2cccc(NC(=O)c3ccncc3)c2O1)C)(C)(=O)=O
+-23.25    -23.35    102.60      0.98      c1ccccc1CCCN1C2CC(NC(c3cc4c(cc3)cccc4)=O)CC1CC2
+-30.56    -31.71     96.02      1.00      c1(Cc2nc(-c3cccc(F)c3)c3c(ccc(Cl)c3)n2)cc(Cl)ccc1
+-42.86    -43.38     59.09      0.80      s1cc(C(C)(C)N=C2NC(=O)C(C)(C(NC(=O)c3ccc(Cl)cc3F)CC)S2)cc1
+-34.26    -36.18     90.27      0.99      Fc1c(C(NC(=O)Nc2ccc(CC(NC(=O)c3c(Cl)cccc3Cl)C(=O)O)cc2)c2ccccc2)cc(Cl)cc1
+-30.77    -32.34     94.08      0.99      c1ccccc1CC(NC(c1cccc(C(=O)c2ccccc2)c1)=O)C(=O)NC(C(=O)O)Cc1ccccc1
+-31.62    -33.14     94.44      1.00      c1c(N(c2cc(C(=O)O)ccc2)Cc2ccc(OC(F)(F)F)cc2)ccc(C(=O)N(CC)CC)c1
+-23.62    -23.75     88.10      0.87      CC(=O)c1c(Oc2c(=N)[nH]c(=N)[nH]c2)ccc(Cl)c1
+-32.57    -31.26     79.57      0.87      C1C2CC3CC1(n1c(=NC(=O)C4OCCC4)sc(C(C)(C)C)n1)CC(C2)C3
+-24.48    -25.19     98.48      0.97      O=C(C)c1ccc(NC(Nc2cnc(N3CCCC3)cc2)=O)cc1
+logp   raw_logp
+0.9054264426231384   2.294328212738037   
+0.9840242266654968   2.536972999572754   
+0.9979250431060791   3.1883013248443604   
+0.8005793690681458   2.181091070175171   
+0.9878958463668823   3.4262750148773193   
+0.9876456260681152   2.571018695831299   
+0.9967288970947266   3.252128839492798   
+0.8737947940826416   2.252101421356201   
+0.8659067749977112   2.24302077293396   
+0.9661760926246643   2.436774253845215   
+
+10:53:13: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 33   Fraction valid SMILES: 100.0   Score: 0.9444   Time elapsed: 29   Time left: 57.1
+  Agent     Prior     Target     Score     SMILES
+-18.46    -19.74     95.95      0.90      c1ccccc1Cn1c(=O)[nH]c2c(ccc(Cl)c2)c1=O
+-27.22    -28.24     98.62      0.99      O=C(c1ccc(OCC(F)(F)F)cc1)c1ccn(-c2ccc(F)cc2)c1
+-22.05    -23.41    102.01      0.98      N=c1c(C(c2ccc(-c3ccccc3)cc2)=O)ncc[nH]1
+-31.74    -31.14     72.40      0.81      c1cc2n(c1)-c1c(n(C)c(CC(C)(O)C)n1)C(=O)N(C)C2
+-18.67    -18.17     91.48      0.86      c1c(Cl)ccc(CSc2n(C)cnn2)c1
+-37.38    -37.75     88.08      0.98      c1(C(c2cc3cc(C(C)=O)c(=O)n(C)c3cc2)(O)CCCCC)ccc(C(F)(F)F)cc1
+-24.64    -24.19     88.15      0.88      c12c(cccc1)C(=O)N(CCCC(=O)Nc1sc3c(c1C(N)=O)CCC(C)C3)C2=O
+-29.63    -29.27     86.76      0.91      Cc1onc(-c2ccccc2)c1C(OCc1nc(OC)c2c(cccc2)n1)=O
+-45.55    -44.89     77.65      0.96      c1cnc(C(N)=O)c(Cc2onc(Cc3ccc(NCC4CC4)cc3)n2)c1
+-27.81    -26.54     99.80      0.99      c1(Oc2ccc(C(C=Cc3cc(OC)c(OC)c(OC)c3)=O)cc2)ccc(C2CCCCC2)cc1
+logp   raw_logp
+0.9037862420082092   2.29185152053833   
+0.9911250472068787   2.6147470474243164   
+0.9798384308815002   2.5060579776763916   
+0.8089137077331543   2.188002586364746   
+0.8566153049468994   2.23288631439209   
+0.9830584526062012   2.5291860103607178   
+0.8776463866233826   2.2567126750946045   
+0.9064780473709106   2.295936346054077   
+0.9573231339454651   2.4052751064300537   
+0.9870306849479675   2.5645911693573   
+
+10:53:14: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 34   Fraction valid SMILES: 98.4   Score: 0.9153   Time elapsed: 30   Time left: 56.6
+  Agent     Prior     Target     Score     SMILES
+-49.04    -51.44     66.79      0.92      c1cc(-c2nc3c(ccc(C(N4CCC(CN(S(=O)(c5cn(C)cn5)=O)C5CCN(C(=O)C)CC5)C(C)C4)=O)c3)o2)c(C(F)(F)F)cc1
+-18.94    -20.77    106.51      0.99      c1cc(Cl)ccc1N=c1[nH]nc(-c2ccc(O)cc2O)s1
+-21.78    -20.73    106.42      0.99      c1(C=CC(Nc2ccc(NC(=O)Cc3ccccc3)c(C(=O)c3ccccc3)c2)=O)ccc(OC)cc1
+-19.92    -18.87    101.98      0.94      c1(C=CC(=O)Nc2ccccc2)ccc(OC)cc1
+-26.46    -27.97     93.41      0.95      c1(Oc2cc(C(Nc3cc(OC)cc(OC)c3)=O)ccc2)ccc2c(cccc2)c1
+-26.23    -27.09    100.67      1.00      c1(N)c(S(c2ccc(NC(=O)c3ccc(OC)cc3)cc2)(=O)=O)cc([N+](=O)[O-])cc1
+-30.58    -31.11     76.88      0.84      OC(CN1C(=O)c2c(cccc2)C1=O)c1c(F)cc(O)cc1
+-23.44    -23.78     79.40      0.81      c1(NC(OC2C3COC(=O)C3C(c3cc(OC)c(OC)c(OC)c3)c3cc4c(cc32)OCO4)=O)cccnc1
+-28.55    -29.12     83.90      0.88      c1(CNC23CCC(CCc4c(F)cnc5ccc(C(C)C(O)=O)cc45)(OC2)CC3)nc2c(cc1)OCC(=O)N2
+-28.30    -30.61     96.98      1.00      c1cccc2cc(NC(Cn3c(-c4ccccc4)c(C)c(-c4ccccc4)n3)=O)ccc12
+logp   raw_logp
+0.9237163066864014   2.324936866760254   
+0.9944251179695129   2.676313877105713   
+0.9933273196220398   3.347527265548706   
+0.9441053867340088   2.3683040142059326   
+0.948223888874054   3.621155023574829   
+0.9980881214141846   2.823774576187134   
+0.8436388373374939   2.219609498977661   
+0.8061102628707886   2.185652732849121   
+0.8829797506332397   2.2633090019226074   
+0.9968183040618896   3.2483468055725098   
+
+10:53:15: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 35   Fraction valid SMILES: 99.2   Score: 0.9400   Time elapsed: 31   Time left: 56.0
+  Agent     Prior     Target     Score     SMILES
+-26.85    -26.32     97.14      0.96      S(=O)(=O)(c1ccc(C)cc1)N1CCN(CC(Nc2cc(S(N(CC)CC)(=O)=O)ccc2)=O)CC1
+-26.20    -26.58     98.37      0.98      C1Oc2cc(C(OC3C(C)(C)Oc4ccc5c(oc(=O)cc5)c4C3)=O)ccc2O1
+-28.37    -26.23     89.31      0.90      Fc1cc(F)ccc1Oc1ccc2c(c1)OCC21C(=O)N(C)C(N)=N1
+-35.42    -36.83     89.52      0.99      c1(COc2ccc(-c3oc4c(cccc4C(=O)NC(C(=O)O)Cc4cc(OC(=O)C(C)C)ccc4)c3)cc2)ccccc1
+-24.06    -25.10     87.28      0.88      c1cccc(-c2oc(SCC(c3cc(Cl)ccc3)=O)nn2)c1C
+-33.05    -35.63     82.74      0.92      c1(NN=C(C(=O)c2noc(-c3ccc(Cl)cc3)c2)C(=O)c2ccccc2)ccc(-n2c(=O)c3ccccc3nc2C)cc1
+-27.52    -29.32     98.34      1.00      C(=O)(c1ccc(N2CCN(S(c3ccccc3F)(=O)=O)CC2)cc1)N1CCN(c2ccc(F)cc2)CC1
+-25.13    -25.79     89.16      0.90      c1ccccc1CN1CC2OC(c3ccc(C)cn3)CC2C1
+-41.42    -43.70     80.78      0.97      c12nnc(C(O)=O)c(Oc3ccc(-c4ccccc4-c4n[nH]nn4)cc3)c1CCC2NC(c1cnc2c(cccc2)n1)=O
+-29.31    -29.48     97.64      0.99      C(NC)CCN(Cc1coc(-c2ccc(C(F)(F)F)cc2)n1)c1ccccc1
+logp   raw_logp
+0.9645341038703918   2.4303741455078125   
+0.9762320518493652   2.4841182231903076   
+0.9026286602020264   2.290126323699951   
+0.9871327877044678   3.4343628883361816   
+0.8779308199882507   2.2570581436157227   
+0.924788773059845   3.673067092895508   
+0.997393012046814   3.2208425998687744   
+0.898084819316864   2.2835261821746826   
+0.972537100315094   3.535214900970459   
+0.9930883049964905   2.6478121280670166   
+
+10:53:16: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 36   Fraction valid SMILES: 99.2   Score: 0.9289   Time elapsed: 32   Time left: 55.4
+  Agent     Prior     Target     Score     SMILES
+-32.43    -33.14     79.20      0.88      O(CC(NNC(Nc1c(OC)c(Cl)ccc1)=O)=O)c1ccccc1CC
+-38.72    -37.03     72.42      0.86      O(c1c[nH]c(=Nc2cc3c(cn2)[nH]cc3)nc1C)C(c1cc(F)c(C(F)(F)F)cc1)C
+-27.82    -30.51     97.28      1.00      c1(-c2c[nH]c3[nH]ccc3c2=Nc2ccc(NC(=O)OCC)cc2)ccccc1
+-22.86    -23.20     92.43      0.90      c1c2c(ccc1)CN(C1CCN(C(=O)Nc3cc(C(=O)C)ccc3)CC1)C(=O)N2
+-25.26    -25.09     81.87      0.84      c1cc2sc(=NC(=O)c3cc(OC)c(OC)cc3[N+](=O)[O-])[nH]c2cc1
+-36.95    -36.44     83.05      0.93      OC(c1cc2nc(Cn3c(C)cc(C(=O)NCC4CCC(N)CC4)n3)ccc2cc1)=O
+-29.35    -29.30     75.46      0.82      c1(C(F)(F)F)cccc(C(NCC(c2cnc(C(F)(F)F)nc2)c2ccc(C(F)(F)F)cn2)=O)c1
+-19.47    -19.12     84.82      0.81      c12ccc(C(O)=O)cc1cccn2
+-24.61    -25.75     96.69      0.96      c1c(-c2ccccc2)cc(CCc2[nH]c(=N)cc(C)c2)cc1N
+-30.06    -28.60     84.04      0.88      C(O)C1C(O)C(O)C2c3c(c(O)n(Cc4c(Cl)cccc4)c3O)CCC21
+logp   raw_logp
+0.8777071237564087   2.256786346435547   
+0.8551504015922546   2.2313389778137207   
+0.9983575940132141   3.152928113937378   
+0.903358519077301   2.2912120819091797   
+0.8356525301933289   2.2118799686431885   
+0.9335485100746155   2.3442959785461426   
+0.8184627890586853   2.1962108612060547   
+0.8120927214622498   2.190699338912964   
+0.9566016793251038   2.4029924869537354   
+0.8800016641616821   2.259594440460205   
+
+10:53:17: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 37   Fraction valid SMILES: 98.4   Score: 0.9092   Time elapsed: 32   Time left: 53.1
+  Agent     Prior     Target     Score     SMILES
+-37.46    -40.66     85.78      0.99      c1sc(=Nc2cccc(NS(c3ccc(Br)cc3Cl)(=O)=O)c2)[nH]c1-c1ccc(CN2CCOCC2)cc1
+-24.45    -23.29    -23.29      0.00      NC(C(C#N)=Cc1cc([N+]([O-])=O)c(N)cc1)=O
+-23.28    -24.22    101.37      0.98      O=S(Nc1ccc(CN2C(=O)c3cccnc3C2=O)cc1)(C(C)C)=O
+-22.29    -23.30     88.34      0.87      C1(Oc2ccc(Cl)c(Cl)c2)CCN(c2nccnn2)CC1
+-20.70    -22.15     94.80      0.91      c1(Br)cccc(C=Nn2c(-c3cnccc3)n[nH]c2=S)c1
+-22.78    -22.25    102.55      0.97      C1c2c(Oc3ccc(F)cc3)cccc2C(=O)N1
+-40.27    -40.52     75.17      0.90      C(N=c1c(C(=O)N)cc2c(cc(C(=O)Nc3ccc(F)cc3)c(OCC(F)F)c2)[nH]1)C
+-30.62    -30.64     96.51      0.99      c1(O)ccc(-c2coc3c(C)c4c(cc32)c(CC)ccc4)cc1
+-23.75    -22.79     85.74      0.85      C1CCc2[nH]c(O)c(C#N)c(=O)c21
+-35.20    -36.57     90.23      0.99      c1(Oc2ccc(NC(c3cc(C)c(Br)cc3)=O)cn2)ccc(C(=O)N2CC(N)CC2)cc1
+logp   raw_logp
+0.9878409504890442   3.4268734455108643   
+0.8205240964889526   2.198026418685913   
+0.9811874628067017   2.515270709991455   
+0.872195839881897   2.2502224445343018   
+0.9136661291122437   2.3073856830596924   
+0.9749458432197571   2.4770748615264893   
+0.9037845134735107   2.29184889793396   
+0.993410050868988   2.6541247367858887   
+0.8479090332984924   2.223875045776367   
+0.9905744791030884   2.6067919731140137   
+
+10:53:18: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 38   Fraction valid SMILES: 98.4   Score: 0.9103   Time elapsed: 33   Time left: 52.5
+  Agent     Prior     Target     Score     SMILES
+-29.12    -30.99     96.87      1.00      N(C)(c1ccccc1)C(=O)n1c(-c2ccc(C)cc2)cc(-c2ccccc2)n1
+-23.91    -23.43     79.62      0.81      c1csc(=NC(=O)CSc2nnc(-c3ccccc3C)n2CC)[nH]1
+-31.41    -31.60     72.37      0.81      C1CNc2c1cc(O)cc2C(c1cc(OC)ccc1)=O
+-33.95    -35.43     92.26      1.00      c1ccc(-n2c3c(nc2Sc2ccc(C=CC(=O)N4CCOCC4)cc2Cl)cccn3)c(C)c1C(=O)N
+-32.34    -35.08     92.80      1.00      C1N(c2ccc(C(F)(F)F)cc2C(=O)OC)CCN(Cc2n(-c3ccccc3F)c(=O)c3c(cccc3)n2)C1
+-50.84    -51.59     52.35      0.81      O=S1(=O)N(C(C)C)c2ncnc(N3CC(N)CC3Cc3ccc4c(c3)COCO4)c2N1
+-39.73    -42.49     84.12      0.99      C1COc2ccccc2C1N(Cc1c(F)cc(N2CCN(S(=O)(c3ccc(F)cc3)C)CC2)cc1)S(c1cn(C)cn1)(=O)=O
+-32.73    -34.58     86.24      0.94      O=S(=O)(c1ccc(N2C(=N)C(C(=O)OCC)C(c3cccs3)C(C#N)C2=N)cc1)N1CCCCCC1
+-35.61    -35.40     71.66      0.84      c1(-c2cc(CCC)nc(Cl)n2)cc(C(=O)NCc2cc(OC)ccc2)sc1
+-26.50    -28.86     98.78      1.00      Oc1c(O)ccc(-c2c3c(c(-c4ccc(Cl)cc4)co3)ccc2O)c1
+logp   raw_logp
+0.9989081621170044   3.076406955718994   
+0.8050878047943115   2.1848020553588867   
+0.8122233152389526   2.1908109188079834   
+0.99761563539505   2.791722059249878   
+0.9990536570549011   2.974039077758789   
+0.81205815076828   2.1906697750091553   
+0.9891285300254822   3.4120728969573975   
+0.9439441561698914   2.3679065704345703   
+0.8363516330718994   2.2125442028045654   
+0.9971945881843567   2.76895809173584   
+
+10:53:19: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 39   Fraction valid SMILES: 98.4   Score: 0.9186   Time elapsed: 34   Time left: 51.8
+  Agent     Prior     Target     Score     SMILES
+-23.88    -26.47    100.60      0.99      c1ccccc1-c1c(C)cc(-n2c(O)c(O)c(C(C(C)(C)C)=O)c2-c2ccccc2OC(F)(F)F)cc1
+-35.26    -37.01     87.71      0.97      c1c(S(=O)(=O)N2CCCc3c2cc(NC(=O)c2ccc(-c4ccc(F)cc4)cc2)cc3)c(C)cc(C(=N)N)c1
+-32.04    -34.95     88.92      0.97      C(Nc1ccc(N=c2c3c(cc(-c4ccc(S(=O)(=O)C)cc4)cc3)[nH]cc2C(=O)N)cc1)(=O)c1ccc(C)cc1
+-32.07    -32.24     95.56      1.00      FC(F)(F)c1c(OC(c2ccc(Cl)cc2)Cn2ncnc2)ccc(-c2cc[nH]n2)c1
+-27.84    -28.12     91.41      0.93      c1ccc2c(cc3ccccc3c2CN2C(C(=O)N)CC3(OCCO3)C2)c1
+-47.72    -49.01     56.45      0.82      c1(-c2cn(CCC3C4C(c5c(Cl)ccc(Cl)c5)COCC43)nn2)cnccc1
+-23.75    -24.86     95.94      0.94      c1c(-c2csc(N3CCN(c4nc5ccccc5s4)CC3)n2)cccc1
+-23.04    -24.25    100.96      0.98      c1cc(Oc2ccccc2)ccc1NC(=O)NCc1nccs1
+-26.74    -28.39     89.71      0.92      c12n(C3C(CO)CN(Cc4ncccc4)CC3)c(C)nc1cnc1[nH]ccc12
+-30.06    -29.30     97.38      0.99      c1(S(=O)(=O)c2ccc(Cl)cc2)ccc(OC)c(NC(C)=O)c1C
+logp   raw_logp
+0.992698073387146   3.3594565391540527   
+0.9743830561637878   3.5258963108062744   
+0.9676805138587952   3.5570929050445557   
+0.9984071850776672   3.1480462551116943   
+0.9337782263755798   2.3447792530059814   
+0.8239069581031799   2.2010416984558105   
+0.9437606930732727   2.36745548248291   
+0.9781660437583923   2.4954428672790527   
+0.9226696491241455   2.3230135440826416   
+0.9896818399429321   2.5948326587677   
+
+10:53:20: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 40   Fraction valid SMILES: 97.7   Score: 0.8941   Time elapsed: 35   Time left: 51.2
+  Agent     Prior     Target     Score     SMILES
+-22.26    -23.18     86.28      0.86      Cc1c(-c2ncn(C=CC(OCc3ccccc3)=O)n2)cccc1
+-31.53    -32.02     93.51      0.98      c1ccccc1CCCN=c1[nH]c(=NCc2ccc(C)cc2)cc(CCCc2ccccc2)[nH]1
+-41.45    -43.52     82.45      0.98      CC(=O)Nc1ccc(-c2cnc(N3Cc4c(-c5ccccc5)nc(N5CCCC5)nc4CC3)o2)cc1
+-27.08    -29.70     98.17      1.00      C(Nc1ccc(NCc2ccc(F)cc2)cc1)(NC(c1c(F)cccc1F)=O)=S
+-27.14    -27.68     99.47      0.99      C1(Oc2cc(-c3oc(-c4ccc(Br)cc4)nn3)ccc2OC)COCC1
+-27.40    -27.60     89.87      0.92      c1ccccc1Nc1cc2sc(=NCCCC)[nH]c2cc1C
+-23.18    -22.62     92.61      0.90      c1ccc(C(=O)N(C)C)c(NC(=O)c2cccc(Cl)c2)c1
+-25.83    -26.14    101.69      1.00      O=C(c1ccc(F)cc1)COC(=O)CN1C(=O)c2ccccc2NC1c1ccccc1
+-22.69    -22.27    104.75      0.99      C(NCCCN1CCN(c2c(OC)cccc2)CC1)(=O)c1cc2ccccc2cc1
+-31.18    -30.22     97.13      0.99      [nH]1c(-c2ccc(Cl)cc2)cc(-c2cc(OC)c(OC)cc2)[n+]1CCCC
+logp   raw_logp
+0.855158269405365   2.23134708404541   
+0.980731725692749   3.487912178039551   
+0.9840919971466064   2.5375373363494873   
+0.9989261031150818   3.0722131729125977   
+0.993425726890564   2.6544408798217773   
+0.9177581071853638   2.3142945766448975   
+0.900230884552002   2.2866101264953613   
+0.998659610748291   3.118802070617676   
+0.9922965168952942   2.6334614753723145   
+0.9949556589126587   2.6896169185638428   
+
+10:53:21: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 41   Fraction valid SMILES: 98.4   Score: 0.9073   Time elapsed: 36   Time left: 50.6
+  Agent     Prior     Target     Score     SMILES
+-20.81    -21.10    103.24      0.97      c1cc(-n2nnnc2)ccc1C(=O)Nc1ccc(OCC)cc1
+-27.67    -26.09     87.72      0.89      C(Cc1[nH]c(=N)[nH]c(=O)c1)CCOC
+-26.07    -27.05    100.34      1.00      C(=Cc1cccc(Oc2ccccc2)c1)(c1ccc(OC)cc1)Cl
+-38.51    -44.06    -44.06      0.00      c1cc(Oc2cc(N3C(=O)N(Cc4cc(=NCc4n(C)ccn5)[nH]c4)N=C(C)C3)ccc2)ccc1
+-26.38    -27.07     83.58      0.86      c1(-c2cc(O)c(=O)[nH]c2)cc[nH]c(=Nc2cnc(N3CCOCC3)cc2)n1
+-26.15    -26.46     98.78      0.98      C(C(NC(OC(C)(C)C)=O)Cc1ccccc1)(=O)NC(C(=O)NC(Cc1ccccc1)C(N)=O)Cc1ccccc1
+-43.42    -46.44     79.05      0.98      C(c1nn(-c2cc(NC(=O)C)c(NC(Nc3c(F)ccc(F)c3)=O)cc2F)c(=O)cc1)c1c(Cl)cccc1Cl
+-21.27    -22.29     93.57      0.91      c1(-n2c(=NN=C3CCCCCCC3)scc2C)ccccc1
+-36.28    -38.97     88.49      1.00      c1(-c2c3nc(=Nc4ncc(N5C(CNS(=O)(=O)C)CCC5)cc4)[nH]cc3cc(C(F)(F)F)c2)ccc(Oc2ccccc2)cc1
+-33.01    -33.69     87.38      0.95      c1cccc(-n2c(=O)c(N=c3sc4c(ccc(NC(=S)NCC)c4)[nH]3)c(C)n2C)c1
+logp   raw_logp
+0.9714657664299011   2.459652900695801   
+0.88913893699646   2.2712595462799072   
+0.9952085614204407   2.6964738368988037   
+0.0   0.0   
+0.8644564747810364   2.241400957107544   
+0.9784333109855652   2.497084617614746   
+0.9803909659385681   2.509756088256836   
+0.9051646590232849   2.2939302921295166   
+0.9957997798919678   3.285909652709961   
+0.9458826184272766   2.3727598190307617   
+
+10:53:21: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 42   Fraction valid SMILES: 100.0   Score: 0.9309   Time elapsed: 37   Time left: 49.9
+  Agent     Prior     Target     Score     SMILES
+-22.12    -22.06     81.87      0.81      c1ccc2cc(C(=O)NCc3ncccc3)c(=O)oc2c1OC
+-23.54    -23.45     78.91      0.80      c1(=Nc2cc[nH]n2)[nH][n+](C)cs1
+-50.18    -50.99     76.88      1.00      C1SC(C2CCCCC2)(C2CCCC2)SC1N(CCCN1CCN(c2c(O)cccc2)CC1)C1c2c(cccn2)CCc2ccccc21
+-57.97    -58.92     68.96      1.00      C(c1c(O)c(Cc2c3c(ccc(NS(=O)(c4cc(C)ccc4)=O)c3)[nH]c2O)[nH]c1C)(NC(C)(c1cc(C(C)C(=O)O)ccc1)C)=O
+-36.58    -40.44     86.61      0.99      c1cccc2c1N(C(=O)COc1cccc(C(F)(F)F)c1)C(C)C(NC(=O)Nc1ccc(C(F)(F)F)cc1)C(=O)N2C
+-43.64    -42.71     70.65      0.89      c1cc(C(=O)N=c2cc(C3CCN(C4COC4)CC3CC)[nH]n2-c2c(OC)cc(F)cn2)nc(-c2ncccc2F)c1
+-17.91    -18.55    109.09      1.00      c1(-c2n(C)c(-c3ccccc3)c(-c3ccccc3)n2)ccncc1
+-25.55    -26.18     82.34      0.85      O=C1NC(=O)N(c2cccc(C)c2)C12CCN(Cc1ccncc1)CC2
+-31.57    -32.91     78.28      0.87      c1cccc(NC(O)c2cc(=O)[nH]c(=Nc3cccc([N+](=O)[O-])c3O)[nH]2)c1
+-42.84    -42.53     76.02      0.93      O=C(NC(OCc1ccccc1)=O)CCCCCCCCc1n(NS(=O)(=O)c2ccc(C)cc2)c(CCCC)nc1
+logp   raw_logp
+0.8119677305221558   2.1905927658081055   
+0.7996797561645508   2.1803581714630127   
+0.9989505410194397   3.066042423248291   
+0.9990212321281433   2.957024335861206   
+0.9925253987312317   3.362548351287842   
+0.8856481313705444   2.2667076587677   
+0.9971733689308167   3.2320845127105713   
+0.8478335738182068   2.2237987518310547   
+0.8687136769294739   2.246198892593384   
+0.9262397885322571   3.6703245639801025   
+
+10:53:22: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 43   Fraction valid SMILES: 96.9   Score: 0.9114   Time elapsed: 38   Time left: 49.2
+  Agent     Prior     Target     Score     SMILES
+-36.66    -35.93     76.05      0.87      C12c3c(cccc3)C(C1(C)C)N1C2(C)CN(C)C(=S)N1
+-23.57    -24.75    100.93      0.98      c1cc(-c2sc(-c3cc(C(O)=O)ccc3)cc2)ccc1C(N)=N
+-29.53    -29.84     98.03      1.00      c12c(cccc1)C(=O)N(Cc1ccc(C)cc1)c1c(ccc(C(NC3C4CCN(C3)CC4)=O)c1)[S+]2[O-]
+-28.83    -27.76     95.03      0.96      O=C(N1CC(OC)CC1C(=O)NCc1c(F)c(Cl)ccc1)C(CN(C=O)O)CC1CCCC1
+-33.10    -34.62     88.66      0.96      c1(Cl)c(N2C(c3cnc(-n4cnnc4)cc3)c3c(ccc(F)c3)C2=O)cccc1
+-38.38    -39.11     84.49      0.97      c1c(OCCN2CC(CNCCOC)(O)C3C(CCCC3)C2)ccc(CN2CCOCC2)c1
+-24.99    -26.93    100.00      0.99      c1ccccc1NC(Oc1cccc(-c2cc(OC(NC3CCCCC3)=O)ccc2)c1)=O
+-25.01    -23.90     95.19      0.93      C(O)(=O)CC(C=O)NC(=O)Cc1sccc1
+-21.12    -20.34     93.29      0.89      c1ccccc1C1=CCN(C(=O)CC)CC1
+-36.72    -36.05     78.57      0.90      COC1(OC)C=C(c2scc(C3=CCNCC3)c2)C(C)(C)C1=O
+logp   raw_logp
+0.874778687953949   2.253267765045166   
+0.9818741679191589   2.5202128887176514   
+0.9989517331123352   2.9342763423919678   
+0.9593238234519958   2.411804437637329   
+0.9631887674331665   3.574659824371338   
+0.9655930399894714   2.4344680309295654   
+0.9916146397590637   2.6222469806671143   
+0.930449366569519   2.337923288345337   
+0.8876938819885254   2.269360065460205   
+0.8954768776893616   2.279855251312256   
+
+10:53:23: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 44   Fraction valid SMILES: 97.7   Score: 0.9280   Time elapsed: 39   Time left: 48.5
+  Agent     Prior     Target     Score     SMILES
+-39.15    -40.59     87.26      1.00      c1cc(-c2cnc3nc(N4C(C)COCC4)c(C)cc3c2)cc(C(Nc2c(F)cccc2)=O)c1
+-26.00    -27.73    100.00      1.00      c1(-c2cc(Br)ccc2OCc2ccccc2)ccc(C(NCC(C)(C)C)=O)cc1C
+-33.08    -33.22     90.32      0.97      CN(c1ccc(C2OC(CO)C(O)C(O)C2O)cc1)C(n1c2c(cccc2)nn1)=O
+-24.55    -25.06    101.12      0.99      c12cc(C(=O)NCc3ccc(F)cc3)ccc1SC(=Cc1cc(Cl)ccc1)C(=O)N2C
+-28.04    -25.33     86.87      0.88      CCCC1CCC(C(OCC(=O)Nc2ccc(OC(F)F)cc2)=O)CC1
+-33.76    -34.09     92.54      0.99      c1(-n2c(=O)n3c(c2O)C(O)CC3)ccc(-c2c(-c3nc4c(cccc4)[nH]3)n(C)nc2)cc1
+-32.27    -32.66     95.02      1.00      c1(C(=O)NCCNC(Nc2ccccc2)=O)c(C)ccc(S(=O)(Nc2ccc(C)cc2C)=O)c1
+-36.03    -35.37    -35.37      0.00      c1ccccc1C(O)(C(=O)OC1C[N+](Cc2ccc(O)cc2)(C)CC1)=O
+-31.45    -31.59     95.52      0.99      O=C(CC(=O)NN=c1[nH]c2c(c(-c3ccccc3)n1)cccc2)c1cc2c(cc1)cccc2
+-31.48    -31.44     95.20      0.99      O(CCOC)c1nnc(-n2nc(-c3ccc(Cl)cc3)c3ccccc3c2=O)s1
+logp   raw_logp
+0.9988779425621033   2.9170472621917725   
+0.9978447556495667   2.806182861328125   
+0.9651356339454651   2.432684898376465   
+0.9858277440071106   3.4471511840820312   
+0.8765091896057129   2.255338430404663   
+0.9893227219581604   2.5903098583221436   
+0.997521162033081   2.786228895187378   
+0.0   0.0   
+0.9930636882781982   3.352658271789551   
+0.9893724322319031   2.5909266471862793   
+
+10:53:24: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 45   Fraction valid SMILES: 97.7   Score: 0.9165   Time elapsed: 40   Time left: 47.8
+  Agent     Prior     Target     Score     SMILES
+-25.85    -27.81     99.54      0.99      O=[N+](c1ccc(C(c2cn(CCN(C)C)c3c2cccc3)c2ccccc2)cc1)[O-]
+-35.87    -38.19     89.69      1.00      n1n2c(-c3ccc(NC(=O)Nc4cc(F)ccc4)cc3)cnc2ccc1OCC12CC3CC(CC(C1)C3)C2
+-28.84    -31.48     96.29      1.00      O=S(c1ccccc1Cc1c(-c2ccccc2)nn(-c2ccccc2)c1C(OC)=O)(=O)Nc1ccccc1
+-39.73    -38.83     89.04      1.00      c1nc2cc(F)ccc2c(OCc2c(Cl)c(N(C)C(=O)C=NC(CCc3ccc(C(N=c4sc(F)c[nH]4)=O)cc3)=O)ccc2Cl)c1Cl
+-35.25    -35.85     68.76      0.82      c1nc2sc(-c3nc(C)n[nH]3)c(C(NCCc3c(Cl)cccc3)=O)c2cc1
+-36.24    -38.63     87.74      0.99      C(NC(c1cccnc1C)c1ccccc1)(c1ccc2nc(Cc3ccccc3OC)sc2c1)=O
+-25.14    -25.31     88.21      0.89      c1c(F)cccc1-c1[nH]c(=Nc2cccc(C)c2)sc1C(=O)O
+-43.48    -45.39     71.62      0.91      c1(C2c3c(cc(O)cc3)C3(O2)C(c2ccc4c(c2)CCc2ccccc2-4)C3)ccc(O)cc1
+-25.60    -25.33     80.10      0.82      Cc1scc(CN2CC3C(CNC(c4ccco4)=O)OCC3CC2)n1
+-37.35    -37.41     87.02      0.97      c1c(OC)cc2c(nnc(-c3ccccc3SC(C)C)c2)c1C
+logp   raw_logp
+0.9948977828025818   3.3119022846221924   
+0.9990677237510681   3.0126848220825195   
+0.9981772303581238   3.1690478324890137   
+0.9989801645278931   2.9424283504486084   
+0.8172621726989746   2.1951606273651123   
+0.9872477054595947   3.4331753253936768   
+0.8869107365608215   2.2683398723602295   
+0.9141666889190674   3.6917853355407715   
+0.8237213492393494   2.2008750438690186   
+0.9721332788467407   2.4628281593322754   
+
+10:53:25: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 46   Fraction valid SMILES: 99.2   Score: 0.9335   Time elapsed: 41   Time left: 47.1
+  Agent     Prior     Target     Score     SMILES
+-37.41    -36.43     78.35      0.90      c1c(OC)cc(OCC2CN(Cc3ccccc3)CCO2)c(C(C=C)O)c1
+-43.64    -48.12     77.77      0.98      c1c(CNCC(NC)c2ccc(-c3ccco3)cc2)ccc(-c2ccc(C(=O)Nc3ccccc3)cc2)c1
+-21.42    -23.37    101.32      0.97      c1ccccc1-n1[nH]nc(C(Nc2ccc(Br)cc2)=O)c1=O
+-27.56    -28.27     91.71      0.94      C(C)C(c1ccccc1)OC(=O)N1CCc2c(Cl)c(O)ccc2C1
+-27.01    -27.74     98.81      0.99      c1cc(-c2ncccc2)cc(N2C(CO)Cc3ccccc3C2)n1
+-29.19    -29.85     98.01      1.00      O=C(Nc1ccc(Cl)cc1)c1cc(Oc2ccccc2[N+](=O)[O-])ccc1O
+-24.18    -24.65     97.66      0.96      c1c2c(=O)cc(-c3cc(-c4ccc(C(F)(F)F)cc4)cnc3)[nH]c2ccc1
+-35.92    -38.92     84.73      0.97      c1c(C(n2c(CCNS(=O)(c3cccc4c3cccc4)=O)c(-c3ccc(Br)cc3)nc2)c2cccc(F)c2)ccc(Cl)c1
+-26.39    -25.96     85.00      0.87      n1cccc(-c2cc(C)n(-c3cccc(OC)c3)c2C)c1
+-33.40    -34.26     81.72      0.91      C1CN(C=Nc2cc(Cl)c(NC(=O)c3cccc(C)c3)cc2Cl)CCC1
+logp   raw_logp
+0.8966994881629944   2.2815659046173096   
+0.9835169911384583   3.467172861099243   
+0.9741206765174866   2.4727396965026855   
+0.9373255372047424   2.352447032928467   
+0.988633394241333   2.5820391178131104   
+0.9988858699798584   3.0812859535217285   
+0.9555405378341675   3.6003003120422363   
+0.9659804701805115   3.5640039443969727   
+0.8669403195381165   2.2441844940185547   
+0.9060714244842529   2.2953126430511475   
+
+10:53:26: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 47   Fraction valid SMILES: 99.2   Score: 0.9271   Time elapsed: 41   Time left: 45.3
+  Agent     Prior     Target     Score     SMILES
+-31.48    -29.99     74.60      0.82      N(C)(C)Cc1cc(F)cc2c(=O)c3cccnc3sc21
+-23.75    -23.48     93.85      0.92      [nH]1c(=NC(c2[nH]c(=NC(N)=N)sc2)=O)sc2cccc(F)c12
+-24.35    -23.79    104.08      1.00      c1(NC(=O)CCn2c3c(cccc3)n3cccc3c2=O)cc(C(F)(F)F)ccc1
+-33.27    -34.46     93.12      1.00      c1(S(=O)(Nc2c(Cl)cc(-c3ccccc3)cc2)=O)ccc(N2CCOCC2)c(OC)c1
+-20.15    -21.00    105.62      0.99      c1c(CSc2oc(-c3ccc([N+](=O)[O-])cc3)nn2)ccc([N+](=O)[O-])c1
+-29.91    -30.45     96.60      0.99      c1(Oc2ccccc2)c(C)[n+]([O-])nc(=Nc2ccc(N)cc2)[nH]1
+-25.77    -26.00     99.37      0.98      O(c1ccc(C(C=Cc2cnccc2)=O)cc1)CCN(C)CC
+-25.90    -26.29     98.61      0.98      c1(-c2c3c(ncc2)OC(C(Nc2cc(OC)c(OC)cc2)=O)C3)oc(CO)cc1
+-35.34    -37.74     90.13      1.00      c1cc(OC)c(Cl)c(-c2ncc(Nc3ccc(C)c(NC(c4ccc(CN5CCN(CC)CC5)c(C(F)(F)F)c4)=O)c3)cc2OC)c1
+-30.93    -32.59     76.84      0.85      C1N(c2cc(OCc3c4c(oc(=O)c3)cc(Cl)cc4)ncn2)CC(C(=O)O)CC1
+logp   raw_logp
+0.8171056509017944   2.195024251937866   
+0.9166259765625   2.312352418899536   
+0.9989341497421265   2.929750919342041   
+0.9966592192649841   2.744999408721924   
+0.9892446398735046   2.5893468856811523   
+0.9925575852394104   2.63802170753479   
+0.9794585704803467   2.503573417663574   
+0.9758062362670898   2.481745958328247   
+0.9990134835243225   3.046114444732666   
+0.8549444675445557   2.2311224937438965   
+
+10:53:27: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 48   Fraction valid SMILES: 97.7   Score: 0.9228   Time elapsed: 42   Time left: 44.6
+  Agent     Prior     Target     Score     SMILES
+-31.45    -33.16     94.55      1.00      c1(=O)c2c(n(Cc3ccccc3)c(=NCc3ncccc3)[nH]1)CN(C(=O)c1cnccc1)CC2
+-23.30    -24.55    100.57      0.98      c1c(C(c2ccc(Cn3cncc3)cc2)=O)cc(OC)c(OC)c1
+-34.99    -38.17     88.08      0.99      c1ccc(-n2c3c(c(C#N)ccc3)c(C(=O)NC)c2Cc2ccc(-c3c(-c4nn[nH]n4)cccc3)cc2)cc1
+-25.02    -24.88     99.67      0.97      c1(SCC(c2ccc(O)cc2)=O)n[nH]c(-c2cnccc2)n1
+-40.32    -41.33     78.01      0.93      O=[N+](OCCCCN(CCN(CC)CC)CC(N1c2ccccc2NC(=O)CC1c1ccc(Cl)cc1)=O)[O-]
+-37.32    -35.50     69.62      0.82      c1(OCC(O)CNC(=O)OC(C)(C)C)c(C(N=C2CC2)=O)cccc1
+-26.33    -28.22     99.16      1.00      c1cc(-c2c(OC)ccc(C(Nc3cccc(-c4cc5ccccc5[nH]4)c3)=O)c2)ccc1
+-30.69    -29.20     75.61      0.82      CC(c1cc(-n2nc(-c3cccc(C)n3)nn2)cc(C(C)(C)C)c1)(C)C
+-38.00    -38.52     87.34      0.98      C1(c2ccc(-c3ccc(-c4cc(Cl)ccc4C#N)s3)[nH]2)C(O)C(O)C(O)C(CO)O1
+-31.13    -31.92     91.77      0.97      O=S(Nc1cc(F)c(F)cc1)(c1ccc(N2CCCCC2)c(NC(=O)c2cc(C)ccc2)c1)=O
+logp   raw_logp
+0.9976743459701538   3.2047367095947266   
+0.9775209426879883   2.4915597438812256   
+0.9863303899765015   3.4423694610595703   
+0.9731040596961975   2.467580556869507   
+0.9323390126228333   3.6582231521606445   
+0.8212456107139587   2.1986658573150635   
+0.9951369762420654   3.305504322052002   
+0.8188226222991943   2.196526527404785   
+0.9832761883735657   2.53090238571167   
+0.9662565588951111   2.4370956420898438   
+
+10:53:28: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 49   Fraction valid SMILES: 98.4   Score: 0.9189   Time elapsed: 43   Time left: 43.9
+  Agent     Prior     Target     Score     SMILES
+-29.03    -31.11     95.16      0.99      c1ccc(C(N=c2cc(N(c3cc(S(=O)(=O)CC)ccc3)C)[nH]cc2)=O)cc1
+-22.28    -22.98    103.52      0.99      c1cc(Cn2c(=O)n(Cc3ccccc3)c3c(c2=O)sc2ccccc23)ccc1C
+-25.21    -26.68    100.40      0.99      c1cc(CN(Cc2occc2)C(COc2ccc(CC)cc2)=O)ccc1SC(F)(F)F
+-22.34    -23.73    102.55      0.99      c1cc2c(cc1C(N(Cc1ccco1)Cc1ccc(N(C)C)cc1)=O)OCCO2
+-33.08    -35.15     91.09      0.99      c1cc(N(CCCNC(=O)CNc2ccc(NC(c3ccccc3)=O)cc2)C)ccc1
+-28.18    -27.95     88.83      0.91      c1ccc(-c2nc(C(C)=O)c(C(OC)OC)[nH]2)cc1
+-30.91    -29.97     75.43      0.82      O(C)c1cc2c(cc1OC)CCN1Cc3cc(C)c(C)nc3CC12
+-24.36    -24.86    102.88      1.00      c1cc(-n2c(-c3cccnc3)nnc2SCC(Nc2ccccc2)=O)c(C)cc1
+-24.30    -25.45     92.06      0.92      N(=c1cccc[nH]1)C(=O)c1c2c(cc(NC(c3ccccc3C(F)(F)F)=O)c1)[nH]c(COC)n2
+-43.66    -45.94     72.65      0.93      CN1c2cc(-c3coc4ccccc43)ccc2C(=NN)c2[nH]c3ccccc3c21
+logp   raw_logp
+0.986535906791687   2.559635639190674   
+0.988267719745636   3.422147750854492   
+0.9928295612335205   2.6429481506347656   
+0.9865915179252625   2.5601840019226074   
+0.9861789345741272   2.5561716556549072   
+0.9123852849006653   2.305284023284912   
+0.8234341740608215   2.200617551803589   
+0.9979039430618286   3.1897761821746826   
+0.9180905222892761   2.3148696422576904   
+0.9265190958976746   3.6697909832000732   
+
+10:53:28: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 50   Fraction valid SMILES: 99.2   Score: 0.9345   Time elapsed: 44   Time left: 43.1
+  Agent     Prior     Target     Score     SMILES
+-43.02    -41.17     86.68      1.00      C(N=c1c2c(c[nH]c(=Nc3c(OC)cc(C(=O)N4CCC(N(CCC)CCCCCC)CC4)cc3)n2)cc[nH]1)c1ccccc1
+-20.38    -20.28     88.48      0.85      c1ccccc1NC(=O)CSc1nc2n(c(=O)n1)cc(C)cc2
+-23.78    -23.29    104.09      1.00      c1cc(-c2ccc(Cl)c(Cl)c2)cc(COCC2(c3ccccc3)CCNCC2)c1
+-42.89    -41.71     71.83      0.89      CC(=C1CCCC(C)(C=Cc2c(C)cccc2C2OC(CO)C(O)C(O)C2O)C1C=O)C
+-34.28    -33.11     80.03      0.88      O1CCC2(C)CCC(C(=C)C(OCCN3CCCC3)=O)CC12
+-30.13    -28.46     80.38      0.85      O=C(CC(c1c(SC)nsc1C)=O)c1ccc(Br)cc1
+-23.80    -23.70     91.77      0.90      c1(OCC2N(C)CCC2)cc(-c2cnc3c(c2)CCCN3C(N)=O)cnc1
+-29.62    -29.05     90.35      0.93      C(Oc1ccc(C(NC(=O)c2ccc(S(=O)(=O)N)cc2)CO)cc1)C
+-25.46    -26.39    100.69      0.99      C1(c2ccc(Br)cc2)[S+]([O-])c2c(cc(Cl)cc2)C(=O)N1
+-27.47    -25.90     88.28      0.89      c1(OCC)cc2c(=Nc3cc(C)c(NC(=O)OC)cc3)nc[nH]c2cc1OCC
+logp   raw_logp
+0.9988312125205994   2.9079670906066895   
+0.8496851325035095   2.225677967071533   
+0.9951642155647278   3.3047547340393066   
+0.8869897723197937   2.268442392349243   
+0.8838986754417419   2.2644717693328857   
+0.850316047668457   2.226322889328003   
+0.9021020531654358   2.2893474102020264   
+0.9328728914260864   2.342883586883545   
+0.9927900433540344   2.6422202587127686   
+0.8920522332191467   2.2751553058624268   
+
+10:53:29: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 51   Fraction valid SMILES: 98.4   Score: 0.9129   Time elapsed: 45   Time left: 42.4
+  Agent     Prior     Target     Score     SMILES
+-30.35    -32.94     90.13      0.96      c1(S(Nc2ccc(OC)c(NC(c3ncccc3)=O)c2)(=O)=O)ccc(Cl)nc1
+-23.25    -22.89     96.68      0.93      c1ccccc1-c1c(OCC2CC2)nccn1
+-33.88    -32.34     81.66      0.89      NC(=O)C(Cc1ccc(O)cc1)C(NCCC1CCCN1C)=O
+-25.87    -29.29     98.36      1.00      c1ccc(Cl)c(N(S(=O)(c2ccccc2)=O)c2c(C(=NO)O)cc(Br)cc2C)c1
+-20.06    -21.74    105.31      0.99      N1(C(=O)c2ccc(NC(=O)c3occc3)cc2)c2ccccc2CCCC1
+-28.93    -29.85     97.99      1.00      c1cc(NC(C)=O)ccc1N=c1[nH]c2c(c(=NCc3ccc(NC(=O)C=C)cc3)[nH]1)ccc(C)c2
+-20.23    -20.73     84.33      0.82      C1N(c2cc(C(F)(F)F)nc(N3CCOCC3)n2)CCOC1
+-28.05    -28.36     97.52      0.98      c1cc(N=c2nc(Oc3cccc4c3C(=O)CC4)cc[nH]2)c(O)cc1
+-25.91    -27.17    100.64      1.00      c1c(-c2c(-c3ccccc3)nn(-c3ccc(OC)cc3)c2)ccc(C(=O)N)c1
+-42.77    -41.32     76.36      0.92      O=c1n(CC2CC2)c2c(cc1-c1c3c(=N)[nH]cnc3n(C3CCCN(C(=O)C=C)C3)n1)CN(C(C)=O)C2
+logp   raw_logp
+0.9614574313163757   2.4191157817840576   
+0.9341927766799927   2.3456554412841797   
+0.8906267285346985   2.273237705230713   
+0.9972907900810242   3.226203203201294   
+0.9925582408905029   2.638033866882324   
+0.9987546801567078   3.104999303817749   
+0.8207523822784424   2.198228597640991   
+0.9833946824073792   2.531846284866333   
+0.9984999299049377   3.138256072998047   
+0.9193862080574036   2.3171310424804688   
+
+10:53:30: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 52   Fraction valid SMILES: 100.0   Score: 0.9482   Time elapsed: 46   Time left: 41.7
+  Agent     Prior     Target     Score     SMILES
+-25.62    -27.40    100.31      1.00      N(Cc1ccc(NC(N2Cc3ccccc3C2)=O)cc1)C(=O)Nc1ccccc1OCC
+-21.30    -22.39    105.42      1.00      c1(C2(c3cccc(-c4cccnc4F)c3)N=C(C)C(=N)N2)ccc(F)cc1
+-21.60    -22.31    103.25      0.98      C1(c2cc3c(cc2)OCCO3)=NN(c2ccccc2)C(c2cccnc2)C1
+-40.91    -41.35     83.88      0.98      C1CCCN(C(CN2CCN(c3c(C(F)(F)F)cccc3)CC2)=O)C1c1nn(-c2ccc(F)cc2F)c2c1nccc2
+-33.41    -35.69     90.81      0.99      c1(-c2c(C(NC(C(=O)O)COc3ccccc3)=O)cccc2)ccc(Cn2c(C3CC3)nc3c2cc(Cl)c(Cl)c3)cc1
+-34.59    -37.23     89.79      0.99      Fc1ccc(-c2nc(-c3cccc(NC(=O)c4c(OC)c(OC)ccc4)c3)cs2)s1
+-49.12    -48.51     73.78      0.96      C(CCC(C)C)(C(OCc1ccc(C(N)=N)cc1)=O)NC(CN(C)C(C(NS(=O)(=O)Cc1ccccc1)CC(=O)O)=O)=O
+-29.77    -30.24     93.29      0.97      n1c(C(=NC(=O)c2ccccc2)SC)nc(-c2ccccc2)o1
+-34.12    -35.38     90.81      0.99      C1N(C(=O)Nc2[nH]c(-n3c(C(F)F)nc4c3cccc4)cc2)CCc2c1cccc2
+-51.42    -51.01     75.24      0.99      c1(CC(NC(C(C=O)NC(N(Cc2ccccc2)NC(=O)OCc2cnccc2)=O)=O)C(=O)NC(C(O)=O)CC(C)C)ccco1
+logp   raw_logp
+0.9977601766586304   3.1993627548217773   
+0.9985014796257019   3.138080596923828   
+0.9808720350265503   3.4869401454925537   
+0.9784262180328369   2.4970409870147705   
+0.9882920384407043   3.4218735694885254   
+0.9923464059829712   2.6343212127685547   
+0.9554146528244019   2.3993141651153564   
+0.9650648832321167   2.4324111938476562   
+0.9858543872833252   2.553097724914551   
+0.9863533973693848   2.5578532218933105   
+
+10:53:31: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 53   Fraction valid SMILES: 99.2   Score: 0.9282   Time elapsed: 47   Time left: 40.9
+  Agent     Prior     Target     Score     SMILES
+-34.75    -36.20     82.30      0.93      C1N(C(c2cc3c(s2)-c2cc(Br)ccc2CCC3)=O)CCN(c2c(Cl)cccc2)C1
+-30.00    -30.10     93.67      0.97      O(C)c1ccc(-c2nc(SCC(c3ccc(O)c(O)c3)=O)[nH]c2Br)cc1
+-33.46    -34.19     80.63      0.90      O(c1c(NC(COC(=O)c2cc(=O)n3[nH]c(C)c(-c4ccccc4)c3n2)=O)cc(Cl)cc1)C
+-36.15    -36.59     78.74      0.90      S(=O)(c1cc2ncn(Cc3cc(Cl)c(Cl)cc3)c2cc1)(=O)N1CCC(NC(=O)C=C)CC1
+-24.22    -24.41    102.21      0.99      c1c(Cl)ccc(O)c1NS(=O)(c1ccc2ccccc2c1)=O
+-35.69    -34.84     83.35      0.92      C(OC(=O)Cc1cc(F)ccc1)C(NC1C2C34c5c(ccc(OC)c5O2)CC(N(CC2CC2)CC3)C4(O)CC1)=O
+-30.35    -29.61     75.67      0.82      C(=O)Nc1n(C)c(=O)n(CC(=O)OCC)c(=O)c1
+-40.62    -38.48     83.82      0.96      c1(CC(N)C(NC(CCCN=C(N)N)C(c2nc3c(cc(CC(N4CCCCC4)=O)cc3)s2)=O)=O)ccc(OCC)cc1
+-41.25    -41.94     75.37      0.92      n1c(N2CCc3cc(S(=O)(c4cccc(Br)c4)=O)c(=NC(C)C)[nH]c3C2)nc(C)cc1C
+-20.68    -19.01    106.67      0.98      c1c2c(CCNCc3ccc(OC)cc3)c[nH]c2ccc1
+logp   raw_logp
+0.9257275462150574   2.3287017345428467   
+0.9670211672782898   2.440186023712158   
+0.8969619870185852   2.281935691833496   
+0.901084303855896   2.2878530025482178   
+0.9891952872276306   2.5887413024902344   
+0.9233496785163879   2.3242604732513428   
+0.8225334882736206   2.1998119354248047   
+0.955457329750061   2.399444580078125   
+0.9165120720863342   2.3121583461761475   
+0.9818894863128662   2.520325183868408   
+
+10:53:32: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 54   Fraction valid SMILES: 99.2   Score: 0.9436   Time elapsed: 48   Time left: 40.1
+  Agent     Prior     Target     Score     SMILES
+-21.23    -23.33    104.41      1.00      c1c(NC(NCCCn2c(C)cnc2)=S)ccc(-c2cnccc2)c1
+-31.22    -32.65     75.18      0.84      o1c(-c2cn3c(scc3C(O)NCc3cccc(OC)c3)n2)ccc1
+-27.13    -25.73     80.28      0.83      O(c1ccc(C=CC(c2cc(OC)ccc2OC)=O)cc1OC)C=C(C)C
+-22.97    -23.79     97.17      0.95      c1cccc2c1NC(=O)C2(NC(=O)c1ccc(F)cc1)C(F)(F)F
+-34.17    -36.93     87.59      0.97      c1cc(N2CCN(Cc3c(Cc4c5ccccc5ccc4)nc4ccccc4c3C(=O)NC(C(O)=O)Cc3ccccc3)CC2)ccc1
+-37.36    -40.03     83.59      0.97      O(c1ccc(CNc2cc3c(cc2)OC2(CCN(C(=O)OC(C)(C)C)CC2)CN(S(=O)(c2c(C)nn(C)c2C)=O)C3)cc1)C
+-30.43    -31.89     85.18      0.91      c1ccc2c(c1)n(C)c1c2C(c2ccc(Br)cc2)c2c(=O)[nH]c3c(cccc3)c2O1
+-36.10    -36.62     82.43      0.93      c1cc(C(C)NC(c2cc(C(N(C)Cc3[nH]c4cccnc4n3)=O)c3c(c2)OCO3)=O)ccc1
+-28.39    -28.92     95.39      0.97      c1cccc(NC(=O)Cn2c(=NCCOC)scc2-c2ccc(C)cc2)c1OC
+-30.79    -30.01     75.96      0.83      c1(=Nc2cc3oc(=O)n(CC(O)C)c3cc2)[nH]cccc1
+logp   raw_logp
+0.9979631900787354   2.8144114017486572   
+0.8424540162086487   2.218442678451538   
+0.8282323479652405   2.2049641609191895   
+0.9450055956840515   2.370544195175171   
+0.9728020429611206   3.5339157581329346   
+0.9658110737800598   2.435326099395752   
+0.9145771861076355   3.6911022663116455   
+0.9300983548164368   2.3372182846069336   
+0.9711893200874329   2.4583590030670166   
+0.8278957009315491   2.2046561241149902   
+
+10:53:33: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 55   Fraction valid SMILES: 97.7   Score: 0.9129   Time elapsed: 49   Time left: 39.4
+  Agent     Prior     Target     Score     SMILES
+-33.52    -35.08     74.09      0.85      C1(=O)N2C(C(OCc3ccccc3)=O)=COC(COc3cccnc3)C2SC1
+-22.04    -23.74     97.31      0.95      c1c(N(C(=O)c2c3n(c(-c4c(C(N5Cc6ccccc6CC5CN5CCOCC5)=O)ccc(Cl)c4)c2)CCCC3)c2ccc(O)cc2)ccc(O)c1
+-28.99    -30.82     96.40      0.99      c1c(C(=N)N)cc(N)c(NC(c2n(-c3ccccc3)c3c(cccc3)c2)=O)c1
+-25.16    -25.68    101.08      0.99      Clc1c(N2CCN(C3C(=O)N(Cc4ccc(Cl)cc4)CC3)CC2)cccc1
+-25.40    -26.71    100.79      1.00      C(Nc1ccc(Cl)cc1)(=O)Cc1c(O)n(-c2ccccc2)c(=O)n1Cc1ccccn1
+-47.16    -48.34     78.28      0.99      O=C(c1cccc(NCc2ccc(Cc3ccccc3)nc2)c1)NC(C(CC(C(NC1CCCCC1)=O)O)CC(C)C)O
+-45.09    -45.81     81.30      0.99      C1c2ccccc2C(NC(C(N2CC3(CCCCC3)CCC2)=O)c2ccccc2)N(Cc2ccccc2)C1=O
+-42.17    -42.91     83.49      0.99      O=C(CCC(N)=O)NC(Cc1nc[nH]c1)C(=O)NC(C(=O)NNc1ccccc1)Cc1c2ccccc2n(C)c1
+-29.48    -31.63     95.80      1.00      c1c(-c2c(Cc3ccc(OS(c4ccccc4)(=O)=O)cc3)c(C)n[nH]2)c(OC)ccc1
+-23.23    -23.62     99.09      0.96      c1ccn2c(=O)n(-c3c(C)cccc3)c(O)c2c1
+logp   raw_logp
+0.8528931736946106   2.2289798259735107   
+0.9457139372825623   3.627669095993042   
+0.9939168691635132   3.335268497467041   
+0.9903026819229126   2.603034496307373   
+0.9960494041442871   3.277677297592163   
+0.9892133474349976   2.588963031768799   
+0.9930596351623535   2.6472649574279785   
+0.9874860644340515   2.5693204402923584   
+0.9955396056175232   3.293959617614746   
+0.9587312340736389   2.409839153289795   
+
+10:53:34: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 56   Fraction valid SMILES: 97.7   Score: 0.9184   Time elapsed: 49   Time left: 37.8
+  Agent     Prior     Target     Score     SMILES
+-28.91    -31.26     92.69      0.97      c1(N2CC(N)C(n3nncc3)C2)ncnc(Oc2cc(F)ccc2OC)c1C
+-23.50    -23.39     92.31      0.90      c1cc(-c2nc3c4c(ccc3)c(=O)[nH][nH]c4n2)cnc1
+-34.09    -36.72     90.54      0.99      C1Cc2c(Oc3ccc(C(Nc4ccccc4N4CCN(C(=O)Oc5ccccc5)CC4)=O)cc3)ncnc2N1C
+-32.70    -34.30     91.74      0.98      c1(=O)c(-c2ccc(OCCCN(CCC(Cc3ccccc3)c3ccccc3)C)cc2)cc2ccccc2o1
+-41.14    -43.62     79.08      0.96      c1(Cl)ccc(OCc2cc3c(c(=O)[nH]2)cccc3)cc1C(=O)Nc1cc(C(=O)Nc2cc(C(NCCN3CCOCC3)=O)n(C)c2)n(C)c1
+-42.81    -45.93     74.74      0.94      c1(-c2nc3c([nH]2)c(=O)n(C(C)CC)c(=O)n3Cc2ccc(OC)cc2)ccc(-c2c3ccccc3ncc2)cc1
+-32.94    -35.83     88.60      0.97      c1(C(N)=N)ccc(NC(c2ccc(C(c3ccc(NC(=O)C(N)C(CC)C)cc3)=O)o2)=O)cc1
+-29.88    -30.33     96.53      0.99      N(CCc1c(OC)cc(Br)c(OC)c1)(CCCN1c2ccccc2CCc2c1cccc2)CCC
+-21.50    -20.71    -20.71      0.00      c1cc(C)ccc1S(=O)(NN=CN(C)C)=O
+-23.93    -23.93     87.64      0.87      N1(Cc2onc(C(Nc3ccccc3Cl)=O)c2)CCN(C)CC1
+logp   raw_logp
+0.9683433771133423   2.44569730758667   
+0.9039773344993591   2.29213809967041   
+0.9942165613174438   3.3285646438598633   
+0.9847050309181213   3.4572525024414062   
+0.9585747122764587   3.5906755924224854   
+0.9427007436752319   3.6351239681243896   
+0.972082257270813   2.462583065032959   
+0.9911149740219116   2.6145966053009033   
+0.8265643119812012   2.203442335128784   
+0.871658444404602   2.2495954036712646   
+
+10:53:35: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 57   Fraction valid SMILES: 97.7   Score: 0.9060   Time elapsed: 50   Time left: 37.1
+  Agent     Prior     Target     Score     SMILES
+-26.49    -25.82     78.27      0.81      O=C(c1cccc(-c2oc(C=O)cc2)c1)C=Cc1cc(OC)c(OC)c(OC)c1
+-32.16    -29.57     97.51      0.99      c1c(C#N)ccc(-c2nc3n(ccc(CN(C)C)c3)c2-c2cc[nH]c(=NCCC#N)n2)c1
+-29.08    -31.92     93.12      0.98      O=C1C(=Cc2cc(Cl)c(OCc3ccc(Cl)cc3)cc2)SC(=Nc2ccc(F)cc2)N1Cc1ccc(C(=O)O)cc1
+-25.93    -25.97     97.57      0.97      c1c(C2CC2)onc1C(=O)Nc1cc(Cl)ccc1Oc1ccc(OC)cc1
+-29.88    -30.24     95.27      0.98      OC(=O)CCc1c(-c2ccc(Cl)cc2)nc(-c2ccc(Cl)c(OC)c2)s1
+-27.87    -28.37     84.27      0.88      c1(=Nc2c(Cl)cccc2)nc[nH]cc1C(O)c1cc(OC)c(OC)c(OC)c1
+-24.18    -25.51    100.35      0.98      Cc1c(C)cc(C(=O)Nc2ccc(-n3c(C(C)(C)C)cnn3)cc2)cc1
+-28.06    -31.05     96.20      0.99      c1ccccc1-c1oc(-c2c[nH]c3ccccc32)nc1C(NC(c1ccccc1)C)=O
+-18.11    -18.97    100.55      0.93      c1ccc(-c2oc(NCCCN(C)C)cc2)c(Cl)c1
+-25.72    -25.23    101.97      0.99      C(N1CCC(c2c3c([nH]c2)cccc3)CC1)CCC(c1ccc(C(C)(C)C)cc1)O
+logp   raw_logp
+0.813250720500946   2.191690444946289   
+0.9928799271583557   2.643880605697632   
+0.9768862128257751   3.512155532836914   
+0.9651197195053101   2.4326233863830566   
+0.9805406928062439   2.510775566101074   
+0.8800151944160461   2.259611129760742   
+0.9832919239997864   2.5310275554656982   
+0.9941112399101257   3.3309593200683594   
+0.9337988495826721   2.344822883605957   
+0.9936929941177368   2.659940004348755   
+
+10:53:36: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 58   Fraction valid SMILES: 98.4   Score: 0.9193   Time elapsed: 51   Time left: 36.3
+  Agent     Prior     Target     Score     SMILES
+-26.65    -27.17     99.49      0.99      O(Cc1ccccc1)c1c(CCCN2CCN(c3ccncc3)CC2)cccc1
+-21.59    -23.08    -23.08      0.00      c1(=O)c2ccccc2sc1-c1ccccc1
+-39.59    -39.70     78.79      0.93      c1nc(-c2nc(CN(C(=O)CN(S(=O)(=O)c3ccc(C)cc3)C(C)C)C(C)C)sc2)ncc1
+-40.95    -42.87     73.35      0.91      N(Cc1ccc(F)cc1)(c1cc(Cl)c(CC(=O)N2C(COC3CCC(C(=O)O)CC3)CC(F)C2)nc1)C(C1CC1)C1CC1
+-23.30    -23.80     81.94      0.83      n1c(-n2ccnc2)nc(N2CCOCC2)nc1-c1ccccn1
+-23.54    -23.12     87.76      0.87      c1(=O)c2c(cccc2)[nH]c(=O)n1Cc1nc(C)no1
+-54.59    -58.45     66.98      0.98      C1(=[N+]=[N-])C(N=c2cc2)n2c(cc(-c3n(C)ncc3)cc2-c2ccc(NC(=O)Nc3ccccc3)cc2C)n1
+-20.16    -22.84     99.21      0.95      c1c(Oc2ccccc2)ccc(N=c2cc[nH]c3cccc(N)c23)c1
+-37.65    -37.81     88.57      0.99      c1[nH]c2c3c(c(=O)n(-c4ccccc4OC(F)(F)F)cn3)[nH]c(=Nc3c(C)cccc3Cl)c2c1
+-24.97    -26.32     99.25      0.98      O=C(Nc1cc(F)c(N2CCN(CC(c3c(F)cc(F)cc3)(O)Cn3ncnc3)CC2)cc1)c1oc2c(cccc2)c1
+logp   raw_logp
+0.989564061164856   2.593332052230835   
+0.0   0.0   
+0.9257215261459351   2.32869029045105   
+0.9079679250717163   2.2982425689697266   
+0.8261008262634277   2.20302152633667   
+0.8662747740745544   2.243434190750122   
+0.9798762798309326   3.493691921234131   
+0.9535346031188965   3.6063249111175537   
+0.9873306155204773   2.567687511444092   
+0.981020450592041   3.4859044551849365   
+
+10:53:37: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 59   Fraction valid SMILES: 99.2   Score: 0.9486   Time elapsed: 52   Time left: 35.5
+  Agent     Prior     Target     Score     SMILES
+-21.23    -22.77    104.94      1.00      c1(-c2c(N3CCOc4cc(S(=O)(=O)N=c5[nH]ccs5)ccc43)ccc(Cl)c2)ccccc1
+-28.64    -30.31     96.41      0.99      c1(Nc2cc(=NC(C)C)nc(-c3c(O)cccc3)[nH]2)ccc(F)cc1
+-26.64    -26.96     97.96      0.98      c1c(S(=O)(N(CC)CC)=O)cc(NC(=O)Cc2c3ccccc3c(=O)[nH]n2)c(N2CCCC2)c1
+-21.27    -22.06     92.47      0.89      c1cccc2c(C)cn(Nc3ccccc3)c(=O)c12
+-31.90    -32.90     90.78      0.97      c1cccc(C(=O)Nc2cc(NC(=O)c3ccc4c(cccn4)c3)cc(C(=O)Nc3ccc(OC)cc3)c2)c1
+-41.09    -42.32     73.86      0.91      c1c(N(S(=O)(=O)N(C)C)CC(c2c(C)cc(-c3c(C)cccc3)cc2C)O)cccn1
+-30.46    -30.51     97.14      1.00      c1ccc(OCCNC2CCC(c3nc4c(cccc4)o3)CC2)c(-c2ccccc2)c1
+-34.51    -32.73     94.33      0.99      C1CC(CN=c2c3c(c(Cl)ccc3)[nH]c(=Nc3ccc4c(c3)cc[nH]4)[nH]2)CCN1C
+-57.41    -58.93     67.21      0.99      c1cccc(COC2CC(N3C(=O)N(c4cc(C(=N)N)c5ccccc5c4)CC(C)C3)CCN2S(=O)(=O)c2cccc3n(C)ccc23)c1
+-30.56    -30.11     86.35      0.91      CCCn1c(-c2no[nH]c2=N)nc2cncc(CN3CCOc4ccccc43)c12
+logp   raw_logp
+0.9977846145629883   3.1977882385253906   
+0.9900158643722534   2.599181890487671   
+0.9759141206741333   2.4823431968688965   
+0.8947799801826477   2.2788877487182617   
+0.9662410020828247   3.5629665851593018   
+0.907632052898407   2.297719717025757   
+0.99723881483078   3.2288408279418945   
+0.9926804304122925   2.640223979949951   
+0.9854516983032227   3.450620412826538   
+0.9099134206771851   2.3013055324554443   
+
+10:53:38: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 60   Fraction valid SMILES: 98.4   Score: 0.9163   Time elapsed: 53   Time left: 34.8
+  Agent     Prior     Target     Score     SMILES
+-52.54    -53.95     55.78      0.86      c12c(cco1)c(O)c1c(c2CC(OC)CCc2cc(O)c(O)cc2)C=C(OC)C(=O)C1(O)C
+-30.49    -29.85     94.29      0.97      N(C(=O)COc1ccc(-c2c3ccccc3c3nnc(C)n3n2)cc1)C12CC3CC(CC(C1)C3)C2
+-33.12    -32.59    -32.59      0.00      CC(O)(C(N)C=Cc1cc([N+]([O-])=O)ccc1)=O
+-27.69    -30.62     97.25      1.00      C(N(c1ccccc1)S(c1ccccc1F)(=O)=O)C(Nc1ccc(OCc2ccccc2)cc1)=O
+-24.68    -25.95     97.67      0.97      c1c(C(ON=Cc2ccc(C(=O)O)cc2)C)ccc([N+]([O-])=O)c1
+-28.80    -26.67    101.20      1.00      C1CC2CC(=C(c3ccc(C(=O)NCC)cc3)c3cccc(NC(=O)OC(C)(C)C)c3)CC1N2Cc1cocc1
+-36.50    -36.10     77.49      0.89      C1(C(=O)O)C2C(c3cc(Br)ccc31)Cc1c(cccc1Cl)N2
+-23.94    -23.86     99.98      0.97      C(=O)(c1ccc(-n2c(C)cc(C)n2)cc1)NN=Cc1c(O)ccc(OC)c1
+-33.61    -35.22     91.45      0.99      C(c1sccc1)(N1CCCn2c(cc(C(N=c3[nH]n(Cc4ccc(Cl)cc4)cc3)=O)n2)C1)=O
+-26.05    -26.29     99.67      0.98      C1CC(C(NCCc2ccc(Cl)cc2)=O)N(c2cnccc2)C1=O
+logp   raw_logp
+0.8572565913200378   2.233567714691162   
+0.9698354601860046   2.452191114425659   
+0.0   0.0   
+0.9990383982658386   3.0350489616394043   
+0.9657793641090393   2.4352009296417236   
+0.9989777207374573   2.9416680335998535   
+0.8874127864837646   2.2689931392669678   
+0.967472493648529   2.442042827606201   
+0.9895965456962585   2.5937445163726807   
+0.984073281288147   2.5373809337615967   
+
+10:53:39: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 61   Fraction valid SMILES: 99.2   Score: 0.9302   Time elapsed: 54   Time left: 34.0
+  Agent     Prior     Target     Score     SMILES
+-41.84    -45.65     82.11      1.00      c1cc(-c2c(-c3n[nH]nn3)cccc2)ccc1S(Nc1c(Cl)cc(C(=O)C(N)C(C)=O)cc1)(=O)=O
+-22.53    -24.59    101.17      0.98      c1ccccc1-c1noc(CN(C(c2occc2)=O)Cc2ccco2)c1
+-20.49    -20.99    102.70      0.97      c1cc(C2CN(c3cccc(OC(C)C)c3)C(=O)C2)ccc1
+-29.64    -33.72     92.70      0.99      c1cccc(N(c2cc(-c3ccc(CNCCc4ccccc4)cc3)ccc2)C(c2c(O)cc(O)cc2)=O)c1C
+-22.21    -25.16    102.22      1.00      c1cccc(Oc2c3cc(-c4ccc(NS(=O)(=O)C)cc4)cnc3[nH]c2)c1
+-27.02    -29.34     96.36      0.98      c1(OCCCCN2CCN(c3ccc(F)cc3)CC2)ccc(C(=NOC)c2ccc(Cl)cc2)cc1
+-17.31    -19.37    108.49      1.00      c1c(-c2ccccc2)ccc(-c2nc3c(cccc3C(=O)N)[nH]2)c1
+-23.54    -23.05     91.37      0.89      C(=O)(C(Sc1ccccc1)=Cc1ccccc1)OC
+-22.84    -23.15     89.90      0.88      c1c([N+]([O-])=O)cc(Cl)c(C(=O)Nc2c(O)cccc2)c1
+-33.63    -35.77     82.83      0.93      n1c(=Nc2ccc(Oc3ccccc3)cc2)cc(-c2ccncc2)[nH]c1-c1c(F)cc(F)cc1F
+logp   raw_logp
+0.9981309175491333   2.827167272567749   
+0.9825055599212646   2.5249223709106445   
+0.9663550853729248   2.4374899864196777   
+0.9876382350921631   3.429060935974121   
+0.9951947331428528   3.3039097785949707   
+0.9819942116737366   3.4789040088653564   
+0.9989621639251709   3.0628676414489746   
+0.8939377069473267   2.277726411819458   
+0.8832338452339172   2.263629674911499   
+0.9265242218971252   3.669780969619751   
+
+10:53:40: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 62   Fraction valid SMILES: 99.2   Score: 0.9310   Time elapsed: 55   Time left: 33.2
+  Agent     Prior     Target     Score     SMILES
+-27.31    -28.94     96.33      0.98      c1(N(S(=O)(=O)c2ccccc2)C)c(C(c2ccco2)=NOC)cccc1
+-25.05    -22.98     98.35      0.95      c1cc(C(=O)CC(=O)C(=O)O)n(Cc2ccc(Cl)c(Cl)c2)c1
+-32.35    -34.42     92.47      0.99      C1(c2ccc(OC)cc2)CCc2c(c(Cl)c(OC)cc2OCc2ccc(Br)cc2)O1
+-29.27    -29.73     83.32      0.88      O=C(c1noc(C(C)C)c1)N1CCN(Cc2cccc(-n3cccn3)c2)CC1
+-30.26    -33.03     83.65      0.91      c1cc(N=c2nc[nH]c3c2cc(-c2ccccc2Cl)cc3)ccc1NC(N(C)C)=O
+-39.88    -39.17     83.18      0.96      O=c1n(CCCNC(=NC2CCCCC2)NCCN(C2CC2)C)c(=O)[nH]c(=N)[nH]1
+-27.73    -29.18     97.61      0.99      c1nc(N2CCN(c3ccc(O)cc3)CC2)nnc1-c1ccccc1Cl
+-25.72    -27.96     99.59      1.00      O=C(c1ccc(Cl)cc1)Nc1ccc2n(Cc3ccc(Cl)c(Cl)c3)n(C)c(=O)c2c1
+-21.41    -23.33    102.59      0.98      c1(-n2c(=O)c3c(nc2SCc2ccc(Cl)nc2)cccc3)ccccc1
+-32.37    -33.08     93.40      0.99      c1c(NC(C(=NC(c2ccccc2OC)=O)Cc2ccc([N+]([O-])=O)o2)=O)c2c(cccc2)cc1
+logp   raw_logp
+0.9786304831504822   2.4983088970184326   
+0.9478638172149658   2.377892255783081   
+0.9913642406463623   2.6183576583862305   
+0.883194625377655   2.263580083847046   
+0.9115554094314575   3.6960628032684326   
+0.9558575749397278   2.4006755352020264   
+0.9905583262443542   2.606565237045288   
+0.996547520160675   2.740532159805298   
+0.9837235808372498   3.4654994010925293   
+0.9881641864776611   3.423309803009033   
+
+10:53:41: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 63   Fraction valid SMILES: 99.2   Score: 0.9362   Time elapsed: 56   Time left: 32.4
+  Agent     Prior     Target     Score     SMILES
+-32.68    -32.00     82.91      0.90      c1c(-c2sc(Br)cc2)cn(CCCN(C)C)c1-c1ncccc1
+-21.98    -23.18     94.05      0.92      c1cccc(-c2cn3c(C)c(C(N)O)sc3n2)c1
+-18.94    -20.08     85.83      0.83      c1c(Cn2nnc(-c3cc([N+](=O)[O-])cc([N+](=O)[O-])c3)c2)cccc1
+-26.56    -25.91     86.20      0.88      C(Cc1n[nH]c(=NC(=O)c2cc(Oc3cnccc3)ccc2)s1)CCC
+-30.81    -31.12     94.98      0.99      c1ncccc1CC(C1ON=C(c2ccc(Br)cc2)C1)N
+-24.65    -24.59     94.49      0.93      [nH]1c(N=c2[nH]c(O)c(-c3ccccc3)s2)nc(=N)[nH]1
+-21.96    -23.73    100.80      0.97      O=C(Nc1ccc(NC(c2oc3c(cccc3)c2)=O)cc1)c1cc(OC)cc(OC)c1
+-23.40    -24.24    102.42      0.99      c1ccc2c(c(=O)[nH]c(Cc3ccc(N(C)C)cc3)n2)c1
+-27.62    -27.34     80.12      0.84      c1cccnc1C1=NCCN(C)c2n1ccn2
+-35.38    -34.84     87.25      0.95      c1(C=NNC(=O)c2ccc(NC(C(C)(C)C)=O)cc2)ccc(OCC(=O)NC(C)(C)CC(C)(C)C)c(OC)c1
+logp   raw_logp
+0.8977571129798889   2.283060312271118   
+0.9158011078834534   2.3109524250030518   
+0.8274233937263489   2.2042248249053955   
+0.8759030103683472   2.254610300064087   
+0.9851517081260681   2.546675443649292   
+0.9303098320960999   2.3376426696777344   
+0.9729138016700745   3.5333640575408936   
+0.9895203709602356   2.5927798748016357   
+0.8394903540611267   2.215555429458618   
+0.9537657499313354   2.3943564891815186   
+
+10:53:41: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 64   Fraction valid SMILES: 96.9   Score: 0.9018   Time elapsed: 57   Time left: 31.6
+  Agent     Prior     Target     Score     SMILES
+-24.91    -26.57     82.25      0.85      Brc1sc(-c2csc(-c3ccccc3C(F)(F)F)n2)cc1
+-31.70    -31.57    -31.57      0.00      C1(=CC=Cc2ncccc2)C=C(c2ccccc2)N=[N+]=1
+-27.25    -27.24     96.15      0.96      c1(OC)ccc2c(=S)n(-c3ccc(C(=O)O)cc3)c(=O)oc2c1
+-19.63    -21.62     97.34      0.93      c1cc(N=c2nc[nH]c3cc(OC)c(OC4CCN(C(=O)C=C)CC4)cc32)ccc1Br
+-19.70    -19.12     98.83      0.92      c1cc(Cc2cn(C3OC(CO)C(O)C3O)c(=O)[nH]c2=O)ccc1
+-28.43    -29.49     94.98      0.97      c1c(-c2nn(-c3ccccc3)cc2C(N2CCN(S(C)(=O)=O)CC2)=O)ccc(C2CC2)c1
+-18.58    -20.38    106.49      0.99      Fc1ccc(NC(Nc2ccc(-c3c4c(ncc3)[nH][nH]c4=N)cc2)=O)cc1
+-45.40    -47.72     70.42      0.92      O(c1cc2sc3c(NNC(=N)N)cc(NCc4cccc(Cl)c4)nc3c2cc1)C
+-24.58    -25.19    100.66      0.98      C1CN(S(c2ccc(NC(=O)c3cc(-c4ccc(C)cc4)nc4ccccc43)cc2)(=O)=O)CCCC1
+-50.28    -51.68     75.08      0.99      C(N(CC(O)c1ccc(O)c2c1CCC(=O)NC2CC(C)C)CCc1ccc(OC)c(OC)c1)c1c(O)c(O)ccc1
+logp   raw_logp
+0.8501821756362915   2.2261857986450195   
+0.0   0.0   
+0.96394944190979   2.42816424369812   
+0.9293552041053772   2.335736036300659   
+0.921459436416626   2.320819139480591   
+0.9724379181861877   2.464301824569702   
+0.9912331700325012   2.6163671016693115   
+0.9230148196220398   2.3236453533172607   
+0.9832507371902466   3.46929931640625   
+0.990264356136322   2.602513074874878   
+
+10:53:42: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 65   Fraction valid SMILES: 98.4   Score: 0.8992   Time elapsed: 58   Time left: 30.8
+  Agent     Prior     Target     Score     SMILES
+-34.35    -32.67     82.72      0.90      C1C2CCC=CC2c2c(c(-c3cc[nH]n3)nc(C)n2)C1
+-30.57    -34.67     92.15      0.99      c1c(Cl)ccc(N(c2ccc(C(Nc3cccc(CN(C)C)c3)=O)cc2)Cc2ccccc2)c1
+-20.71    -21.40     89.36      0.87      N#Cc1ccc(-c2nc(=N)[nH]c(N3CCN(C)CC3)c2)cc1
+-27.90    -29.10     85.59      0.90      c1(Cl)ccc(Cl)c(NC(=O)CN(C)c2ncc(Br)cn2)c1
+-31.36    -32.27     76.64      0.85      O1C2(CCN(C(=O)CN(C)c3ccccc3F)CC2)N(C)C(=O)C1
+-20.14    -21.44    102.09      0.97      N(=c1[nH]c(-c2ccc([N+]([O-])=O)cc2)cs1)C(c1ccccc1)=O
+-26.12    -26.94     99.01      0.98      C1N(Cc2cc(OC)ccc2)CCN(C2CS(=O)(=O)N(Cc3cn(-c4ccc(F)cc4)nc3)C2)C1
+-19.84    -19.45    -19.45      0.00      c1cc(C=NNC(=S)NC)cc(Br)c1
+-24.11    -23.50     95.20      0.93      c1c2c(cc(SC3=C(Sc4ccc(OC)cc4)C(=O)c4c(cccc4)C3=O)c1)cccc2
+-15.48    -15.64    -15.64      0.00      c1ccc(O)c(N)c1
+logp   raw_logp
+0.9014220833778381   2.2883474826812744   
+0.9907276034355164   3.3910436630249023   
+0.865371584892273   2.2424213886260986   
+0.8960584402084351   2.2806668281555176   
+0.8508011698722839   2.2268199920654297   
+0.9651368260383606   2.432689666748047   
+0.9840434789657593   2.537132978439331   
+0.931732177734375   2.3405284881591797   
+0.9273467659950256   3.668198585510254   
+0.7873032689094543   2.1705150604248047   
+
+10:53:43: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 66   Fraction valid SMILES: 97.7   Score: 0.9235   Time elapsed: 59   Time left: 29.9
+  Agent     Prior     Target     Score     SMILES
+-24.67    -24.22    102.98      0.99      c1c(Oc2ccc(Cl)cc2)c(OC)cc(NC(=N)N)c1
+-23.42    -24.42    103.03      1.00      c1ccncc1COc1ccc(CNCCSc2n(-c3ccccc3)nnn2)cc1OC
+-26.50    -28.35     88.79      0.92      c1c(F)ccc(-c2c(C(=O)N)c3n(c2C2CC2)C2C(C3)CNC2)c1
+-25.19    -24.33     84.47      0.85      c1c(O)cc2c(c1)C1c3ccc(O)c(OC)c3CCC1NC2
+-29.17    -31.77     91.60      0.96      O(c1c2c(c(-c3ccc(NC(Nc4cc(C(F)(F)F)ccc4)=O)cc3)cc1)ncnc2)C
+-25.11    -23.35     85.27      0.85      Clc1c(Cl)cc(-c2nc(SCC(NCC3CCCO3)=O)[nH]n2)cc1
+-25.91    -27.44     95.77      0.96      Clc1cc(NS(=O)(=O)c2cc(C(Nc3ccc(F)cc3F)=O)ccc2F)cc(Cl)c1
+-35.64    -37.87     85.98      0.97      C1(=Cc2ccc(OCCCN3CCOCC3)cc2)C2Cc3ccc(C(N)=O)cc3CC2N(C)CC1
+-22.76    -23.49     96.75      0.94      N1(c2c3c(ncn2)[nH]cc3)CC2(CCN(Cc3ccccc3)CC2)C1
+-31.47    -31.78     79.56      0.87      N(c1c(CC)cccc1)=c1scc(C2(C)CC(C(F)(F)F)NC(=O)C2)[nH]1
+logp   raw_logp
+0.9937170743942261   2.660446882247925   
+0.9957345724105835   3.287975549697876   
+0.9151626825332642   2.309877395629883   
+0.8500082492828369   2.2260079383850098   
+0.9638009071350098   3.5723917484283447   
+0.8485919833183289   2.2245662212371826   
+0.9625691771507263   2.4230806827545166   
+0.9675926566123962   2.4425413608551025   
+0.9393823146820068   2.3570806980133057   
+0.869853138923645   2.2475054264068604   
+
+10:53:44: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 67   Fraction valid SMILES: 98.4   Score: 0.9136   Time elapsed: 60   Time left: 29.1
+  Agent     Prior     Target     Score     SMILES
+-36.46    -36.36     88.18      0.97      n12nc(-c3ccco3)nc1c(C#N)c(N(C)C)[nH]c2=NN1C(=O)C=C(C)c2ccccc21
+-21.71    -23.73    103.98      1.00      c1cccc(-c2ccc(Cc3ccc(Cl)cc3Cl)cc2)c1
+-36.48    -36.88     67.48      0.82      O=C1c2c(O)c(C)c(O)c(C(CC(C)C)=O)c2Oc2c(CNCc3cnccc3)cccc21
+-28.20    -27.82     87.36      0.90      N(=c1c2cccnc2cc(-c2cc(OC)c(O)cc2)[nH]1)Cc1cccs1
+-28.17    -27.57     84.74      0.88      O=C(c1ccc(OCC(CNC2CCN(c3ncncc3C#N)CC2)O)cc1)C
+-26.62    -26.09     92.87      0.93      c1cn(C2(CC#N)CN(C3CCN(C(c4cc(Cl)cc(F)c4)=O)CC3)C2)cc1-c1c2cc[nH]c2ncn1
+-38.31    -40.94     85.38      0.99      c1cccc(C(N=c2[nH]cnc3c(C(N)=O)cc(-c4sc(=NCc5ccccc5)[nH]c4)cc23)CC#N)c1
+-34.22    -35.93     89.29      0.98      c1(Cl)cc(C2C(N(CC)C(=O)Oc3ccc(F)cc3)CN(C(=O)N3CCN(C(=O)C4CCN(C(C(C)C)=O)CC4)CC3)C2)ccc1
+-31.28    -32.86     94.97      1.00      O=S(c1ccc(NC(=O)c2cc(-c3ccccc3)c(NC3CCNCC3)cc2)cc1)(=O)N=c1nccc[nH]1
+-26.68    -27.47    100.41      1.00      c1(Cn2c(=O)c3c(cc2)nc(C)c(C(Nc2c(F)cccc2)=O)c3)ncccc1
+logp   raw_logp
+0.9729653596878052   2.466891288757324   
+0.9978030920028687   3.1965811252593994   
+0.8152822256088257   2.1934406757354736   
+0.8998842835426331   2.2861082553863525   
+0.877411961555481   2.2564284801483154   
+0.929366409778595   2.3357582092285156   
+0.9868254065513611   3.4374866485595703   
+0.9782503247261047   2.4959583282470703   
+0.9986956715583801   3.113811731338501   
+0.9990397095680237   3.034372568130493   
+
+10:53:45: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 68   Fraction valid SMILES: 96.9   Score: 0.8973   Time elapsed: 61   Time left: 28.3
+  Agent     Prior     Target     Score     SMILES
+-23.90    -24.58     90.21      0.90      C(=O)(Nc1cccc(Cl)c1C)c1c(C)nc(-c2ncccc2)s1
+-34.81    -34.44     88.15      0.96      C(C)(C)(C)c1cc(-c2ccc(NC(c3cc4c(cccc4)n3C)=O)cc2)c2sccc2n1
+-28.55    -29.82     97.95      1.00      c1c(OC)ccc(-c2nc3c([nH]c(=Nc4cc(Cl)ccc4)cc3)nc2)c1
+-39.67    -43.62     80.58      0.97      c1cc2c(sc(=NC(=O)c3c(Cl)cccc3)n2Cc2ccc(NC(=O)c3ccc(C(F)(F)F)cc3)cc2)cc1C(=O)N(CCC(O)=O)c1ccccc1
+-40.57    -39.68     81.08      0.94      [nH]1c(SCC=Cc2ccccc2)nc2c(c1=O)C(c1cccc(O)c1)NC=N2
+-21.67    -22.48    103.90      0.99      c1cc(N=Nc2cnccc2)ccc1[N+](=O)[O-]
+-18.35    -18.45     84.23      0.80      c1(C#N)c(N2CCOCC2)oc(-c2ccco2)n1
+-31.63    -33.96     84.43      0.92      N1(c2cnccn2)CCC(CNS(=O)(=O)c2cc3c(cc2)N(C(=O)NC2CC2)CC3)CC1
+-28.76    -31.36     96.49      1.00      c1c(-c2ccc(CN(C3CCN(c4ccnc(OC)n4)C3)C(Nc3ccccc3)=O)cc2)cccc1
+-24.75    -24.65     86.29      0.87      OC(COc1cc(C)cc(C)c1)CN1CCC(n2nnc(C(C)(C)C)c2)CC1
+logp   raw_logp
+0.8968175649642944   2.2817320823669434   
+0.9577262997627258   3.593432903289795   
+0.9982220530509949   3.165252447128296   
+0.9703375697135925   3.545553207397461   
+0.9434297680854797   2.366645336151123   
+0.9873260259628296   2.5676395893096924   
+0.8021870851516724   2.1824071407318115   
+0.9249690771102905   2.327270984649658   
+0.998870849609375   2.9156036376953125   
+0.866699755191803   2.243912935256958   
+
+10:53:46: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 69   Fraction valid SMILES: 99.2   Score: 0.9287   Time elapsed: 62   Time left: 27.5
+  Agent     Prior     Target     Score     SMILES
+-28.52    -29.62     96.57      0.99      o1c(-c2cc3cccnc3cc2)nnc1SCC(Nc1ccc(NC(=O)C)cc1)=O
+-39.06    -38.61     83.00      0.95      c12c(n3c4c5n(cc(C=O)c5c3c1=O)cccc4)CSO2
+-60.66    -60.35     53.64      0.89      C12(C)C(OC(=O)C(CC)C)C(O)C3(C)C1C(C)(C(OC(=O)C(COC1C(O)C(O)C(O)C(C)O1)C(O)(C)C)C2)OC3
+-18.17    -17.56     92.57      0.86      c12c(cccc1)C(=O)N(c1c(Cl)cccc1)C2=O
+-31.45    -32.61     93.91      0.99      CC(NC(c1ccc2c(c1)n(CC(Nc1ccccc1)=O)c(=O)n(-c1cccc(Cl)c1)c2=O)=O)(C)C
+-38.75    -40.19     86.32      0.99      S=C(N1CCN(C(Cc2ccccc2)=O)C(c2ccccc2)C1)NC(c1cccc(N(C)C)c1)=O
+-45.61    -46.07     81.80      1.00      C1(c2ccc(Cl)cc2)(c2cc(F)cc(Br)c2)SC(=NCc2ccc(OC)cc2)NN1C(CC)=O
+-42.76    -46.58     64.42      0.87      c1(C2C(N)Cc3c2cccc3)ccc2c(c1)c1c(c(-c3ccncc3)n2)C(=O)c2ccccc2-1
+-22.37    -24.27    102.85      0.99      c1cc(-c2c(-c3ccccc3)c(=NCc3cnccc3)n(C)[nH]2)ccc1F
+-27.19    -27.87     95.89      0.97      CN1c2c(cc(Br)cc2)C2(c3cc(OC)c(OC)cc3C(=O)O2)C1=O
+logp   raw_logp
+0.9858635067939758   2.553183078765869   
+0.9500923752784729   2.3838911056518555   
+0.8905383944511414   2.2731196880340576   
+0.8604571223258972   2.2370078563690186   
+0.9884291291236877   3.420315742492676   
+0.9883778691291809   2.579099416732788   
+0.9989467263221741   3.0670363903045654   
+0.8671451210975647   3.7555840015411377   
+0.9931502938270569   3.350994348526001   
+0.966851532459259   2.4394943714141846   
+
+10:53:47: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 70   Fraction valid SMILES: 96.9   Score: 0.9086   Time elapsed: 63   Time left: 26.6
+  Agent     Prior     Target     Score     SMILES
+-25.63    -26.01    100.64      0.99      O(c1ccc(C(NC(c2ccc(-c3ccccc3)cc2)=O)CC=C)cc1)C
+-35.94    -37.90     84.15      0.95      c1c([N+]([O-])=O)cc2c(c1)C(=O)N(c1ccc(-n3c(CN4CCC(C(N)=O)CC4)nnn3)cc1)C2=O
+-17.09    -18.47     93.19      0.87      c1(-c2oc(NCc3ccccc3)c(C#N)n2)ccco1
+-39.58    -41.82     85.98      1.00      c1(CN(CCN(C)C(C(Sc2ccc(OC)cc2)c2ccccc2)C)S(c2ccc(C)cc2)(=O)=O)ccccc1
+-46.27    -46.78    -46.78      0.00      O1C(n2c3c4c(c5cccnc5c3n2)c(O)[nH]c4=O)C=c2c1c1c(cc(Cl)cc1)[nH]2
+-30.84    -29.56    -29.56      0.00      c1(SC)nc2n(c3c(cccc3)c(=O)n2CC=C)cn1
+-28.78    -26.20     91.12      0.92      Fc1cc(S(=O)(=O)NCC(O)=NO)ccc1OC1CCCC1
+-36.42    -39.40     87.20      0.99      c1c2c3c([nH]c2ccc1OCC(NS(c1cc(F)c(F)cc1F)(=O)=O)=O)ccc(NS(=O)(c1ccc(C(C)(C)C)cc1)=O)c3
+-28.13    -27.19    -27.19      0.00      c1(NC(=NC(=NCC)N)N)c(F)cc(Cl)cc1
+-39.24    -38.98     78.71      0.92      c1(OC)cc(OC)cc(NC(C2CN(S(C)(=O)=O)CC23CCCCC3C)=O)c1
+logp   raw_logp
+0.9894768595695496   2.5922319889068604   
+0.9534884691238403   2.3935394287109375   
+0.8723591566085815   2.250413417816162   
+0.9984630346298218   3.142259359359741   
+0.0   0.0   
+0.0   0.0   
+0.9165078997612   2.3121511936187744   
+0.9891207218170166   3.412167549133301   
+0.8369996547698975   2.2131621837615967   
+0.9194321632385254   2.317211627960205   
+
+10:53:48: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 71   Fraction valid SMILES: 97.7   Score: 0.9240   Time elapsed: 64   Time left: 25.8
+  Agent     Prior     Target     Score     SMILES
+-20.28    -21.79    105.74      1.00      c1cccc(C2NC(c3ccc(OC)cc3)c3ccccc3C2)c1
+-36.88    -39.72     88.15      1.00      c1c(F)cc(Cl)c(-c2n(CCOC)c(SC(c3ccccc3OC)=O)nc2-c2ccc(Cl)cc2)c1
+-34.66    -35.70     89.78      0.98      N(Cc1c(OC)nccc1)=c1[nH]cc(C(NCc2cc(F)cc(F)c2)=O)c(-c2c(Cl)cccc2)c1
+-22.99    -22.94    104.31      0.99      c1c2nc3n(C)[nH]c(=N)c3c(-c3ccc(Cl)cc3)c2ccc1
+-31.84    -31.70     96.18      1.00      C(Cc1ccccn1)(N=c1[nH][nH]c2c1cc(Oc1ccc(F)cc1)cc2)=O
+-35.25    -34.81     74.80      0.86      S(NCC1CC12c1c(cccn1)CC2)(N(CC)CC)(=O)=O
+-30.57    -30.53     97.35      1.00      c1(S(=O)(C2(C(=O)OCC)CC(c3ccccc3)=NN2C(c2ccc(Cl)cc2)=O)=O)ccc(C)cc1
+-22.21    -21.81     98.85      0.94      C1C(NC(=O)C2CCN(C(=O)c3ccc(-n4cccc4)cc3)CC2)CCCC1
+-25.84    -27.13    100.58      1.00      C(c1ccccc1)(c1ccccc1)(C(N1CCN(Cc2ccc3c(c2)OCO3)CC1)=O)c1ccccc1
+-22.42    -25.99     96.91      0.96      c1(Oc2ccc(Cl)cc2)ccc(-c2cccc(C(Nc3cccnc3)=O)c2)cc1
+logp   raw_logp
+0.9963979721069336   2.7347848415374756   
+0.9990009665489197   3.050731658935547   
+0.9803276658058167   3.4906728267669678   
+0.994165301322937   2.6702640056610107   
+0.9990593194961548   2.9783639907836914   
+0.8562689423561096   2.2325191497802734   
+0.9990684986114502   2.9884631633758545   
+0.9426725506782532   2.3648080825805664   
+0.9977107644081116   3.202488422393799   
+0.960150957107544   3.5854058265686035   
+
+10:53:49: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 72   Fraction valid SMILES: 98.4   Score: 0.9236   Time elapsed: 65   Time left: 24.9
+  Agent     Prior     Target     Score     SMILES
+-25.75    -26.06     99.79      0.98      c1c(-c2noc(CSc3[nH]c(=N)c(C#N)c(-c4cc(OC)c(OC)cc4)c3C#N)n2)ccc(F)c1
+-30.12    -31.63     96.25      1.00      O=C(c1c2c(ccc1)c(=NNC(c1ccc(F)cc1)=O)c1c(cccc1)[nH]2)N
+-22.00    -21.87     88.33      0.86      C1=CC2c3c(c(O)n(-c4nc(-c5ccc(OC)cc5)cs4)c3O)C1C2
+-19.91    -22.02     83.83      0.83      c1ccc(N2CCOCC2)cc1N=c1nccc[nH]1
+-27.47    -28.70     95.58      0.97      c1c(Br)ccc(OCc2ccc3ccccc3n2)c1C(Nc1c(Cl)cccc1)=O
+-24.29    -26.27    101.61      1.00      O(c1c(OC)c(CNc2ccc(NC(c3ccc(F)cc3)=O)cc2)ccc1)C
+-28.47    -28.53     99.18      1.00      n1(CCO)c(-c2ccc(-c3cccc(C)c3)cc2)nc2cc(N)ccc12
+-28.20    -30.21     96.36      0.99      N(c1ccc(NS(=O)(c2ccc3c(c2)[nH]c(=O)[nH]3)=O)cc1)=c1cc[nH]c2cc(Cl)ccc21
+-23.77    -23.72    104.11      1.00      c12cnccc1c(C(=O)c1cncc(NC(Cc3cccc(C(F)(F)F)c3)=O)c1)cn2C(C)C
+-26.13    -27.38     96.59      0.97      c1cc(C(=O)Nc2c(C(NCC)=O)cccc2)ccc1C1SCCS1
+logp   raw_logp
+0.9832011461257935   2.530308485031128   
+0.999065637588501   2.984617233276367   
+0.8609853982925415   2.237581968307495   
+0.8269578814506531   2.2038004398345947   
+0.9709212183952332   3.542884349822998   
+0.9990661144256592   2.985187530517578   
+0.9977234601974487   3.201692819595337   
+0.9887928366661072   3.416093111038208   
+0.9986456632614136   2.8793301582336426   
+0.9685341715812683   2.4465110301971436   
+
+10:53:50: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 73   Fraction valid SMILES: 98.4   Score: 0.9160   Time elapsed: 65   Time left: 23.7
+  Agent     Prior     Target     Score     SMILES
+-35.82    -39.12     83.86      0.96      N1(C2CN(c3c(F)cc4c(n(CC)cc(C(Nc5ccccc5C(=O)OC)=O)c4=O)n3)CC2)Cc2ccccc2CC1
+-49.28    -50.80     60.52      0.87      n1nn(-c2c(Cl)cc(Cl)cc2)c2c1c(=N)c(C(N1C(C)CN(c3scc(C(=O)OCC)n3)CC1)=O)n[nH]2
+-31.80    -33.50     94.30      1.00      O1C(CN(C(=O)Nc2ccc(OC)cc2)CCc2cc(Cl)ccc2)C(O)c2cccnc21
+-26.63    -28.38     81.14      0.86      c1cccc2c(Cc3n(C)c(SCc4cc([N+]([O-])=O)ccc4)nn3)csc12
+-18.57    -18.92    107.11      0.98      c1cc(Cl)ccc1C(=O)c1c(N)scc1
+-25.86    -26.72     99.64      0.99      c12c(N(C)c3ccc(C(C)C)cc3)ncnc1ccc(-c1cc3c(cc1)OCO3)c2
+-24.08    -25.05     93.63      0.93      c1(-c2c(Nc3ccccc3)n3ccncc3n2)ncsc1
+-47.37    -47.71     75.37      0.96      C(O)C1OC(c2c(O)c3c(=O)cc(-c4ccc(C)cc4)oc3cc2OC2C(O)C(O)C(O)C(CO)O2)C(O)(C)C(O)C1OC(=O)C(CC)C
+-42.81    -41.58     79.22      0.94      C(CCN1CCN(S(=O)(c2ccc(C(F)(F)F)cc2)=O)CC1)(NCc1nc2cccc(C)c2n1CCC)=O
+-24.71    -24.23     93.90      0.92      c12n(C3CC(O)C(CO)S3)ccc1c(SC)ncn2
+logp   raw_logp
+0.9608008861541748   2.416825532913208   
+0.8696679472923279   2.2472922801971436   
+0.9984747767448425   2.858999252319336   
+0.8556835651397705   2.231900691986084   
+0.984640896320343   2.5421926975250244   
+0.9872214198112488   3.43344783782959   
+0.9272063970565796   2.3315300941467285   
+0.9615417122840881   2.41941237449646   
+0.9437397718429565   2.3674042224884033   
+0.9228851795196533   2.3234076499938965   
+
+10:53:51: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 74   Fraction valid SMILES: 97.7   Score: 0.9169   Time elapsed: 66   Time left: 22.9
+  Agent     Prior     Target     Score     SMILES
+-32.96    -32.81     94.25      0.99      C1(c2c(=O)n(CC=C)c3c(cc(C)cc3)c2-c2ccccc2)=NN(c2ccccc2)CN1
+-22.95    -22.96    101.45      0.97      c1(-n2c(=O)c3c(cc(OC)cc3)oc2=O)ccc(F)cc1
+-23.26    -23.62     80.58      0.81      O=c1[nH]c(=O)c(F)cn1CCl
+-24.12    -24.87    100.73      0.98      c12ccc(C)cc1CN(C(=O)Nc1ccc(C(=O)NCCCn3cncc3)cc1)C2
+-24.48    -25.89    101.81      1.00      c1(NC(=O)Nc2ccc(N=c3cc[nH]cc3)cc2)cccc(O)c1
+-21.34    -21.37    103.97      0.98      c1(-c2c(C(=O)NCCc3ccncc3)scc2)ccccc1
+-27.58    -30.25     96.53      0.99      c1ccc(N=c2c(C(CCN3CCC(c4ccccc4)CC3)=O)ccc[nH]2)cc1O
+-31.47    -31.86     82.63      0.89      c1cccc(C(CNC(c2sc3c(c2)nc(-c2ccncc2)n3C)=O)N2CCOCC2)c1
+-24.99    -27.08     72.70      0.78      c1(NC(=O)c2cccc3ccccc23)cc(-c2sc(-c3[nH]c4ccccc4n3)cc2)ccc1
+-34.14    -35.07     92.20      0.99      c1c(O)ccc(CC(=NS(=O)(c2c(C)cc(C)cc2C)=O)N(Cc2ccc(OC)cc2)OCc2ccccc2)c1
+logp   raw_logp
+0.9926919341087341   3.359567642211914   
+0.9718851447105408   2.461639404296875   
+0.814073920249939   2.1923978328704834   
+0.9813071489334106   2.5161192417144775   
+0.9976223707199097   2.792121410369873   
+0.9792523384094238   2.5022428035736084   
+0.9904915690422058   2.6056342124938965   
+0.8944634795188904   2.2784504890441895   
+0.7795811295509338   3.8354156017303467   
+0.9942470788955688   3.327862024307251   
+
+10:53:52: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 75   Fraction valid SMILES: 99.2   Score: 0.9257   Time elapsed: 67   Time left: 22.0
+  Agent     Prior     Target     Score     SMILES
+-29.35    -30.51     93.07      0.97      c1cc(Cn2nnc(-c3ccc(N4C(=O)OC(CNC(OC)=O)C4)cc3)c2)cc(C(F)(F)F)c1
+-22.00    -22.09     89.81      0.87      n1cccnc1N1CCN(C(=O)C2CCN(c3ncccn3)CC2)CC1
+-29.50    -30.14     85.24      0.90      C1N(c2c3c(nc(=N)[nH]2)-c2ccc(OC)cc2CC3(CC)OCC)CCOC1
+-34.20    -34.27     87.71      0.95      c1(F)cc(F)ccc1-c1ccc(OC)cc1NC(N1CC(F)CC1C(NCc1c(F)c(Cl)ccc1)=O)=O
+-42.03    -38.81     75.86      0.90      C(C)C1C(=O)C2C(CC)=CC(C)(C(O)CC2)O1
+-38.30    -38.92     79.55      0.93      n1nn2c(c1CNC(N(C1CC1)C)=O)CN(Cc1n(C)ccc1)CCC2
+-23.03    -23.76    103.76      1.00      c1c(C2(CO)CCN(Cc3cccc(Cl)c3)CC2)ccc(Cl)c1
+-35.65    -37.53     83.15      0.94      c1(CC(CC(N2C(c3ccc(F)cc3F)C(OC(C)c3cc(C(F)(F)F)cc(F)c3)CC2)=O)N)ccccc1F
+-36.85    -38.68     80.04      0.93      c1ccccc1C1N(c2nc(C)c(C)c(C)n2)C(=O)C2C(C)(C)N(C)C(=O)C12Cc1ccccc1
+-23.80    -23.53     78.83      0.80      c12c(c(C(=O)N)cn1C)C(=O)c1ncccc1C2=O
+logp   raw_logp
+0.9655173420906067   2.434171438217163   
+0.8742253184318542   2.252610921859741   
+0.9013900756835938   2.2883005142211914   
+0.9529678821563721   2.3920178413391113   
+0.8958281874656677   2.2803449630737305   
+0.9255985617637634   2.3284573554992676   
+0.9962548613548279   2.7295196056365967   
+0.9428208470344543   2.365165948867798   
+0.9274545311927795   2.33201003074646   
+0.7996907830238342   2.1803669929504395   
+
+10:53:53: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 76   Fraction valid SMILES: 100.0   Score: 0.9374   Time elapsed: 68   Time left: 21.2
+  Agent     Prior     Target     Score     SMILES
+-35.04    -35.71     90.01      0.98      O=C(c1ccc(N2CCC3(OCCC3)CC2)cc1)NCC(Cc1ccccc1)c1ccccc1
+-20.71    -20.96     98.30      0.93      c1(CN2C(C)=C(C(=O)OC)C(c3cc(Cl)ccc3)NC2=O)ccccc1
+-56.76    -58.22     66.09      0.97      C12(O)OC(C(=C)C(OC(=O)NCc3ccc(OC)cc3)C(c3ccc(O)c(OC)c3)O)CCC1C(N=[N+]=[N-])CC2
+-26.11    -24.66     82.98      0.84      O=C(OC)CSc1[nH]c2c(c(=O)n1)CC(C)(C)OC2
+-26.74    -29.09     95.10      0.97      c1cc(-c2ccc(-c3c(C(=O)N)c4n(c3Cl)CCC4)cc2)ccc1
+-22.04    -21.76    105.77      1.00      Clc1ccc(C(c2ccc(O)cc2)=C2CCN(C)CC2)cc1
+-26.82    -31.31     94.24      0.98      C(c1cc(N2C(=O)OC(C(NCc3ccc(F)c(F)c3F)=O)C2c2ccc(C)cc2)ccc1)(F)(F)F
+-39.38    -44.77     83.10      1.00      c1c(F)c(Nc2ccc3c(c2)CN(c2nc(-c4ccc(NC(CN(C)C)=O)cc4)cc(C)n2)C(=O)N3C)ccc1F
+-36.50    -35.87     90.61      0.99      C(c1ccccn1)(=O)N=CCCC(Nc1ccc(C)cc1C(=O)c1ccccc1)=O
+-23.31    -23.03     90.32      0.89      c1c(OC)cc(NC(CN(C)S(c2cc3c(cc2)NC(=O)CCC3)(=O)=O)=O)cc1OC
+logp   raw_logp
+0.9822324514389038   2.522864818572998   
+0.931690514087677   2.3404431343078613   
+0.9711584448814392   2.4582149982452393   
+0.8409219980239868   2.216944694519043   
+0.970240592956543   2.4540083408355713   
+0.9963362216949463   2.7324869632720947   
+0.9808613061904907   2.5129852294921875   
+0.9989832043647766   3.0566246509552   
+0.9881237149238586   2.5762386322021484   
+0.8855139017105103   2.2665348052978516   
+
+10:53:54: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 77   Fraction valid SMILES: 96.1   Score: 0.8995   Time elapsed: 69   Time left: 20.3
+  Agent     Prior     Target     Score     SMILES
+-29.11    -29.65     94.96      0.97      c1cc(Cn2c(=Nc3cccc(Cl)c3)[nH]c(=O)c(C(O)=O)n2)ccc1C
+-25.36    -27.24    100.01      0.99      O(c1c2[nH]ccc(=Nc3ccc(-c4ccccc4)cc3)c2ccc1)CC
+-42.10    -45.32     79.74      0.98      c1(C(=O)Nc2c(N)ccc(-c3sccc3)c2)ccc(CN=C2N(c3ccccc3)C(=O)N3c4ccncc4C24CCCN4C3(C)C)cc1
+-48.10    -51.02     72.84      0.97      Oc1cc(C(Nc2ccc(NC(=O)C(c3c4ccccc4[nH]c3)CSCc3ccccc3)cc2)=O)cc(O)c1C(C(C)C)=O
+-29.02    -30.16     90.87      0.95      c1c(-c2cccc(Cl)c2)cc(OC)cc1C(=O)Nc1cc2c(cc1)CCN(C)C2
+-27.03    -25.02     95.95      0.95      C1CC(N2CCCC2)CCN1S(c1ccc(C(NC2CCCCC2)=O)cc1)(=O)=O
+-34.63    -33.14     76.28      0.85      C1CC2C(CNC(C(=O)Oc3cc(Cl)ccc3Cl)=O)CC1O2
+-37.46    -37.93    -37.93      0.00      O(c1ccc(-c2nc3n(c(=NC4CC4)c2)nc(-c2oc(-c4ncccc4)cc2)c3)cc1)C
+-21.62    -24.87    102.88      1.00      N1(C(c2n(Cc3ccccc3)c3ccccc3n2)=O)c2c(cccc2)CC1
+-17.94    -19.69    107.41      0.99      c1(N2CCN(N=Cc3ccc(N(C)C)cc3)CC2)cc(Cl)ccc1
+logp   raw_logp
+0.97345370054245   2.4693331718444824   
+0.9941785335540771   3.329434394836426   
+0.9770234823226929   3.5113604068756104   
+0.9676863551139832   3.5570685863494873   
+0.9455756545066833   2.3719804286956787   
+0.9450670480728149   2.3706982135772705   
+0.8548719882965088   2.231046199798584   
+0.0   0.0   
+0.9980865120887756   3.176352024078369   
+0.9930101037025452   2.6463229656219482   
+
+10:53:55: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 78   Fraction valid SMILES: 98.4   Score: 0.9048   Time elapsed: 70   Time left: 19.5
+  Agent     Prior     Target     Score     SMILES
+-20.70    -20.67    106.81      1.00      c1cc(Cl)ccc1OCc1n(N=Cc2ccc(O)cc2)c(=S)[nH]n1
+-27.20    -30.09     97.58      1.00      c1ccc2c(c(-c3ccccc3)cc(-c3c(NC(=O)C)cccc3)c2)c1
+-32.03    -35.32     91.59      0.99      n1c(C(=O)Nc2ccc(NC(=O)Nc3ccccc3)cc2C(F)(F)F)cc(-c2ccccn2)cc1
+-46.70    -47.36     77.72      0.98      c1(-c2c(C)nn3c(=NC(CO)C)[nH]c4c(cn(CCc5ccccc5)n4)c23)ccc(C2(N)CC(C3CC3)(O)C2)nc1
+-43.64    -44.99     66.45      0.87      N(c1cc(Cc2c(O)oc3c(=N)[nH]cnc23)ccc1)C(=O)C(N)c1c(F)cccc1
+-20.54    -20.80     93.16      0.89      O=C(N=c1[nH]nc(COC)s1)c1ccc(N(C)C)cc1
+-38.27    -38.24     85.33      0.97      c1cc(OC)c(S(C)(=O)=O)cc1-c1[nH]c2ccccc2c(=Nc2cccc3c2ccs3)n1
+-24.24    -23.39     96.82      0.94      C1C(n2c(=S)[nH]c3c2cc(Cl)c(Cl)c3)CCCC1
+-20.00    -20.68     95.56      0.91      c1c(CCNC(CN2C(=O)c3ccccc3C2=O)=O)ccc(S(N)(=O)=O)c1
+-46.96    -49.32     75.49      0.98      C(Cc1ccc(-c2ccc(C(=O)N(C3CC3)C3CCN(C(N(C)C)=O)CC3)cc2)cc1)(NC(=O)C(C(C)C)N(C)C)C(=O)O
+logp   raw_logp
+0.9959258437156677   2.7181806564331055   
+0.9974138140678406   3.219721555709839   
+0.9914957880973816   3.379613161087036   
+0.9771832227706909   2.4895706176757812   
+0.8706454634666443   2.2484195232391357   
+0.890310525894165   2.272815227508545   
+0.965398371219635   3.566293716430664   
+0.9391127228736877   2.3564648628234863   
+0.9081152081489563   2.2984724044799805   
+0.9751003384590149   2.4779021739959717   
+
+10:53:56: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 79   Fraction valid SMILES: 98.4   Score: 0.9180   Time elapsed: 71   Time left: 18.6
+  Agent     Prior     Target     Score     SMILES
+-29.79    -29.62     88.93      0.93      n1cc(-c2cccnc2)cc2c(-c3cncc(N4CCOCC4)c3)ncnc12
+-34.12    -36.26     87.97      0.97      C1(C)(C)Oc2c(cc(-c3ccc4c(n3)nccc4)cc2)C(NC(=O)Nc2ccc(OC)cc2)C1O
+-24.38    -24.96     97.01      0.95      N(c1[nH]c2c(c1)cccc2)C(c1ccc(OC)cc1)=O
+-21.44    -21.33     83.93      0.82      N12C(C(NCc3ccco3)=O)CSC1(C)CCC2=O
+-28.51    -29.35     96.89      0.99      c12cc(-c3ccc(NC(N=c4cc(C(C)(C)C)o[nH]4)=O)cc3)oc1ccc(CN1CCOCC1)c2
+-42.12    -44.14     77.00      0.95      c12c(nc(-c3cnccc3)nc1-c1ccccc1NC(c1cc3c(cc1)OCO3)=O)sc(-c1ccc(Cl)cc1)c2
+-24.33    -25.94    100.01      0.98      n1(-c2ccccc2)nc(-c2cc(OC)ccc2)c(C(=O)Nc2cc(OC)ccc2)c1
+-31.66    -35.29     92.57      1.00      c1cc(Oc2c(C(=O)O)cc(N(C(=O)C)c3ccccc3)cc2)ccc1C(=O)O
+-32.14    -33.10     94.53      1.00      O=c1n(C2OC(CNC(Nc3ccccc3C(F)(F)F)=S)C3OC(C=Cc4ccccc4)OC32)ccc(=O)[nH]1
+-24.63    -27.22    100.56      1.00      O=C(OCc1ccc(C(=O)Nc2ccccc2N)cc1)c1ccc(-c2ccccc2)cc1
+logp   raw_logp
+0.9262050986289978   2.3296093940734863   
+0.9705612063407898   3.544536828994751   
+0.9528592228889465   2.39170241355896   
+0.8224115967750549   2.1997032165527344   
+0.9862598776817322   2.5569491386413574   
+0.9464240074157715   3.6258554458618164   
+0.9839918613433838   3.4632952213287354   
+0.9988290071487427   3.0924389362335205   
+0.997092604637146   2.7640233039855957   
+0.9983085989952087   3.1575469970703125   
+
+10:53:57: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 80   Fraction valid SMILES: 97.7   Score: 0.9000   Time elapsed: 72   Time left: 17.8
+  Agent     Prior     Target     Score     SMILES
+-38.48    -40.17     87.62      1.00      c1(C)ccc(C(N2C(C(NS(=O)(=O)c3cc(F)ccc3)=O)(C)CC2)=O)c(NS(c2ccc(CC)cc2)(=O)=O)c1
+-21.76    -21.35     83.20      0.82      c1ncc(CNC(=O)c2c(=O)n(O)c(O)c3ccccc23)cc1
+-40.26    -41.18     81.70      0.96      c12c(ccc(CC(C)(NC(c3[nH]c(=NC)c(C(F)(F)F)cc3)=O)C)c1)N(C)C(=O)CS2
+-26.63    -28.75     84.64      0.89      C1CN(c2ccccn2)CCN1C(c1onc(CN2C(=O)c3ccccc3C2)c1)=O
+-26.97    -27.24     86.01      0.88      O=C(Nc1ccc(C)cc1O)Nc1cccc(OC(F)F)c1
+-16.79    -16.61     85.21      0.80      c1c(=O)n(C2=CC(C)(C)Oc3ccc(C#N)cc32)ccc1
+-27.82    -29.29     98.58      1.00      c1c[nH]c(=Nc2ccc3n(C)c(-c4ccc([N+]([O-])=O)cc4)nc3c2)cc1
+-23.21    -23.98    101.40      0.98      c1(NC(COc2ccc(Cl)cc2)=O)ccc(-c2nc3c(cccc3)n2C)cc1
+-18.82    -18.80    107.91      0.99      C1CN(Cc2ccc(COc3ccc(-c4ccccc4)cc3)cc2)CCC1
+-21.77    -20.45     82.39      0.80      c1(Cl)cc(Cl)c(Oc2c(O)cc(Br)c(Br)c2)cc1
+logp   raw_logp
+0.9983794093132019   2.849195718765259   
+0.8168379664421082   2.194791078567505   
+0.9599993824958801   2.414078712463379   
+0.88584965467453   2.2669670581817627   
+0.8847527503967285   2.265559434890747   
+0.7954376339912415   2.1769347190856934   
+0.9989437460899353   3.0678234100341797   
+0.9795460104942322   3.495858907699585   
+0.9899184107780457   2.597898244857788   
+0.8034025430679321   2.1834073066711426   
+
+10:53:58: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 81   Fraction valid SMILES: 97.7   Score: 0.9189   Time elapsed: 74   Time left: 17.1
+  Agent     Prior     Target     Score     SMILES
+-23.29    -23.26     89.31      0.88      c1c(-n2[nH]c(C(Cl)(Cl)Cl)nc2=N)cccc1
+-30.40    -34.35     93.52      1.00      C1N(Cc2c(-c3ccc(NC(Nc4cc(C(F)(F)F)c(Cl)cc4)=O)cc3)cccc2)CCCC1C(O)=O
+-41.82    -44.35     82.12      0.99      c1c(C(F)(F)F)ccc2c1[nH]c(=Nc1ccc(NS(=O)(CCNC(=O)c3cccc(O)c3)=O)cc1)c1c2-c2ccccc2C1=NO
+-23.06    -24.32    101.47      0.98      O=C(N1CC(C(=O)Nc2ccc(C)cc2)CCC1)c1cccc(Cl)c1
+-33.19    -35.05     92.74      1.00      c1c(-c2ccccc2)ccc(C(F)(F)F)c1-c1sc(N)c(C(c2cccc(C(F)(F)F)c2)=O)c1
+-29.24    -29.98     97.40      1.00      C(C1CCN(CCCOc2ccc(NC(=O)c3ccc(C(C)(C)C)cc3)cc2)CC1)c1ccc(F)cc1
+-28.26    -28.45     96.68      0.98      c1c2c(ccc1C(N=c1cccc[nH]1)=O)S(=O)(=O)c1cc(N3CCNCC3)ccc1C2=O
+-38.28    -43.20     78.48      0.95      c1(N2CCN(C(c3oc(-c4ccc(Cl)cc4)cc3)C(Nc3c(OC)ccc(OC)c3)C(N)=O)CC2)c(F)cccc1
+-32.51    -34.69     85.70      0.94      c1cc(-n2ncc3c2nc[nH]c3=Nc2cc(OC)c(OC)c(OC)c2)ccc1OCC(Nc1cccc(Cl)c1)=O
+-28.80    -28.26     73.57      0.80      FC(C(=O)c1cc(F)c(-n2c(=O)n(C(F)F)c(C)n2)c(F)c1)(F)F
+logp   raw_logp
+0.8794686794281006   2.2589380741119385   
+0.999046802520752   2.969602584838867   
+0.988073468208313   3.4243197441101074   
+0.9827642440795898   2.526900291442871   
+0.9983973503112793   3.1490321159362793   
+0.9951561093330383   3.304978609085083   
+0.9776508808135986   2.492333173751831   
+0.9506273865699768   3.614631175994873   
+0.9405847191810608   3.6401422023773193   
+0.7956140637397766   2.1770761013031006   
+
+10:53:59: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 82   Fraction valid SMILES: 97.7   Score: 0.9212   Time elapsed: 75   Time left: 16.3
+  Agent     Prior     Target     Score     SMILES
+-35.00    -36.76     79.44      0.91      C1CN(c2cc(F)ccc2)CCC1N(Cc1cc(Cl)ccc1)Cc1nc2c(cccc2)[nH]1
+-31.96    -32.90     94.97      1.00      c1(C(Oc2ccc(C(Nc3ccc(S(=O)(N=c4sc(CC)n[nH]4)=O)cc3)=O)cc2)=O)cc(C)cc(C)c1
+-29.32    -32.59     94.90      1.00      N1(c2ccc(C(N3C(c4ccc(-c5ccccc5)cc4)CC(c4ccc(NC(=O)C)cc4)=N3)=O)cc2)CCOCC1
+-32.91    -33.85     93.43      0.99      c1nc(-c2nc(=NC(=O)Cc3ccccc3)[nH]nc2-c2ccc(F)cc2)ccc1
+-44.39    -47.12     76.86      0.97      c1cc(SCC(=O)N2C(C)CN(c3nn(Cc4ccc(C(N=c5[nH][nH]c(C(=O)O)c5)=O)cc4)c(C)c3C)CC2)ccc1F
+-31.73    -32.77     77.68      0.86      C(Nc1cc(-c2cc(Cl)ccc2)c(OC)cc1)(=O)C1(C)NN=C(C(C)C)C1
+-24.10    -24.37     98.34      0.96      c1(NC(Nc2ccc(C(OCCCC)=O)cc2)=O)ccc(OS(=O)(N)=O)cc1
+-24.96    -24.60    101.75      0.99      c1c(OC)ccc(-c2nc3cc(CCCN4CCOCC4)ccc3[nH]2)c1
+-19.81    -20.89     99.75      0.94      c1ccc(-c2c(COc3ccc(C(NC4C(O)CCCC4)=O)cn3)c(C)on2)cc1
+-30.78    -30.19     75.77      0.83      c1(C(C)(C)C)cc(-n2c(=S)[nH]nc2-c2cc(O)ccc2)c(O)cc1
+logp   raw_logp
+0.9078241586685181   3.70198130607605   
+0.9989503622055054   2.9339232444763184   
+0.9960103034973145   3.2790021896362305   
+0.9943764209747314   3.324841260910034   
+0.968591570854187   2.4467568397521973   
+0.8628852367401123   2.2396621704101562   
+0.958658754825592   2.4096004962921143   
+0.987145721912384   2.565770387649536   
+0.9425421357154846   2.3644938468933105   
+0.8278027176856995   2.20457124710083   
+
+10:54:00: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 83   Fraction valid SMILES: 98.4   Score: 0.9324   Time elapsed: 76   Time left: 15.4
+  Agent     Prior     Target     Score     SMILES
+-26.89    -29.67     95.77      0.98      c1cc(N(C2(COC)CCN(CCn3nc(-c4ccccc4)nc3)CC2)C(=O)CC)ccc1C(F)(F)F
+-35.36    -35.83     90.90      0.99      N1(c2n3cc(Cl)ccc3nc2CN2CCOCC2)CCC(C(Nc2ccc(Cl)cc2)=O)CC1
+-26.61    -28.10     99.76      1.00      c1ccc(CN(Cc2ccc(Br)cc2)c2c3c(ncn2)n(C)cn3)cc1
+-27.03    -28.73     98.81      1.00      n1c[nH]c2c(c1=Nc1cc(OC)c(OC)cc1)cc[nH]c2=Nc1cccc(Br)c1
+-31.12    -29.72     97.72      1.00      c1cc(OC)ccc1Cn1c2cc(-c3ccc(O)c(OC)c3)cc(O)c2nc1
+-32.76    -36.47     91.34      1.00      c1ccc(N(C(C)=O)c2c([N+](=O)[O-])cc(C(=O)N(CC(=O)Nc3ccc(NC(=O)C)cc3)C)cc2)cc1
+-22.29    -22.93    102.43      0.98      N(CCc1ccccc1)C(c1ccc(-c2ccccc2)cc1)=N
+-33.02    -33.03     88.46      0.95      c1cccc(CC(N)CNC(C(O)c2ccc([N+](=O)[O-])cc2)COC(C(C)(C)C)=O)c1
+-32.63    -39.95     87.89      1.00      c1c(C(=NOCc2c(Br)cccc2)C)c(NS(c2ccc(NC(=O)NCCCl)cc2)(=O)=O)ccc1
+-28.26    -27.61     89.17      0.91      c1ccccc1-c1c(C=NO)oc2c1cc(C)c(C)c2
+logp   raw_logp
+0.9800084829330444   2.507185220718384   
+0.9900140762329102   2.599158525466919   
+0.9989368915557861   2.930438995361328   
+0.9964104294776917   2.735252857208252   
+0.9955711960792542   2.7069902420043945   
+0.99851393699646   3.1366891860961914   
+0.9793586730957031   2.502927303314209   
+0.9491811394691467   2.381408214569092   
+0.9988051056861877   3.0966875553131104   
+0.9122871160507202   2.305124044418335   
+
+10:54:01: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 84   Fraction valid SMILES: 96.1   Score: 0.8864   Time elapsed: 77   Time left: 14.5
+  Agent     Prior     Target     Score     SMILES
+-39.17    -43.87     79.87      0.97      O=C(N(C)c1scc(-c2c(OC)cc(Cl)cc2)n1)c1ccc(NC(Nc2cc(N(C)C)ccc2)=O)cc1
+-24.30    -26.92     94.58      0.95      c1c(-c2cccc(CNCc3cc(-c4ccc(-c5[nH]c6ccccc6n5)cc4)ccc3)c2)cnc(N2CCOCC2)c1
+-23.98    -24.22    103.65      1.00      N1(C(C)CO)S(=O)(=O)c2c(cc(C#Cc3cnccc3)cc2)OC(CN(C)C(Nc2ccc(OC)cc2)=O)C(C)C1
+-26.32    -29.54     97.46      0.99      O=c1cc(-c2ccncc2F)[nH]c2n1nc(-c1ccc(Cl)cc1)n2
+-22.88    -23.74     83.23      0.84      C1N(Cc2onc(-c3sccc3)n2)Cc2cc(OC)c(OC)cc2C1
+-27.48    -28.02    -28.02      0.00      c1ccccc1NC(CSc1n(-c2ccc(OC)cc2)c(=O)n2c(cccc2)n1)=O
+-19.90    -20.21     91.81      0.88      OC(C(N)Cc1c(=O)[nH]oc1-c1ccccc1)=O
+-24.55    -23.52     85.34      0.85      c1(N)cccc(C2=C(C(O)=O)N3C(=O)C(C(O)C)C3C2C)c1
+-27.15    -26.60     77.27      0.81      c1c2c(ccc1OC(F)F)Nc1n(C)ncc1CO2
+-25.63    -26.91     76.53      0.81      C(C(Nc1n(C)c(=O)n(C)c(=O)c1)=O)c1ccc(-n2ccnc2)cc1
+logp   raw_logp
+0.9666911959648132   3.5611560344696045   
+0.9491865038871765   3.618577480316162   
+0.9990593194961548   2.9783849716186523   
+0.9921968579292297   2.6317622661590576   
+0.8357056975364685   2.211930274963379   
+0.0   0.0   
+0.8751311302185059   2.2536873817443848   
+0.8504442572593689   2.226454019546509   
+0.8114949464797974   2.1901895999908447   
+0.8080841302871704   2.1873044967651367   
+
+10:54:02: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 85   Fraction valid SMILES: 97.7   Score: 0.9277   Time elapsed: 78   Time left: 13.6
+  Agent     Prior     Target     Score     SMILES
+-19.68    -23.02     99.66      0.96      c1(-c2ccccc2)ccc(-c2cc(-c3ccc(Cl)cc3)n(-c3ccccc3)n2)cc1
+-30.96    -32.62     95.13      1.00      Brc1cc(N=c2[nH]cnc(N3CCN(c4ccc(Cl)cc4)C(C)(C)C3)c2)ccc1F
+-33.62    -34.40     88.15      0.96      c1(C(c2c(C)c(=O)[nH]c(=O)n2COCCO)=O)nc(-c2cc3ccccc3cc2)c[nH]1
+-26.08    -25.77     75.83      0.79      S(=O)(c1c2nonc2ccc1)(=O)Nc1c(C)cc(O)cc1C
+-34.30    -35.56     75.71      0.87      c12ccc(NC(=O)Nc3ccc(Cl)c(Cl)c3)cc1cc(CC1N=NNC1)o2
+-47.15    -51.02     74.20      0.98      c1(-n2nc(OCC)n(Cc3ccc(-c4cccc(F)c4C(O)=O)cc3)c2=O)cc(CC(=O)NCc2cnccc2)c(C)cc1
+-18.92    -22.05    105.02      0.99      c1cccc(C(N2CCN(c3c(F)cccc3)CC2)c2nnnn2Cc2ccc(OC)cc2)c1
+-20.25    -21.44    106.41      1.00      c1(-c2cc(-c3cnccc3)nc(-c3ccsc3)c2)ccccc1
+-35.04    -36.81     81.88      0.93      n12c(c(NCc3cc(-c4cnccc4)cs3)ccc1)nc(NC(=O)OCC)c2
+-24.27    -24.97    102.55      1.00      c1c(C2N(Cc3ccc(F)cc3)CCCC2)ccc(-n2cccn2)c1
+logp   raw_logp
+0.9584218859672546   3.5911762714385986   
+0.9980471730232239   2.8206207752227783   
+0.957484781742096   2.405791759490967   
+0.7938040494918823   2.175630569458008   
+0.869288980960846   2.246857166290283   
+0.9782630205154419   3.5039637088775635   
+0.9927797317504883   3.3579678535461426   
+0.9988581538200378   3.0869266986846924   
+0.9272472858428955   2.3316092491149902   
+0.9962688088417053   2.7300238609313965   
+
+10:54:03: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 86   Fraction valid SMILES: 99.2   Score: 0.9294   Time elapsed: 79   Time left: 12.7
+  Agent     Prior     Target     Score     SMILES
+-40.20    -42.79     84.73      1.00      C1(c2cc(OCc3ccccc3Br)ccc2)C(OC)C(=O)N1Cc1ccc(C(C)(C)C(OC)=O)cc1
+-21.63    -21.70     96.24      0.92      N=c1c2c(nc[nH]1)n(CCc1ccc(F)cc1)cn2
+-37.69    -39.89     85.15      0.98      c1c(-c2ccc(NC(c3sccc3S(=O)(=O)C(C)C)=O)cc2)[nH]c(C(OC)=O)c1
+-22.83    -23.76    104.03      1.00      c1c(OC)c(OC)c(OC)cc1C1=C(c2ccccc2)C(=O)N(Cc2ccc(O)cc2)C1=O
+-36.76    -40.41     76.29      0.91      N(C(=O)Nc1ccc(-c2nc3n(c2NC(Nc2cccc4c2cccc4)=O)cccc3)cc1)c1ccccc1C
+-36.71    -35.71     75.81      0.87      O=C(c1c(OCC(=O)O)ccc(Cl)c1)NC1CCC12CCN(Cc1nccs1)CC2
+-23.39    -21.95     87.76      0.86      C1C2CC3CC(CC1(C(N(CC(=O)Nc1ccc(OC)cc1)C)=O)C3)C2
+-37.76    -39.04     88.84      1.00      OC(c1cc(-c2ccc(-c3ccc(Cl)cc3)cc2)cc(C(NCC2CCC(C)N2C)=O)c1)=O
+-21.56    -21.63    105.45      0.99      n1(OCCOc2ccc(Br)cc2)c2ccccc2nn1
+-37.53    -39.33     87.83      0.99      c1ccc(-c2cc(-c3ccccc3)nc3sc(=Nc4c([N+](=O)[O-])cccc4)[nH]c32)cc1F
+logp   raw_logp
+0.9962074160575867   3.2721784114837646   
+0.9214635491371155   2.320826768875122   
+0.9768307209014893   2.4875242710113525   
+0.9984320998191833   2.854499101638794   
+0.9117111563682556   3.6958110332489014   
+0.8712924718856812   2.2491698265075684   
+0.8571556806564331   2.2334604263305664   
+0.9990118741989136   3.046736240386963   
+0.992789626121521   2.6422126293182373   
+0.9934362173080444   3.3453478813171387   
+
+10:54:04: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 87   Fraction valid SMILES: 99.2   Score: 0.9276   Time elapsed: 80   Time left: 11.8
+  Agent     Prior     Target     Score     SMILES
+-22.14    -21.73     94.44      0.91      C(N(C)C)CNC(=O)c1ccc(N=c2[nH]cc3c(n2)-c2c(nn(C)c2-c2ccccc2Cl)CC3)c(OC)c1
+-29.75    -29.75     86.95      0.91      c1ccc(Cc2c3c(nc[nH]c3=O)n(C3C(O)C(O)C(CO)O3)c2NC(=O)C)cc1
+-25.15    -26.40     87.95      0.89      c1ccc(N(C)C(N2C(C)CN(c3cc(OC)ncn3)CC2)=O)cc1
+-34.20    -34.01     73.34      0.84      C1C(N(C)C)C2(c3cc(Cl)ccc31)C(=O)Nc1cc(Cl)cc(Cl)c12
+-31.17    -31.21     89.12      0.94      c1(Br)cc(NC(=O)OC2CCC(CNC(c3ccccc3)=O)CC2)ccc1
+-18.24    -19.39    107.61      0.99      c1cc(OC)ccc1-n1nnc(-c2ccc(C)cc2)c1
+-39.33    -40.34     71.00      0.87      c1(-c2nc(=N)[nH]o2)cc(N2Cc3ccc(C(O)=O)cc3C2)[nH]c(=N)n1
+-28.45    -27.29     84.60      0.87      OCC1C(O)C(O)C(NC(=O)c2cc3c(cc(OC)cc3)cc2)CO1
+-24.06    -25.46    100.74      0.99      c1c(OC(=O)c2sccc2)c(NC(=O)c2ccccc2)cc(Cl)c1
+-21.37    -22.89    102.69      0.98      C(NCc1ccccc1)c1ccc(-c2cc(-c3[nH]c4cccc(C)c4n3)ccc2)cc1
+logp   raw_logp
+0.9075707793235779   2.2976245880126953   
+0.9117254018783569   2.3042120933532715   
+0.8934012055397034   2.2769908905029297   
+0.8385981321334839   2.2146947383880615   
+0.9400785565376282   2.35868239402771   
+0.9922313094139099   2.6323471069335938   
+0.8698868751525879   2.247544288635254   
+0.8741258382797241   2.252492904663086   
+0.9859784245491028   2.5542643070220947   
+0.9811351895332336   3.485097885131836   
+
+10:54:05: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 88   Fraction valid SMILES: 98.4   Score: 0.9325   Time elapsed: 81   Time left: 10.9
+  Agent     Prior     Target     Score     SMILES
+-23.30    -23.32    102.85      0.99      O=S(N1CCN(c2c3ccc(Cl)cc3ncc2)CC1)(c1cc2c(cccc2)cc1)=O
+-25.63    -25.09     84.94      0.86      c1(COc2cc(-c3scc(CC(O)=O)n3)ccc2)ccccc1
+-26.12    -27.07     97.83      0.98      C1Oc2c(ccc(NC(CSc3nc(=Nc4ccc(OC)cc4)[nH][nH]3)=O)c2)O1
+-26.21    -28.58     98.11      0.99      c1(=O)ccc(Cl)c(-c2ccc(NC(Nc3ccc(C)cc3)=O)cc2)o1
+-24.75    -26.72     95.69      0.96      c1cc(C)ccc1N=C(Nc1ccc(F)cc1)c1ccc(N(C)C)cc1
+-42.42    -43.29     73.97      0.92      C1c2c(cccc2)C2C=C(Br)C(=O)CC22C1=C(Br)c1ccccc1C2=O
+-33.21    -36.56     86.69      0.96      c1c(-c2cccc(-c3oc(-c4ccc(N5CCN(C)CC5)cc4)cc3)c2)cc(NC(=O)c2ccccc2N2CCOCC2)cc1
+-38.13    -37.39     78.40      0.90      C1CC(OC(C)=O)C(C)(C)C2C1(C)C1CCC3(C)C4(C(=O)OC(C)(C)C4)CCC3(C)C1C(=O)C2
+-33.89    -33.64     88.41      0.95      C(OC(=O)Nc1cccc(C2=NOC3(CN(C(CC(=O)O)=O)C(C(NCc4c(F)c(Cl)ccc4)=O)C3)C2)c1)C
+-49.22    -54.23     39.05      0.73      c1cc(-c2oc(-c3cc4ccccc4cc3)nn2)ccc1-n1nc(-c2ccc(C)cc2)c(-c2c(O)ccc(N=Cc3cc(OC)ccc3)c2)c1
+logp   raw_logp
+0.9856622219085693   3.4486894607543945   
+0.8595784902572632   2.2360570430755615   
+0.975756049156189   2.48146915435791   
+0.989768385887146   2.5959458351135254   
+0.9562621712684631   3.598069429397583   
+0.9160886406898499   2.311439037322998   
+0.9628961682319641   3.5757315158843994   
+0.9045979976654053   2.293072462081909   
+0.9534738659858704   2.393496513366699   
+0.7287387847900391   3.871244430541992   
+
+10:54:06: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 89   Fraction valid SMILES: 96.9   Score: 0.9050   Time elapsed: 81   Time left: 9.9
+  Agent     Prior     Target     Score     SMILES
+-50.41    -53.49     73.51      0.99      c1(NC(=O)CN(c2ccc(C3(c4n(C)ncn4)C(=O)NC(=O)N3)cc2)C(OCc2ccccc2)=O)ccc(OCC)cc1
+-20.59    -21.84    105.25      0.99      c1(-c2ccc(Cl)cc2)nc(-c2ccccc2)nnc1C
+-22.58    -24.51    103.37      1.00      c1cc(C(=O)Nc2cccc(NC(c3cc(F)c(F)cc3)=O)c2)ccc1F
+-27.28    -27.38     75.97      0.81      c1c2c(c(Cl)cc1Cl)n[nH]c2-c1cc2cc[nH]c2cc1
+-32.05    -35.49     92.21      1.00      O=C(Nc1ccc(Cl)cc1)c1cc(-c2cccc(NCCN3CCNCC3)c2)ccc1
+-42.38    -40.69     72.84      0.89      c1cc(C2N=CC(=O)Nc3nccn32)c(F)cc1NC(c1n(C)ncc1Cl)=O
+-18.70    -19.53    107.43      0.99      c1(Cl)ccc(NC(=O)c2n(-c3ccccc3)nc(C)c2)cc1
+-27.47    -28.86     96.80      0.98      n1nc(N2CCC(NC(=O)c3cnc(-c4ccc(F)cc4)cc3)CC2)ccc1
+-23.27    -24.88    102.22      0.99      c1ccc(N)cc1-c1[nH]c(=NCc2ccccc2)c2nccn2c1
+-18.58    -17.50     96.21      0.89      CC1(C)Oc2ccc(C#N)cc2C(N2C(=O)CCCCC2)C1O
+logp   raw_logp
+0.992173969745636   3.3686251640319824   
+0.9929395318031311   2.644993543624878   
+0.9990720152854919   3.001708507537842   
+0.8074572086334229   2.1867783069610596   
+0.997704029083252   3.202907085418701   
+0.8869656920433044   2.268411159515381   
+0.9918784499168396   2.6264731884002686   
+0.9817073941230774   2.518996000289917   
+0.9930022954940796   3.3538243770599365   
+0.8883669376373291   2.270242214202881   
+
+10:54:07: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 90   Fraction valid SMILES: 98.4   Score: 0.9227   Time elapsed: 82   Time left: 9.0
+  Agent     Prior     Target     Score     SMILES
+-27.64    -27.10    100.15      0.99      C1Oc2c(cc(C=C3C(=O)C(=Cc4ccc(OCC=C)cc4)CN(Cc4ccccc4)C3)cc2)O1
+-33.62    -32.84     89.53      0.96      c12c(c(-c3ccc(C(F)(F)F)cc3)c[nH]1)C(=O)c1c(NC(=O)CN3CCNC(C)C3)cccc1C2=O
+-24.79    -27.41     98.29      0.98      c1(=O)cc[nH]c(=Nc2ccc(NC(c3c(OC)cccc3)=O)cc2)[nH]1
+-18.55    -20.90    106.95      1.00      c1cc(C2C(n3cncc3)C(c3ccc(Cl)cc3)O2)ccc1Cl
+-36.68    -39.86     75.16      0.90      c1(C(=O)Nc2cc(-c3n(C)ccn3)ccc2)ccc(N=c2[nH]c3cc(C(N(C4CCCCC4)C)=O)ccc3[nH]2)cc1
+-22.57    -23.35    104.34      1.00      c1cccc(C(c2ccccc2)(OCC2OC(n3cc(C)c(=O)[nH]c3=O)C3OC(C)(C)OC23)c2ccccc2)c1
+-38.93    -39.70    -39.70      0.00      Oc1c(C(=O)O)ccc(Nc2[nH]c3cccc4c3c(n2)C(=O)c2c-4cccc2)c1Cl
+-25.07    -26.53     99.23      0.98      c1cc(-c2ccnc(-c3ccccc3)c2)ccc1C(=O)NC(N)=N
+-29.87    -31.74     96.13      1.00      C1Cc2ccccc2-c2[nH]c3c(cc(C(=O)NN=Cc4ccccc4C(=O)O)cc3)c21
+-31.82    -34.13     86.15      0.94      C(c1n[nH]c(=Nc2c(F)cccc2)s1)(C)(c1nc2c(cccc2)[nH]1)C
+logp   raw_logp
+0.9940999746322632   3.3312132358551025   
+0.9560760259628296   2.4013516902923584   
+0.9820728302001953   2.521677255630493   
+0.9988138675689697   2.9048404693603516   
+0.8985909223556519   3.7157516479492188   
+0.9976118206977844   3.2085061073303223   
+0.0   0.0   
+0.9825316667556763   2.525120735168457   
+0.9990503787994385   2.9718523025512695   
+0.9396156668663025   2.3576154708862305   
+
+10:54:08: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 91   Fraction valid SMILES: 98.4   Score: 0.9296   Time elapsed: 84   Time left: 8.2
+  Agent     Prior     Target     Score     SMILES
+-27.34    -28.02     89.24      0.92      c1(NC(C(F)(F)F)=O)sc(-c2ccccc2)cc1C(=O)N=c1cc[nH]cc1
+-35.95    -38.28     86.80      0.98      c1(-c2[nH]c3n(ncc3-c3ccc(NC(CC(C)(C)C)=O)cc3)c(=O)c2)ccc(Cl)c(C(F)(F)F)c1
+-33.41    -34.11     93.76      1.00      Fc1cc(-c2c(=O)oc3c(c(OCC4CCCCC4)ccc3)c2)ccc1Oc1ccc(F)cc1
+-29.57    -27.10     79.03      0.83      C(c1c(O)c(CCC)c(O)c(C(C)=O)c1O)(c1ccccc1)CC(C)C
+-21.42    -23.14     93.31      0.91      c1ccccc1-n1nc(-c2ccc(Cl)c(Cl)c2)c(CN2CCOCC2)c1
+-34.63    -38.44     88.63      0.99      c1c(OC)ccc(N(S(=O)(c2cc(-c3ccc(NC(=O)CSc4nncn4-c4ccccc4)cc3)ccc2)=O)C)c1
+-32.15    -32.36     89.18      0.95      c12cnn3ccc(C)cc3c1c1c(n2)cccc1
+-24.50    -23.68    102.40      0.99      c1(C)ccc(S(N(CC2CC2)c2sc3c(cccc3)c2C)(=O)=O)cc1
+-22.28    -23.81    102.39      0.99      c1cc(S(=O)(=O)Nc2c(=O)oc3c(cccc3)c2Nc2ccc(C)cc2)ccc1C
+-31.29    -33.50     94.37      1.00      c1sccc1CN1C(=O)C2(C(=O)N(CC(=O)O)c3ccccc32)N(c2ccc(Cl)cc2)C1=O
+logp   raw_logp
+0.916094958782196   2.3114497661590576   
+0.9771772027015686   2.489535331726074   
+0.9990379810333252   3.0352535247802734   
+0.8291186094284058   2.205777645111084   
+0.9097429513931274   2.301034688949585   
+0.9927605390548706   3.3583195209503174   
+0.9495149850845337   2.382312774658203   
+0.985045313835144   2.545729637145996   
+0.9859224557876587   3.446263313293457   
+0.9989902377128601   2.945613384246826   
+
+10:54:09: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 92   Fraction valid SMILES: 100.0   Score: 0.9446   Time elapsed: 85   Time left: 7.3
+  Agent     Prior     Target     Score     SMILES
+-30.96    -31.50     92.93      0.97      c1cc(Cc2noc(CN3CCN(C(c4cccc5occc45)=O)CC3)n2)ccc1
+-41.85    -43.33     82.47      0.98      n1c2c(cc(C(Nc3cc(NC)c(N=c4cc(C)[nH]c(=NC(C)c5ccccc5)[nH]4)cc3)=O)cc2)ccc1N1CCN(C)CC1
+-22.61    -23.15     94.96      0.92      c1cc(C=NN2CCN(C)CC2)oc1-c1ccccc1
+-27.92    -27.22     86.46      0.89      C(C1(O)C(=O)Nc2cc(Cl)cc(Cl)c21)(=O)N1CCC(C)CC1
+-26.48    -27.98     96.67      0.97      C(C(=O)c1ccc(Br)cc1)(CN(C)C)(c1ccc(F)cc1)O
+-21.80    -21.22     90.93      0.88      c1cccc(CNC(C2CCN(S(=O)(=O)c3ccccc3)CC2)=O)n1
+-32.08    -35.97     87.98      0.97      c1c(C(Nc2ccc(-n3c(C(F)(F)F)nc(C4=CCCCC4)n3)cc2)=O)cnc(Cl)c1
+-29.38    -28.29     95.74      0.97      n1(CCOC)c(-c2cc3ccccc3o2)nnc1SCC(=O)Nc1ccc(C(C)=O)cc1
+-31.02    -29.95     85.14      0.90      c1c(C(c2c3c(c(=O)n(C)n2)CCCC3)=NO)cccn1
+-40.67    -41.50     86.36      1.00      C(c1nc2c(c(=O)n1NC(c1cc3c(cc1)OCO3)C1CC1)cccc2)C(c1ccc(C)cc1)=O
+logp   raw_logp
+0.9721139669418335   2.462735414505005   
+0.9827940464019775   3.472870111465454   
+0.9227522015571594   2.323164463043213   
+0.8881154656410217   2.269912004470825   
+0.9738324880599976   2.471257448196411   
+0.8762226700782776   2.2549939155578613   
+0.9683083295822144   2.4455485343933105   
+0.9689960479736328   2.448500633239746   
+0.8991296887397766   2.285020351409912   
+0.9988930225372314   3.079754590988159   
+
+10:54:10: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 93   Fraction valid SMILES: 97.7   Score: 0.9090   Time elapsed: 86   Time left: 6.4
+  Agent     Prior     Target     Score     SMILES
+-20.13    -23.28     99.81      0.96      O(c1ccc(Nc2c(=O)c(=O)c2-c2ccccc2)cc1)C
+-25.58    -25.25     76.65      0.80      c1(C)cccc(Oc2cc(N)c([N+]([O-])=O)cc2[N+](=O)[O-])c1
+-32.52    -35.94     85.69      0.95      c1(C2NC(c3ccc(F)cc3)=c3ccccc3=C2c2ccccc2)ccc(F)cc1
+-21.27    -21.39    100.93      0.96      c1c(OCC(NC2CC2)=O)ccc(C(c2ccc(F)cc2)=O)c1
+-37.46    -37.94     89.82      1.00      c1c(S(=O)(NC(c2ccc(-c3c(C)n(-c4ccccc4)nc3-c3ccccc3)cc2)=O)=O)c(F)cc(F)c1Cl
+-22.19    -21.11     84.74      0.83      c1nc(CN=C2CC(=O)c3c(cccc3)C2=O)ccc1
+-26.39    -27.40    100.40      1.00      c1cc(OC)ccc1CN(C)c1c(C#N)cc(-c2ccccc2)nc1
+-25.38    -26.06     88.58      0.90      c1ccccc1C(CO)NC(N1CCc2c[nH]c(=Nc3c(OC)cccc3)nc2C1)=O
+-28.85    -29.99     84.80      0.90      c1(=O)cc(CCc2nc3c(cccc3)[nH]2)[nH]c2c(C)cccc12
+-28.19    -26.99     79.74      0.83      s1cc[nH]c1=NC(=O)c1c(C)n(CC(F)(F)F)nc1
+logp   raw_logp
+0.9615983963012695   2.419612407684326   
+0.7960529327392578   2.1774280071258545   
+0.9502392411231995   3.6157047748565674   
+0.9556257128715515   2.399961233139038   
+0.9981555938720703   3.1708333492279053   
+0.8269343376159668   2.2037789821624756   
+0.9984424114227295   2.8555703163146973   
+0.8956601619720459   2.2801105976104736   
+0.8968494534492493   2.2817771434783936   
+0.8338322043418884   2.210160493850708   
+
+10:54:11: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 94   Fraction valid SMILES: 98.4   Score: 0.9182   Time elapsed: 87   Time left: 5.5
+  Agent     Prior     Target     Score     SMILES
+-33.94    -33.72     84.71      0.93      C1C(N2CCc3c(=NCc4nc5c(cc4)cccc5)nc(CC)[nH]c32)CCNC1
+-29.67    -31.20     79.24      0.86      O=C(O)c1ccc(N2C(=O)N(c3c(C#N)cccc3)CC2)cc1F
+-27.73    -27.54     79.84      0.84      n1c2c(ccc1)c(NC(c1ncccc1)=O)c(C(OCC)=O)[nH]2
+-25.69    -25.38    101.28      0.99      [nH]1c(=Nc2ccc3c(c2)OCO3)nc(N2CCCC2)[nH]c1=Nc1ccc(C)cc1
+-34.14    -36.07     90.17      0.99      c1c(Cl)ccc(C([n+]2c(-c3ccc(Cl)cc3)cc(-c3ccc(Cl)cc3)cc2-c2ccccc2)=Nc2ccc(OCC)cc2)c1
+-42.98    -42.09     82.27      0.97      O=C(C(C(=O)OC)=Cc1c(SCc2ccc(C)cc2)n(CCSc2nc(C)cc(C)n2)c2ccccc12)OC
+-19.87    -21.30    106.58      1.00      c1ccc(NC(c2cccc3[nH]c(-c4ccccc4)nc23)=O)cc1
+-41.89    -41.35     76.96      0.92      C(=O)(N)c1c(N)c2c(-c3ccccc3)cc(N3CCCC4(CC3)OC(C)CO4)nc2s1
+-29.71    -30.06     97.78      1.00      c1cc(S(Oc2ccc(C=O)cc2)(=O)=O)ccc1N=CCC(c1cccc(Cl)c1)=O
+-28.15    -27.85     80.63      0.85      O=C(N1CCCC1)Nc1cncc(Sc2ccc(F)cc2)c1
+logp   raw_logp
+0.9252825379371643   2.3278605937957764   
+0.8628803491592407   2.239656686782837   
+0.8389445543289185   2.2150285243988037   
+0.9895318746566772   2.592925548553467   
+0.9861805438995361   3.4438133239746094   
+0.9715521931648254   2.4600601196289062   
+0.999022364616394   3.0425000190734863   
+0.9242448806762695   2.3259174823760986   
+0.9987452030181885   3.106471538543701   
+0.8474543690681458   2.2234160900115967   
+
+10:54:12: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 95   Fraction valid SMILES: 99.2   Score: 0.9356   Time elapsed: 88   Time left: 4.6
+  Agent     Prior     Target     Score     SMILES
+-36.24    -34.62     92.39      0.99      N1(CCC(=O)Nc2cc3n[nH]c(C=Cc4ccccn4)c3cc2)CCCN(Cc2c(C)cc(C)cc2)CC1
+-24.13    -25.81    101.44      0.99      c1(C2NC(=O)N=C(C)C2C(=O)Nc2cc(C(F)(F)F)ccc2)ccc(Oc2ccccc2)cc1
+-38.66    -41.20     83.84      0.98      C(CN(C)C)NC(=O)c1[nH]c(-c2ccc(NC(=O)Nc3cc(C(NCCN(C)C)=O)ccc3)cc2OC)cc1
+-32.54    -32.86     92.32      0.98      c1(-c2ccc(Oc3ncc(NC(=O)Nc4cc(C)ccc4F)cn3)cc2)n(C(C)C)[nH]c(=NC(=O)C2CC2c2ccccc2)c1
+-30.75    -30.04     97.21      0.99      Cc1c(OC)c(OC)ccc1C(SCCN)(c1ccc(OC)cc1)c1ccc(OC)cc1
+-26.34    -26.88    100.76      1.00      c12c(C(C#N)C(=O)c3ccc(Br)cc3)c(-c3ccccc3)[nH]c1cccc2
+-24.45    -25.11    102.07      0.99      c1(=NS(c2ccc(NC(=O)CCOc3ccc(OC)cc3)cc2)(=O)=O)[nH]cccc1
+-33.93    -35.21     85.93      0.95      O1c2c(C(O)=O)cc(CC(=O)O)cc2C(N(C(=O)N(C)c2ccccc2)C)CC1(C)C
+-21.16    -23.43    103.88      0.99      c1ccc(C(c2ccccc2)C(=O)Nc2c(C(=O)Nc3ccccc3)cccc2)cc1
+-33.02    -35.32     89.71      0.98      c1cc(C2CC3=Nc4ccccc4N(C(=S)Nc4ccc(Cl)cc4)C3C2C(=O)OCC)ccc1OC
+logp   raw_logp
+0.9922325015068054   2.6323671340942383   
+0.9941090941429138   3.331007719039917   
+0.9768835306167603   2.4878287315368652   
+0.9779486656188965   3.505877733230591   
+0.9941343665122986   2.669562816619873   
+0.9972096085548401   3.2303004264831543   
+0.9936251640319824   2.6585216522216797   
+0.9464254975318909   2.37414813041687   
+0.9945839047431946   2.6801533699035645   
+0.9767774939537048   3.512781858444214   
+
+10:54:13: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 96   Fraction valid SMILES: 98.4   Score: 0.9264   Time elapsed: 89   Time left: 3.7
+  Agent     Prior     Target     Score     SMILES
+-28.52    -29.37     85.45      0.90      C1CC(Nc2[nH]c3c(cc(Cl)cc3)c(=O)c2)CCN1Cc1c(F)cc(Cl)cc1
+-27.41    -29.72     94.74      0.97      C1c2c([nH]c(-c3cc(OC)c(OC)cc3)nc2=NCc2ccccc2)CCN1Cc1ccccc1
+-27.15    -26.12     82.66      0.85      c1(C)cc(N)ccc1C(=O)N1CC(C(=O)OCC)CCC1
+-23.50    -23.82     96.12      0.94      c1ccc(-c2c(N=Nc3cncc(C(F)(F)F)c3)c(=O)[nH][nH]2)cc1
+-18.29    -18.87     83.99      0.80      o1c(=O)cccc1C(O)=O
+-30.13    -29.31     84.14      0.89      c1(C(=O)N2CCCCC2c2ccccc2)cc(OC)nc(C)c1
+-19.92    -20.25     94.45      0.90      c12[nH]c3c(c1cccc2)CCN1C3CC(c2ccccc2)CC1=O
+-23.18    -24.12    103.65      1.00      Oc1c(N=NC(Cc2ccc(O)cc2)=O)c2ccc(-c3ccccc3)cc2[nH]1
+-19.14    -19.69    105.80      0.98      Brc1ccc(NC(C2Oc3c(cccc3)OC2)=O)cc1
+-30.04    -31.67     93.75      0.98      n1ccccc1C(c1nccnc1)NC(=O)c1ccccc1N
+logp   raw_logp
+0.8970555663108826   2.2820675373077393   
+0.9723890423774719   3.535935640335083   
+0.8498498797416687   2.225846290588379   
+0.9370632767677307   2.3518664836883545   
+0.8035574555397034   2.183535099029541   
+0.8862831592559814   2.267526388168335   
+0.8961149454116821   2.2807457447052   
+0.9981658458709717   3.1699883937835693   
+0.9804136157035828   2.5099098682403564   
+0.979907214641571   2.5065131187438965   
+
+10:54:14: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 97   Fraction valid SMILES: 99.2   Score: 0.9444   Time elapsed: 90   Time left: 2.8
+  Agent     Prior     Target     Score     SMILES
+-33.19    -34.68     93.05      1.00      O(C)c1c(Cc2c(CCN(Cc3cc(Cl)c(Cl)cc3)C)c3ccccc3[nH]2)cccc1
+-28.21    -30.01     97.78      1.00      N1Cc2c(cccc2)N(Cc2cccc(OC)c2)C(=O)C1CSCc1ccccc1
+-26.43    -27.90     99.20      0.99      C(N(c1ccc(F)cc1)Cc1ccc(Cl)cc1)C(=O)NN=Cc1c(Cl)cncc1Cl
+-35.91    -36.48     85.90      0.96      c1(N2C(C(OC)=O)C(C(=O)OCC)C(c3ccc(OC)cc3)C(C#N)C2=S)ccccc1[N+](=O)[O-]
+-23.14    -24.53    103.35      1.00      c1cc(F)ccc1C(Nc1ccc2c(nc(-c3c(Br)cccc3)o2)c1)=O
+-37.44    -39.14     87.08      0.99      c1(Cl)cc(-c2cc(=NC(c3cc(-c4cn(CC(C)(O)C)c(C(N)=O)c4)c(C)cc3)=O)n(-c3ccccc3)[nH]2)cc(F)c1O
+-33.49    -35.98     63.26      0.78      c1c(C(C)(C)C)ccc(-c2ocnc2C(Nc2ccc(C(=O)N3c4ccccc4Cc4c([nH]c5ccccc45)C3)cc2)=O)c1
+-27.87    -28.24     81.84      0.86      c1(C(=O)Nc2c([N+](=O)[O-])cc(-c3n[nH]c(=N)o3)cc2)c(F)cccc1F
+-21.36    -24.22    103.58      1.00      c1cccc(-c2nnc(-c3ccc(C(Nc4ccc(C)cc4)=O)cc3)o2)c1
+-36.13    -40.64     70.04      0.86      c1ccc(OC)c(-c2cc(C(=O)Nc3ccc(Oc4c5c(ncc4)ccc(-c4ccc(C(C)(C)N)cc4)c5)cc3)ccc2)c1
+logp   raw_logp
+0.9978317022323608   3.194689989089966   
+0.9984109401702881   3.1476616859436035   
+0.9930198788642883   2.6465084552764893   
+0.956040620803833   2.4012417793273926   
+0.9990713000297546   2.9945120811462402   
+0.9861332774162292   3.444265127182007   
+0.7753462195396423   3.8386049270629883   
+0.8600636720657349   2.236581325531006   
+0.9984292984008789   3.145789623260498   
+0.8646611571311951   3.758371353149414   
+
+10:54:15: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 98   Fraction valid SMILES: 97.7   Score: 0.9149   Time elapsed: 91   Time left: 1.8
+  Agent     Prior     Target     Score     SMILES
+-23.75    -24.20    103.67      1.00      c1nc(N=c2[nH]c(-c3ccc(=NC4CCN(C(=O)c5c(F)ccc(F)c5)CC4)[nH]c3)cc(C)c2)cc(C(F)(F)F)c1
+-30.05    -30.32     87.73      0.92      C1N(c2ncccn2)CCN(CCCCn2cc(-c3ccsc3)c3cccnc32)C1
+-32.00    -33.19     92.89      0.99      C12(CCC(NC(=O)Nc3ccc(F)cc3)CC1)CCN(C(c1cc3c(F)cccc3[nH]1)=O)CC2
+-27.97    -27.74     87.25      0.90      c1cc2n3c(nnc3-c3ccccc3Cl)n(-c3ccc(CC)cc3)c(=O)c2cc1
+-28.77    -30.92     92.38      0.96      c1ccc(N=c2[nH][nH]c3c2ncc(-c2ccc(Oc4ccccc4)cc2)c3)cc1OC
+-36.43    -38.71     89.08      1.00      N1(Cc2c(F)cc(F)cc2)CCN(c2nc(NC3CC3)cc(Cc3c4c(ccc3)cccc4)n2)CC1
+-37.83    -37.39     90.48      1.00      c1c(CN2CCN(C(N=c3cc[nH]cc3)=O)CC2)cc(OCC)c(OCc2ccccc2C(=COC)C(=O)OC)c1
+-32.69    -31.68     83.69      0.90      [O-][N+](c1c(OC)ccc(C(C(NC2CCCC2)OC(=O)C)=O)c1)=O
+-37.47    -42.53     81.78      0.97      O=c1n(-c2ccc(F)cc2)cccc1C(Nc1ccc(N2CCC3(CCN(C(=O)c4cccnc4OC)CC3)CC2)cc1)=O
+-26.87    -26.62     99.99      0.99      O1C(c2ccc(N=[N+]=[N-])cc2)C(CO)N(S(=O)(=O)c2ccc(C)cc2)C1c1ccccc1
+logp   raw_logp
+0.9989288449287415   3.071556329727173   
+0.9222157597541809   2.3221869468688965   
+0.9850257635116577   2.54555606842041   
+0.8983690738677979   3.7160685062408447   
+0.9632705450057983   3.574359178543091   
+0.998376727104187   3.151071071624756   
+0.9990320801734924   2.9618496894836426   
+0.901390790939331   2.288301706314087   
+0.9711733460426331   3.541715383529663   
+0.9891376495361328   2.588038682937622   
+
+10:54:16: local_reinforcement_logger.timestep_report +41: INFO     
+ Step 99   Fraction valid SMILES: 98.4   Score: 0.9249   Time elapsed: 92   Time left: 0.9
+  Agent     Prior     Target     Score     SMILES
+-39.25    -40.82     85.29      0.99      C12C3=NC(=S)NNN3C(c3ccc(OC)cc3)N=C1SC1c3c(cccc3)C(=O)N21
+-37.08    -36.09     87.01      0.96      C1CC2OC(=O)C(O)C2(C)C2C(O)CC3(C)C(CC(C)C3(C(=O)C)O)C12
+-30.60    -33.51     90.41      0.97      C(c1c2ccc(C(F)(F)F)cc2n(Cc2cc(F)ccc2F)c1)(Nc1ccc(-n2ncc(C(=O)CCC)c2C)cc1)=O
+-23.06    -23.67     95.56      0.93      Cc1nn(C)c(C)c1NS(c1ccc(-c2ccccc2)cc1F)(=O)=O
+-19.22    -21.08    106.10      0.99      c1c(C(=O)Nc2ccccc2C(Nc2ccccc2C(=O)O)=O)cccc1
+-30.35    -30.31     91.11      0.95      c1ccc2n(c3ccc(O)cc3c2CC(=O)OC)c1
+-36.39    -36.61     89.53      0.99      c1(CN(C)Cc2cccc(C#N)c2)c(C(=O)Nc2c(C(=O)N=c3ccc(Cl)c[nH]3)cc(Cl)cc2OC)cccc1
+-25.93    -28.89     98.77      1.00      n1c(-c2ccc(CN3CC(C(=O)O)C3)cc2)noc1-c1cc(CN(CC)Cc2ccccc2)ccc1
+-24.12    -23.70     98.37      0.95      c1c(-c2c3nc(C)cc(=NCCc4ccccc4)n3[nH]c2C)ccnc1
+-24.65    -25.20     84.52      0.86      [nH]1n(C2(CC#N)CCN(Cc3c(C)cc(O)cc3)CC2)cc(C(=O)N)c1=Nc1ccccc1
+logp   raw_logp
+0.9851930141448975   2.5470447540283203   
+0.9617487788200378   2.4201440811157227   
+0.9681176543235779   3.5552589893341064   
+0.9314849972724915   2.3400230407714844   
+0.9935907125473022   2.6578078269958496   
+0.9486090540885925   2.379870891571045   
+0.985473096370697   3.450425386428833   
+0.9973098039627075   3.22522234916687   
+0.953683614730835   2.3941140174865723   
+0.8572137951850891   2.2335221767425537   
+
