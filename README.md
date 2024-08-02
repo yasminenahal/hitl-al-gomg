@@ -25,23 +25,27 @@ Installation instructions
 1. Install [Conda](https://conda.io/projects/conda/en/latest/index.html)
 2. Clone this Git repository
 3. In a shell terminal, go to the repository and clone the Reinvent repository from this [URL](https://github.com/MolecularAI/Reinvent)
-4. Create the Conda environment for `REINVENT` using
+4. In the cloned Reinvent repository, run
+
+        $ cp configs/example.config.json configs/config.json
+   
+6. Create the Conda environment for `REINVENT` using
    
         $ conda env create -f reinvent.yml
 
-5. Active the environment then install `reinvent-scoring/` as a `pip` package using
+7. Active the environment then install `reinvent-scoring/` as a `pip` package using
 
         $ conda activate reinvent.v3.2
         $ pip install -e ./reinvent-scoring/
         $ conda deactivate
 
-6. Copy or move the `reinvent.v3.2` environment directory in this repository, or modify its path in `HITL_AL_GOMG/path.py`
+8. Copy or move the `reinvent.v3.2` environment directory in this repository, or modify its path in `HITL_AL_GOMG/path.py`
 
-7. Create the Conda environment for the HITL-AL workflow using
+9. Create the Conda environment for the HITL-AL workflow using
    
         $ conda env create -f environment.yml
 
-8. Activate the environment then install this repository as a `pip` package using
+10. Activate the environment then install this repository as a `pip` package using
    
         $ conda activate hitl-al-gomg
         $ pip install -e .
@@ -50,17 +54,17 @@ Usage
 -------------
 Below are command examples for training a target property predictor (e.g., for DRD2 bioactivity) and running the workflow using a simulated expert.
 
-* For training the predictor, go to `HITL_AL_GOMG/models/` then
+**For training the predictor:**
 
-        $ mkdir predictors simulators
+1. Go to `HITL_AL_GOMG/models/` and create a directory to store the trained predictors `predictors/` and a directory to store the simulators `simulators/`
 
-In `simulators/`, you need to have a copy of the DRD2 bioactivity simulator (`drd2.pkl`) that you can download from this [URL](https://huggingface.co/yasminenahal/hitl-al-gomg-simulators/tree/main). Then you can run
+In `simulators/`, you need to have a copy of the DRD2 bioactivity simulator (`drd2.pkl`) which you can download from this [URL](https://huggingface.co/yasminenahal/hitl-al-gomg-simulators/tree/main). Then, you can run
 
         $ python train.py --task drd2 --path_to_param_grid ../../example_files/rfc_param_grid.json --train True --demo True
 
 The directory `example_files/` contains examples of hyperparameter grids for `scikit-learn` Random Forest models.
 
-* For running the workflow using a simulated expert
+**For running the workflow using a simulated expert:**
 
 1. Create an output directory to store `REINVENT` generation results and change the variable `demos` in `HITL_AL_GOMG/path.py` with the corresponding path to your output directory
 2. In `HITL_AL_GOMG/`, run a simulation
@@ -68,16 +72,17 @@ The directory `example_files/` contains examples of hyperparameter grids for `sc
 
         $ python run.py --seed 3 --rounds 4 --num_opt_steps 100 --scoring_model drd2 --model_type classification --scoring_component_name bioactivity --threshold_value 0.5 --dirname demo_drd2 --init_train_set drd2_train --acquisition None --task drd2 --expert_model drd2
 
-- with HITL active learning (e.g., entropy-based sampling):
+- then with HITL active learning (e.g., using entropy-based sampling):
 
         $ python run.py --seed 3 --rounds 4 --num_opt_steps 100 --scoring_model drd2 --model_type classification --scoring_component_name bioactivity --threshold_value 0.5 --dirname demo_drd2 --init_train_set drd2_train --acquisition entropy --al_iterations 5 --n_queries 10 --noise 0.1 --task drd2 --expert_model drd2
 
-* For running final simulator evaluation and calculating metrics from [MOSES](https://github.com/molecularsets/moses) molecular generation benchmarking platform
+**For running final simulator evaluation and calculating metrics from [MOSES](https://github.com/molecularsets/moses) molecular generation benchmarking platform:**
 
 1. In the `REINVENT` output directory, create a `data_for_figures/` directory to store all metric values
-2. Go to `HITL_AL_GOMG/` and run
+2. In `HITL_AL_GOMG/`, run
 
-        $ python evaluate_results.py --job_name demo_drd2 --seed 2 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --scoring_model drd2 --init_data drd2 --acquisition entropy --al_iterations 5 --n_queries 10 --sigma_noise 0.1
+         $ python evaluate_results.py --job_name demo_drd2 --seed 2 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --scoring_model drd2 --init_data drd2 --acquisition None
+         $ python evaluate_results.py --job_name demo_drd2 --seed 2 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --scoring_model drd2 --init_data drd2 --acquisition entropy --al_iterations 5 --n_queries 10 --sigma_noise 0.1
 
 Data
 -------------
@@ -94,4 +99,5 @@ Acknowledgements
 - We acknowledge the following works which were extremely helpful to develop this workflow:
   * Sundin, I., Voronov, A., Xiao, H. et al. Human-in-the-loop assisted de novo molecular design. J Cheminform 14, 86 (2022). [https://doi.org/10.1186/s13321-022-00667-8](https://doi.org/10.1186/s13321-022-00667-8)
   * Bickford Smith, F., Kirsch, A., Farquhar, S., Gal, Y., Foster, A., Rainforth, T. Prediction-oriented Bayesian active learning. International Conference on Artificial Intelligence and Statistics (2023). [https://arxiv.org/abs/2304.08151](https://arxiv.org/abs/2304.08151)
-- We acknowledge the contribution of [Vincenzo Palmacci](https://github.com/vincenzo-palmacci) in refactoring parts of the code.
+
+- We acknowledge the contribution of [Vincenzo Palmacci](https://github.com/vincenzo-palmacci) in refactoring parts of this code.
