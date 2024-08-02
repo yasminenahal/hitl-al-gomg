@@ -41,7 +41,7 @@ Installation instructions
 
 8. In the environment, install `reinvent-scoring` as a `pip` package using
 
-        $ pip install -e ./reinvent_scoring/
+        $ pip install -e ./reinvent-scoring/
 
 9. Still in the environment, Install this repository as a `pip` package using
 
