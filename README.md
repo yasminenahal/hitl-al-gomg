@@ -29,7 +29,7 @@ Installation instructions
    
         $ conda env create -f reinvent.yml
 
-5. Active the environment then install `reinvent-scoring` as a `pip` package using
+5. Active the environment then install `reinvent-scoring/` as a `pip` package using
 
         $ conda activate reinvent.v3.2
         $ pip install -e ./reinvent-scoring/
