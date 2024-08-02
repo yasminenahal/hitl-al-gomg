@@ -1,4 +1,4 @@
-name: reinvent.v3.2-original
+name: reinvent.v3.2
 channels:
   - rdkit
   - pytorch
@@ -171,7 +171,7 @@ dependencies:
   - requests-toolbelt=0.9.1
   - rfc3986=1.4.0
   - rsa=4.7.2
-  - scikit-learn=0.21.3
+  - scikit-learn==1.0.2
   - scipy=1.4.1
   - secretstorage=3.2.0
   - send2trash=1.5.0
@@ -210,12 +210,12 @@ dependencies:
     - keras-applications==1.0.8
     - markdown==3.2.1
     - opt-einsum==3.2.0
-    - protobuf==3.11.3
+    - protobuf==3.20.3
     - reinvent-chemistry==0.0.50
     - reinvent-models==0.0.15rc1
-    - reinvent-scoring==0.0.73
     - tensorboard==1.15.0
     - tensorflow==1.15.2
     - tensorflow-estimator==1.15.1
     - termcolor==1.1.0
     - werkzeug==1.0.0
+    - chemprop==1.7.1
