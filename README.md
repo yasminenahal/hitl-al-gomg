@@ -51,7 +51,7 @@ Usage
 -------------
 Below are command examples for training target property predictors and running the workflow using a simulated expert.
 
-* For training a target property predictor, go to HITL_AL_GOMG/models then
+* For training a target property predictor, go to `HITL_AL_GOMG/models/` then
 
         $ mkdir predictors
         $ python train.py --task drd2 --param_grid ../example_files/TEST_param_grid.json train True --demo True
