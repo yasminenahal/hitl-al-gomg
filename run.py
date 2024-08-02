@@ -8,14 +8,14 @@ import pandas as pd
 import numpy as np
 from numpy.random import default_rng
 
-from synthitl.simulated_expert import EvaluationModel
-from synthitl.write import write_REINVENT_config
-from synthitl.acquisition import select_query
+from HITL_AL_GOMG.synthitl.simulated_expert import EvaluationModel, utility
+from HITL_AL_GOMG.scoring.write import write_REINVENT_config
+from HITL_AL_GOMG.synthitl.acquisition import select_query
 
-from models.RandomForest import RandomForestClf, RandomForestReg
-from utils import ecfp_generator
+from HITL_AL_GOMG.models.RandomForest import RandomForestClf, RandomForestReg
+from HITL_AL_GOMG.utils import ecfp_generator
 
-from path import reinvent, reinventconda, training, predictors, simulators, priors
+from HITL_AL_GOMG.path import reinvent, reinventconda, training, predictors, simulators, priors, demos
 
 fp_counter = ecfp_generator(radius=3, useCounts=True)
 
@@ -34,22 +34,24 @@ def load_training_set(init_train_set):
     x_train, y_train = fingerprints, labels
     return smiles_train, x_train, y_train
 
-def load_model(scoring_model):
+def load_model(path_to_scoring_model):
     # Load the initial target property predictor
     print("\nLoading target property predictor")
-    fitted_model = pickle.load(open(f"{predictors}/{scoring_model}.pkl", "rb"))
-    return fitted_model
+    prop_predictor = pickle.load(open(path_to_scoring_model, "rb"))
+    return prop_predictor
 
 def copy_model(scoring_model, output_folder, iter):
     # Save the initial target property predictor to the root output folder
-    model_load_path = output_folder + f"/{scoring_model}_iteration_{iter}.pkl"
+    model_load_path = f"{output_folder}/{scoring_model}_iteration_{iter}.pkl"
     if iter==0 and not os.path.exists(model_load_path):
-        shutil.copy(scoring_model, output_folder)
+        shutil.copy(f"{predictors}/{scoring_model}.pkl", output_folder)
+        os.rename(f"{output_folder}/{scoring_model}.pkl", model_load_path)
+    return model_load_path
 
 def update_reinvent_config_file(
     output_folder, 
     num_opt_steps, 
-    scoring_model, 
+    path_to_scoring_model, 
     model_type,
     task, 
     scoring_component_name, 
@@ -69,9 +71,12 @@ def update_reinvent_config_file(
     # Write initial scoring predictor path in configuration file
     configuration_scoring_function = configuration["parameters"]["scoring_function"]["parameters"]
     for i in range(len(configuration_scoring_function)):
-        if configuration_scoring_function[i]["component_type"] == "predictive_property" and configuration_scoring_function[i]["name"] == scoring_component_name:
-            configuration_scoring_function[i]["specific_parameters"]["model_path"] = scoring_model
+        if configuration_scoring_function[i]["component_type"] == "predictive_property":
+            configuration_scoring_function[i]["name"] = scoring_component_name
             configuration_scoring_function[i]["specific_parameters"]["scikit"] = model_type
+            if configuration_scoring_function[i]["name"] == scoring_component_name:
+                # Only target property predictor is updated through AL, do not update other predictive components with the same path
+                configuration_scoring_function[i]["specific_parameters"]["model_path"] = path_to_scoring_model
             if model_type == "classification":
                 configuration_scoring_function[i]["specific_parameters"]["transformation"] = {"transformation_type": "no_transformation"}
             elif model_type == "regression" and task == "logp":
@@ -93,7 +98,7 @@ def update_reinvent_config_file(
                 "name": "Tanimoto Similarity",
                 "weight": 1,
                 "specific_parameters": {
-                    "smiles": smiles_train
+                    "smiles": smiles_train.tolist()
                     }
             }
         
@@ -125,7 +130,6 @@ def update_reinvent_config_file(
                 "descriptor_type": "ecfp_counts",
                 "size": 2048,
                 "radius": 3,
-                "selected_feat_idx": "none",
                 "transformation": {
                     "transformation_type": "flip_probability"
                 },
@@ -137,71 +141,88 @@ def update_reinvent_config_file(
         configuration["parameters"]["scoring_function"]["parameters"].append(herg_config)
     
     # Write the updated REINVENT configuration file to the disc
-    configuration_json_path = os.path.join(output_folder, f"config_iteration{iter+1}.json")
+    if iter == 0:
+        configuration_json_path = os.path.join(output_folder, "config.json")
+    else:
+        configuration_json_path = os.path.join(output_folder, f"config_iteration{iter+1}.json")
     with open(configuration_json_path, "w") as f:
         json.dump(configuration, f, indent=4, sort_keys=True)
 
 def run_reinvent(acquisition, configuration_json_path, output_folder, iter):
-    if iter == 1 and acquisition != "None":
+    if iter == 0 and acquisition != "None":
         if os.path.exists(os.path.join(output_folder, "iteration_0/scaffold_memory.csv")):
             # Start from an existing scaffold_memory i.e., pool of unlabelled compounds
-            with open(os.path.join(output_folder, "iteration_0/scaffold_memory.csv"), "r") as file:
-                data = pd.read_csv(file)
-                data.reset_index(inplace=True)
+            print(f"\nLoad REINVENT output, round {iter}")
+            data = pd.read_csv(os.path.join(output_folder, "iteration_0/scaffold_memory.csv"))
+            data.reset_index(inplace=True)
         else:
             # Start from scratch and generate a pool of unlabelled compounds with REINVENT
-            print("\nRun REINVENT")
+            print(f"\nRun REINVENT, round {iter}")
             os.system(str(reinventconda) + "/bin/python " + str(reinvent) + "/input.py " + str(configuration_json_path) + "&> " + str(output_folder) + "/run.err")
             
-            with open(os.path.join(output_folder, "results/scaffold_memory.csv"), "r") as file:
-                data = pd.read_csv(file)
+            data = pd.read_csv(os.path.join(output_folder, "results/scaffold_memory.csv"))
 
     else:
         # Overwrite any existing scaffold_memory and run REINVENT from scratch
-        print("\nRun REINVENT")
+        print(f"\nRun REINVENT, round {iter}")
         os.system(str(reinventconda)  + "/bin/python " + str(reinvent) + "/input.py " + str(configuration_json_path) + "&> " + str(output_folder) + "/run.err")
 
-        with open(os.path.join(output_folder, "results/scaffold_memory.csv"), "r") as file:
-            data = pd.read_csv(file)
+        data = pd.read_csv(os.path.join(output_folder, "results/scaffold_memory.csv"))
+    
     return data
 
 def prep_pool(data, threshold_value, scoring_component_name):
-    smiles = data["SMILES"]
     bioactivity_score = data[scoring_component_name]
     # Save the indexes of high scoring molecules for satisfying the target property according to predictor
     high_scoring_idx = bioactivity_score > threshold_value
-    smiles = smiles[high_scoring_idx]
-    print(f"\n{len(smiles)} high-scoring (> {high_scoring_idx}) molecules")
+    smiles = data[high_scoring_idx].SMILES.tolist()
+    print(f"\n{len(smiles)} high-scoring (> {threshold_value}) molecules")
     return smiles
 
-def active_learning_selection(smiles, n_queries, acquisition, fitted_model, model_type, rng):
+def active_learning_selection(
+    pool, 
+    smiles, 
+    selected_feedback, 
+    n_queries, 
+    acquisition, 
+    scoring_model, 
+    model_type, 
+    rng
+    ):
     # Create the fine-tuned predictor (RFC or RFR) object
     if model_type == "regression":
-        model = RandomForestReg(fitted_model)
+        model = RandomForestReg(scoring_model)
     elif model_type == "classification":
-        model = RandomForestClf(fitted_model)
+        model = RandomForestClf(scoring_model)
     # Select queries to show to expert
     if len(smiles) >= n_queries:
-        new_query = select_query(smiles, n_queries, model, acquisition, rng)
+        new_query = select_query(pool, n_queries, smiles, model, selected_feedback, acquisition=acquisition, rng=rng)
     else:
         # Select all high-scoring smiles if their number is less than n_queries
-        new_query = select_query(smiles, len(smiles), model, acquisition, rng)
-    return new_query, smiles.drop(new_query, axis=0)
+        new_query = select_query(pool, len(smiles), smiles, model, selected_feedback, acquisition=acquisition, rng=rng)
+    
+    # Append selected feedback
+    selected_feedback = np.hstack((selected_feedback, new_query))
 
-def get_expert_feedback(smiles, new_query, task, model_type, expert_model, noise):
+    mask = np.ones(len(pool), dtype=bool)
+    mask[selected_feedback] = False
+    
+    selected_smiles = pool.iloc[new_query].SMILES.tolist()
+    return selected_smiles, selected_feedback
+
+def get_expert_feedback(selected_smiles, task, model_type, expert_model, noise):
     if task == "drd2":
-        feedback_model = EvaluationModel(task, path_to_simulator=f"{simulators}/{expert_model}")
+        feedback_model = EvaluationModel(task, path_to_simulator=f"{simulators}/{expert_model}.pkl")
     else:
         feedback_model = EvaluationModel(task)
-    selected_smiles = smiles.iloc[new_query].SMILES.values
     raw_feedback = np.array([feedback_model.human_score(s, noise) for s in selected_smiles])
     if model_type == "regression":
         # Get normalized expert scores from raw feedback (i.e., positive probabilities if classification or continuous values if regression)
         # (On the GUI, the expert directly provides [0,1] scores)
-        scores = [feedback_model.utility(f, low=2, high=4) for f in raw_feedback]
+        scores = [utility(f, low=2, high=4) for f in raw_feedback]
         feedback = raw_feedback
     elif model_type == "classification":
-        scores = [1 if f > 0.5 else 0 for f in feedback]
+        scores = raw_feedback
         feedback = np.round(raw_feedback).astype(int)
     # Get confidence scores based on expert scores 
     # (e.g., If the expert estimates a 10% chance that a molecule satisfies the target property, we apply a weight of 1−0.1=0.9 when retraining the predictor. 
@@ -211,7 +232,7 @@ def get_expert_feedback(smiles, new_query, task, model_type, expert_model, noise
     confidences = [s if s > 0.5 else 1-s for s in scores]
     return feedback, confidences
 
-def concatenate(
+def augment_train_set(
         x_train, 
         y_train, 
         sample_weights, 
@@ -220,7 +241,8 @@ def concatenate(
         feedback, 
         confidences, 
         output_folder, 
-        iter
+        iter,
+        t
     ):
     
     x_new = fp_counter.get_fingerprints(selected_smiles)
@@ -228,79 +250,78 @@ def concatenate(
     y_train = np.concatenate([y_train, feedback])
     sample_weights = np.concatenate([sample_weights, confidences])
     smiles_train = np.concatenate([smiles_train, selected_smiles])
-    print(f"\nAugmented train set size at iteration {iter}: {x_train.shape[0]} {y_train.shape[0]}")
+    print(f"\nAugmented train set size at iteration {iter}, {t}: {x_train.shape[0]} {y_train.shape[0]}")
     # Save augmented training data
     D_r = pd.DataFrame(np.concatenate([smiles_train.reshape(-1,1), y_train.reshape(-1,1)], 1))
     D_r.columns = ["SMILES", "target"]
     D_r.to_csv(os.path.join(output_folder, f"augmented_train_set_iter{iter}.csv"))
-    return x_train, y_train, sample_weights
+    return x_train, y_train, sample_weights, smiles_train
 
-def retrain_model(x_train, y_train, sample_weights, fitted_model, model_type, model_new_savefile):
+def retrain_model(x_train, y_train, sample_weights, prop_predictor, model_type, model_new_savefile):
     print("\nRetrain model")
     if model_type == "regression":
-        model = RandomForestReg(fitted_model)
+        model = RandomForestReg(prop_predictor)
     elif model_type == "classification":
-        model = RandomForestClf(fitted_model)
+        model = RandomForestClf(prop_predictor)
     # Retrain and save the updated predictor
     model._retrain(x_train, y_train, sample_weights, save_to_path = model_new_savefile)
 
-def save_configuration_file(output_folder, initial_dir, jobid, replicate, scoring_component_name, model_new_savefile, iter): 
-    # Get current REINVENT configuration
-    configuration = json.load(open(os.path.join(output_folder, conf_filename)))
+def save_configuration_file(output_folder, initial_dir, conf_filename, jobid, seed, scoring_component_name, iter, model_new_savefile=None): 
+    # Get initial configuration
+    configuration = json.load(open(os.path.join(initial_dir, conf_filename)))
     conf_filename = f"iteration{iter}_config.json"   
 
     # Modify predictor path in configuration using the updated predictor's path
     configuration_scoring_function = configuration["parameters"]["scoring_function"]["parameters"]
     for i in range(len(configuration_scoring_function)):
-        if configuration_scoring_function[i]["component_type"] == "predictive_property" and configuration_scoring_function[i]["name"] == scoring_component_name:
+        if model_new_savefile and configuration_scoring_function[i]["component_type"] == "predictive_property" and configuration_scoring_function[i]["name"] == scoring_component_name:
             configuration_scoring_function[i]["specific_parameters"]["model_path"] = model_new_savefile
 
+    # Define new directory for the next round
+    root_output_dir = os.path.expanduser(f"{jobid}_seed{seed}")
+    output_folder = os.path.join(root_output_dir, f"iteration{iter}")
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    
     # Update REINVENT agent checkpoint
     if iter == 1:
         configuration["parameters"]["reinforcement_learning"]["agent"] = os.path.join(initial_dir, "results/Agent.ckpt")
     else:
-        configuration["parameters"]["reinforcement_learning"]["agent"] = os.path.join(output_folder, "results/Agent.ckpt")
-
-    root_output_dir = os.path.expanduser(f"{jobid}_seed{replicate}")
-
-    # Define new directory for the next round
-    output_folder = os.path.join(root_output_dir, f"iteration{iter}")
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
-    print(output_folder)
+        configuration["parameters"]["reinforcement_learning"]["agent"] = os.path.join(os.path.join(root_output_dir, f"iteration{iter-1}"), "results/Agent.ckpt")
 
     # Modify log and result paths in REINVENT configuration
     configuration["logging"]["logging_path"] = os.path.join(output_folder, "progress.log")
     configuration["logging"]["result_folder"] = os.path.join(output_folder, "results")
 
     # Write the updated configuration file to the disc
-    configuration_JSON_path = os.path.join(output_folder, conf_filename)
-    with open(configuration_JSON_path, "w") as f:
+    configuration_json_path = os.path.join(output_folder, conf_filename)
+    with open(configuration_json_path, "w") as f:
         json.dump(configuration, f, indent=4, sort_keys=True)
 
+    return output_folder, configuration_json_path
 
 
 @click.command()
-@click.option("--replicate", "-r", default=42, type=int, help="Experiment replicate number")
+@click.option("--seed", "-s", default=42, type=int, help="Experiment seed")
 @click.option("--rounds", "-R", default=4, type=int, help="Number of rounds")
 @click.option("--num_opt_steps", default=250, type=int, help="Number of REINVENT optimization steps")
-@click.option("--scoring_model", "-m", type=str, help="Path to the initial target property predictor")
+@click.option("--scoring_model", "-m", type=str, help="Filename of initial target property predictor")
 @click.option("--model_type", type=click.Choice(["regression", "classification"]), help="Whether the scoring model is a regressor or classifier")
 @click.option("--scoring_component_name", type=str, help="Name given to the predictor component in REINVENT output files")
 @click.option("--threshold_value", "-t", default=0.5, type=float, help="Score threshold value used to select high-scoring generated molecule for active learning")
 @click.option("--dirname", "-o", type=str, help="Name of output folder to store all results")
-@click.option("--init_train_set", type=str, help="Path to initial predictor training data")
+@click.option("--init_train_set", type=str, help="Filename of initial predictor training data")
 @click.option("--multi_objectives", type=bool, default=False, help="Whether to optimize multiple objectives")
 @click.option("--train_similarity", type=bool, default=False, help="Whether to optimize Tanimoto similarity in REINVENT with respect to predictor training set")
 @click.option("--pretrained_prior", type=bool, default=False, help="Whether to use a REINVENT prior agent pre-trained on the predictor training set")
 @click.option("--al_iterations", "-T", default=5, type=int, help="Number of AL iterations")
-@click.option("--acquisition", "-a", type=click.Choice(["random", "greedy", "epig", "qbc", "None"]), help="Data acquisition method")
+@click.option("--acquisition", "-a", type=click.Choice(["random", "greedy_classification", "greedy_regression", "epig", "uncertainty", "entropy", "margin", "None"]), help="Data acquisition method")
 @click.option("--n_queries", "-n", default=10, help="Number of selected queries to be evaluated by the expert")
 @click.option("--task", type=click.Choice(["logp", "drd2"]), help="Goal of the molecule generation")
-@click.option("--expert_model", type=str, help="Path to expert model used for assessing predictions with respect to the goal")
+@click.option("--expert_model", type=str, help="Filename of simulator used for assessing predictions with respect to the goal")
 @click.option("--noise", default=0.0, type=float, help="Sigma value for the noise term in the expert model (if 0, expert model = Oracle)")
 def main(
-    replicate, 
+    seed, 
     rounds, 
     num_opt_steps,
     scoring_model,
@@ -320,21 +341,22 @@ def main(
     noise
     ):
 
-    np.random.seed(replicate)
-    rng = default_rng(replicate)
+    np.random.seed(seed)
+    rng = default_rng(seed)
     
-    reinvent_dir = str(reinvent)
-    reinvent_env = str(reinventconda)
-    jobid = f"{dirname}_R{rounds}_T{al_iterations}_n{n_queries}_{acquisition}_noise{noise}" if acquisition != "None" else f"{dirname}_R{rounds}_{acquisition}"
-    output_folder = os.path.expanduser(f"{jobid}_rep{replicate}")
+    if acquisition != "None":
+        jobid = f"{demos}/{dirname}_R{rounds}_step{num_opt_steps}_T{al_iterations}_n{n_queries}_{acquisition}_noise{noise}" if acquisition != "None" else f"{dirname}_R{rounds}_{acquisition}"
+    else:
+        jobid = f"{demos}/{dirname}_R{rounds}_step{num_opt_steps}_None"
+    output_folder = os.path.expanduser(f"{jobid}_seed{seed}")
     
     if os.path.exists(output_folder):
         shutil.rmtree(output_folder)
     os.makedirs(output_folder)
     print(f"\nCreating output directory: {output_folder}.")
 
+    initial_dir = f"{demos}/{dirname}_R{rounds}_step{num_opt_steps}_None_seed{seed}"
     if acquisition != "None":
-        initial_dir = f"{dirname}_R{rounds}_None_seed{replicate}"
         if os.path.exists(initial_dir):
             os.makedirs(os.path.join(output_folder, "iteration_0"))
             try:
@@ -343,24 +365,28 @@ def main(
             except FileNotFoundError:
                 pass
 
-    print(f"\nRunning REINVENT with {num_opt_steps} guided by predictive property ({task}) component")
-    print(f"\nRunning HITL AL experiment {replicate} with R={rounds}, T={al_iterations}, n_queries={n_queries}, acquisition={acquisition}. \n Results will be saved at {output_folder}")
+    print(f"\nRunning REINVENT with {num_opt_steps} optimization steps guided by predictive property ({task}) component")
+    if acquisition != "None":
+        print(f"\nRunning HITL AL experiment (seed {seed}) with R={rounds}, T={al_iterations}, n_queries={n_queries}, acquisition={acquisition}. \n Results will be saved at {output_folder}")
+    else:
+        print(f"\nRunning HITL AL experiment (seed {seed}) with R={rounds}, acquisition={acquisition}. \n Results will be saved at {output_folder}")
     
-    fitted_model = load_model(scoring_model)
-    copy_model(scoring_model, output_folder, iter=0)
+    prop_predictor = load_model(f"{predictors}/{scoring_model}.pkl")
+    path_to_scoring_model = copy_model(scoring_model, output_folder, iter=0)
     
     train_smiles, train_fps, train_labels = load_training_set(init_train_set)
     sample_weights = np.ones(len(train_smiles))
     
     conf_filename = "config.json"
     jobname = "fine-tune predictive component"
-    configuration_json_path = write_REINVENT_config(reinvent_dir, reinvent_env, output_folder, conf_filename, jobid, jobname)
+    configuration_json_path = write_REINVENT_config(output_folder, conf_filename, jobid, jobname)
     print(f"\nCreating config file: {configuration_json_path}")
     update_reinvent_config_file(
         output_folder, 
         num_opt_steps, 
-        scoring_model, 
+        path_to_scoring_model, 
         model_type, 
+        task,
         scoring_component_name, 
         multi_objectives, 
         train_similarity, 
@@ -373,18 +399,24 @@ def main(
 
     for r in range(1, rounds + 1):
         highscore_molecules = prep_pool(generated_molecules, threshold_value, scoring_component_name)
-        for t in range(1, al_iterations + 1):
-            selected_molecules, remaining_highscore_molecules = active_learning_selection(highscore_molecules, n_queries, acquisition, fitted_model, model_type, rng)
-            feedback, confidences = get_expert_feedback(highscore_molecules, selected_molecules, task, model_type, expert_model, noise)
-            train_fps, train_labels, sample_weights = concatenate(train_fps, train_labels, sample_weights, train_smiles, selected_molecules, feedback, confidences, output_folder, r)
-            model_new_savefile = os.path.join(output_folder, f"{scoring_component_name}_iteration_{r}.pkl")
-            retrain_model(train_fps, train_labels, sample_weights, fitted_model, model_type, model_new_savefile)
-            highscore_molecules = remaining_highscore_molecules
-            print(highscore_molecules)
-            fitted_model = load_model(model_new_savefile)
+        
+        if acquisition != "None":
+            # store molecule indexes selected for feedback
+            selected_feedback = np.empty(0).astype(int)
+            for t in range(1, al_iterations + 1):
+                selected_smiles, selected_feedback = active_learning_selection(generated_molecules, highscore_molecules, selected_feedback, n_queries, acquisition, prop_predictor, model_type, rng)
+                feedback, confidences = get_expert_feedback(selected_smiles, task, model_type, expert_model, noise)
+                train_fps, train_labels, sample_weights, train_smiles = augment_train_set(train_fps, train_labels, sample_weights, train_smiles, selected_smiles, feedback, confidences, output_folder, r, t)
+                model_new_savefile = os.path.join(output_folder, f"{scoring_model}_iteration_{r}.pkl")
+                retrain_model(train_fps, train_labels, sample_weights, prop_predictor, model_type, model_new_savefile)
+                prop_predictor = load_model(model_new_savefile)
+            output_folder, configuration_json_path = save_configuration_file(output_folder, initial_dir, conf_filename, jobid, seed, scoring_component_name, r, model_new_savefile)
+        else:
+            output_folder, configuration_json_path = save_configuration_file(output_folder, initial_dir, conf_filename, jobid, seed, scoring_component_name, r)
+        
+        generated_molecules = run_reinvent(acquisition, configuration_json_path, output_folder, r)
 
-        save_configuration_file(output_folder, initial_dir, jobid, replicate, scoring_component_name, model_new_savefile, r)
-        run_reinvent(acquisition, configuration_json_path, output_folder, r)
+    print(f"\nExiting and saving results")
 
 if __name__ == "__main__":
     main()
