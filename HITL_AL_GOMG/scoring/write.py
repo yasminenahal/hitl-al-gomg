@@ -96,7 +96,7 @@ def write_REINVENT_config(output_dir, conf_filename, jobid, jobname):
     return configuration_JSON_path
 
 
-def write_sample_file(jobid, jobname, agent_dir, N):
+def write_sample_file(jobid, jobname, agent_dir, agent, N):
   configuration={
     "logging": {
         "job_id": jobid,
@@ -106,7 +106,7 @@ def write_sample_file(jobid, jobname, agent_dir, N):
         "sender": "http://127.0.0.1"
     },
     "parameters": {
-        "model_path": os.path.join(agent_dir, "Agent.ckpt"),
+        "model_path": os.path.join(agent_dir, agent),
         "output_smiles_path": os.path.join(agent_dir, f"sampled_N_{N}.csv"),
         "num_smiles": N,
         "batch_size": 128,                          
