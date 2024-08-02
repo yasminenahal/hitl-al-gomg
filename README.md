@@ -58,23 +58,27 @@ The directory `example_files/` contains examples of hyperparameter grids for `sc
 
 * For running the workflow using a simulated expert
 
-1. Create an output directory to store `REINVENT` generation results and change the variable `demos` in HITL_AL_GOMG/path.py with the corresponding path to your output directory
-2. Run a simulation
-- Without HITL active learning:
+1. Create an output directory to store `REINVENT` generation results and change the variable `demos` in `HITL_AL_GOMG/path.py` with the corresponding path to your output directory
+2. In `HITL_AL_GOMG/`, run a simulation
+- without HITL active learning:
 
         $ python run.py --seed 3 --rounds 4 --num_opt_steps 100 --scoring_model drd2 --model_type classification --scoring_component_name bioactivity --threshold_value 0.5 --dirname demo_drd2 --init_train_set drd2_train --acquisition None --task drd2 --expert_model drd2
 
-- With HITL active learning (e.g., entropy-based sampling):
+- with HITL active learning (e.g., entropy-based sampling):
 
         $ python run.py --seed 3 --rounds 4 --num_opt_steps 100 --scoring_model drd2 --model_type classification --scoring_component_name bioactivity --threshold_value 0.5 --dirname demo_drd2 --init_train_set drd2_train --acquisition entropy --al_iterations 5 --n_queries 10 --noise 0.1 --task drd2 --expert_model drd2
 
 * For running final simulator evaluation and calculating metrics from [MOSES](https://github.com/molecularsets/moses) molecular generation benchmarking platform
+
+1. In the `REINVENT` output directory, create a `data_for_figures/` directory to store all metric values
+2. Go to `HITL_AL_GOMG/` and run
 
         $ python evaluate_results.py --job_name demo_drd2 --seed 2 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --scoring_model drd2 --init_data drd2 --acquisition entropy --al_iterations 5 --n_queries 10 --sigma_noise 0.1
 
 Data
 -------------
 - We provide data for training the penalized LogP and DRD2 bioactivity predictors, as well as a sample from ChEMBL on which `REINVENT` prior agent was pre-trained.
+- A copy of the `REINVENT` pre-trained prior agent is available at `HITL_AL_GOMG/models/priors/random.prior.new`.
 - The experimental simulator for DRD2 bioactivity and the hERG model described in the multi-objective generation use case are available at this [URL](https://huggingface.co/yasminenahal/hitl-al-gomg-simulators/tree/main).
   
 Jupyter notebooks
