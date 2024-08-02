@@ -51,10 +51,13 @@ Usage
 -------------
 Below are command examples for training target property predictors and running the workflow using a simulated expert.
 
-* For training a target property predictor, go to `HITL_AL_GOMG/models/` then
+* For training a target property predictor (e.g., to predict DRD2 bioactivity), go to `HITL_AL_GOMG/models/` then
 
-        $ mkdir predictors
-        $ python train.py --task drd2 --param_grid ../example_files/TEST_param_grid.json train True --demo True
+        $ mkdir predictors simulators
+
+In `simulators/`, you need to have a copy of the DRD2 bioactivity simulator that you can download from this [URL](https://huggingface.co/yasminenahal/hitl-al-gomg-simulators/tree/main).
+
+        $ python train.py --task drd2 --path_to_param_grid ../example_files/TEST_param_grid.json --train True --demo True
 
 The directory `example_files/` contains examples of hyperparameter grids for `scikit-learn` Random Forest models.
 
