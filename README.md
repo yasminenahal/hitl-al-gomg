@@ -35,7 +35,7 @@ Installation instructions
         $ pip install -e ./reinvent-scoring/
         $ conda deactivate
 
-6. Copy or move the `reinvent.v3.2` environment directory in this repository, or modify its path in HITL_AL_GOMG/path.py
+6. Copy or move the `reinvent.v3.2` environment directory in this repository, or modify its path in `HITL_AL_GOMG/path.py`
 
 7. Create the Conda environment for the HITL-AL workflow using
    
@@ -87,7 +87,7 @@ Data
   
 Jupyter notebooks
 -------------
-We also provide Jupyter notebooks with code to reproduce the paper's figures for both simulation and human experiments.
+In `notebooks/`, we provide Jupyter notebooks with code to reproduce the paper's figures for both simulation and human experiments.
 
 Acknowledgements
 -------------
