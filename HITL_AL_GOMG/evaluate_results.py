@@ -22,7 +22,7 @@ RDLogger.DisableLog('rdApp.*')
 
 def sample_mols_from_agent(jobid, jobname, agent_dir, reinvent_env, reinvent_dir, agent="Agent.ckpt", N=1000):
     print("Sampling from agent " + os.path.join(agent_dir, agent))
-    conf_file = write_sample_file(jobid, jobname, agent_dir, N)
+    conf_file = write_sample_file(jobid, jobname, agent_dir, agent, N)
     os.system(str(reinvent_env) + "/bin/python " + str(reinvent_dir) + "/input.py " + str(conf_file) + "&> " + str(agent_dir) + "/sampling.err")
 
 
