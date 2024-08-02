@@ -13,10 +13,12 @@ Since simulators are expensive to query at each iteration of the drug design pro
 
 Human experts supervised the predictive machine learning model that scores the molecules by accepting or refuting some of its predictions of top-scoring molecules. This improved the process' outcome by progressively aligning the machine-predicted probabilities of success with those of an experimental simulator and enhancing other metrics such as drug-likeness and synthetic accessibility.
 
+This workflow uses [REINVENT 3.2](https://github.com/MolecularAI/Reinvent) for molecule generation.
+
 System Requirements
 -------------
 - Python 3.7
-- This code and `REINVENT` have been tested on Linux
+- This code and `REINVENT 3.2` have been tested on Linux
 
 Installation instructions
 -------------
