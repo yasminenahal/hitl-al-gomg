@@ -55,7 +55,7 @@ Below are command examples for training a target property predictor (e.g., for D
 
         $ mkdir predictors simulators
 
-In `simulators/`, you need to have a copy of the DRD2 bioactivity simulator that you can download from this [URL](https://huggingface.co/yasminenahal/hitl-al-gomg-simulators/tree/main). Then you can run
+In `simulators/`, you need to have a copy of the DRD2 bioactivity simulator (`drd2.pkl`) that you can download from this [URL](https://huggingface.co/yasminenahal/hitl-al-gomg-simulators/tree/main). Then you can run
 
         $ python train.py --task drd2 --path_to_param_grid ../example_files/TEST_param_grid.json --train True --demo True
 
