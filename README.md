@@ -29,22 +29,21 @@ Installation instructions
    
         $ conda env create -f reinvent.yml
 
-5. Copy or move the `reinvent.v3.2` environment directory in this repository, or modify its path in HITL_AL_GOMG/path.py
+5. Active the environment then install `reinvent-scoring` as a `pip` package using
 
-6. Create the Conda environment for the HITL-AL workflow using
+        $ conda activate reinvent.v3.2
+        $ pip install -e ./reinvent-scoring/
+        $ conda deactivate
+
+6. Copy or move the `reinvent.v3.2` environment directory in this repository, or modify its path in HITL_AL_GOMG/path.py
+
+7. Create the Conda environment for the HITL-AL workflow using
    
         $ conda env create -f environment.yml
 
-7. Activate the environment:
+8. Activate the environment then install this repository as a `pip` package using
    
         $ conda activate hitl-al-gomg
-
-8. In the environment, install `reinvent-scoring` as a `pip` package using
-
-        $ pip install -e ./reinvent-scoring/
-
-9. Still in the environment, Install this repository as a `pip` package using
-
         $ pip install -e .
 
 Usage
