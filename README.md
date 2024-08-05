@@ -64,7 +64,7 @@ In `simulators/`, you need to have a copy of the DRD2 bioactivity simulator (`dr
 
 The directory `example_files/` contains examples of hyperparameter grids for `scikit-learn` Random Forest models.
 
-**For running the workflow using a simulated expert:**
+**For running the HITL-AL workflow using a simulated expert:**
 
 1. Create an output directory to store `REINVENT` generation results and change the variable `demos` in `HITL_AL_GOMG/path.py` with the corresponding path to your output directory
 2. In `HITL_AL_GOMG/`, run a simulation
@@ -76,7 +76,7 @@ The directory `example_files/` contains examples of hyperparameter grids for `sc
 
         $ python run.py --seed 3 --rounds 4 --num_opt_steps 100 --scoring_model drd2 --model_type classification --scoring_component_name bioactivity --threshold_value 0.5 --dirname demo_drd2 --init_train_set drd2_train --acquisition entropy --al_iterations 5 --n_queries 10 --noise 0.1 --task drd2 --expert_model drd2
 
-**For running final simulator evaluation and calculating metrics from [MOSES](https://github.com/molecularsets/moses) molecular generation benchmarking platform:**
+**For calculating oracle scores and metrics from [MOSES](https://github.com/molecularsets/moses):**
 
 1. In the `REINVENT` output directory, create a `data_for_figures/` directory to store all metric values
 2. In `HITL_AL_GOMG/`, run
@@ -100,4 +100,4 @@ Acknowledgements
   * Sundin, I., Voronov, A., Xiao, H. et al. Human-in-the-loop assisted de novo molecular design. J Cheminform 14, 86 (2022). [https://doi.org/10.1186/s13321-022-00667-8](https://doi.org/10.1186/s13321-022-00667-8)
   * Bickford Smith, F., Kirsch, A., Farquhar, S., Gal, Y., Foster, A., Rainforth, T. Prediction-oriented Bayesian active learning. International Conference on Artificial Intelligence and Statistics (2023). [https://arxiv.org/abs/2304.08151](https://arxiv.org/abs/2304.08151)
 
-- We acknowledge the contribution of [Vincenzo Palmacci](https://github.com/vincenzo-palmacci) in refactoring parts of this code.
+- We thank [Vincenzo Palmacci](https://github.com/vincenzo-palmacci) for his contribution in refactoring parts of this code.
