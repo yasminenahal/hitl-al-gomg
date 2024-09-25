@@ -129,6 +129,7 @@ dependencies:
   - pexpect=4.8.0=pyh1a96a4e_2
   - pickleshare=0.7.5=py_1003
   - pillow=7.0.0=py37hb39fc2d_0
+  - pip
   - pixman=0.38.0=h516909a_1003
   - pkginfo=1.6.1=pyh9f0ad1d_0
   - pluggy=0.13.1=py37h89c1867_4

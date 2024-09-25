@@ -39,9 +39,9 @@ pip-delete-this-directory.txt
 
 # Large files
 *.pkl
-HITL_AL_GOMG/models/predictors
-HITL_AL_GOMG/models/simulators
-HITL_AL_GOMG/models/priors
+hitl_al_gomg/models/predictors
+hitl_al_gomg/models/simulators
+hitl_al_gomg/models/priors
 generations/
 notebooks/oracle
 Reinvent/
