@@ -12,8 +12,8 @@ setup(
     description="A Human-in-the-loop active learning workflow to improve molecular property predictors with human expert feedback for goal-oriented molecule generation.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yasminenahal/HITL_AL_GoalOrientedMolGen.git",
-    download_url = 'https://github.com/yasminenahal/HITL_AL_GoalOrientedMolGen/archive/v_01.tar.gz',
+    url="https://github.com/yasminenahal/hitl_al_gomg.git",
+    download_url = 'https://github.com/yasminenahal/hitl_al_gomg/archive/v_01.tar.gz',
     keywords = ['REINVENT', 'HITL', 'HITL_AL_GOMG'],
     packages=find_packages(),
     classifiers=[
