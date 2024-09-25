@@ -17,18 +17,15 @@ _repo_root = _here.parent.parent
 # Data
 _data = _repo_root / "data"
 
-# Models
-_models = _repo_root / "hitl_al_gomg/models"
-
 # Add paths to data files and directories here:
 training = _data / "train"
 testing = _data / "test"
 chemspace = _data / "chemspace"
 
 # Add paths to trained model files and directories here:
-predictors = _models / "predictors"
-simulators = _models / "simulators"
-priors = _models / "priors"
+predictors = _data / "predictors"
+simulators = _data / "simulators"
+priors = _data / "priors"
 
 # REINVENT
 reinvent = _repo_root / "ReinventHITL"

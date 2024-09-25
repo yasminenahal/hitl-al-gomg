@@ -15,6 +15,8 @@ from hitl_al_gomg.path import training, testing, predictors, simulators
 
 from hitl_al_gomg.utils import ecfp_generator
 
+print(simulators)
+
 
 fp_counter = ecfp_generator(radius=3, useCounts=True)
 
