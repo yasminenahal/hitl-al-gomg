@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="hitl_al_gomg",
-    version="0.0.1",
+    version="0.0.2",
     license="MIT",
     author="Yasmine Nahal",
     author_email="yasmine.nahal@aalto.fi",
@@ -13,7 +13,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/yasminenahal/hitl_al_gomg.git",
-    download_url = 'https://github.com/yasminenahal/hitl_al_gomg/archive/v_01.tar.gz',
+    download_url = 'https://github.com/yasminenahal/hitl_al_gomg/archive/v_02.tar.gz',
     keywords = ['REINVENT', 'HITL', 'HITL_AL_GOMG'],
     packages=find_packages(),
     classifiers=[
