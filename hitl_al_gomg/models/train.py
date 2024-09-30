@@ -29,7 +29,9 @@ def load_oracle(path_to_simulator):
     return pickle.load(open(f"{path_to_simulator}.pkl", "rb"))
 
 
-def preprocess_init_data(path_to_train_data, path_to_test_data, regression, path_to_simulator):
+def preprocess_init_data(
+    path_to_train_data, path_to_test_data, regression, path_to_simulator
+):
     print(f"\nLoad and preprocess data for predictor training")
     train_set = pd.read_csv(f"{path_to_train_data}.csv")
     test_set = pd.read_csv(f"{path_to_test_data}.csv")
@@ -193,7 +195,16 @@ def eval(model, x_test, y_test, regression=False):
     default=False,
     help="Whether to run a quick demo with the expert model to test the initial level of agreement with the predictor",
 )
-def main(regression, path_to_train_data, path_to_test_data, path_to_predictor, path_to_simulator, path_to_param_grid, train, demo):
+def main(
+    regression,
+    path_to_train_data,
+    path_to_test_data,
+    path_to_predictor,
+    path_to_simulator,
+    path_to_param_grid,
+    train,
+    demo,
+):
     print(f"\nSave trained model to {path_to_predictor}.pkl")
     save_to_path = f"{path_to_predictor}.pkl"
     oracle = load_oracle(path_to_simulator)
@@ -205,7 +216,9 @@ def main(regression, path_to_train_data, path_to_test_data, path_to_predictor, p
         smiles_test,
         oracle_labels_train,
         oracle_labels_test,
-    ) = preprocess_init_data(path_to_train_data, path_to_test_data, regression, path_to_simulator)
+    ) = preprocess_init_data(
+        path_to_train_data, path_to_test_data, regression, path_to_simulator
+    )
 
     if train:
         # search for optimal hyperparameters and pre-train ML property predictor

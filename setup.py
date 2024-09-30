@@ -28,6 +28,6 @@ setup(
         "fcd-torch==1.0.7",
         "click==8.1.7",
         "matplotlib==3.9.2",
-        "jupyter==1.1.1"
+        "jupyter==1.1.1",
     ],
 )

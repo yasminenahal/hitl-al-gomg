@@ -170,7 +170,14 @@ def update_reinvent_config_file(
         json.dump(configuration, f, indent=4, sort_keys=True)
 
 
-def run_reinvent(path_to_reinvent_env, path_to_reinvent_repo, acquisition, configuration_json_path, output_folder, iter):
+def run_reinvent(
+    path_to_reinvent_env,
+    path_to_reinvent_repo,
+    acquisition,
+    configuration_json_path,
+    output_folder,
+    iter,
+):
     if iter == 0 and acquisition != "None":
         if os.path.exists(
             os.path.join(output_folder, "iteration_0/scaffold_memory.csv")
@@ -406,7 +413,11 @@ def save_configuration_file(
 
 
 @click.command()
-@click.option("--path_to_output_dir", type=str, help="Path to the directory where you wish to store all results")
+@click.option(
+    "--path_to_output_dir",
+    type=str,
+    help="Path to the directory where you wish to store all results",
+)
 @click.option("--seed", "-s", default=42, type=int, help="Experiment seed")
 @click.option("--rounds", "-R", default=4, type=int, help="Number of rounds")
 @click.option(
@@ -451,7 +462,9 @@ def save_configuration_file(
     "--dirname", "-o", type=str, help="Name of output folder to store all results"
 )
 @click.option(
-    "--path_to_train_data", type=str, help="Path to csv containing initial predictor training data (without .csv extension)"
+    "--path_to_train_data",
+    type=str,
+    help="Path to csv containing initial predictor training data (without .csv extension)",
 )
 @click.option(
     "--multi_objectives",
@@ -567,7 +580,9 @@ def main(
     os.makedirs(output_folder)
     print(f"\nCreating output directory: {output_folder}.")
 
-    initial_dir = f"{path_to_output_dir}/{dirname}_R{rounds}_step{num_opt_steps}_None_seed{seed}"
+    initial_dir = (
+        f"{path_to_output_dir}/{dirname}_R{rounds}_step{num_opt_steps}_None_seed{seed}"
+    )
     if acquisition != "None":
         if os.path.exists(initial_dir):
             os.makedirs(os.path.join(output_folder, "iteration_0"))
@@ -594,7 +609,9 @@ def main(
         )
 
     prop_predictor = load_model(f"{path_to_scoring_model}.pkl")
-    scoring_model_name, path_to_scoring_model = copy_model(path_to_scoring_model, output_folder, iter=0)
+    scoring_model_name, path_to_scoring_model = copy_model(
+        path_to_scoring_model, output_folder, iter=0
+    )
 
     train_smiles, train_fps, train_labels = load_training_set(path_to_train_data)
     sample_weights = np.ones(len(train_smiles))
@@ -621,7 +638,12 @@ def main(
     )
 
     generated_molecules = run_reinvent(
-        path_to_reinvent_env, path_to_reinvent_repo, acquisition, configuration_json_path, output_folder, iter=0
+        path_to_reinvent_env,
+        path_to_reinvent_repo,
+        acquisition,
+        configuration_json_path,
+        output_folder,
+        iter=0,
     )
 
     for r in range(1, rounds + 1):
@@ -694,7 +716,12 @@ def main(
             )
 
         generated_molecules = run_reinvent(
-            path_to_reinvent_env, path_to_reinvent_repo, acquisition, configuration_json_path, output_folder, r
+            path_to_reinvent_env,
+            path_to_reinvent_repo,
+            acquisition,
+            configuration_json_path,
+            output_folder,
+            r,
         )
 
     print(f"\nExit and save results")

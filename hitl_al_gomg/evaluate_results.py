@@ -471,9 +471,7 @@ def get_result_data_for_figures(
             if i == 0:
                 scaff = pd.read_csv(f"{dirname}/iteration_0/scaffold_memory.csv")
                 jobid = f"{job_name}_R{R}_step{n_opt_steps}_None_seed{seed}"
-                base_dirname = (
-                    f"{path_to_output_dir}/{job_name}_R{R}_step{n_opt_steps}_None_seed{seed}"
-                )
+                base_dirname = f"{path_to_output_dir}/{job_name}_R{R}_step{n_opt_steps}_None_seed{seed}"
 
                 if not os.path.exists(
                     os.path.join(f"{base_dirname}/results", f"sampled_N_10000.csv")
@@ -2125,7 +2123,9 @@ def main(
     if not os.path.exists(f"{path_to_output_dir}/data_for_figures"):
         os.makedirs(f"{path_to_output_dir}/data_for_figures")
 
-    with open(os.path.join(f"{path_to_output_dir}/data_for_figures", filename), "wb") as handle:
+    with open(
+        os.path.join(f"{path_to_output_dir}/data_for_figures", filename), "wb"
+    ) as handle:
         pickle.dump(results, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
