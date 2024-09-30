@@ -5,6 +5,7 @@ from hitl_al_gomg.synthitl.simulated_expert import utility
 
 fp_counter = ecfp_generator(radius=3, useCounts=True)
 
+
 # Some functions were taken and adapted from Sundin et al. (2022) code (https://github.com/MolecularAI/reinvent-hitl)
 def local_idx_to_fulldata_idx(N, selected_feedback, idx):
     all_idx = np.arange(N)
@@ -16,12 +17,15 @@ def local_idx_to_fulldata_idx(N, selected_feedback, idx):
         return pred_idx[idx]
     except:
         if len(pred_idx) > 0:
-            valid_idx = [i if 0 <= i < len(pred_idx) else len(pred_idx) - 1 for i in idx]
+            valid_idx = [
+                i if 0 <= i < len(pred_idx) else len(pred_idx) - 1 for i in idx
+            ]
             return pred_idx[valid_idx]
         else:
             return pred_idx
 
-def epig(data, n, smiles, fit, selected_feedback, rng = None, t = None):
+
+def epig(data, n, smiles, fit, selected_feedback, rng=None, t=None):
     """
     data: pool of unlabelled molecules
     n: number of queries to select
@@ -35,10 +39,11 @@ def epig(data, n, smiles, fit, selected_feedback, rng = None, t = None):
     probs_pool = fit._get_prob_distribution(fps_pool)
     probs_target = fit._get_prob_distribution(fps_target)
     estimated_epig_scores = fit._estimate_epig(probs_pool, probs_target)
-    query_idx = np.argsort(estimated_epig_scores.numpy())[::-1][:n] # Get the n highest
-    return local_idx_to_fulldata_idx(N, selected_feedback, query_idx)  
+    query_idx = np.argsort(estimated_epig_scores.numpy())[::-1][:n]  # Get the n highest
+    return local_idx_to_fulldata_idx(N, selected_feedback, query_idx)
 
-def uncertainty_sampling(data, n, smiles, fit, selected_feedback, rng = None, t = None):
+
+def uncertainty_sampling(data, n, smiles, fit, selected_feedback, rng=None, t=None):
     """
     data: pool of unlabelled molecules
     n: number of queries to select
@@ -54,7 +59,8 @@ def uncertainty_sampling(data, n, smiles, fit, selected_feedback, rng = None, t 
     query_idx = np.argsort(estimated_unc)[::-1][:n]
     return local_idx_to_fulldata_idx(N, selected_feedback, query_idx)
 
-def entropy_based_sampling(data, n , smiles, fit, selected_feedback, rng = None, t = None):
+
+def entropy_based_sampling(data, n, smiles, fit, selected_feedback, rng=None, t=None):
     """
     data: pool of unlabelled molecules
     n: number of queries to select
@@ -69,7 +75,10 @@ def entropy_based_sampling(data, n , smiles, fit, selected_feedback, rng = None,
     query_idx = np.argsort(estimated_unc)[::-1][:n]
     return local_idx_to_fulldata_idx(N, selected_feedback, query_idx)
 
-def exploitation_classification(data, n, smiles, fit, selected_feedback, rng = None, t = None):
+
+def exploitation_classification(
+    data, n, smiles, fit, selected_feedback, rng=None, t=None
+):
     """
     data: pool of unlabelled molecules
     n: number of queries to select
@@ -80,11 +89,12 @@ def exploitation_classification(data, n, smiles, fit, selected_feedback, rng = N
     """
     N = len(data)
     fps = fp_counter.get_fingerprints(smiles)
-    score_pred = fit._predict_proba(fps)[:,1]
+    score_pred = fit._predict_proba(fps)[:, 1]
     query_idx = np.argsort(score_pred)[::-1][:n]
     return local_idx_to_fulldata_idx(N, selected_feedback, query_idx)
 
-def exploitation_regression(data, n, smiles, fit, selected_feedback, rng = None, t = None):
+
+def exploitation_regression(data, n, smiles, fit, selected_feedback, rng=None, t=None):
     """
     data: pool of unlabelled molecules
     n: number of queries to select
@@ -96,11 +106,14 @@ def exploitation_regression(data, n, smiles, fit, selected_feedback, rng = None,
     N = len(data)
     fps = fp_counter.get_fingerprints(smiles)
     values = fit._predict(fps)
-    score_pred = [utility(v, low = 2, high = 4) for v in values] # Low and high values specified according to the paper experiment (use case 1)
-    query_idx = np.argsort(score_pred)[::-1][:n] # Get the n highest
+    score_pred = [
+        utility(v, low=2, high=4) for v in values
+    ]  # Low and high values specified according to the paper experiment (use case 1)
+    query_idx = np.argsort(score_pred)[::-1][:n]  # Get the n highest
     return local_idx_to_fulldata_idx(N, selected_feedback, query_idx)
 
-def margin_selection(data, n, smiles, fit, selected_feedback, rng = None, t = None):
+
+def margin_selection(data, n, smiles, fit, selected_feedback, rng=None, t=None):
     """
     data: pool of unlabelled molecules
     n: number of queries to select
@@ -117,6 +130,7 @@ def margin_selection(data, n, smiles, fit, selected_feedback, rng = None, t = No
     query_idx = np.argsort(values)[:n]
     return local_idx_to_fulldata_idx(N, selected_feedback, query_idx)
 
+
 def random_selection(data, n, smiles, fit, selected_feedback, rng, t=None):
     """
     data: pool of unlabelled molecules
@@ -127,12 +141,17 @@ def random_selection(data, n, smiles, fit, selected_feedback, rng, t=None):
     """
     N = len(data)
     try:
-        selected = rng.choice(N-len(selected_feedback), n, replace=False)
+        selected = rng.choice(N - len(selected_feedback), n, replace=False)
     except:
-        selected = rng.choice(N-len(selected_feedback), N-len(selected_feedback), replace=False)
+        selected = rng.choice(
+            N - len(selected_feedback), N - len(selected_feedback), replace=False
+        )
     return local_idx_to_fulldata_idx(N, selected_feedback, selected)
 
-def select_query(data, n, smiles, fit, selected_feedback, acquisition = "random", rng = None, t = None):
+
+def select_query(
+    data, n, smiles, fit, selected_feedback, acquisition="random", rng=None, t=None
+):
     """
     Parameters
     ----------
@@ -144,7 +163,7 @@ def select_query(data, n, smiles, fit, selected_feedback, acquisition = "random"
 
     Returns
     -------
-    int idx: 
+    int idx:
         Index of the query
 
     """
@@ -162,7 +181,7 @@ def select_query(data, n, smiles, fit, selected_feedback, acquisition = "random"
     elif acquisition == "epig":
         acq = epig
     elif acquisition == "margin":
-        acq = margin_selection # (Margin selection not tested in the paper experiments)
+        acq = margin_selection  # (Margin selection not tested in the paper experiments)
     else:
         print("Warning: unknown acquisition criterion. Using random sampling.")
         acq = random_selection

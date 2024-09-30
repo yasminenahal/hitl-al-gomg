@@ -1,5 +1,5 @@
 Human-in-the-loop Active Learning for Goal-Oriented Molecule Generation
-=================================================================================================================
+====================================================================================================
 
 We present an interactive workflow to fine-tune predictive machine learning models for target molecular properties based on expert feedback and foster human-machine collaboration for goal-oriented molecular design and optimization.
 
@@ -20,7 +20,7 @@ System Requirements
 - Python 3.7
 - This code and `REINVENT 3.2` have been tested on Linux
 
-Installation instructions
+# Installation
 -------------
 1. Install [Conda](https://conda.io/projects/conda/en/latest/index.html)
 2. Clone this Git repository
@@ -50,7 +50,7 @@ Installation instructions
         $ conda activate hitl-al-gomg
         $ pip install -e .
 
-Usage
+# Usage
 -------------
 Below are command examples for training a target property predictor (e.g., for DRD2 bioactivity) and running the workflow using a simulated expert.
 
@@ -84,17 +84,17 @@ The directory `example_files/` contains examples of hyperparameter grids for `sc
          $ python evaluate_results.py --job_name demo_drd2 --seed 3 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --scoring_model drd2 --init_data drd2 --acquisition None
          $ python evaluate_results.py --job_name demo_drd2 --seed 3 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --scoring_model drd2 --init_data drd2 --acquisition entropy --al_iterations 5 --n_queries 10 --sigma_noise 0.1
 
-Data
+# Data
 -------------
 - We provide data for training the penalized LogP and DRD2 bioactivity predictors, as well as a sample from ChEMBL on which `REINVENT` prior agent was pre-trained.
 - A copy of the `REINVENT` pre-trained prior agent is available at `HITL_AL_GOMG/models/priors/random.prior.new`.
 - The experimental simulator for DRD2 bioactivity and the hERG model described in the multi-objective generation use case are available at this [URL](https://huggingface.co/yasminenahal/hitl-al-gomg-simulators/tree/main).
   
-Jupyter notebooks
+# Notebooks
 -------------
 In `notebooks/`, we provide Jupyter notebooks with code to reproduce the paper's figures for both simulation and human experiments.
 
-Acknowledgements
+# Acknowledgements
 -------------
 - We acknowledge the following works which were extremely helpful to develop this workflow:
   * Sundin, I., Voronov, A., Xiao, H. et al. Human-in-the-loop assisted de novo molecular design. J Cheminform 14, 86 (2022). [https://doi.org/10.1186/s13321-022-00667-8](https://doi.org/10.1186/s13321-022-00667-8)
