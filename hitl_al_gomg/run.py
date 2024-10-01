@@ -195,11 +195,13 @@ def run_reinvent(
             command = [
                 str(path_to_reinvent_env) + "/bin/python",
                 str(path_to_reinvent_repo) + "/input.py",
-                str(configuration_json_path)
+                str(configuration_json_path),
             ]
 
             with open(os.path.join(output_folder, "run.err"), "w") as err_file:
-                process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=err_file)
+                process = subprocess.Popen(
+                    command, stdout=subprocess.PIPE, stderr=err_file
+                )
 
                 # Wait for the process to finish
                 output, errors = process.communicate()
@@ -221,7 +223,7 @@ def run_reinvent(
         command = [
             str(path_to_reinvent_env) + "/bin/python",
             str(path_to_reinvent_repo) + "/input.py",
-            str(configuration_json_path)
+            str(configuration_json_path),
         ]
 
         with open(os.path.join(output_folder, "run.err"), "w") as err_file:
