@@ -6,7 +6,7 @@ We present an interactive workflow to fine-tune predictive machine learning mode
 ![Overview of the human-in-the-loop active learning workflow to fine-tune molecular property predictors for goal-oriented molecule generation.](figures/graphical-abstract.png)
 
 In this study, we simulate the process of producing novel drug candidates through machine learning (REINVENT) then validating them in the lab.
-This workflow is based [REINVENT 3.2](https://github.com/MolecularAI/Reinvent) for molecule generation. In the meantine, [REINVENT 4](https://github.com/MolecularAI/REINVENT4) was released so the plan is to move to REINVENT 4 soon!
+This workflow is based [REINVENT 3.2](https://github.com/MolecularAI/Reinvent) for molecule generation. In the meantime, [REINVENT 4](https://github.com/MolecularAI/REINVENT4) was released so the plan is to move to REINVENT 4 soon!
 
 The goal of this study is to generate successful top-scoring molecules (i.e., promising with respect to a target molecular property) according to both the machine learning predictive model used in the scoring function, and a lab simulator that validates the promise of the produced molecules at the end of the REINVENT process. Both should be well aligned to avoid relying on suboptimal molecules during assay trials and increasing their success rate.
 
