@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13868609.svg)](https://doi.org/10.5281/zenodo.13868609)
+
 Human-in-the-loop Active Learning for Goal-Oriented Molecule Generation
 ====================================================================================================
 
