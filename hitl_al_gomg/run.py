@@ -2,6 +2,7 @@
 import click
 import pickle
 import os
+import subprocess
 import shutil
 import json
 import pandas as pd
@@ -182,44 +183,60 @@ def run_reinvent(
         if os.path.exists(
             os.path.join(output_folder, "iteration_0/scaffold_memory.csv")
         ):
-            # Start from an existing scaffold_memory i.e., pool of unlabelled compounds
+            # Load existing scaffold_memory
             print(f"\nLoad REINVENT output, round {iter}")
             data = pd.read_csv(
                 os.path.join(output_folder, "iteration_0/scaffold_memory.csv")
             )
             data.reset_index(inplace=True)
         else:
-            # Start from scratch and generate a pool of unlabelled compounds with REINVENT
+            # Start from scratch
             print(f"\nRun REINVENT, round {iter}")
-            os.system(
-                str(path_to_reinvent_env)
-                + "/bin/python "
-                + str(path_to_reinvent_repo)
-                + "/input.py "
-                + str(configuration_json_path)
-                + "&> "
-                + str(output_folder)
-                + "/run.err"
-            )
+            command = [
+                str(path_to_reinvent_env) + "/bin/python",
+                str(path_to_reinvent_repo) + "/input.py",
+                str(configuration_json_path)
+            ]
 
+            with open(os.path.join(output_folder, "run.err"), "w") as err_file:
+                process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=err_file)
+
+                # Wait for the process to finish
+                output, errors = process.communicate()
+
+                # Check if there are any errors during execution
+                if process.returncode != 0:
+                    print(f"Error occurred while running REINVENT: {errors.decode()}")
+                else:
+                    print(output.decode())  # Print any standard output
+
+            # Read the scaffold_memory CSV
             data = pd.read_csv(
                 os.path.join(output_folder, "results/scaffold_memory.csv")
             )
 
     else:
-        # Overwrite any existing scaffold_memory and run REINVENT from scratch
+        # Overwrite existing scaffold_memory
         print(f"\nRun REINVENT, round {iter}")
-        os.system(
-            str(path_to_reinvent_env)
-            + "/bin/python "
-            + str(path_to_reinvent_repo)
-            + "/input.py "
-            + str(configuration_json_path)
-            + "&> "
-            + str(output_folder)
-            + "/run.err"
-        )
+        command = [
+            str(path_to_reinvent_env) + "/bin/python",
+            str(path_to_reinvent_repo) + "/input.py",
+            str(configuration_json_path)
+        ]
 
+        with open(os.path.join(output_folder, "run.err"), "w") as err_file:
+            process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=err_file)
+
+            # Wait for the process to finish
+            output, errors = process.communicate()
+
+            # Check if there are any errors during execution
+            if process.returncode != 0:
+                print(f"Error occurred while running REINVENT: {errors.decode()}")
+            else:
+                print(output.decode())  # Print any standard output
+
+        # Read the scaffold_memory CSV
         data = pd.read_csv(os.path.join(output_folder, "results/scaffold_memory.csv"))
 
     return data
