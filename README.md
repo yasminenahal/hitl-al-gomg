@@ -67,6 +67,22 @@ Once you the HITL-AL run is completed, you can generate a pickled dictionary tha
 
 **For running the HITL-AL workflow using the Metis graphical interface:**
 
+To run the workflow with real expert feedback through a graphical interface, you first need to install Metis in two quick steps:
+
+1. Clone the Metis repository
+2. Navigate to its location then install it with `pip install .`.
+3. On a remote machine accessible through SSH and that has SLURM, install [REINVENT V3.2](https://github.com/yasminenahal/ReinventHITL/tree/main) as mentioned in the Installation section above.
+
+Then, on your local machine, move the `example_files/human_workflow.zip` file to Metis directory, unzip it, navigate to its location, then run
+
+        metis -f settings_ui.yml --output results/
+
+The zipped folder `example_files/human_workflow.zip` contains data, model, and configuration files needed to run the HITL-AL workflow with Metis. You should change the file contents according to your SSH login details and your paths to models and data sets.
+
+- `settings_ssh.yml` should contain your SSH login information, path to folder where to store your REINVENT outputs on the remote machine, the initial REINVENT run configuration (`initial_reinvent.json`) and your SLURM script (`standard_slurm.slurm`).
+- `settings_ui.yml` should contain your Metis configuration as well as input files to Metis.
+- `initial_gen_molecules.csv` should contain your initial set of generated molecules from REINVENT before observing human feedback.
+
 # Data
 -------------
 - We provide data sets for training the penalized LogP and DRD2 bioactivity predictors, as well as a sample from ChEMBL on which `REINVENT` prior agent was pre-trained.
@@ -75,7 +91,7 @@ Once you the HITL-AL run is completed, you can generate a pickled dictionary tha
   
 # Notebooks
 -------------
-In `notebooks/`, we provide Jupyter notebooks with code to reproduce the paper's result figures for both simulation and human experiments.
+In `notebooks/`, we provide Jupyter notebooks with code to reproduce the paper's result figures for both simulation and real human experiments.
 
 # Acknowledgements
 -------------
