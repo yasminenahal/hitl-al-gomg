@@ -17,19 +17,19 @@ Human experts evaluate the relevance of top-scoring molecules identified by the 
 
 
 # System Requirements
--------------
+
 - `python>=3.9,<3.11`
 - This code was tested on Linux `x86_64`
 
 # Installation
--------------
+
 1. Since this workflow is based on REINVENT 3.2, you need a working installation of REINVENT 3.2. Follow install instructions [here](https://github.com/yasminenahal/ReinventHITL/tree/main).
 2. Create a virtual environment with `python>=3.9,<3.11` and activate it, then install the package with
 
         pip install hitl-al-gomg
 
 # Usage
--------------
+
 Below are command examples to train a target property predictor then running the active learning workflow using a simulated expert to fine-tune it. Make sure to replace the provided paths with yours before running the command lines.
 In this example, the target property is DRD2 bioactivity.
 
@@ -84,17 +84,17 @@ The zipped folder `example_files/human_workflow.zip` contains data, model, and c
 - `initial_gen_molecules.csv` should contain your initial set of generated molecules from REINVENT before observing human feedback.
 
 # Data
--------------
+
 - We provide data sets for training the penalized LogP and DRD2 bioactivity predictors, as well as a sample from ChEMBL on which `REINVENT` prior agent was pre-trained.
 - We also provide a copy of the pre-trained `REINVENT` prior agent in `data/priors/random.prior.new`.
 - The experimental simulators or oracles for DRD2 bioactivity and the hERG model described in the multi-objective generation use case can both be downloaded from [https://huggingface.co/yasminenahal/hitl-al-gomg-simulators/tree/main].
   
 # Notebooks
--------------
+
 In `notebooks/`, we provide Jupyter notebooks with code to reproduce the paper's result figures for both simulation and real human experiments.
 
 # Acknowledgements
--------------
+
 - We acknowledge the following works which were extremely helpful to develop this workflow:
   * Sundin, I., Voronov, A., Xiao, H. et al. Human-in-the-loop assisted de novo molecular design. J Cheminform 14, 86 (2022). [https://doi.org/10.1186/s13321-022-00667-8](https://doi.org/10.1186/s13321-022-00667-8)
   * Bickford Smith, F., Kirsch, A., Farquhar, S., Gal, Y., Foster, A., Rainforth, T. Prediction-oriented Bayesian active learning. International Conference on Artificial Intelligence and Statistics (2023). [https://arxiv.org/abs/2304.08151](https://arxiv.org/abs/2304.08151)
