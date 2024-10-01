@@ -73,7 +73,7 @@ To run the workflow with real expert feedback through a graphical interface, you
 2. Navigate to its location then install it with `pip install .`.
 3. On a remote machine accessible through SSH and that has SLURM, install [REINVENT V3.2](https://github.com/yasminenahal/ReinventHITL/tree/main) as mentioned in the Installation section above.
 
-Then, on your local machine, move the `example_files/human_workflow.zip` file to Metis directory, unzip it, navigate to its location, then run
+Then, on your local machine, upload the `example_files/human_workflow.zip` file to the cloned Metis directory, unzip it, navigate to its location, then run
 
         metis -f settings_ui.yml --output results/
 
