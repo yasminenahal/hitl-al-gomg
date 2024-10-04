@@ -8,7 +8,7 @@ We present an interactive workflow to fine-tune predictive machine learning mode
 ![Overview of the human-in-the-loop active learning workflow to fine-tune molecular property predictors for goal-oriented molecule generation.](figures/graphical-abstract.png)
 
 In this study, we simulate the process of producing novel drug candidates through machine learning (REINVENT) then validating them in the lab.
-This workflow is based [REINVENT 3.2](https://github.com/MolecularAI/Reinvent) for molecule generation. In the meantime, [REINVENT 4](https://github.com/MolecularAI/REINVENT4) was released so the plan is to move to REINVENT 4 soon!
+This workflow is based [REINVENT 3.2](https://github.com/yasminenahal/Reinvent) for molecule generation. In the meantime, [REINVENT 4](https://github.com/MolecularAI/REINVENT4) was released so the plan is to move to REINVENT 4 soon!
 
 The goal of this study is to generate successful top-scoring molecules (i.e., promising with respect to a target molecular property) according to both the machine learning predictive model used in the scoring function, and a lab simulator that validates the promise of the produced molecules at the end of the REINVENT process. Both should be well aligned to avoid relying on suboptimal molecules during assay trials and increasing their success rate.
 
@@ -25,7 +25,7 @@ Human experts evaluate the relevance of top-scoring molecules identified by the 
 
 # Installation
 
-1. Since this workflow is based on REINVENT 3.2, you need a working installation of REINVENT 3.2. Follow install instructions [here](https://github.com/yasminenahal/ReinventHITL/tree/main).
+1. Since this workflow is based on REINVENT 3.2, you need a working installation of REINVENT 3.2. Follow install instructions [here](https://github.com/yasminenahal/Reinvent).
 2. Create a virtual environment with `python>=3.9,<3.11` and activate it, then install the package with
 
         pip install hitl-al-gomg
@@ -48,11 +48,11 @@ Once you have a pre-trained predictor for your target property, you can use it t
 
 - First, you need to run the workflow without active learning so that you can generate the set of generated molecules based on your initial target property predictor.
 
-        python -m hitl_al_gomg.run --seed 3 --rounds 4 --num_opt_steps 100 --path_to_output_dir results --path_to_reinvent_env /home/miniconda3/envs/reinvent-hitl --path_to_reinvent_repo /home/Test_my_code/ReinventHITL --task drd2 --path_to_scoring_model data/predictors/drd2 --path_to_simulator data/simulators/drd2 --model_type classification --scoring_component_name bioactivity --dirname demo_drd2 --path_to_train_data data/train/drd2_train --acquisition None
+        python -m hitl_al_gomg.run --seed 3 --rounds 4 --num_opt_steps 100 --path_to_output_dir results --path_to_reinvent_env /home/miniconda3/envs/reinvent-hitl --path_to_reinvent_repo /home/Test_my_code/Reinvent --task drd2 --path_to_scoring_model data/predictors/drd2 --path_to_simulator data/simulators/drd2 --model_type classification --scoring_component_name bioactivity --dirname demo_drd2 --path_to_train_data data/train/drd2_train --acquisition None
 
 - Then, you can run the workflow using active learning. Below is an example where we use entropy-based sampling to select `10` query molecules to be evaluated by the simulated expert model.
 
-        python -m hitl_al_gomg.run --seed 3 --rounds 4 --num_opt_steps 100 --path_to_output_dir results --path_to_reinvent_env /home/miniconda3/envs/reinvent-hitl --path_to_reinvent_repo /home/Test_my_code/ReinventHITL --task drd2 --path_to_scoring_model data/predictors/drd2 --path_to_simulator data/simulators/drd2 --model_type classification --scoring_component_name bioactivity --dirname demo_drd2 --path_to_train_data data/train/drd2_train --acquisition entropy --al_iterations 5 --n_queries 10 --noise 0.1
+        python -m hitl_al_gomg.run --seed 3 --rounds 4 --num_opt_steps 100 --path_to_output_dir results --path_to_reinvent_env /home/miniconda3/envs/reinvent-hitl --path_to_reinvent_repo /home/Test_my_code/Reinvent --task drd2 --path_to_scoring_model data/predictors/drd2 --path_to_simulator data/simulators/drd2 --model_type classification --scoring_component_name bioactivity --dirname demo_drd2 --path_to_train_data data/train/drd2_train --acquisition entropy --al_iterations 5 --n_queries 10 --noise 0.1
 
 
 **For calculating simulator scores and metrics from [MOSES](https://github.com/molecularsets/moses):**
@@ -61,11 +61,11 @@ Once you the HITL-AL run is completed, you can generate a pickled dictionary tha
 
 - To evaluate the output of your baseline run (without active learning feedback):
 
-         python -m hitl_al_gomg.evaluate_results --job_name demo_drd2 --seed 3 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --path_to_predictor data/predictors/drd2 --path_to_simulator data/simulators/drd2 --path_to_train_data data/train/drd2_train --path_to_test_data data/test/drd2_test --path_to_reinvent_env /home/miniconda3/envs/reinvent-hitl --path_to_reinvent_repo /home/Test_my_code/ReinventHITL --path_to_output_dir results --acquisition None
+         python -m hitl_al_gomg.evaluate_results --job_name demo_drd2 --seed 3 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --path_to_predictor data/predictors/drd2 --path_to_simulator data/simulators/drd2 --path_to_train_data data/train/drd2_train --path_to_test_data data/test/drd2_test --path_to_reinvent_env /home/miniconda3/envs/reinvent-hitl --path_to_reinvent_repo /home/Test_my_code/Reinvent --path_to_output_dir results --acquisition None
 
 - To evaluate the output of your active learning-enabled run:
   
-         python -m hitl_al_gomg.evaluate_results --job_name demo_drd2 --seed 3 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --path_to_predictor data/predictors/drd2 --path_to_simulator data/simulators/drd2 --path_to_train_data data/train/drd2_train --path_to_test_data data/test/drd2_test --path_to_reinvent_env /home/miniconda3/envs/reinvent-hitl --path_to_reinvent_repo /home/Test_my_code/ReinventHITL --path_to_output_dir results --acquisition entropy --al_iterations 5 --n_queries 10 --sigma_noise 0.1
+         python -m hitl_al_gomg.evaluate_results --job_name demo_drd2 --seed 3 --rounds 4 --n_opt_steps 100 --task drd2 --model_type classification --score_component_name bioactivity --path_to_predictor data/predictors/drd2 --path_to_simulator data/simulators/drd2 --path_to_train_data data/train/drd2_train --path_to_test_data data/test/drd2_test --path_to_reinvent_env /home/miniconda3/envs/reinvent-hitl --path_to_reinvent_repo /home/Test_my_code/Reinvent --path_to_output_dir results --acquisition entropy --al_iterations 5 --n_queries 10 --sigma_noise 0.1
 
 **For running the HITL-AL workflow using the Metis graphical interface:**
 
@@ -73,7 +73,7 @@ To run the workflow with real expert feedback through a graphical interface, you
 
 1. Clone the Metis repository
 2. Navigate to its location then install it with `pip install .`.
-3. On a remote machine accessible through SSH and that has SLURM, install [REINVENT V3.2](https://github.com/yasminenahal/ReinventHITL/tree/main) as mentioned in the Installation section above.
+3. On a remote machine accessible through SSH and that has SLURM, install [REINVENT V3.2](https://github.com/yasminenahal/Reinvent) as mentioned in the Installation section above.
 
 Then, on your local machine, upload the `example_files/human_workflow.zip` file to the cloned Metis directory, unzip it, navigate to its location, then run
 
