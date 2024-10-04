@@ -69,17 +69,17 @@ Once you the HITL-AL run is completed, you can generate a pickled dictionary tha
 
 **For running the HITL-AL workflow using the Metis graphical interface:**
 
-To run the workflow with real expert feedback through a graphical interface, you first need to install Metis in two quick steps:
+To run the workflow with real expert feedback through a graphical interface, you first need to install  [Metis](https://github.com/JanoschMenke/metis) in three quick steps:
 
 1. Clone the Metis repository
-2. Navigate to its location then install it with `pip install .`.
-3. On a remote machine accessible through SSH and that has SLURM, install [REINVENT V3.2](https://github.com/yasminenahal/Reinvent) as mentioned in the Installation section above.
+2. Navigate to its location then install it using `pip install .`.
+3. On your remote machine accessible through SSH and that has SLURM, install [REINVENT V3.2](https://github.com/yasminenahal/Reinvent) as mentioned previously.
 
-Then, on your local machine, upload the `example_files/human_workflow.zip` file to the cloned Metis directory, unzip it, navigate to its location, then run
+On your local machine where you have installed Metis, upload the `example_files/human_workflow.zip` file, unzip it, navigate to its location, then run
 
         metis -f settings_ui.yml --output results/
 
-The zipped folder `example_files/human_workflow.zip` contains data, model, and configuration files needed to run the HITL-AL workflow with Metis. You should change the file contents according to your SSH login details and your paths to models and data sets.
+The zipped folder `example_files/human_workflow.zip` contains data, model, and configuration files needed to run the HITL-AL workflow described in our paper. You should change the file contents according to your SSH login details and your paths to predictive models and data sets. Your evaluations through Metis will be stored in the `results`folder.
 
 - `settings_ssh.yml` should contain your SSH login information, path to folder where to store your REINVENT outputs on the remote machine, the initial REINVENT run configuration (`initial_reinvent.json`) and your SLURM script (`standard_slurm.slurm`).
 - `settings_ui.yml` should contain your Metis configuration as well as input files to Metis.
