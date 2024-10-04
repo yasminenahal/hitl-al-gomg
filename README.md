@@ -79,11 +79,12 @@ On your local machine where you have installed Metis, upload the `example_files/
 
         metis -f settings_ui.yml --output results/
 
-The zipped folder `example_files/human_workflow.zip` contains data, model, and configuration files needed to run the HITL-AL workflow described in our paper. You should change the file contents according to your SSH login details and your paths to predictive models and data sets. Your evaluations through Metis will be stored in the `results`folder.
+To run the HITL-AL workflow described in our paper, you can download the following [zipped folder](https://drive.google.com/file/d/1ePVnW9dfspFnpQyXgA46oHB7tptyd8Dw/view?usp=sharing) which contains data, models, and configuration files needed. You should change the following file contents according to your SSH login details and your paths to predictive models and data sets. Your evaluations through Metis will be stored in the `results`folder.
 
-- `settings_ssh.yml` should contain your SSH login information, path to folder where to store your REINVENT outputs on the remote machine, the initial REINVENT run configuration (`initial_reinvent.json`) and your SLURM script (`standard_slurm.slurm`).
-- `settings_ui.yml` should contain your Metis configuration as well as input files to Metis.
-- `initial_gen_molecules.csv` should contain your initial set of generated molecules from REINVENT before observing human feedback.
+- `settings_ssh.yml` should contain your SSH login information, path to a folder where REINVENT is installed and where you wish to store your REINVENT outputs on your remote machine
+- `initial_reinvent.json` should contain your initial REINVENT run configuration (after the first iteration, it will be updated automatically)
+- `standard_slurm.slurm` should contain your SLURM job specifications and REINVENT run commands.
+- `settings_ui.yml` should contain your Metis configuration, such as which features you wish to display on the interface, as well as your paths to your initial predictive model, initial training set and initial set of generated molecules before observing any feedback.
 
 # Data
 
