@@ -79,7 +79,7 @@ On your local machine where you have installed Metis, upload the `example_files/
 
         metis -f settings_ui.yml --output results/
 
-To run the HITL-AL workflow described in our paper, you can download the following [zipped folder](https://drive.google.com/file/d/1LGocCVQrckCwPh0fXsIX2EoqWJa9LIKQ/view?usp=sharing) which contains data, models, and configuration files needed. You should change the following file contents according to your SSH login details and your paths to predictive models and data sets. Your evaluations through Metis will be stored in the `results`folder.
+To run the HITL-AL workflow described in our paper, you can download the following [zipped folder](https://drive.google.com/file/d/13NKWkJxHLxuAdrZZss0DMfjd4FBauc8b/view?usp=sharing) which contains data, models, and configuration files needed. You should change the following file contents according to your SSH login details and your paths to predictive models and data sets. Your evaluations through Metis will be stored in the `results`folder.
 
 - `settings_ssh.yml` should contain your SSH login information, path to a folder where REINVENT is installed and where you wish to store your REINVENT outputs on your remote machine
 - `initial_reinvent.json` should contain your initial REINVENT run configuration (after the first iteration, it will be updated automatically)
