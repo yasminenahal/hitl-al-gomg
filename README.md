@@ -83,7 +83,7 @@ You should change the following file contents according to your remote SSH login
 - `metis/reinvent_connect/input_files/test_qsar.json` should contain your initial REINVENT run configuration (after the first iteration, it will be updated automatically)
 - `metis/reinvent_connect/input_files/reinvent_slurm.slurm` should contain your SLURM job specifications and REINVENT run commands.
 
-Once all set up, run the following command to start the interface
+To start the interface and the human workflow, run
 
         cd metis && python metis.py
 
