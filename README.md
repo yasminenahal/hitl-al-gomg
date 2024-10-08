@@ -106,3 +106,5 @@ In `notebooks/`, we provide Jupyter notebooks with code to reproduce the paper's
   * Bickford Smith, F., Kirsch, A., Farquhar, S., Gal, Y., Foster, A., Rainforth, T. Prediction-oriented Bayesian active learning. International Conference on Artificial Intelligence and Statistics (2023). [https://arxiv.org/abs/2304.08151](https://arxiv.org/abs/2304.08151)
 
 - We thank [Vincenzo Palmacci](https://github.com/vincenzo-palmacci) for his contribution in refactoring parts of this code.
+
+**For any inquiries, please contact [yasmine.nahal@aalto.fi]**
