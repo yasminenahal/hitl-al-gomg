@@ -74,7 +74,7 @@ To run the workflow with real expert feedback through a graphical interface, you
 1. Clone the Metis repository using ``git clone --branch nahal_experiment https://github.com/yasminenahal/metis.git`` then navigate to its location.
 2. On a remote machine accessible through SSH and that has SLURM, install [REINVENT V3.2](https://github.com/yasminenahal/Reinvent) as mentioned previously.
 
-To run the HITL-AL workflow described in our paper, you can download the following [zipped folder](https://drive.google.com/file/d/13NKWkJxHLxuAdrZZss0DMfjd4FBauc8b/view?usp=sharing) and upload it to your remote machine. This folder contains the models used for Reinvent (the prior Reinvent agent `random.prior.new`, the Reinvent agent `Agent_Initial.ckpt` after being optimized for 1200 epochs using the initial target property predictor `Model_Initial.pkl` as well as the hERG bioactivity oracle that we use in the multi-objective use case experiments `herg.pkl`).
+To run the HITL-AL workflow described in our paper, you can download the following [zipped folder](https://drive.google.com/file/d/1xWCoHodZTy9VwIm-CAicT1MFbzHg2bPn/view?usp=sharing) and upload it to your remote machine. This folder contains the models used for Reinvent (the prior Reinvent agent `random.prior.new`, the Reinvent agent `Agent_Initial.ckpt` after being optimized for 1200 epochs using the initial target property predictor `Model_Initial.pkl` as well as the hERG bioactivity oracle that we use in the multi-objective use case experiments `herg.pkl`).
 
 You should change the following file contents according to your remote SSH login details and your paths to predictive models and data sets.
 
