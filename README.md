@@ -40,7 +40,7 @@ In this example, the target property is DRD2 bioactivity.
         python -m hitl_al_gomg.models.train --path_to_train_data data/train/drd2_train --path_to_test_data data/test/drd2_test --path_to_predictor data/predictors/drd2 --path_to_simulator data/simulators/drd2 --train True --demo True
 
 - To use the same DRD2 bioactivity simulator than that of the paper, you can download `drd2.pkl` from this [URL](https://huggingface.co/yasminenahal/hitl-al-gomg-simulators/tree/main).
-- The directory `example_files/` contains examples of hyperparameter grids to run cross-validation for `scikit-learn` Random Forest models. If you wish to enable hyparameter search, you can add the argument ```--path_to_param_grid example_files/rfc_param_grid.json``.
+- The directory `example_files/` contains examples of hyperparameter grids to run cross-validation for `scikit-learn` Random Forest models. If you wish to enable hyparameter search, you can add the argument ``--path_to_param_grid example_files/rfc_param_grid.json``.
 
 **For running the HITL-AL workflow using a simulated expert:**
 
