@@ -82,8 +82,8 @@ You should change the following file contents according to your SSH login detail
 
 - `metis/reinvent_connect/input_files/ssh_settings.yml` should contain your SSH login information, path to a folder where REINVENT is installed and where you wish to store your REINVENT outputs on your remote machine
 - `metis/reinvent_connect/input_files/settings_ui.yml` should contain your Metis configuration, such as which features you wish to display on the interface, as well as your paths to your initial predictive model, initial training set and initial set of generated molecules before observing any human feedback.
-- `metis/reinvent_connect/input_files/current_run/new_run.json` should contain your initial REINVENT run configuration (after the first iteration, it will be updated automatically)
-- `metis/reinvent_connect/input_files/current_run/new_run.slurm` should contain your SLURM job specifications and REINVENT run commands.
+- `metis/reinvent_connect/input_files/test_qsar.json` should contain your initial REINVENT run configuration (after the first iteration, it will be updated automatically)
+- `metis/reinvent_connect/input_files/reinvent_slurm.slurm` should contain your SLURM job specifications and REINVENT run commands.
 
 Once all set up, run the following command to start the interface
 
