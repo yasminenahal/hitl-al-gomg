@@ -1,6 +1,9 @@
 from pathlib import Path
 import pandas as pd
 
+def get_package_root():
+    # Find the path of the current file
+    return Path(__file__).resolve().parent
 
 def table():
     files = [
@@ -10,19 +13,12 @@ def table():
     ]
     return pd.DataFrame(files, columns=["variable", "path", "exists"])
 
+# Get the package root path dynamically
+package_root = get_package_root()
 
-# Determine paths
-_here = Path(__file__).resolve()
-_repo_root = _here.parent.parent
-
-# Data
-_data = _repo_root / "data"
-
-# Add paths to data files and directories here:
-chemspace = _data / "chemspace"
-
-# Add paths to trained model files and directories here:
-priors = _data / "priors"
+# Path to chembl sample data and trained Reinvent priors
+chemspace = package_root / "scoring" / "chemspace"
+priors = package_root / "models" / "priors"
 
 if __name__ == "__main__":
     with pd.option_context("display.max_rows", None, "display.max_columns", None):

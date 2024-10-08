@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="hitl_al_gomg",
-    version="0.0.16",
+    version="0.0.23",
     license="MIT",
     author="Yasmine Nahal",
     author_email="yasmine.nahal@aalto.fi",
@@ -15,6 +15,8 @@ setup(
     url="https://github.com/yasminenahal/hitl_al_gomg.git",
     keywords=["REINVENT", "HITL", "HITL_AL_GOMG"],
     packages=find_packages(),
+    package_data={"hitl_al_gomg": ["models/priors/random.prior.new", "scoring/chemspace/chembl.csv"]},
+    include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

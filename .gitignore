@@ -22,6 +22,8 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.err
+*.log
 MANIFEST
 
 # PyInstaller
@@ -44,6 +46,9 @@ data/simulators
 data/priors
 results/
 notebooks/oracle
+hitl_al_gomg/models/priors/evaluate_agent_config.json
+hitl_al_gomg/models/priors/sampled_N_10000.csv
+hitl_al_gomg/models/priors/sampling.*
 
 # Archive files
 */archive

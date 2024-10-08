@@ -1,2 +1,4 @@
 include README.md
 include example_files/
+include hitl_al_gomg/models/priors/random.prior.new
+include hitl_al_gomg/scoring/chemspace/chembl.csv
