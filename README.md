@@ -74,11 +74,9 @@ To run the workflow with real expert feedback through a graphical interface, you
 1. Clone the Metis repository using ``git clone --branch nahal_experiment https://github.com/yasminenahal/metis.git`` then navigate to its location.
 2. On a remote machine accessible through SSH and that has SLURM, install [REINVENT V3.2](https://github.com/yasminenahal/Reinvent) as mentioned previously.
 
-To run the HITL-AL workflow described in our paper, you can download the following [zipped folder](https://drive.google.com/file/d/13NKWkJxHLxuAdrZZss0DMfjd4FBauc8b/view?usp=sharing) and upload it to your remote machine. This folder contains the models used for Reinvent (the prior Reinvent agent `random.prior.new`, the initial DRD2 bioactivity predictor `drd2_initial.pkl` and hERG bioactivity oracle `herg.pkl`). 
+To run the HITL-AL workflow described in our paper, you can download the following [zipped folder](https://drive.google.com/file/d/13NKWkJxHLxuAdrZZss0DMfjd4FBauc8b/view?usp=sharing) and upload it to your remote machine. This folder contains the models used for Reinvent (the prior Reinvent agent `random.prior.new`, the Reinvent agent `Agent_Initial.ckpt` after being optimized for 1200 epochs using the initial target property predictor `Model_Initial.pkl` as well as the hERG bioactivity oracle that we use in the multi-objective use case experiments `herg.pkl`).
 
-In your remote machine, you also need a Reinvent agent checkpoint file `Agent_Initial.ckpt`. For example, you have trained Reinvent for 100 epochs using the initial DRD2 bioactivity predictor and you wish to start a HITL iterative fine-tuning from there.
-
-You should change the following file contents according to your SSH login details and your paths to predictive models and data sets. Your evaluations through Metis will be stored in the `results`folder.
+You should change the following file contents according to your remote SSH login details and your paths to predictive models and data sets.
 
 - `metis/reinvent_connect/input_files/ssh_settings.yml` should contain your SSH login information, path to a folder where REINVENT is installed and where you wish to store your REINVENT outputs on your remote machine
 - `metis/reinvent_connect/input_files/settings_ui.yml` should contain your Metis configuration, such as which features you wish to display on the interface, as well as your paths to your initial predictive model, initial training set and initial set of generated molecules before observing any human feedback.
@@ -88,6 +86,8 @@ You should change the following file contents according to your SSH login detail
 Once all set up, run the following command to start the interface
 
         cd metis && python metis.py
+
+Your evaluations through Metis will be stored in the `results` folder.
 
 # Data
 
