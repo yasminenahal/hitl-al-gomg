@@ -69,22 +69,23 @@ Once you the HITL-AL run is completed, you can generate a pickled dictionary tha
 
 **For running the HITL-AL workflow using the Metis graphical interface:**
 
-To run the workflow with real expert feedback through a graphical interface, you first need to install  [Metis](https://github.com/JanoschMenke/metis) in three quick steps:
+To run the workflow with real expert feedback through a graphical interface, you first need to install  [Metis](https://github.com/yasminenahal/metis) in two quick steps:
 
-1. Clone the Metis repository
-2. Navigate to its location then install it using `pip install .`.
-3. On your remote machine accessible through SSH and that has SLURM, install [REINVENT V3.2](https://github.com/yasminenahal/Reinvent) as mentioned previously.
+1. Clone the Metis repository using ``git clone --branch nahal_experiment https://github.com/yasminenahal/metis.git`` then navigate to its location.
+2. On a remote machine accessible through SSH and that has SLURM, install [REINVENT V3.2](https://github.com/yasminenahal/Reinvent) as mentioned previously.
 
-On your local machine where you have installed Metis, upload the `example_files/human_workflow.zip` file, unzip it, navigate to its location, then run
+To run the HITL-AL workflow described in our paper, you can download the following [zipped folder](https://drive.google.com/file/d/13NKWkJxHLxuAdrZZss0DMfjd4FBauc8b/view?usp=sharing) and upload it to your remote machine. This folder contains the models used for Reinvent (the prior Reinvent agent `random.prior.new`, the initial DRD2 bioactivity predictor `drd2_initial.pkl` and hERG bioactivity oracle `herg.pkl`). In your remote machine, you also need a Reinvent agent checkpoint file ``Agent_Initial.ckpt`. For example, you have trained Reinvent for 100 epochs using the initial DRD2 bioactivity predictor and you wish to start a HITL iterative fine-tuning from there.
 
-        metis -f settings_ui.yml --output results/
+You should change the following file contents according to your SSH login details and your paths to predictive models and data sets. Your evaluations through Metis will be stored in the `results`folder.
 
-To run the HITL-AL workflow described in our paper, you can download the following [zipped folder](https://drive.google.com/file/d/13NKWkJxHLxuAdrZZss0DMfjd4FBauc8b/view?usp=sharing) which contains data, models, and configuration files needed. You should change the following file contents according to your SSH login details and your paths to predictive models and data sets. Your evaluations through Metis will be stored in the `results`folder.
+- `metis/reinvent_connect/input_files/ssh_settings.yml` should contain your SSH login information, path to a folder where REINVENT is installed and where you wish to store your REINVENT outputs on your remote machine
+- `metis/reinvent_connect/input_files/settings_ui.yml` should contain your Metis configuration, such as which features you wish to display on the interface, as well as your paths to your initial predictive model, initial training set and initial set of generated molecules before observing any human feedback.
+- `metis/reinvent_connect/input_files/current_run/new_run.json` should contain your initial REINVENT run configuration (after the first iteration, it will be updated automatically)
+- `metis/reinvent_connect/input_files/current_run/new_run.slurm` should contain your SLURM job specifications and REINVENT run commands.
 
-- `settings_ssh.yml` should contain your SSH login information, path to a folder where REINVENT is installed and where you wish to store your REINVENT outputs on your remote machine
-- `initial_reinvent.json` should contain your initial REINVENT run configuration (after the first iteration, it will be updated automatically)
-- `standard_slurm.slurm` should contain your SLURM job specifications and REINVENT run commands.
-- `settings_ui.yml` should contain your Metis configuration, such as which features you wish to display on the interface, as well as your paths to your initial predictive model, initial training set and initial set of generated molecules before observing any feedback.
+Once all set up, run the following command to start the interface
+
+        cd metis && python metis.py
 
 # Data
 
