@@ -29,5 +29,10 @@ setup(
         "click==8.1.7",
         "matplotlib==3.9.2",
         "jupyter==1.1.1",
+        "PySide2>5.15",
+        "cairosvg",
+        "pydantic",
+        "pyyaml",
+        "rdeditor==0.2.0.1",
     ],
 )
