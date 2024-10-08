@@ -107,4 +107,4 @@ In `notebooks/`, we provide Jupyter notebooks with code to reproduce the paper's
 
 - We thank [Vincenzo Palmacci](https://github.com/vincenzo-palmacci) for his contribution in refactoring parts of this code.
 
-**For any inquiries, please contact [yasmine.nahal@aalto.fi]**
+**For any inquiries, please contact yasmine.nahal@aalto.fi**
