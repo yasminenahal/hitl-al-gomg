@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="hitl_al_gomg",
-    version="0.0.25",
+    version="0.0.27",
     license="MIT",
     author="Yasmine Nahal",
     author_email="yasmine.nahal@aalto.fi",
