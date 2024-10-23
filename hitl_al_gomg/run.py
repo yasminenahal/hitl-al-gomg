@@ -493,7 +493,7 @@ def save_configuration_file(
 )
 @click.option(
     "--path_to_herg_simulator",
-    type=bool,
+    type=str,
     default=None,
     help="Path to the pickled hERG bioactivity simulator used in the multi-objective scoring experiments",
 )
