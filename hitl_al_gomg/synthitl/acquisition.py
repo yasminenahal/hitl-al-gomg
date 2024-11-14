@@ -134,11 +134,11 @@ def random_selection(data, n, smiles, fit, selected_feedback, rng):
     n: number of queries to select
     smiles: array-like object of high-scoring smiles
     fit: trained predictive model
-    selected_feedback: previously selected in previous feedback rounds
+    selected_feedback: previoclearusly selected in previous feedback rounds
     rng: random number generator
     """
     N = len(smiles)
-    query_idx = rng.choice(N-len(selected_feedback),n, replace=False)
+    query_idx = rng.choice(N-len(selected_feedback), n, replace=False)
     return local_idx_to_fulldata_idx(N, selected_feedback, query_idx)
 
 
@@ -160,6 +160,9 @@ def select_query(
         Index of the query
 
     """
+    N = len(data)
+    if N - len(selected_feedback) < n:
+        n = N - len(selected_feedback)
     if acquisition == "uncertainty":
         acq = uncertainty_sampling
     elif acquisition == "entropy":

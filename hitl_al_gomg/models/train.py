@@ -8,6 +8,7 @@ import pickle
 import pandas as pd
 import numpy as np
 
+from tdc import Oracle
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.metrics import (
     r2_score,
@@ -26,7 +27,10 @@ fp_counter = ecfp_generator(radius=3, useCounts=True)
 
 def load_oracle(path_to_simulator):
     print(f"\nLoad oracle")
-    return pickle.load(open(f"{path_to_simulator}.pkl", "rb"))
+    if path_to_simulator:
+        return pickle.load(open(f"{path_to_simulator}.pkl", "rb"))
+    else:
+        return Oracle(name="LogP")
 
 
 def preprocess_init_data(
@@ -49,6 +53,8 @@ def preprocess_init_data(
     print("\nDataset specifications")
     print("\nTrain set size:", train_set.shape)
     print("Test set size:", test_set.shape)
+    # load oracle
+    oracle = load_oracle(path_to_simulator)
     if not regression:
         print(
             "\nInitial train 0/1 ratio:",
@@ -56,12 +62,10 @@ def preprocess_init_data(
         )
         print("Initial test 0/1 ratio:", np.unique(test_set.target, return_counts=True))
 
-    # get ground truth labels from oracle
-    oracle = load_oracle(path_to_simulator)
-    oracle_labels_train = oracle.predict(fps_train)
-    oracle_labels_test = oracle.predict(fps_test)
+        # get ground truth labels from oracle
+        oracle_labels_train = oracle.predict(fps_train)
+        oracle_labels_test = oracle.predict(fps_test)
 
-    if not regression:
         print(
             "\nUpdated train 0/1 ratio:",
             np.unique(oracle_labels_train, return_counts=True),
@@ -69,6 +73,10 @@ def preprocess_init_data(
         print(
             "Updated test 0/1 ratio:", np.unique(oracle_labels_test, return_counts=True)
         )
+    else:
+        # get ground truth labels from oracle
+        oracle_labels_train = np.array(oracle(train_set.SMILES.tolist()))
+        oracle_labels_test = np.array(oracle(test_set.SMILES.tolist()))
 
     train_set["target"] = oracle_labels_train.tolist()
     test_set["target"] = oracle_labels_test.tolist()
@@ -176,6 +184,7 @@ def eval(model, x_test, y_test, regression=False):
 @click.option(
     "--path_to_simulator",
     type=str,
+    default=None,
     help="Path to oracle or assay simulator (without .pkl extension)",
 )
 @click.option(
@@ -265,12 +274,17 @@ def main(
         sigma_noise = float(0.15)
         print("\nNoise term will be sampled from Normal(0, sigma=0.15)")
 
-        def expert(smi, oracle, sigma_noise):
+        def expert(smi, oracle, regression, sigma_noise):
             noise = np.random.normal(0, sigma_noise, 1).item()
-            y_oracle = oracle.predict_proba(fp_counter.get_fingerprints([smi]))[
-                :, 1
-            ].item()
-            return np.clip(y_oracle + noise, 0, 1)
+            if not regression:
+                y_oracle = oracle.predict_proba(fp_counter.get_fingerprints([smi]))[
+                    :, 1
+                ].item()
+                return np.clip(y_oracle + noise, 0, 1)
+            else:
+                y_oracle = oracle([smi])[0]
+                print(y_oracle)
+                return y_oracle + noise
 
         print("\nExpert demo")
         for i in range(5):
@@ -280,7 +294,7 @@ def main(
                 "ML predicted proba:",
                 ml_predictor.predict(fps_test[i].reshape(1, -1)).item(),
                 "Expert scores:",
-                expert(smiles_test[i], oracle, sigma_noise),
+                expert(smiles_test[i], oracle, regression, sigma_noise),
             )
 
 

@@ -248,14 +248,13 @@ def prep_pool(data, threshold_value, scoring_component_name):
     bioactivity_score = data[scoring_component_name]
     # Save the indexes of high scoring molecules for satisfying the target property according to predictor
     high_scoring_idx = bioactivity_score > threshold_value
-    smiles = data[high_scoring_idx].SMILES.tolist()
-    print(f"\n{len(smiles)} high-scoring (> {threshold_value}) molecules")
-    return smiles
+    high_scoring_set = data[high_scoring_idx]
+    print(f"\n{len(high_scoring_set)} high-scoring (> {threshold_value}) molecules")
+    return high_scoring_set
 
 
 def active_learning_selection(
-    pool,
-    smiles,
+    high_scoring_set,
     selected_feedback,
     n_queries,
     acquisition,
@@ -263,17 +262,18 @@ def active_learning_selection(
     model_type,
     rng,
 ):
+    highscore_smiles_list = high_scoring_set.SMILES.tolist()
     # Create the fine-tuned predictor (RFC or RFR) object
     if model_type == "regression":
         model = RandomForestReg(scoring_model)
     elif model_type == "classification":
         model = RandomForestClf(scoring_model)
     # Select queries to show to expert
-    if len(smiles) >= n_queries:
+    if len(highscore_smiles_list) >= n_queries:
         new_query = select_query(
-            pool,
+            high_scoring_set,
             n_queries,
-            smiles,
+            highscore_smiles_list,
             model,
             selected_feedback,
             acquisition=acquisition,
@@ -282,28 +282,36 @@ def active_learning_selection(
     else:
         # Select all high-scoring smiles if their number is less than n_queries
         new_query = select_query(
-            pool,
-            len(smiles),
-            smiles,
+            high_scoring_set,
+            len(highscore_smiles_list),
+            highscore_smiles_list,
             model,
             selected_feedback,
             acquisition=acquisition,
             rng=rng,
         )
 
-    selected_smiles = [smiles[i] for i in new_query]
-
-    # Append selected feedback
-    selected_feedback = np.hstack((selected_feedback, new_query))
+    if len(new_query) > 0:
+        # Remove duplicated indices
+        new_query = list(dict.fromkeys(new_query))
+        selected_smiles = high_scoring_set.iloc[new_query].SMILES.tolist()
+        # Append selected feedback
+        selected_feedback = np.hstack((selected_feedback, new_query))
+    else:
+        print("No remaining SMILES to select.")
+        selected_smiles = []
 
     return selected_smiles, selected_feedback
 
 
 def get_expert_feedback(selected_smiles, task, model_type, path_to_simulator, noise):
     if task == "drd2":
-        feedback_model = EvaluationModel(
-            task, path_to_simulator=f"{path_to_simulator}.pkl"
-        )
+        try:
+            feedback_model = EvaluationModel(
+                task, path_to_simulator=f"{path_to_simulator}.pkl"
+            )
+        except:
+            ValueError("Please ensure path_to_simulator is not None and is a valid path.")
     else:
         feedback_model = EvaluationModel(task)
     raw_feedback = np.array(
@@ -540,6 +548,7 @@ def save_configuration_file(
 @click.option(
     "--path_to_simulator",
     type=str,
+    default=None,
     help="Path to oracle or assay simulator used to assess the predictor accuracy (without .pkl extension)",
 )
 @click.option(
@@ -672,7 +681,6 @@ def main(
             selected_feedback = np.empty(0).astype(int)
             for t in range(1, al_iterations + 1):
                 selected_smiles, selected_feedback = active_learning_selection(
-                    generated_molecules,
                     highscore_molecules,
                     selected_feedback,
                     n_queries,
@@ -681,6 +689,8 @@ def main(
                     model_type,
                     rng,
                 )
+                if len(selected_smiles) == 0:
+                    break
                 # Remove any generated SMILES which is identical to train set SMILES
                 selected_smiles = [s for s in selected_smiles if s not in train_smiles]
                 feedback, confidences = get_expert_feedback(
@@ -712,7 +722,6 @@ def main(
                     model_new_savefile,
                 )
                 prop_predictor = load_model(model_new_savefile)
-                highscore_molecules = [s for s in highscore_molecules if s not in selected_smiles]
             output_folder, configuration_json_path = save_configuration_file(
                 output_folder,
                 initial_dir,
