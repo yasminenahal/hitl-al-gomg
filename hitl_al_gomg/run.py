@@ -291,13 +291,11 @@ def active_learning_selection(
             rng=rng,
         )
 
+    selected_smiles = [smiles[i] for i in new_query]
+
     # Append selected feedback
     selected_feedback = np.hstack((selected_feedback, new_query))
 
-    mask = np.ones(len(pool), dtype=bool)
-    mask[selected_feedback] = False
-
-    selected_smiles = pool.iloc[new_query].SMILES.tolist()
     return selected_smiles, selected_feedback
 
 
@@ -342,7 +340,6 @@ def augment_train_set(
     iter,
     t,
 ):
-
     x_new = fp_counter.get_fingerprints(selected_smiles)
     x_train = np.concatenate([x_train, x_new])
     y_train = np.concatenate([y_train, feedback])
@@ -684,6 +681,8 @@ def main(
                     model_type,
                     rng,
                 )
+                # Remove any generated SMILES which is identical to train set SMILES
+                selected_smiles = [s for s in selected_smiles if s not in train_smiles]
                 feedback, confidences = get_expert_feedback(
                     selected_smiles, task, model_type, path_to_simulator, noise
                 )
@@ -713,6 +712,7 @@ def main(
                     model_new_savefile,
                 )
                 prop_predictor = load_model(model_new_savefile)
+                highscore_molecules = [s for s in highscore_molecules if s not in selected_smiles]
             output_folder, configuration_json_path = save_configuration_file(
                 output_folder,
                 initial_dir,
