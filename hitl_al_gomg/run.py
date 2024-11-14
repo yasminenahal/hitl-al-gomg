@@ -311,7 +311,9 @@ def get_expert_feedback(selected_smiles, task, model_type, path_to_simulator, no
                 task, path_to_simulator=f"{path_to_simulator}.pkl"
             )
         except:
-            ValueError("Please ensure path_to_simulator is not None and is a valid path.")
+            ValueError(
+                "Please ensure path_to_simulator is not None and is a valid path."
+            )
     else:
         feedback_model = EvaluationModel(task)
     raw_feedback = np.array(

@@ -21,6 +21,7 @@ def local_idx_to_fulldata_idx(N, selected_feedback, idx):
         valid_idx = [i if 0 <= i < len(pred_idx) else len(pred_idx) - 1 for i in idx]
         return pred_idx[valid_idx]
 
+
 def epig(data, n, smiles, fit, selected_feedback, rng=None):
     """
     data: pool of unlabelled molecules
@@ -73,9 +74,7 @@ def entropy_based_sampling(data, n, smiles, fit, selected_feedback, rng=None):
     return local_idx_to_fulldata_idx(N, selected_feedback, query_idx)
 
 
-def exploitation_classification(
-    data, n, smiles, fit, selected_feedback, rng=None
-):
+def exploitation_classification(data, n, smiles, fit, selected_feedback, rng=None):
     """
     data: pool of unlabelled molecules
     n: number of queries to select
@@ -138,7 +137,7 @@ def random_selection(data, n, smiles, fit, selected_feedback, rng):
     rng: random number generator
     """
     N = len(smiles)
-    query_idx = rng.choice(N-len(selected_feedback), n, replace=False)
+    query_idx = rng.choice(N - len(selected_feedback), n, replace=False)
     return local_idx_to_fulldata_idx(N, selected_feedback, query_idx)
 
 

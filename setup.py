@@ -15,7 +15,12 @@ setup(
     url="https://github.com/yasminenahal/hitl_al_gomg.git",
     keywords=["REINVENT", "HITL", "HITL_AL_GOMG"],
     packages=find_packages(),
-    package_data={"hitl_al_gomg": ["models/priors/random.prior.new", "scoring/chemspace/chembl.csv"]},
+    package_data={
+        "hitl_al_gomg": [
+            "models/priors/random.prior.new",
+            "scoring/chemspace/chembl.csv",
+        ]
+    },
     include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",

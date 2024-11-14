@@ -1,9 +1,11 @@
 from pathlib import Path
 import pandas as pd
 
+
 def get_package_root():
     # Find the path of the current file
     return Path(__file__).resolve().parent
+
 
 def table():
     files = [
@@ -12,6 +14,7 @@ def table():
         if isinstance(value, Path)
     ]
     return pd.DataFrame(files, columns=["variable", "path", "exists"])
+
 
 # Get the package root path dynamically
 package_root = get_package_root()
