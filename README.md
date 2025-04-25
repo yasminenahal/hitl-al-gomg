@@ -99,6 +99,21 @@ Your evaluations through Metis will be stored in the `results` folder.
 
 In `notebooks/`, we provide Jupyter notebooks with code to reproduce the paper's result figures for both simulation and real human experiments.
 
+# Citation
+
+If you use this code in your research work, please cite our article:
+
+ @article{nahal2024human,
+  title={Human-in-the-loop active learning for goal-oriented molecule generation},
+  author={Nahal, Yasmine and Menke, Janosch and Martinelli, Julien and Heinonen, Markus and Kabeshov, Mikhail and Janet, Jon Paul and Nittinger, Eva and Engkvist, Ola and Kaski, Samuel},
+  journal={Journal of Cheminformatics},
+  volume={16},
+  number={1},
+  pages={1--24},
+  year={2024},
+  publisher={Springer}
+}
+
 # Acknowledgements
 
 - We acknowledge the following works which were extremely helpful to develop this workflow:
