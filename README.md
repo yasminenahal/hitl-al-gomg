@@ -103,6 +103,7 @@ In `notebooks/`, we provide Jupyter notebooks with code to reproduce the paper's
 
 If you use this code in your research work, please cite our article:
 
+```bibtex
  @article{nahal2024human,
   title={Human-in-the-loop active learning for goal-oriented molecule generation},
   author={Nahal, Yasmine and Menke, Janosch and Martinelli, Julien and Heinonen, Markus and Kabeshov, Mikhail and Janet, Jon Paul and Nittinger, Eva and Engkvist, Ola and Kaski, Samuel},
@@ -113,6 +114,7 @@ If you use this code in your research work, please cite our article:
   year={2024},
   publisher={Springer}
 }
+```
 
 # Acknowledgements
 
